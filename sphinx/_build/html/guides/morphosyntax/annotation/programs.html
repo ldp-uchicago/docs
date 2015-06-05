@@ -1,0 +1,286 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Programs &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Programs</a><ul>
+<li><a class="reference internal" href="#all">all</a></li>
+<li><a class="reference internal" href="#add">add</a></li>
+<li><a class="reference internal" href="#caps">caps</a></li>
+<li><a class="reference internal" href="#commitlex">commitlex</a></li>
+<li><a class="reference internal" href="#compare-py">compare.py</a><ul>
+<li><a class="reference internal" href="#usage">Usage</a></li>
+<li><a class="reference internal" href="#options">Options</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dic">dic</a><ul>
+<li><a class="reference internal" href="#id1">Usage</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#dis">dis</a></li>
+<li><a class="reference internal" href="#fixlines">fixlines</a></li>
+<li><a class="reference internal" href="#grasper">grasper</a></li>
+<li><a class="reference internal" href="#postal">postal</a></li>
+<li><a class="reference internal" href="#root-nv">root_nv</a></li>
+<li><a class="reference internal" href="#synflagger">synflagger</a></li>
+<li><a class="reference internal" href="#syntax-extract">syntax_extract</a></li>
+<li><a class="reference internal" href="#helper-programs">Helper programs</a><ul>
+<li><a class="reference internal" href="#dict">dict</a></li>
+<li><a class="reference internal" href="#fixpost-pl">fixpost.pl</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/annotation/programs.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="programs">
+<span id="mg-prog"></span><h1>Programs<a class="headerlink" href="#programs" title="Permalink to this headline">¶</a></h1>
+<p>The following list outlines the various scripts and programs developed by members of the LDP.</p>
+<div class="section" id="all">
+<span id="mg-prog-all"></span><h2>all<a class="headerlink" href="#all" title="Permalink to this headline">¶</a></h2>
+<p>A simple script that updates all svn repositories that are being used.  This
+was a lot more useful before the repositories were consolidated, but this
+can still be run from anywhere.</p>
+</div>
+<div class="section" id="add">
+<span id="mg-prog-add"></span><h2>add<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h2>
+<p>A simple script that opens the specified <tt class="docutils literal"><span class="pre">.cut</span></tt> file from the
+<tt class="docutils literal"><span class="pre">$CLAN/lib/english/lex</span></tt> in a vi editor.</p>
+</div>
+<div class="section" id="caps">
+<span id="mg-prog-caps"></span><h2>caps<a class="headerlink" href="#caps" title="Permalink to this headline">¶</a></h2>
+<p>Identifies all capitalized words and all ampersanded words in a CHAT file.
+Also identifies those capitalized words that also appear in lower case and
+those ampersanded words that also appear without an ampersand.</p>
+<p>Usage:</p>
+<div class="highlight-python"><pre>caps xx.xx.cha</pre>
+</div>
+<p>Sample output:</p>
+<div class="highlight-python"><pre>Capitalized words:
+
+Alls
+Bam             --&gt;     check lower case
+Caribou
+Dad
+Daddy
+Flipper
+Fuh
+Ick             --&gt;     check lower case
+Kuh             --&gt;     check lower case
+La
+Lilia
+Mama            --&gt;     check lower case
+Mexican
+Mom
+Mommy
+Museum_Of_Science_And_Industry
+Pete
+Seesee
+Uhuh
+Vroom           --&gt;     check lower case
+Vuh             --&gt;     check lower case
+Wah             --&gt;     check lower case
+Zs
+
+Ampersanded words:
+
+&amp;fa             --&gt;     check for unampersanded instances
+&amp;fuh
+&amp;la</pre>
+</div>
+</div>
+<div class="section" id="commitlex">
+<span id="mg-prog-commitlex"></span><h2>commitlex<a class="headerlink" href="#commitlex" title="Permalink to this headline">¶</a></h2>
+<p>A simple script that changes directory to the <tt class="docutils literal"><span class="pre">$CLAN/lib/english/lex</span></tt>
+directory, commits any changes to the svn repository, and returns to the
+previous working directory.</p>
+</div>
+<div class="section" id="compare-py">
+<span id="mg-prog-compare"></span><h2>compare.py<a class="headerlink" href="#compare-py" title="Permalink to this headline">¶</a></h2>
+<p>Compares the tags of specified tiers in chat files.</p>
+<p>The script compares a <em>test</em> tier against a <em>gold</em> standard tier.
+The tiers to be compared can be in the same file or separate files.</p>
+<div class="section" id="usage">
+<h3>Usage<a class="headerlink" href="#usage" title="Permalink to this headline">¶</a></h3>
+<p>To compare two syntax tiers in the same file (&#8216;test.cha&#8217;):</p>
+<div class="highlight-python"><pre>compare.py --test TIER --gold TIER test.cha</pre>
+</div>
+<p>If comparing seperate files (&#8216;test.cha&#8217; against &#8216;gold.cha&#8217;):</p>
+<div class="highlight-python"><pre>compare.py --test TIER --gold TIER test.cha gold.cha</pre>
+</div>
+<p>Note that both &#8211;test and &#8211;gold default to &#8216;syn&#8217;:</p>
+<div class="highlight-python"><pre>compare.py test.cha gold.cha</pre>
+</div>
+</div>
+<div class="section" id="options">
+<h3>Options<a class="headerlink" href="#options" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-python"><pre>-h, --help                show this help message and exit
+-g &lt;TIER&gt;, --gold=&lt;TIER&gt;  tier to use as gold standard
+-t &lt;TIER&gt;, --test=&lt;TIER&gt;  tier to test against gold standard
+--mismatch=&lt;TEST&gt; &lt;GOLD&gt;  print lines with specified tag mismatches
+--mismatches              print all mismatches
+--matrix                  print confusion matrix
+--labeled                 evaluate syntax tiers with dependency labels
+--unlabeled               evaluate syntax tiers without dependency labels
+--omit_single_words       exclude single word utts from evaluation</pre>
+</div>
+</div>
+</div>
+<div class="section" id="dic">
+<span id="mg-prog-dic"></span><h2>dic<a class="headerlink" href="#dic" title="Permalink to this headline">¶</a></h2>
+<p><tt class="docutils literal"><span class="pre">dic</span></tt> is a bash script for looking up words in the CLAN lexicon.  It will
+search for the term with word boundaries on either side.  Thus searching for
+&#8220;how&#8221; will find &#8220;how&#8221;, &#8220;how_come&#8221;, or &#8220;know+how&#8221;, but not &#8220;howl&#8221;, &#8220;howitzer&#8221;,
+or &#8220;shower&#8221;.</p>
+<p>The default output is in the same format as it would be in a transcript , i.e.
+<em>pos|word(+comp|word...)</em>.  Adding the <tt class="docutils literal"><span class="pre">-f</span></tt> switch shows output in the format
+of grep, i.e. <em>filename:word {[scat pos]([comp comp+comp])}</em>.</p>
+<p>You can add the <tt class="docutils literal"><span class="pre">-p</span></tt> switch to search for parts of words.
+Thus <tt class="docutils literal"><span class="pre">dic</span> <span class="pre">-p</span> <span class="pre">how</span></tt> will find &#8220;how&#8221;, &#8220;how_come&#8221;, &#8220;know+how&#8221; AND &#8220;howl&#8221;,
+&#8220;howitzer&#8221;, and &#8220;shower&#8221;.</p>
+<div class="section" id="id1">
+<h3>Usage<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">dic how:</th><td class="field-body">Searches lexicon for &#8220;how&#8221; with word boundaries.  Output is same as
+in CHAT transcripts.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">dic -f how:</th><td class="field-body">Searches lexicon for &#8220;how&#8221; with word boundaries.  Output is same as
+if grep had been used.</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">dic -p how:</th><td class="field-body">Searches lexicon for any word containing the pattern &#8220;how&#8221;.
+Output is same as in CHAT transcripts.</td>
+</tr>
+<tr class="field-even field"><th class="field-name">dic -p -f how:</th><td class="field-body">Alternatively, <tt class="docutils literal"><span class="pre">dic</span> <span class="pre">-f</span> <span class="pre">-p</span> <span class="pre">how</span></tt>.
+Searches lexicon for any word containing the pattern &#8220;how&#8221;.
+Output is same as if grep had been used.</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="dis">
+<span id="mg-prog-dis"></span><h2>dis<a class="headerlink" href="#dis" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="fixlines">
+<span id="mg-prog-fixlines"></span><h2>fixlines<a class="headerlink" href="#fixlines" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="grasper">
+<span id="mg-prog-grasper"></span><h2>grasper<a class="headerlink" href="#grasper" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="postal">
+<span id="mg-prog-postal"></span><h2>postal<a class="headerlink" href="#postal" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="root-nv">
+<span id="mg-prog-root-nv"></span><h2>root_nv<a class="headerlink" href="#root-nv" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="synflagger">
+<span id="mg-prog-synflagger"></span><h2>synflagger<a class="headerlink" href="#synflagger" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="syntax-extract">
+<span id="mg-prog-syntax-extract"></span><h2>syntax_extract<a class="headerlink" href="#syntax-extract" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="helper-programs">
+<h2>Helper programs<a class="headerlink" href="#helper-programs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="dict">
+<h3>dict<a class="headerlink" href="#dict" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="fixpost-pl">
+<h3>fixpost.pl<a class="headerlink" href="#fixpost-pl" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

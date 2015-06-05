@@ -1,0 +1,587 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>4. Utterance boundaries &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">4. Utterance boundaries</a><ul>
+<li><a class="reference internal" href="#what-is-an-utterance">4.1 What is an utterance?</a></li>
+<li><a class="reference internal" href="#transcribe-for-pauses-of-2-seconds-or-less">4.2 Transcribe <tt class="docutils literal"><span class="pre">--</span></tt> for pauses of 2 seconds or less</a></li>
+<li><a class="reference internal" href="#self-corrected-speech-is-one-utterance">4.3 Self-corrected speech is one utterance</a></li>
+<li><a class="reference internal" href="#self-interrupted-speech-requires-multiple-utterances">4.4 Self-interrupted speech requires multiple utterances</a></li>
+<li><a class="reference internal" href="#false-starts-are-one-utterance">4.5 False starts are one utterance</a><ul>
+<li><a class="reference internal" href="#a-pause-of-more-than-2-seconds-requires-a-new-utterance">4.5.1 A pause of more than 2 seconds requires a new utterance</a></li>
+<li><a class="reference internal" href="#unfinished-utterances-end-with">4.5.2 Unfinished utterances end with <tt class="docutils literal"><span class="pre">--</span></tt></a></li>
+<li><a class="reference internal" href="#speaker-stumbling-over-words-is-one-utterance">4.5.3 Speaker stumbling over words is one utterance</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#utterances-never-span-more-than-one-conversational-turn">4.6 Utterances never span more than one conversational turn</a></li>
+<li><a class="reference internal" href="#utterances-are-never-more-than-one-complete-sentence">4.7 Utterances are never more than one complete sentence</a><ul>
+<li><a class="reference internal" href="#conditional-constructions-in-aave">4.7.1 Conditional constructions in AAVE</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#use-semantic-and-syntactic-cohesion-to-determine-utterance-boundary">4.8 Use semantic and syntactic cohesion to determine utterance boundary</a><ul>
+<li><a class="reference internal" href="#a-pause-of-more-than-2-seconds-trumps-semantic-syntactic-cohesion">4.8.1 A pause of more than 2 seconds trumps semantic/syntactic cohesion</a></li>
+<li><a class="reference internal" href="#use-intonational-contours-to-help-determine-utterance-boundary">4.8.2 Use intonational contours to help determine utterance boundary</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tag-words-and-phrases">4.9 Tag words and phrases</a><ul>
+<li><a class="reference internal" href="#tags-to-transcribe-on-the-same-line">4.9.1 Tags to transcribe on the same line</a></li>
+<li><a class="reference internal" href="#transcribe-inverted-auxiliary-tag-questions">4.9.2 Transcribe inverted auxiliary tag questions</a></li>
+<li><a class="reference internal" href="#tags-to-transcribe-on-a-separate-line">4.9.3 Tags to transcribe on a separate line</a></li>
+<li><a class="reference internal" href="#tags-vs-multi-clause-utterances">4.9.4 Tags vs. multi-clause utterances</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repeated-words-and-phrases-may-be-transcribed-as-one-utterance">4.10 Repeated words and phrases may be transcribed as one utterance</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/guides/transcription/sect_4.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="utterance-boundaries">
+<span id="tg-4"></span><h1>4. Utterance boundaries<a class="headerlink" href="#utterance-boundaries" title="Permalink to this headline">¶</a></h1>
+<p>Determining where the boundaries fall between utterances is an important part of your job as a transcriber. Lots of segments of speech qualify as utterances: a word, a short phrase, or a complex sentence with many embedded clauses. Unfortunately, people don&#8217;t speak with periods, commas, and question marks to let you know when one utterance ends and another one begins. The following guidelines have been developed to help you break continuous human speech into single utterances that fit into Excel spreadsheet cells. It is in this format that we can further analyze human speech into words per utterance, clauses per utterance, relationships between clauses within an utterance, etc.</p>
+<div class="section" id="what-is-an-utterance">
+<span id="tg-4-1"></span><h2>4.1 What is an utterance?<a class="headerlink" href="#what-is-an-utterance" title="Permalink to this headline">¶</a></h2>
+<p>An utterance can be a word, a phrase, or an entire sentence. The following are all potential examples of utterances:</p>
+<div class="highlight-python"><pre>ok?
+uhhuh.
+not on the floor!
+the pink one.
+yeah, well, I thought she was going to, but she never did.
+bugs lives outside, honey.
+we don't bring them in the house.</pre>
+</div>
+</div>
+<div class="section" id="transcribe-for-pauses-of-2-seconds-or-less">
+<span id="tg-4-2"></span><h2>4.2 Transcribe <tt class="docutils literal"><span class="pre">--</span></tt> for pauses of 2 seconds or less<a class="headerlink" href="#transcribe-for-pauses-of-2-seconds-or-less" title="Permalink to this headline">¶</a></h2>
+<p>If the speaker hesitates to find a word, treat it as one utterance, unless the speaker pauses for more than two seconds.  If there is less than a two-second pause, put two dashes in for the hesitation and a space on either side of the dashes ( <tt class="docutils literal"><span class="pre">--</span></tt> ).  Any time there is a pause of more than two seconds, transcribe it as two separate utterances (see also <a class="reference internal" href="#tg-4-5-1"><em>Section 4.5.1</em></a>).</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>put it in the &#8211; toy
+box.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="self-corrected-speech-is-one-utterance">
+<span id="tg-4-3"></span><h2>4.3 Self-corrected speech is one utterance<a class="headerlink" href="#self-corrected-speech-is-one-utterance" title="Permalink to this headline">¶</a></h2>
+<p>If the speaker interrupts herself to correct herself, treat it as one utterance, putting two dashes between the original and the corrected word(s) and a space on either side of the dashes ( <tt class="docutils literal"><span class="pre">--</span></tt> ):</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>don&#8217;t do that,
+Nathan &#8211; Jake!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="self-interrupted-speech-requires-multiple-utterances">
+<span id="tg-4-4"></span><h2>4.4 Self-interrupted speech requires multiple utterances<a class="headerlink" href="#self-interrupted-speech-requires-multiple-utterances" title="Permalink to this headline">¶</a></h2>
+<p>If the speaker interrupts herself to express an entirely different thought, treat it as two separate utterances and put a space and two dashes ( <tt class="docutils literal"><span class="pre">--</span></tt>) after the first utterance:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>why don&#8217;t you put
+it &#8211;</td>
+</tr>
+<tr class="row-odd"><td>don&#8217;t do that!</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="false-starts-are-one-utterance">
+<span id="tg-4-5"></span><h2>4.5 False starts are one utterance<a class="headerlink" href="#false-starts-are-one-utterance" title="Permalink to this headline">¶</a></h2>
+<p>If the speaker has a false start in her speech, treat it as one utterance, and put two dashes surrounded by spaces ( <tt class="docutils literal"><span class="pre">--</span></tt> ) between the repeated utterances. False starts are instances when a speaker begins to say something, hesitates, and then resumes saying the same thing:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="100%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>will you &#8211; will you
+go to your room?</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="a-pause-of-more-than-2-seconds-requires-a-new-utterance">
+<span id="tg-4-5-1"></span><h3>4.5.1 A pause of more than 2 seconds requires a new utterance<a class="headerlink" href="#a-pause-of-more-than-2-seconds-requires-a-new-utterance" title="Permalink to this headline">¶</a></h3>
+<p>In the case of false starts, if there is a two second or greater pause between the repeated phrases, then do start a new utterance:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="63%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+<th class="head"><em>context</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>will you &#8211;</td>
+<td>3-second pause</td>
+</tr>
+<tr class="row-odd"><td>will you go to your room?</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="unfinished-utterances-end-with">
+<span id="tg-4-5-2"></span><h3>4.5.2 Unfinished utterances end with <tt class="docutils literal"><span class="pre">--</span></tt><a class="headerlink" href="#unfinished-utterances-end-with" title="Permalink to this headline">¶</a></h3>
+<p>If the speaker has a false start and then trails off without completing her sentence or phrase, just end the utterance with two dashes ( <tt class="docutils literal"><span class="pre">--</span></tt>).</p>
+</div>
+<div class="section" id="speaker-stumbling-over-words-is-one-utterance">
+<span id="tg-4-5-3"></span><h3>4.5.3 Speaker stumbling over words is one utterance<a class="headerlink" href="#speaker-stumbling-over-words-is-one-utterance" title="Permalink to this headline">¶</a></h3>
+<p>If the speaker stumbles over his or her words while trying to formulate an utterance, still count this as a false start and transcribe the attempts on a single utterance line. To count as a false start, the words must be spoken very quickly or be otherwise clearly an attempt at verbalizing a single thought. For example:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+<th class="head"><em>c_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>no &#8211; don&#8217;t &#8211; oh no!</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>where &#8211; what &#8211; where
+did you put it?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="utterances-never-span-more-than-one-conversational-turn">
+<span id="tg-4-6"></span><h2>4.6 Utterances never span more than one conversational turn<a class="headerlink" href="#utterances-never-span-more-than-one-conversational-turn" title="Permalink to this headline">¶</a></h2>
+<p>An utterance is never more than one conversational turn. When people are taking turns talking, having a conversation, a single utterance will never span over more than one person&#8217;s turn. (Recall that in <a class="reference internal" href="sect_3.html#tg-3-2"><em>Section 3.2</em></a>, when a person is interrupted and doesn&#8217;t acknowledge the interruption, this is still a single conversational turn.)</p>
+</div>
+<div class="section" id="utterances-are-never-more-than-one-complete-sentence">
+<span id="tg-4-7"></span><h2>4.7 Utterances are never more than one complete sentence<a class="headerlink" href="#utterances-are-never-more-than-one-complete-sentence" title="Permalink to this headline">¶</a></h2>
+<p>An utterance is never more than one complete sentence long. A sentence is a segment of speech containing a subject and a predicate. Complete sentences include things like &#8220;the man is walking&#8221; and &#8220;I&#8217;m sleepy&#8221;. If sentences are joined by conjunction words (like &#8220;and&#8221;, &#8220;or&#8221;, &#8220;but&#8221;, &#8220;because&#8221;, &#8220;after&#8221;, &#8220;for&#8221;, &#8220;so&#8221;, &#8220;if&#8221;, &#8220;when&#8221;, etc.), then it&#8217;s okay to transcribe them together on a single utterance line, but if there are no conjunction words, the sentences should be separate utterances.</p>
+<p>For example, the following could be utterances:</p>
+<div class="highlight-python"><pre>but you said you would!
+the one that's right over there.
+I'll go first, and then you can have a turn.
+if I tag you, you have to go to jail!
+I wanted to throw it but then I remembered not to because then I would get in trouble.
+he keeps hiding!</pre>
+</div>
+<p>And the following should never be transcribed as single utterances:</p>
+<div class="highlight-python"><pre>get your coat, it's time to go!
+you know what, let's do this inside.
+bring it to me later, I'm busy right now.</pre>
+</div>
+<div class="section" id="conditional-constructions-in-aave">
+<span id="tg-4-7-1"></span><h3>4.7.1 Conditional constructions in AAVE<a class="headerlink" href="#conditional-constructions-in-aave" title="Permalink to this headline">¶</a></h3>
+<p>Especially in African-American Vernacular English (AAVE), it is common to create if-then constructions while omitting the words &#8220;if&#8221; and &#8220;then&#8221;. You might, for example, hear somebody say &#8220;you leave your jacket off, you&#8217;re going to get cold&#8221;, meaning &#8220;IF you leave your jacket off, THEN you&#8217;re going to get cold&#8221;. Transcribe constructions such as these on a single utterance line, even if the connecting words technically are not present.</p>
+</div>
+</div>
+<div class="section" id="use-semantic-and-syntactic-cohesion-to-determine-utterance-boundary">
+<span id="tg-4-8"></span><h2>4.8 Use semantic and syntactic cohesion to determine utterance boundary<a class="headerlink" href="#use-semantic-and-syntactic-cohesion-to-determine-utterance-boundary" title="Permalink to this headline">¶</a></h2>
+<p>In general, when phrases are related semantically and grammatically, they should be transcribed together as one utterance if there is less than a two second pause between them. For instance, the phrases &#8220;I&#8217;ll go first&#8221; and &#8220;and then you can have a turn&#8221; are related semantically because after &#8220;I&#8217;ll go first&#8221; is the time when you can have a turn, and the conjunction words &#8220;and then&#8221; connect the phrases to each other grammatically. Another example are the phrases &#8220;are you having fun&#8221; and &#8220;on the couch&#8221;. These are related semantically because &#8220;on the couch&#8221; is a place where you could have fun, and they&#8217;re related grammatically because it&#8217;s grammatically acceptable to put a prepositional phrase like &#8220;on the couch&#8221; at the end of a sentence like &#8220;are you having fun&#8221;.</p>
+<p>In most cases, utterances like the ones above should be transcribed as follows:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+<th class="head"><em>c_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>I&#8217;ll go first and then
+you can have a turn.</td>
+</tr>
+<tr class="row-odd"><td>are you having fun on
+the couch?</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>But occasionally people will add something as sort of an after-thought that could have been related semantically and grammatically to the rest of the utterance, but isn&#8217;t part of the original train of thought. In cases where speaker adds a phrase more as an after-thought than as part of the original utterance, transcribe the phrases as separate utterances, like this:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+<th class="head"><em>c_utts</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>&nbsp;</td>
+<td>I&#8217;ll go first.</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>and then you can have
+a turn.</td>
+</tr>
+<tr class="row-even"><td>are you having fun?</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td>on the couch?</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>But how can we determine whether two phrases are part of the same train of thought or not? Use the guidelines in <a class="reference internal" href="#tg-4-8-1"><em>4.8.1</em></a> and <a class="reference internal" href="#tg-4-8-2"><em>4.8.2</em></a> to determine whether you have strong enough evidence to break up two phrases that could be semantically and grammatically related.</p>
+<div class="section" id="a-pause-of-more-than-2-seconds-trumps-semantic-syntactic-cohesion">
+<span id="tg-4-8-1"></span><h3>4.8.1 A pause of more than 2 seconds trumps semantic/syntactic cohesion<a class="headerlink" href="#a-pause-of-more-than-2-seconds-trumps-semantic-syntactic-cohesion" title="Permalink to this headline">¶</a></h3>
+<p>If there is a two-second or longer pause in between phrases, transcribe them as two separate utterances instead of a single utterance, even if they are semantically and syntactically cohesive.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>p_utts</em></th>
+<th class="head"><em>c_utts</em></th>
+<th class="head"><em>context</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>are you having fun?</td>
+<td>&nbsp;</td>
+<td>at least 2 full seconds
+of pause after &#8220;fun&#8221;</td>
+</tr>
+<tr class="row-odd"><td>on the couch?</td>
+<td>&nbsp;</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td>I&#8217;ll go first.</td>
+<td>at least 2 full seconds
+of pause after &#8220;first&#8221;</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>and then you can
+have a turn.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="use-intonational-contours-to-help-determine-utterance-boundary">
+<span id="tg-4-8-2"></span><h3>4.8.2 Use intonational contours to help determine utterance boundary<a class="headerlink" href="#use-intonational-contours-to-help-determine-utterance-boundary" title="Permalink to this headline">¶</a></h3>
+<p>If two phrases are part of two totally separate intonational contours, transcribe them as two separate utterances instead of a single utterance. Intonational contour refers to the pattern the pitch of your voice makes when you utter questions, propositions, and commands. Linguists have formed nuanced and complex theories about the intonational contour patterns of different languages, but for the purposes of transcribing, you only need to know the following principles (which we will illustrate using the example of a question):</p>
+<p>When you form a question in English, you usually raise the pitch of your voice at the end, like this:</p>
+<img alt="../../_images/IntonationOne.jpg" src="../../_images/IntonationOne.jpg" />
+<p>The rising line represents the way your voice goes up at the end of the question. An utterance with this intonational contour pattern would be transcribed on one line.</p>
+<p>If you form two distinct questions, however, your voice will do something like this:</p>
+<img alt="../../_images/IntonationTwo.jpg" src="../../_images/IntonationTwo.jpg" />
+<p>Your voice&#8217;s pitch rises twice, because you&#8217;ve asked two questions with two intonational contours. This example would be transcribed as two utterances on two separate lines.</p>
+<p>Sometimes you will encounter a complex intonational contour pattern, where there are two segments of a larger intonational pattern. Such a contour would look something like this:</p>
+<img alt="../../_images/IntonationThree.jpg" src="../../_images/IntonationThree.jpg" />
+<p>The above example still has a single intonational contour, even though that contour is complex, and should be transcribed as a single utterance on a single line.</p>
+</div>
+</div>
+<div class="section" id="tag-words-and-phrases">
+<span id="tg-4-9"></span><h2>4.9 Tag words and phrases<a class="headerlink" href="#tag-words-and-phrases" title="Permalink to this headline">¶</a></h2>
+<p>People often use tag words and phrases in their speech. A tag is a word or short phrase that frames or clarifies the rest of the sentence or phrase, and usually occurs at the beginning or end of an utterance.</p>
+<div class="section" id="tags-to-transcribe-on-the-same-line">
+<span id="tg-4-9-1"></span><h3>4.9.1 Tags to transcribe on the same line<a class="headerlink" href="#tags-to-transcribe-on-the-same-line" title="Permalink to this headline">¶</a></h3>
+<p>When you encounter tags like the ones in the table below, err on the side of them on the same utterance line as the speech they accompany, instead of on their own separate line. The tags below (not an exhaustive list) either do not have a verb or are sentence fragments without a subject. Because they are not full sentences there is no prohibition against putting them on the same utterance line as another sentence. However, just as is the case with phrases that are connected structurally, there are times when you should transcribe tag words and phrases such as the ones below as separate utterances rather than as part of the same utterance as the speech they accompany. Use the principles outlined in <a class="reference internal" href="#tg-4-8-1"><em>4.8.1</em></a> and <a class="reference internal" href="#tg-4-8-2"><em>4.8.2</em></a> regarding pauses and intonational contours to decide when to transcribe a non-sentence tag word or phrase as its own separate utterance.</p>
+<p>Examples of tag words and phrases:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="36%" />
+<col width="37%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag word/phrase</th>
+<th class="head">Appearing at the beginning</th>
+<th class="head">Appearing at the end</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ok</td>
+<td>ok, can we go now?</td>
+<td>I get it, ok?</td>
+</tr>
+<tr class="row-odd"><td>honey</td>
+<td>honey, will you put your
+toys away?</td>
+<td>it&#8217;s in the kitchen, honey.</td>
+</tr>
+<tr class="row-even"><td>right</td>
+<td>right, first the top, then
+the bottom.</td>
+<td>put it in the oven, right?</td>
+</tr>
+<tr class="row-odd"><td>well</td>
+<td>well, not without your
+brother!</td>
+<td>n/a</td>
+</tr>
+<tr class="row-even"><td>here</td>
+<td>here, let me do this.</td>
+<td>n/a</td>
+</tr>
+<tr class="row-odd"><td>no</td>
+<td>no, not the blue one!</td>
+<td>n/a</td>
+</tr>
+<tr class="row-even"><td>oh boy</td>
+<td>oh boy, you&#8217;re in for a
+treat.</td>
+<td>n/a</td>
+</tr>
+<tr class="row-odd"><td>my goodness</td>
+<td>my goodness, that was a
+big burp!</td>
+<td>n/a</td>
+</tr>
+<tr class="row-even"><td>Mommy</td>
+<td>Mommy, help me!</td>
+<td>I want down, Mommy!</td>
+</tr>
+<tr class="row-odd"><td>remember</td>
+<td>remember, no running in
+the kitchen.</td>
+<td>I put those in your toy
+box, remember?</td>
+</tr>
+<tr class="row-even"><td>see</td>
+<td>see, it&#8217;s not so scary.</td>
+<td>it&#8217;s up on top, see?</td>
+</tr>
+<tr class="row-odd"><td>look (at)</td>
+<td>look at, they&#8217;re picking
+vegetables.</td>
+<td>n/a</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="transcribe-inverted-auxiliary-tag-questions">
+<span id="tg-4-9-2"></span><h3>4.9.2 Transcribe inverted auxiliary tag questions<a class="headerlink" href="#transcribe-inverted-auxiliary-tag-questions" title="Permalink to this headline">¶</a></h3>
+<p>At the end of a sentence, an inverted question can also be a tag. These tags are formed by taking the auxiliary verb (or &#8220;do&#8221; if there isn&#8217;t an explicit auxiliary verb) and forming a negated question from it.  Err on the side of transcribing inverted tag questions on the same utterance line as the speech they accompany.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="18%" />
+<col width="36%" />
+<col width="46%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag question</th>
+<th class="head">Appearing at the beginning</th>
+<th class="head">Appearing at the end</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>isn&#8217;t it?</td>
+<td>n/a</td>
+<td>that&#8217;s the right answer, isn&#8217;t it?</td>
+</tr>
+<tr class="row-odd"><td>do we?</td>
+<td>n/a</td>
+<td>we don&#8217;t need to watch t+v right
+now, do we?</td>
+</tr>
+<tr class="row-even"><td>aren&#8217;t you?</td>
+<td>n/a</td>
+<td>you&#8217;re a little cranky today,
+aren&#8217;t you?</td>
+</tr>
+<tr class="row-odd"><td>didn&#8217;t you?</td>
+<td>n/a</td>
+<td>you saw your friend at the store
+today, didn&#8217;t you?</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tags-to-transcribe-on-a-separate-line">
+<span id="tg-4-9-3"></span><h3>4.9.3 Tags to transcribe on a separate line<a class="headerlink" href="#tags-to-transcribe-on-a-separate-line" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes you will hear complete sentences spoken like tags. Do NOT transcribe complete sentence tags on the same utterance line as another sentence, even if they really, really sound like they go together. This would be a violation of <a class="reference internal" href="#tg-4-7"><em>Rule 4.7</em></a>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="51%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><em>If a speaker says:</em></th>
+<th class="head"><em>Transcribe it as:</em></th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>I know, it&#8217;s so crazy!</td>
+<td>I know.</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>it&#8217;s so crazy.</td>
+</tr>
+<tr class="row-even"><td>I don&#8217;t know, maybe we should
+wait until after dinner.</td>
+<td>I don&#8217;t know.</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>maybe we should wait until
+after dinner.</td>
+</tr>
+<tr class="row-even"><td>you know what, let&#8217;s put the
+toys away first.</td>
+<td>you know what?</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>let&#8217;s put the toys away first.</td>
+</tr>
+<tr class="row-even"><td>there you go, it&#8217;s all fixed.</td>
+<td>there you go.</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>it&#8217;s all fixed.</td>
+</tr>
+<tr class="row-even"><td>you see, all three things are
+the same color.</td>
+<td>you see?</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>all three things are the same
+color.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tags-vs-multi-clause-utterances">
+<span id="tg-4-9-4"></span><h3>4.9.4 Tags vs. multi-clause utterances<a class="headerlink" href="#tags-vs-multi-clause-utterances" title="Permalink to this headline">¶</a></h3>
+<p>You may notice that a subset of these tags (such as &#8220;I know&#8221; and &#8220;you see&#8221;) could actually be the beginning of a sentence without being a tag. For example, a speaker might say &#8220;I know it&#8217;s so crazy&#8221;, meaning &#8220;I know THAT it&#8217;s so crazy&#8221;. Most sentences that fall into this category contain verbs of perception or cognition, like &#8220;think&#8221;, &#8220;see&#8221;, &#8220;know&#8221;, &#8220;wish&#8221;, etc. In cases where a speaker means something like &#8220;I know that it&#8217;s so crazy&#8221; or &#8220;you see that all three things are the same color&#8221;, but has simply omitted the word &#8220;that&#8221;, put them on the same utterance line and do NOT break them up.</p>
+</div>
+</div>
+<div class="section" id="repeated-words-and-phrases-may-be-transcribed-as-one-utterance">
+<span id="tg-4-10"></span><h2>4.10 Repeated words and phrases may be transcribed as one utterance<a class="headerlink" href="#repeated-words-and-phrases-may-be-transcribed-as-one-utterance" title="Permalink to this headline">¶</a></h2>
+<p>If a speaker keeps repeating a word or short phrase over and over again (e.g. &#8220;no no no, no no, no no no....no!&#8221; or &#8220;I won&#8217;t I won&#8217;t I won&#8217;t I won&#8217;t!&#8221;, or is counting, saying the alphabet, or reciting a list, use Rules <a class="reference internal" href="#tg-4-8-1"><em>4.8.1</em></a> and <a class="reference internal" href="#tg-4-8-2"><em>4.8.2</em></a> to establish utterance boundaries. If you are dealing with a short repeated sentence (like &#8220;I won&#8217;t&#8221;), then you have leave to break <a class="reference internal" href="#tg-4-7"><em>Rule 4.7</em></a> and put them on the same utterance line if:</p>
+<blockquote>
+<div><ol class="loweralpha simple">
+<li>they are spoken rapidly</li>
+<li>they are part of a single intonational contour as defined in <a class="reference internal" href="#tg-4-8-2"><em>4.8.2</em></a></li>
+<li>there is no discernible pause in between repetitions.</li>
+</ol>
+</div></blockquote>
+<p>Basically, (a), (b), and (c) are to help you determine in an objective way whether to make it look in the transcript like the speaker kept uttering the same thing over and over again, or like they said one utterance with an emphatically repeated sentence in it. Whenever you have a repeated word or phrase, type it out according to the conventions in <a class="reference internal" href="sect_6.html#tg-6-3"><em>Rule 6.3</em></a>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
