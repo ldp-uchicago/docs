@@ -1,0 +1,1178 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Common problems &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Common problems</a><ul>
+<li><a class="reference internal" href="#abbreviations">Abbreviations</a></li>
+<li><a class="reference internal" href="#part-of-speech">Part of speech</a><ul>
+<li><a class="reference internal" href="#the-phrase-go-to-sleep">The phrase <em>go to sleep</em></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#syntax">Syntax</a><ul>
+<li><a class="reference internal" href="#v-np-to-v"><strong>V NP</strong> <b><em>to</em></b> <strong>V</strong></a><ul>
+<li><a class="reference internal" href="#xcomp"><tt class="docutils literal"><span class="pre">XCOMP</span></tt></a></li>
+<li><a class="reference internal" href="#xmod"><tt class="docutils literal"><span class="pre">XMOD</span></tt></a></li>
+<li><a class="reference internal" href="#xjct"><tt class="docutils literal"><span class="pre">XJCT</span></tt></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#v-np-v"><strong>V NP V</strong></a></li>
+<li><a class="reference internal" href="#aux-and-inf-as-head-of-a-verb-cluster"><tt class="docutils literal"><span class="pre">AUX</span></tt> and <tt class="docutils literal"><span class="pre">INF</span></tt> as head of a verb cluster</a></li>
+<li><a class="reference internal" href="#det-as-the-head-of-a-noun-phrase"><tt class="docutils literal"><span class="pre">DET</span></tt> as the head of a noun phrase</a></li>
+<li><a class="reference internal" href="#det-used-as-jct"><tt class="docutils literal"><span class="pre">det</span></tt> used as <tt class="docutils literal"><span class="pre">JCT</span></tt></a></li>
+<li><a class="reference internal" href="#nominals-in-apposition">Nominals in apposition</a></li>
+<li><a class="reference internal" href="#pronouns-used-as-determiners">Pronouns used as determiners</a></li>
+<li><a class="reference internal" href="#missing-copulae">Missing copulae</a></li>
+<li><a class="reference internal" href="#missing-copula-vs-post-positioned-mod">Missing copula vs. post-positioned <tt class="docutils literal"><span class="pre">MOD</span></tt></a></li>
+<li><a class="reference internal" href="#post-positioned-mods-after-thing-body-and-one-words">Post-positioned <tt class="docutils literal"><span class="pre">MOD</span></tt>s after <em>-thing</em>, <em>-body</em>, and <em>-one</em> words</a></li>
+<li><a class="reference internal" href="#subj-after-root"><tt class="docutils literal"><span class="pre">SUBJ</span></tt> after <tt class="docutils literal"><span class="pre">ROOT</span></tt></a></li>
+<li><a class="reference internal" href="#post-positioned-quantifiers">Post-positioned quantifiers</a></li>
+<li><a class="reference internal" href="#perfect-participle-as-pred-vs-passive-construction">Perfect participle as <tt class="docutils literal"><span class="pre">PRED</span></tt> vs. passive construction</a><ul>
+<li><a class="reference internal" href="#as-pred">As <tt class="docutils literal"><span class="pre">PRED</span></tt></a></li>
+<li><a class="reference internal" href="#as-passive-construction">As passive construction</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#compound-multi-word-prepositions">Compound (multi-word) prepositions</a></li>
+<li><a class="reference internal" href="#prepositional-phrase-as-object-of-another-preposition">Prepositional phrase as object of another preposition</a></li>
+<li><a class="reference internal" href="#dangling-coords">Dangling <tt class="docutils literal"><span class="pre">COORD</span></tt>s</a></li>
+<li><a class="reference internal" href="#when-to-use-pred">When to use <tt class="docutils literal"><span class="pre">PRED</span></tt></a></li>
+<li><a class="reference internal" href="#using-the-tag-gr">Using the <tt class="docutils literal"><span class="pre">TAG</span></tt> GR</a><ul>
+<li><a class="reference internal" href="#negated-auxiliary-copula-tags">Negated auxiliary/copula tags</a></li>
+<li><a class="reference internal" href="#sentence-fragment-with-full-verb">Sentence fragment with full verb</a></li>
+<li><a class="reference internal" href="#full-sentence-with-no-grammatical-connection">Full sentence with no grammatical connection</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#the-phrase-verbing">The phrase <b><em>to be</em></b> + <b><em>done/finished</b></em> + <b>VERB<em>ing</em></b></a></li>
+<li><a class="reference internal" href="#quantifiers-and-quantifier-of-phrases">Quantifiers and <em>quantifier + of</em> phrases</a></li>
+<li><a class="reference internal" href="#when-to-use-voc">When to use <tt class="docutils literal"><span class="pre">VOC</span></tt></a></li>
+<li><a class="reference internal" href="#structure-of-a-noun-phrase">Structure of a noun phrase</a></li>
+<li><a class="reference internal" href="#comps-and-cpreds-introduce-by-wh-words"><tt class="docutils literal"><span class="pre">COMP</span></tt>s and <tt class="docutils literal"><span class="pre">CPRED</span></tt>s introduce by WH-words</a></li>
+<li><a class="reference internal" href="#all-np-verb-is"><b><em>all</em></b> <strong>NP VERB</strong> <b><em>is</em></b></a></li>
+<li><a class="reference internal" href="#the-phrase-be-adj-to-verb">The phrase <b><em>be</em></b> <strong>ADJ</strong> <b><em>to</em></b> <strong>VERB</strong></a></li>
+<li><a class="reference internal" href="#the-phrase-good-at-verbing">The phrase <b><em>good at</em></b> <strong>VERBing</strong></a></li>
+<li><a class="reference internal" href="#clauses-used-as-objects-of-prepositions">Clauses used as objects of prepositions</a></li>
+<li><a class="reference internal" href="#wh-word-do-you-think-clause"><strong>WH-word</strong> <b><em>do you think</em></b> <strong>CLAUSE</strong></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/annotation/problems.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="common-problems">
+<span id="mg-problems"></span><h1>Common problems<a class="headerlink" href="#common-problems" title="Permalink to this headline">¶</a></h1>
+<p>After you have prepped a transcript and generated flags to catch probable errors,
+you are ready to correct the morphosyntactic tagging.  The flags will point out
+common problems, but it can&#8217;t catch everything.  You don&#8217;t have to correct only
+those problems that are flagged; while you&#8217;re looking at a flagged utterance, go
+ahead and make sure everything in it is correct.  Likewise, if you happen to spot
+a mistake in an unflagged utterance, you can fix that too (don&#8217;t make a point to
+look at unflagged utterances, but if your eye wanders and you happen to see some
+mistakes, feel free to correct them).  The rule names should provide a clue as to
+what may have been mistagged and will require your attention.</p>
+<p>You will inevitably encounter some utterances which don&#8217;t have an immediately
+obvious solution.  There&#8217;s a good chance that these problems have come up before
+and have already been discussed.  This section outlines those troublesome
+utterances and constructions and provides the conventions that have been
+established to deal with them.  If you are ever stumped by an utterance, check
+here to see if there is already a conventional solution for it.</p>
+<div class="section" id="abbreviations">
+<span id="mg-problems-doc-abbrevs"></span><h2>Abbreviations<a class="headerlink" href="#abbreviations" title="Permalink to this headline">¶</a></h2>
+<p>The following abbreviations are used in this document:</p>
+<div class="highlight-python"><pre>POS             Part-of-speech (the tags found on the mor tier)
+GR              Grammatical Relationship (the tags found on the syn tier)
+NP              Noun Phrase
+VP              Verb Phrase
+PP              Prepositional Phrase</pre>
+</div>
+</div>
+<div class="section" id="part-of-speech">
+<span id="mg-problems-pos"></span><h2>Part of speech<a class="headerlink" href="#part-of-speech" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="the-phrase-go-to-sleep">
+<span id="mg-problems-go-to-sleep"></span><h3>The phrase <em>go to sleep</em><a class="headerlink" href="#the-phrase-go-to-sleep" title="Permalink to this headline">¶</a></h3>
+<p>The phrase &#8220;go to sleep&#8221; is coded as <tt class="docutils literal"><span class="pre">v|go</span> <span class="pre">prep|to</span> <span class="pre">n|sleep</span></tt> (as opposed
+to something like <tt class="docutils literal"><span class="pre">v|go</span> <span class="pre">inf|to</span> <span class="pre">v|sleep</span></tt>).  This is because it is
+analogous to &#8220;go to bed&#8221;, which is unambiguously a prepositional phrase.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I want to go to bed .
+pro|I aux|want inf|to v|go prep|to n|bed .
+1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+
+I want to go to sleep .
+pro|I aux|want inf|to v|go prep|to n|sleep .
+1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT</pre>
+</div>
+</div>
+</div>
+<div class="section" id="syntax">
+<span id="mg-problems-syntax"></span><h2>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="v-np-to-v">
+<span id="mg-problems-v-np-to-v"></span><h3><strong>V NP</strong> <b><em>to</em></b> <strong>V</strong><a class="headerlink" href="#v-np-to-v" title="Permalink to this headline">¶</a></h3>
+<p>The construction <strong>V NP</strong> <b><em>to</em></b> <strong>V</strong> (e.g. I want you to want me) can occur with a large
+number of verbs in the first position and essentially limitless range of verbs in the
+second position.  The <strong>NP</strong> is almost always an <tt class="docutils literal"><span class="pre">OBJ</span></tt> or <tt class="docutils literal"><span class="pre">PRED</span></tt> to the first verb,
+and the <b><em>to</em></b> <strong>V</strong> phrase may be an <tt class="docutils literal"><span class="pre">XMOD</span></tt> to the <strong>NP</strong>, or an <tt class="docutils literal"><span class="pre">XJCT</span></tt> or <tt class="docutils literal"><span class="pre">XCOMP</span></tt>
+to the first verb.  The <tt class="docutils literal"><span class="pre">XCOMP</span></tt> scenario is by far the most common.</p>
+<div class="section" id="xcomp">
+<span id="mg-problems-v-np-to-v-xcomp"></span><h4><tt class="docutils literal"><span class="pre">XCOMP</span></tt><a class="headerlink" href="#xcomp" title="Permalink to this headline">¶</a></h4>
+<p>If the <strong>NP</strong> is semantically the subject of the <b><em>to</em></b> <strong>V</strong> phrase, mark the
+<strong>NP</strong> as an <tt class="docutils literal"><span class="pre">OBJ</span></tt> or <tt class="docutils literal"><span class="pre">PRED</span></tt> to the first verb and mark the second verb as an
+<tt class="docutils literal"><span class="pre">XCOMP</span></tt> to the first verb.  We mark the <strong>NP</strong> as being dependent on the first verb
+even though it is semantically the subject of the second verb because it is
+inflected as though it were the object of the first verb, which is only seen
+when the <strong>NP</strong> is a pronoun (e.g. &#8220;I need him to call me&#8221;, not &#8220;I need he to
+call me&#8221;).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I need him to call me .
+pro|I v|need pro|him inf|to v|call pro|me .
+1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|5|INF 5|2|XCOMP 6|5|OBJ 7|2|PUNCT
+
+I want Buzz to come .
+pro|I v|want n:prop|Buzz inf|to v|come .
+1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|5|INF 5|2|XCOMP 6|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="xmod">
+<span id="mg-problems-v-np-to-v-xmod"></span><h4><tt class="docutils literal"><span class="pre">XMOD</span></tt><a class="headerlink" href="#xmod" title="Permalink to this headline">¶</a></h4>
+<p>If the <strong>NP</strong> is semantically an object of the second verb or the object of a
+preposition dependent on that verb, mark the second verb as an <tt class="docutils literal"><span class="pre">XMOD</span></tt> to the
+<strong>NP</strong>.  In the latter case, although the preposition will be marked <tt class="docutils literal"><span class="pre">prep</span></tt> on
+the mor tier, the <strong>NP</strong> will not be a <tt class="docutils literal"><span class="pre">POBJ</span></tt> on the syn tier, so the preposition
+will not have an explicitly marked <tt class="docutils literal"><span class="pre">POBJ</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>those are big shoes to fill .
+pro:dem|those v|be&amp;PRES adj|big n|shoe-PL inf|to v|fill .
+1|2|SUBJ 2|0|ROOT 3|4|MOD 4|2|PRED 5|6|INF 6|4|XMOD 7|2|PUNCT
+
+I need a sheet to write on .
+pro|I v|need det|a n|sheet inf|to v|write prep|on .
+1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|6|INF 6|4|XMOD 7|6|JCT 8|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="xjct">
+<span id="mg-problems-v-np-to-v-xjct"></span><h4><tt class="docutils literal"><span class="pre">XJCT</span></tt><a class="headerlink" href="#xjct" title="Permalink to this headline">¶</a></h4>
+<p>If the <strong>NP</strong> is semantically unrelated to the <b><em>to</em></b> <strong>V</strong> phrase, (i.e.
+semantically not an obligatory argument to any part of the second verb phrase),
+mark it as an <tt class="docutils literal"><span class="pre">XJCT</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I need caffeine to study .
+pro|I v|need n|caffeine inf|to v|study .
+1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|5|INF 5|2|XJCT 6|2|PUNCT
+
+I'm climbing the wall to go save him .
+pro|I~aux|be&amp;1S part|climb-PROG det|the n|wall inf|to v|go v|save pro|him .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|5|DET 5|3|OBJ 6|7|INF 7|8|SRL 8|3|XJCT 9|8|OBJ 10|3|PUNCT</pre>
+</div>
+<p>A good test to see whether a <b><em>to</em></b> <strong>V</strong> phrase should be an <tt class="docutils literal"><span class="pre">XJCT</span></tt> or not is to
+add &#8220;in order&#8221; before the &#8220;to&#8221; and see if it makes sense and means the same thing.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>1a. I need you to study.
+1b. I need you in order to study.
+
+2a. I need caffeine to study.
+2b. I need caffeine in order to study.</pre>
+</div>
+<p>The sentence <em>1b</em> is the same as <em>1a</em> with &#8220;in order&#8221; added to it.  While <em>1b</em>
+does have a meaning, it is not the same as that of <em>1a</em>.  On the other hand, <em>2b</em>
+is <em>2a</em> with &#8220;in order&#8221; added to it.  Since the meaning of <em>2b</em> is the same as
+that of <em>2a</em>, you should mark <b><em>to study</em></b> as <tt class="docutils literal"><span class="pre">XJCT</span></tt>.</p>
+</div>
+</div>
+<div class="section" id="v-np-v">
+<span id="mg-problems-v-np-v"></span><h3><strong>V NP V</strong><a class="headerlink" href="#v-np-v" title="Permalink to this headline">¶</a></h3>
+<p>Very similar to <strong>V NP</strong> <b><em>to</em></b> <strong>V</strong> is the construction <strong>V NP V</strong> (e.g. make him
+come here).  With this construction, however, the <strong>NP</strong> is only ever the semantic
+subject of the second <strong>VP</strong>, and thus that <strong>VP</strong> is always coded as <tt class="docutils literal"><span class="pre">XCOMP</span></tt>.
+The most common verbs that introduce this construction are &#8220;make&#8221;, &#8220;let&#8221;, &#8220;help&#8221;
+and the sensing verbs &#8220;see&#8221;, &#8220;hear&#8221;, and &#8220;feel&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>make that guy come here .
+v|make det|that n|guy v|come adv:loc|here .
+1|0|ROOT 2|3|DET 3|1|OBJ 4|1|XCOMP 5|4|JCT 6|1|PUNCT
+
+can you help me move this ?
+aux|can pro|you v|help pro|me v|move pro:dem|this ?
+1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|3|XCOMP 6|5|OBJ 7|3|PUNCT
+
+I heard my phone ring .
+pro|I v|hear&amp;PAST pro:poss:det|my n|phone v|ring .
+1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|2|XCOMP 6|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="aux-and-inf-as-head-of-a-verb-cluster">
+<span id="mg-problems-aux-gr"></span><h3><tt class="docutils literal"><span class="pre">AUX</span></tt> and <tt class="docutils literal"><span class="pre">INF</span></tt> as head of a verb cluster<a class="headerlink" href="#aux-and-inf-as-head-of-a-verb-cluster" title="Permalink to this headline">¶</a></h3>
+<p>If an auxiliary is acting in place of a full verb, add <tt class="docutils literal"><span class="pre">AUX-</span></tt> to the
+beginning of what the GR would normally be.  Likewise, if an infinitive
+is taking the place of a full verb, add <tt class="docutils literal"><span class="pre">INF-</span></tt> to the beginning.  Even
+though an infinitive is obviously marking a non-finite verb, you can
+still have <tt class="docutils literal"><span class="pre">INF-COMP</span></tt> or <tt class="docutils literal"><span class="pre">INF-CJCT</span></tt> if the first part of the verb
+cluster is inflected (e.g. &#8220;he said he <em>is going to</em>&#8221; where <em>is going to</em>
+is the verb cluster).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>yes I can .
+co|yes pro|I aux|can .
+1|3|COM 2|3|SUBJ 3|0|AUX-ROOT 4|3|PUNCT
+
+I don't want to .
+pro|I aux|do~neg|not aux|want inf|to .
+1|5|SUBJ 2|5|AUX 3|2|NEG 4|5|AUX 5|0|INF-ROOT 6|5|PUNCT
+
+I said I will .
+pro|I v|say&amp;PAST pro|I aux|will .
+1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|AUX-COMP 5|2|PUNCT
+
+I said I don't want to .
+pro|I v|say&amp;PAST pro|I aux|do~neg|not aux|want inf|to .
+1|2|SUBJ 2|0|ROOT 3|7|SUBJ 4|7|AUX 5|4|NEG 6|7|AUX 7|2|INF-COMP 8|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="det-as-the-head-of-a-noun-phrase">
+<span id="mg-problems-det-gr"></span><h3><tt class="docutils literal"><span class="pre">DET</span></tt> as the head of a noun phrase<a class="headerlink" href="#det-as-the-head-of-a-noun-phrase" title="Permalink to this headline">¶</a></h3>
+<p>Similar to <tt class="docutils literal"><span class="pre">AUX-</span></tt> and <tt class="docutils literal"><span class="pre">INF-</span></tt>, if a determiner is taking the place of
+a complete NP, add <tt class="docutils literal"><span class="pre">DET-</span></tt> to the beginning of the GR.  Note that this
+only happens in incomplete or partially unintelligible utterances, or
+when children misuse a possessive pronoun in place of a regular pronoun.
+If it&#8217;s possible to analyze a word as a <tt class="docutils literal"><span class="pre">pro:dem</span></tt> instead of as a
+<tt class="docutils literal"><span class="pre">det</span></tt> (e.g. &#8220;that&#8221; or &#8220;those&#8221;), use the <tt class="docutils literal"><span class="pre">pro:dem</span></tt>.  If the only
+option for the word is a <tt class="docutils literal"><span class="pre">det</span></tt>, however, then add <tt class="docutils literal"><span class="pre">DET-</span></tt> to the GR.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>look at that dog .
+v|look ptl|at det|that n|dog .
+1|0|ROOT 2|1|PTL 3|4|DET 4|1|OBJ 5|1|PUNCT
+(Since the complete NP is there, "that" is a DET and "dog" is OBJ)
+
+look at that ### .
+v|look ptl|at pro:dem|that .
+1|0|ROOT 2|1|PTL 3|1|OBJ 4|1|PUNCT
+(Since the complete NP is missing, "that" is now OBJ.  Since it
+ has a pro:dem entry, however, we use pro:dem|that and do not add DET-)
+
+look at the dog .
+v|look ptl|at det|the n|dog .
+1|0|ROOT 2|1|PTL 3|4|DET 4|1|OBJ 5|1|PUNCT
+(Since the complete NP is there, "the" is a DET and "dog" is OBJ)
+
+look at the ### .
+v|look ptl|at det|the .
+1|0|ROOT 2|1|PTL 3|1|DET-OBJ 4|1|PUNCT
+(Since the complete NP is missing, "the" is now OBJ.  Since it
+ has only the one POS entry, det|the, add DET- to the GR)</pre>
+</div>
+<p>The only words that just have a determiner entry, and thus would require
+<tt class="docutils literal"><span class="pre">DET-</span></tt> at the beggining of a GR are:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">the</span>
+<span class="n">a</span>
+<span class="n">an</span>
+<span class="n">my</span>
+<span class="n">your</span>
+<span class="n">their</span>
+<span class="n">our</span>
+<span class="n">its</span>
+</pre></div>
+</div>
+<p>NOTE: We make an exception for numbers (which have POS <tt class="docutils literal"><span class="pre">det:num</span></tt>), which
+do not require anything added to the front of the GR.</p>
+</div>
+<div class="section" id="det-used-as-jct">
+<span id="mg-problems-det-as-jct"></span><h3><tt class="docutils literal"><span class="pre">det</span></tt> used as <tt class="docutils literal"><span class="pre">JCT</span></tt><a class="headerlink" href="#det-used-as-jct" title="Permalink to this headline">¶</a></h3>
+<p>There is one time when a <tt class="docutils literal"><span class="pre">det</span></tt> is not used as an actual determiner,
+but we do not use the <tt class="docutils literal"><span class="pre">DET-</span></tt> tag, and that is with non-standard/babyish
+uses of &#8220;a&#8221;.  When &#8220;a&#8221; is used in some non-standard way (e.g. &#8220;a me want
+it&#8221;, &#8220;I&#8217;m a go over here&#8221;), leave its POS as <tt class="docutils literal"><span class="pre">det|a</span></tt>, but change its GR to
+<tt class="docutils literal"><span class="pre">JCT</span></tt>.  This way, it won&#8217;t add to the count of NPs and won&#8217;t affect the
+number of clauses.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I'm a go over here .
+pro|I~aux|be&amp;1S det|a v|go prep|over adv:loc|here .
+1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|JCT 6|5|POBJ 7|4|PUNCT
+
+a look up microscopic creatures .
+det|a v|look ptl|up adj|microscopic n|creature-PL .
+1|2|JCT 2|0|ROOT 3|2|PTL 4|5|MOD 5|2|OBJ 6|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="nominals-in-apposition">
+<span id="mg-problems-apposition"></span><h3>Nominals in apposition<a class="headerlink" href="#nominals-in-apposition" title="Permalink to this headline">¶</a></h3>
+<p>When there are two nominals in apposition, the first phrase is the head
+and the second is a <tt class="docutils literal"><span class="pre">MOD</span></tt> to the first.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>my friend Paul is here .
+pro:poss:det|my n|friend n:prop|Paul v|be&amp;3S adv:loc|here .
+1|2|DET 2|4|SUBJ 3|2|MOD 4|0|ROOT 5|4|PRED 6|4|PUNCT</pre>
+</div>
+<p>This rule encompasses phrases like &#8220;the number three&#8221;, &#8220;the letter b&#8221;,
+or &#8220;the year two+thousand&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>can you find the letter b@l ?
+aux|can pro|you v|find det|the n|letter n:let|b ?
+1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|OBJ 6|5|MOD 7|3|PUNCT
+
+you were born in the year two+thousand .
+pro|you aux|be&amp;PAST part|bear&amp;PERF prep|in det|the n|year det:num|two+thousand .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|6|MOD 8|3|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="pronouns-used-as-determiners">
+<span id="mg-problems-pro-as-det"></span><h3>Pronouns used as determiners<a class="headerlink" href="#pronouns-used-as-determiners" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes a pronoun (e.g. me) is used like a possessive pronoun (e.g. my).
+If that happens, code everything else as though the <tt class="docutils literal"><span class="pre">pro</span></tt> were indeed a
+<tt class="docutils literal"><span class="pre">pro:poss:det</span></tt>.  However, instead of coding the <tt class="docutils literal"><span class="pre">pro</span></tt> as a <tt class="docutils literal"><span class="pre">DET</span></tt>, mark
+it as a <tt class="docutils literal"><span class="pre">MOD</span></tt>.  A <tt class="docutils literal"><span class="pre">pro</span></tt> can only be used in this way if the head of the
+NP has no other determiner, although it may have a <tt class="docutils literal"><span class="pre">MOD</span></tt> or a <tt class="docutils literal"><span class="pre">QUANT</span></tt>.</p>
+<p>Although this pattern is often used for non-standard English (e.g. &#8220;now
+where&#8217;s me toothpick?&#8221;, &#8220;you won&#8217;t catch them bad guys&#8221;), it is also
+frequently used in the standard English construction <b><em>you</em></b> <strong>NP</strong>, the
+most common example of which is &#8220;you guys&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>you guys are noisy .
+pro|you n|guy-PL v|be&amp;PRES adj|noisy .
+1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+
+that's not it, you silly goose .
+pro:dem|that~v|be&amp;3S neg|not pro|it pro|you adj|silly n|goose .
+1|2|SUBJ 2|0|ROOT 3|2|NEG 4|2|PRED 5|7|MOD 6|7|MOD 7|2|VOC 8|2|PUNCT
+
+them three ninjas are sneaky .
+pro|them det:num|three n|ninja-PL v|be&amp;PRES adj|sneaky .
+1|3|MOD 2|3|QUANT 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+
+him bike is fast .
+pro|him n|bike v|be&amp;3S adj|fast .
+1|2|MOD 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="missing-copulae">
+<span id="mg-problems-no-copula"></span><h3>Missing copulae<a class="headerlink" href="#missing-copulae" title="Permalink to this headline">¶</a></h3>
+<p>If there is a pronoun followed by an NP that <em>does</em> include a <tt class="docutils literal"><span class="pre">DET</span></tt>,
+this is probably a clause that is missing a copula (e.g. &#8220;you a silly
+goose&#8221;, &#8220;them the ninjas&#8221;).  In this case, mark what would have been
+the <tt class="docutils literal"><span class="pre">PRED</span></tt> as the <tt class="docutils literal"><span class="pre">ROOT</span></tt> (or whatever the head of that clause would
+be).  Keep what would have been the <tt class="docutils literal"><span class="pre">SUBJ</span></tt> as the <tt class="docutils literal"><span class="pre">SUBJ</span></tt>, but make
+it dependent on what was formerly the <tt class="docutils literal"><span class="pre">PRED</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>you are a silly goose .
+pro|you v|be&amp;PRES det|a adj|silly n|goose .
+1|2|SUBJ 2|0|ROOT 3|5|DET 4|5|MOD 5|2|PRED 6|2|PUNCT
+
+you a silly goose .
+pro|you det|a adj|silly n|goose .
+1|4|SUBJ 2|4|DET 3|4|MOD 4|0|ROOT 5|4|PUNCT
+
+I thought them were the ninjas .
+pro|I v|think&amp;PAST pro|them v|be&amp;PAST det|the n|ninja-PL .
+1|2|SUBJ 2|0|ROOT 3|4|SUBJ 4|2|COMP 5|6|DET 6|4|PRED 7|2|PUNCT
+
+I thought them the ninjas .
+pro|I v|think&amp;PAST pro|them det|the n|ninja-PL .
+1|2|SUBJ 2|0|ROOT 3|5|SUBJ 4|5|DET 5|2|COMP 6|2|PUNCT</pre>
+</div>
+<p>The last example is obviously non-standard English, but it would
+be the same format, and more clearly a missing-copula construction,
+if the pronoun had been &#8220;they&#8221; instead of &#8220;them&#8221;.</p>
+<p>ADD MORE ABOUT MISSING COPULAE HEREHEREHERE</p>
+</div>
+<div class="section" id="missing-copula-vs-post-positioned-mod">
+<span id="mg-problems-no-copula-vs-post-mod"></span><h3>Missing copula vs. post-positioned <tt class="docutils literal"><span class="pre">MOD</span></tt><a class="headerlink" href="#missing-copula-vs-post-positioned-mod" title="Permalink to this headline">¶</a></h3>
+<p>If you encounter an NP followed by a locative adverb or a PP, it may be a missing
+copula construction, but it may also be an NP with a post-positioned <tt class="docutils literal"><span class="pre">MOD</span></tt> or a
+sentence fragment containing an NP and a <tt class="docutils literal"><span class="pre">JCT</span></tt>.  You must use the context of the
+utterance to determine how it&#8217;s being used.  The utterance &#8220;that guy in the car&#8221;,
+for example, could be any of of those constructions:</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>Missing Copula:
+
+(playing with toy figures)
+\*MOT:  where is this guy going to be ?
+\*CHI:  that guy in the car .
+%mor:   det|that n|guy prep|in det|the n|car .
+%syn:   1|2|DET 2|3|SUBJ 3|0|ROOT 4|5|DET 5|3|POBJ 6|3|PUNCT
+
+Post-positioned MOD:
+
+\*CHI:  now he's sleeping .
+\*MOT:  who's sleeping ?
+\*CHI:  that guy in the car .
+%mor:   det|that n|guy prep|in det|the n|car .
+%syn:   1|2|DET 2|0|ROOT 3|2|MOD 4|5|DET 5|3|POBJ 6|2|PUNCT
+
+Sentence fragment with JCT:
+
+\*MOT:  should we put this guy in the car or that guy in the car ?
+\*CHI:  that guy in the car .
+%mor:   det|that n|guy prep|in det|the n|car .
+%syn:   1|2|DET 2|0|ROOT 3|2|JCT 4|5|DET 5|3|POBJ 6|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="post-positioned-mods-after-thing-body-and-one-words">
+<span id="mg-problems-thing-post-mod"></span><h3>Post-positioned <tt class="docutils literal"><span class="pre">MOD</span></tt>s after <em>-thing</em>, <em>-body</em>, and <em>-one</em> words<a class="headerlink" href="#post-positioned-mods-after-thing-body-and-one-words" title="Permalink to this headline">¶</a></h3>
+<p>In general, the only post-positioned <tt class="docutils literal"><span class="pre">MOD</span></tt>s (that is, where the <tt class="docutils literal"><span class="pre">MOD</span></tt>
+comes after the NP) will be prepositional phrases (e.g. the guy <em>in the car</em>).
+The major exception, however, is when the noun phrase is one of the
+<em>-thing</em>, <em>-body</em>, or <em>-one</em> words (i.e. nothing, something, anything,
+everything, nobody, somebody, anybody, everybody, noone, someone,
+anyone, everyone), in which case the <tt class="docutils literal"><span class="pre">MOD</span></tt> following may be any adjective
+or the word &#8220;else&#8221; with POS <tt class="docutils literal"><span class="pre">post</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>do you want something else ?
+aux|do pro|you v|want pro:indef|anything post|else ?
+1|3|AUX 2|3|SUBJ 3|0|ROOT 4|3|OBJ 5|4|MOD 6|3|PUNCT
+
+you can't have anything sweet .
+pro|you aux|can~neg|not v|have pro:indef|anything adj|sweet .
+1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|OBJ 6|5|MOD 7|4|PUNCT
+
+there's nobody cooler than him .
+pro:exist|there~v|be&amp;3S pro:indef|nobody adj|cool-CP prep|than pro|him .
+1|2|ESUBJ 2|0|ROOT 3|2|PRED 4|3|MOD 5|4|JCT 6|5|POBJ 7|2|PUNCT
+
+everyone else can go .
+pro:indef|everyone post|else aux|can v|go .
+1|4|SUBJ 2|1|MOD 3|4|AUX 4|0|ROOT 5|4|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="subj-after-root">
+<span id="mg-problems-subj-after-verb"></span><h3><tt class="docutils literal"><span class="pre">SUBJ</span></tt> after <tt class="docutils literal"><span class="pre">ROOT</span></tt><a class="headerlink" href="#subj-after-root" title="Permalink to this headline">¶</a></h3>
+<p>Naturally, in a standard declarative utterance, the <tt class="docutils literal"><span class="pre">SUBJ</span></tt> comes
+before the <tt class="docutils literal"><span class="pre">ROOT</span></tt>.  A common exception to this happens when the words
+&#8220;here/there&#8221; are used in conjunction with the verbs &#8220;be/come/go&#8221;.
+In those cases, the <tt class="docutils literal"><span class="pre">JCT</span></tt> or <tt class="docutils literal"><span class="pre">PRED</span></tt> (whichever GR &#8220;here/there&#8221; is
+fulfilling) comes first, followed by the verb, followed by the <tt class="docutils literal"><span class="pre">SUBJ</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>here comes the car .
+adv:loc|here v|come-3S det|the n|car .
+1|2|JCT 2|0|ROOT 3|4|DET 4|2|SUBJ 5|2|PUNCT
+
+there goes my baby .
+adv:loc|there v|go-3S pro:poss:det|my n|baby .
+1|2|JCT 2|0|ROOT 3|4|DET 4|2|SUBJ 5|2|PUNCT
+
+here's your doll .
+adv:loc|here~v|be&amp;3S pro:poss:det|your n|doll .
+1|2|PRED 2|0|ROOT 3|4|DET 4|2|SUBJ 5|2|PUNCT</pre>
+</div>
+<p>Unless &#8220;here/there&#8221; is used with &#8220;be/come/go&#8221;, any nominal coming
+after the verb is almost definitely an <tt class="docutils literal"><span class="pre">OBJ</span></tt> (unless you think
+there&#8217;s a very good reason that the thing coming after is a <tt class="docutils literal"><span class="pre">SUBJ</span></tt>,
+but it&#8217;s unlikely).</p>
+</div>
+<div class="section" id="post-positioned-quantifiers">
+<span id="mg-problems-post-quant"></span><h3>Post-positioned quantifiers<a class="headerlink" href="#post-positioned-quantifiers" title="Permalink to this headline">¶</a></h3>
+<p>Quantifiers usually precede the NP they are quantifying (e.g. &#8220;all my children&#8221;,
+&#8220;both candidates&#8221;), but it&#8217;s possible for the quantifier to come after the
+quantified NP, especially when that NP is the <tt class="docutils literal"><span class="pre">SUBJ</span></tt> (&#8220;my children all want to
+come&#8221;).  The quantifier can even be separated by an auxiliary or a copula (&#8220;my
+children are all adults now&#8221;, &#8220;my children can all ride unicycles&#8221;).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>we both are tired .
+pro|we qn|both v|be&amp;PRES part|tire-PERF .
+1|3|SUBJ 2|1|QUANT 3|0|ROOT 4|3|PRED 5|3|PUNCT
+
+we are both tired .
+pro|we v|be&amp;PRES qn|both part|tire-PERF .
+1|2|SUBJ 2|0|ROOT 3|1|QUANT 4|2|PRED 5|2|PUNCT
+
+the guests will each receive a copy .
+det|the n|guest-PL aux|will qn|each v|receive det|a n|copy .
+1|2|DET 2|5|SUBJ 3|5|AUX 4|2|QUANT 5|0|ROOT 6|7|DET 7|5|OBJ 8|5|PUNCT
+
+I'll show them all .
+pro|I~aux|will v|show pro|them qn|all .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|4|QUANT 6|3|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="perfect-participle-as-pred-vs-passive-construction">
+<span id="mg-problems-part-pred-vs-passive"></span><h3>Perfect participle as <tt class="docutils literal"><span class="pre">PRED</span></tt> vs. passive construction<a class="headerlink" href="#perfect-participle-as-pred-vs-passive-construction" title="Permalink to this headline">¶</a></h3>
+<p>At some point you will probably encounter a construction like <strong>NP</strong> <b><em>be</em></b> <strong>PART</strong>
+(e.g. &#8220;the toy was broken&#8221;) and you will have to decide whether it should be coded
+as a copula construction (i.e.  <tt class="docutils literal"><span class="pre">1|2|DET</span> <span class="pre">2|3|SUBJ</span> <span class="pre">3|0|ROOT</span> <span class="pre">4|3|PRED</span></tt>) or as a
+passive construction (i.e. <tt class="docutils literal"><span class="pre">1|2|DET</span> <span class="pre">2|4|SUBJ</span> <span class="pre">3|4|AUX</span> <span class="pre">4|0|ROOT</span></tt>).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>Copula:
+        the toy was broken .
+        det|the n|toy v|be&amp;PAST&amp;13S part|break&amp;PERF .
+        1|2|DET 2|3|SUBJ 3|0|ROOT 4|3|PRED 5|3|PUNCT
+
+Passive:
+        the toy was broken .
+        det|the n|toy aux|be&amp;PAST&amp;13S part|break&amp;PERF .
+        1|2|DET 2|4|SUBJ 3|4|AUX 4|0|ROOT 5|4|PUNCT</pre>
+</div>
+<p>Notice that in the copula construction, &#8220;be&#8221; is marked as a full verb on the mor
+tier, as well as being marked <tt class="docutils literal"><span class="pre">ROOT</span></tt> (or another verbish GR) on the syn tier
+and the participle is a <tt class="docutils literal"><span class="pre">PRED</span></tt> to &#8220;be&#8221;.  In a passive construction, &#8220;be&#8221; is
+marked <tt class="docutils literal"><span class="pre">aux</span></tt> on the mor tier and <tt class="docutils literal"><span class="pre">AUX</span></tt> on the syn tier, while the participle
+takes over the verbish GR on the syn tier.</p>
+<p>So how do you decide which way to code it?  It depends on the context and what you
+think the meaning of the sentence is.</p>
+<div class="section" id="as-pred">
+<span id="mg-problems-part-pred"></span><h4>As <tt class="docutils literal"><span class="pre">PRED</span></tt><a class="headerlink" href="#as-pred" title="Permalink to this headline">¶</a></h4>
+<p>If the utterance is meant to describe the state of something at a given timepoint,
+you probably want to use the copula construction:</p>
+<div class="highlight-python"><pre>Copula:
+        *MOT:   do you want to look at the painting ?
+
+        *CHI:   where is it ?
+
+        *MOT:   it is attached to the wall .
+        %mor:   pro|it v|be&amp;3S part|attach-PERF prep|to det|the n|wall .
+        %syn:   1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|6|DET 6|4|POBJ 7|2|PUNCT</pre>
+</div>
+<p>In the previous exchange, the mother reports the state of the picture as being
+attached to the wall.  The painting does not undergo any change and is not acted
+upon.  You can also see how the utterance in question would be coded as a copula
+construction.</p>
+</div>
+<div class="section" id="as-passive-construction">
+<span id="mg-problems-part-passive"></span><h4>As passive construction<a class="headerlink" href="#as-passive-construction" title="Permalink to this headline">¶</a></h4>
+<p>If, on the other hand, the utterance is describing a process or an event that
+something experienced, you probably want to use the passive construction:</p>
+<div class="highlight-python"><pre>Passive:
+        *MOT:   when the painter finishes, he frames his painting .
+
+        *CHI:   and then what happens ?
+
+        *MOT:   it is attached to the wall .
+        %mor:   pro|it aux|be&amp;3S part|attach-PERF prep|to det|the n|wall .
+        %syn:   1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|3|PUNCT</pre>
+</div>
+<p>In the previous exchange, the mother describes a process that the painting undergoes,
+namely somebody attaching the painting to the wall.  Again, you can see how the
+utterance would be coded, this time as a passive construction.</p>
+<p>More examples:</p>
+<div class="highlight-python"><pre>Copula:
+        *CHI:   why did he look like a chicken ?
+
+        *MOT:   he was covered in feathers .
+        %mor:   pro|he v|be&amp;PAST&amp;13S part|cover-PERF prep|in n|feather-PL .
+        %syn:   1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|4|POBJ 6|2|PUNCT
+
+Passive:
+        *CHI:   what happened after they tarred him ?
+
+        *MOT:   he was covered in feathers .
+        %mor:   pro|he aux|be&amp;PAST&amp;13S part|cover-PERF prep|in n|feather-PL .
+        %syn:   1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|4|POBJ 6|3|PUNCT</pre>
+</div>
+<p>Now that you know the actual reasons for choosing copula vs.  passive
+constructions, it may also be useful to know that passive constructions come up
+much less frequently in our data than copula constructions do.</p>
+</div>
+</div>
+<div class="section" id="compound-multi-word-prepositions">
+<span id="mg-problems-compound-preps"></span><h3>Compound (multi-word) prepositions<a class="headerlink" href="#compound-multi-word-prepositions" title="Permalink to this headline">¶</a></h3>
+<p>You will sometimes encounter &#8220;compound prepositions&#8221; comprising either two
+<tt class="docutils literal"><span class="pre">prep</span></tt>s or an <tt class="docutils literal"><span class="pre">adv</span></tt>/<tt class="docutils literal"><span class="pre">adv:loc</span></tt> followed by a <tt class="docutils literal"><span class="pre">prep</span></tt> (usually &#8220;of&#8221; or
+&#8220;to&#8221;).  When this happens, the first part is the head of the construction (and
+thus is the <tt class="docutils literal"><span class="pre">JCT</span></tt> or <tt class="docutils literal"><span class="pre">PRED</span></tt> or whatever GR to something else), while the
+second part is a <tt class="docutils literal"><span class="pre">JCT</span></tt> to the first part.  The most common examples of these
+&#8220;compound prepositions&#8221; are &#8220;out of&#8221; and &#8220;next to&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>take the sandwich out of the bag .
+v|take det|the n|sandwich adv:loc|out prep|of det|the n|bag .
+1|0|ROOT 2|3|DET 3|1|OBJ 4|1|JCT 5|4|JCT 6|7|DET 7|5|POBJ 8|1|PUNCT
+
+put it next to the table .
+v|put pro|it adv|next prep|to det|the n|table .
+1|0|ROOT 2|1|OBJ 3|1|LOC 4|3|JCT 5|6|DET 6|4|POBJ 7|1|PUNCT
+
+I want to sit next to you .
+pro|I aux|want inf|to v|sit adv|next prep|to pro|you .
+1|4|SUBJ 2|4|AUX 3|4|INF 4|0|ROOT 5|4|JCT 6|5|JCT 7|6|POBJ 8|4|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="prepositional-phrase-as-object-of-another-preposition">
+<span id="mg-problems-pp-as-pobj"></span><h3>Prepositional phrase as object of another preposition<a class="headerlink" href="#prepositional-phrase-as-object-of-another-preposition" title="Permalink to this headline">¶</a></h3>
+<p>Although it doesn&#8217;t happen very often, you may encounter a preposition whose
+argument is not an NP but a PP (e.g. for in the house).  Code these the same way
+you would code compound prepositions, with the first <tt class="docutils literal"><span class="pre">prep</span></tt> being the <tt class="docutils literal"><span class="pre">PRED</span></tt>,
+<tt class="docutils literal"><span class="pre">JCT</span></tt>, etc. and the second <tt class="docutils literal"><span class="pre">prep</span></tt> being a <tt class="docutils literal"><span class="pre">JCT</span></tt> to the first.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>the little ones are for in the house .
+det|the adj|little pro:indef|one-PL v|be&amp;PRES prep|for prep|in det|the n|JCT .
+1|3|DET 2|3|MOD 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|5|JCT 7|8|DET 8|6|POBJ 9|4|PUNCT
+
+here is your snacks from around the world .
+adv:loc|here v|be&amp;3S pro:poss:det|your n|snack-PL prep|from prep|around det|the n|world .
+1|2|PRED 2|0|ROOT 3|4|DET 4|2|SUBJ 5|4|MOD 6|5|JCT 7|8|DET 8|6|POBJ 9|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="dangling-coords">
+<span id="mg-problems-dangling-coord"></span><h3>Dangling <tt class="docutils literal"><span class="pre">COORD</span></tt>s<a class="headerlink" href="#dangling-coords" title="Permalink to this headline">¶</a></h3>
+<p>If you have two independent clauses joined by a coordinating conjunction,
+each of those clauses is a <tt class="docutils literal"><span class="pre">COORD</span></tt> dependent on the conjucntion, which
+takes over as <tt class="docutils literal"><span class="pre">ROOT</span></tt> of the utterance.  If you have a coordinating
+conjunction that&#8217;s only &#8220;coordinating&#8221; one clause, it still takes over as
+the <tt class="docutils literal"><span class="pre">ROOT</span></tt> while the one clause is a <tt class="docutils literal"><span class="pre">COORD</span></tt> dependent on the
+conjunction.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I will always love you .
+pro|I aux|will adv|always v|love pro|you .
+1|4|SUBJ 2|4|AUX 3|4|JCT 4|0|ROOT 5|4|OBJ 6|4|PUNCT
+
+and I will always love you .
+conj:coo|and pro|I aux|will adv|always v|love pro|you .
+1|0|ROOT 2|5|SUBJ 3|5|AUX 4|5|JCT 5|1|COORD 6|5|OBJ 7|1|PUNCT
+
+I'd like to tell you .
+pro|I~aux|will&amp;COND aux|like inf|to v|tell pro|you .
+1|5|SUBJ 2|5|AUX 3|5|AUX 4|5|INF 5|0|ROOT 6|5|OBJ 7|5|PUNCT
+
+I'd like to tell you but +..
+pro|I~aux|will&amp;COND aux|like inf|to v|tell pro|you conj:coo|but +..
+1|5|SUBJ 2|5|AUX 3|5|AUX 4|5|INF 5|7|COORD 6|5|OBJ 7|0|ROOT 8|7|PUNCT</pre>
+</div>
+<p>This also includes a phrase that itself comprises two coordinated clauses.  The
+head of the coordinated phrase, which in this case is a coordinator, is still the
+<tt class="docutils literal"><span class="pre">COORD</span></tt> dependent on the dangling coordinator.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I'll love him and walk him every day .
+pro|I~aux|will v|love pro|him conj:coo|and v|walk pro|him qn|every n|day .
+1|3|SUBJ 2|3|AUX 3|5|COORD 4|3|OBJ 5|0|ROOT 6|5|COORD 7|6|OBJ 8|9|QUANT 9|6|JCT 10|5|PUNCT
+
+and I'll love him and walk him every day .
+conj:coo|and pro|I~aux|will v|love pro|him conj:coo|and v|walk pro|him qn|every n|day .
+1|0|ROOT 2|4|SUBJ 3|4|AUX 4|6|COORD 5|4|OBJ 6|1|COORD 7|6|COORD 8|7|OBJ 9|10|QUANT 10|7|JCT 11|1|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="when-to-use-pred">
+<span id="mg-problems-pred-words"></span><h3>When to use <tt class="docutils literal"><span class="pre">PRED</span></tt><a class="headerlink" href="#when-to-use-pred" title="Permalink to this headline">¶</a></h3>
+<p>A <tt class="docutils literal"><span class="pre">PRED</span></tt> is used to give information about the state or condition of the
+<tt class="docutils literal"><span class="pre">SUBJ</span></tt>.  A <tt class="docutils literal"><span class="pre">PRED</span></tt> can be just about any part-of-speech, most commonly <tt class="docutils literal"><span class="pre">n</span></tt>,
+<tt class="docutils literal"><span class="pre">n:prop</span></tt>, <tt class="docutils literal"><span class="pre">adj</span></tt>, <tt class="docutils literal"><span class="pre">adv:loc</span></tt>, and <tt class="docutils literal"><span class="pre">prep</span></tt>.  In incomplete utterances, they
+may even be <tt class="docutils literal"><span class="pre">det</span></tt>.  The most common verb with which a <tt class="docutils literal"><span class="pre">PRED</span></tt> occurs is &#8220;be&#8221;,
+but can also occur with the verbs &#8220;get&#8221;, &#8220;seem&#8221;, &#8220;appear&#8221;, and verbs of sensing,
+or rather of being sensed (i.e. sound, look, smell, taste, feel).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>he is very smart .
+pro|he v|be&amp;3S adv:int|very adj|smart .
+1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+
+are they in the car ?
+v|be&amp;PRES pro|they prep|in det|the n|car ?
+1|0|ROOT 2|1|SUBJ 3|1|PRED 4|5|DET 5|3|POBJ 6|1|PUNCT
+
+it seems friendly .
+pro|it v|seem-3S adj:n|friend-LY .
+1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|PUNCT
+
+this tastes kind+of funny .
+pro:dem|this v|taste-3S adv|kind+of adj|funny .
+1|2|SUBJ 2|0|ROOT 3|4|JCT 4|2|PRED 5|2|PUNCT
+
+I don't feel good .
+pro|I aux|do~neg|not v|feel adj|good .
+1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|PRED 6|4|PUNCT
+
+she looks like a good student .
+pro|she v|look-3S prep|like det|a adj|good n|student .
+1|2|SUBJ 2|0|ROOT 3|2|PRED 4|6|DET 5|6|MOD 6|3|POBJ 7|2|PUNCT</pre>
+</div>
+<p><tt class="docutils literal"><span class="pre">PRED</span></tt> may also occur with the verbs &#8220;make&#8221;, &#8220;want&#8221;, and &#8220;need&#8221; after the
+<tt class="docutils literal"><span class="pre">OBJ</span></tt> of the verb.  Only use a <tt class="docutils literal"><span class="pre">PRED</span></tt>, however, if you could insert the
+word(s) &#8220;(to) be&#8221; between the <tt class="docutils literal"><span class="pre">OBJ</span></tt> and the <tt class="docutils literal"><span class="pre">PRED</span></tt> and maintain the same
+meaning.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>Good:
+      make that one red         =&gt;      make that one be red
+
+      he wants that over here   =&gt;      he wants that to be over here
+
+      I need you very quiet     =&gt;      I need you to be very quiet
+
+Bad:
+      (where should we make our cake?)
+      let's make it over here   =&gt;      let's make it be over here
+
+      I want that for my car    =&gt;      I want that to be for my car
+
+      she needs you real quick  =&gt;      she needs you to be real quick</pre>
+</div>
+<p>In the first set of examples, you can add &#8220;(to) be&#8221; between the <tt class="docutils literal"><span class="pre">OBJ</span></tt> and the
+adjective or PP and the meaning remains the same, so that <tt class="docutils literal"><span class="pre">adj</span></tt> or PP should
+be marked <tt class="docutils literal"><span class="pre">PRED</span></tt>.  In the second set of examples, while the utterances with
+&#8220;to be&#8221; are grammatical, they do not mean the same thing as the utterances
+without &#8220;to be&#8221;, so those PPs and <tt class="docutils literal"><span class="pre">adv</span></tt>s should be coded as <tt class="docutils literal"><span class="pre">JCT</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>make that one red .
+v|make det|that pro:indef|one adj|red .
+1|0|ROOT 2|3|DET 3|1|OBJ 4|1|PRED 5|1|PUNCT
+
+I need you in here right now .
+pro|I v|need pro|you prep|in adv:loc|here adv|right adv|now .
+1|2|SUBJ 2|0|ROOT 3|2|OBJ 4|2|PRED 5|4|POBJ 6|7|JCT 7|2|JCT 8|2|PUNCT
+
+let's make him the captain .
+aux|let's v|make pro|him det|the n|captain .
+1|2|AUX 2|0|ROOT 3|2|OBJ 4|5|DET 5|2|PRED 6|2|PUNCT
+
+(where should be make this ?)
+let's make it over here .
+aux|let's v|make pro|it prep|over adv:loc|here .
+1|2|AUX 2|0|ROOT 3|2|OBJ 4|2|PRED 5|4|POBJ 6|2|PUNCT</pre>
+</div>
+<p>Notice that in order for one of these three verbs to have a <tt class="docutils literal"><span class="pre">PRED</span></tt>, it must
+also have an <tt class="docutils literal"><span class="pre">OBJ</span></tt> that comes first.</p>
+</div>
+<div class="section" id="using-the-tag-gr">
+<span id="mg-problems-tags"></span><h3>Using the <tt class="docutils literal"><span class="pre">TAG</span></tt> GR<a class="headerlink" href="#using-the-tag-gr" title="Permalink to this headline">¶</a></h3>
+<p>The <tt class="docutils literal"><span class="pre">TAG</span></tt> code is used on the syn tier for the head of a verb cluster that is
+either a full verb/participle or an auxiliary on the mor tier, but that should
+not be counted as adding to the number of clauses of the utterance.  There are
+three occasions when you will use the <tt class="docutils literal"><span class="pre">TAG</span></tt> code on the syn tier:</p>
+<blockquote>
+<div><ol class="arabic simple">
+<li>Negated auxiliary/copula tags (e.g. he&#8217;s fast, isn&#8217;t he?)</li>
+<li>Sentence fragments containing a full verb.  These are sometimes
+properly transcribed utterances (e.g. this goes on top, see?).</li>
+<li>Full sentences with no grammatical connection that are on the
+same line as another utterance.  These are the result of incorrect
+transcription (e.g. let&#8217;s go, we&#8217;re late.)</li>
+</ol>
+</div></blockquote>
+<div class="section" id="negated-auxiliary-copula-tags">
+<span id="mg-problems-tags-negated"></span><h4>Negated auxiliary/copula tags<a class="headerlink" href="#negated-auxiliary-copula-tags" title="Permalink to this headline">¶</a></h4>
+<p>These are a valid construction in standard English, but we don&#8217;t want these
+phrases to add to the complexity (i.e. clause count) of the utterance, so we
+mark them as <tt class="docutils literal"><span class="pre">TAG</span></tt>.  The <tt class="docutils literal"><span class="pre">TAG</span></tt> is dependent on whatever phrase the auxiliary
+or copula is referencing, usually the <tt class="docutils literal"><span class="pre">ROOT</span></tt>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>he's fast, isn't he ?
+pro|he~v|be&amp;3S adj|fast v|be&amp;3S~neg|not pro|he ?
+1|2|SUBJ 2|0|ROOT 3|2|PRED 4|2|TAG 5|4|NEG 6|4|SUBJ 7|2|PUNCT
+
+she was laughing a+lot, wasn't she ?
+pro|she aux|be&amp;PAST&amp;13S part|laugh-PROG adv|a+lot aux|be&amp;PAST&amp;13S~neg|not pro|she ?
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|3|TAG 6|5|NEG 7|5|SUBJ 8|3|PUNCT
+
+I thought gosh he's fast, isn't he ?
+pro|I v|think&amp;PAST co|gosh pro|he~v|be&amp;3S adj|fast v|be&amp;3S~neg|not pro|he ?
+1|2|SUBJ 2|0|ROOT 3|5|COM 4|5|SUBJ 5|2|COMP 6|5|PRED 7|5|TAG 8|7|NEG 9|7|SUBJ 10|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="sentence-fragment-with-full-verb">
+<span id="mg-problems-tags-fragment"></span><h4>Sentence fragment with full verb<a class="headerlink" href="#sentence-fragment-with-full-verb" title="Permalink to this headline">¶</a></h4>
+<p>While these types of utterances aren&#8217;t technically considered one sentence
+in standard English, our transcription rules allow some verbs with no
+arguments (or sometimes one object argument, so long as the verb is in
+imperative form) to be transcribed on the same line (see <cite>Rule 4.9 &lt;tg-4-9&gt;</cite>).
+However, we still don&#8217;t want these verbs to add to the complexity/clause
+count, so we mark them as <tt class="docutils literal"><span class="pre">TAG</span></tt>.  These are almost always dependent on
+<tt class="docutils literal"><span class="pre">ROOT</span></tt> or, in the case of coordinated clauses, on the closest head of an
+independent clause (I can&#8217;t think of when it wouldn&#8217;t be, but if you think
+there&#8217;s a good reason for something not to be dependent on <tt class="docutils literal"><span class="pre">ROOT</span></tt>, it&#8217;s not
+prohibited).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>this goes on top, see ?
+pro:dem|this v|go-3S prep|on n|top v|see ?
+1|2|SUBJ 2|0|ROOT 3|2|JCT 4|3|POBJ 5|2|TAG 6|2|PUNCT
+
+remember, we have to go to practice .
+v|remember pro|we aux|have inf|to v|go prep|to n|practice .
+1|5|TAG 2|5|SUBJ 3|5|AUX 4|5|INF 5|0|ROOT 6|5|JCT 7|6|POBJ 8|5|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="full-sentence-with-no-grammatical-connection">
+<span id="mg-problems-tags-full"></span><h4>Full sentence with no grammatical connection<a class="headerlink" href="#full-sentence-with-no-grammatical-connection" title="Permalink to this headline">¶</a></h4>
+<p>Unfortunately, transcribers are not perfect, and sometimes you will see
+an utterance that does not conform to our transcription rules regarding
+utterance boundaries.  While we can make slight changes to single words
+which are clearly typos (e.g. &#8220;its in the box&#8221; =&gt; &#8220;it&#8217;s in the box&#8221;, or
+&#8220;do you have they&#8217;re number&#8221; =&gt; &#8220;do you have their number&#8221;), we cannot
+split an utterance into two utterances.  So if you encounter something
+like &#8220;let&#8217;s go, we&#8217;re late&#8221; you&#8217;ll have to make do with what you have.</p>
+<p>There are two options for dealing with an extraneous clause like this:
+mark it as <tt class="docutils literal"><span class="pre">TAG</span></tt>, so that it doesn&#8217;t add to the clause count, or mark it
+as <tt class="docutils literal"><span class="pre">CJCT</span></tt>/<tt class="docutils literal"><span class="pre">XJCT</span></tt>, so that it does add to the clause count.  In general,
+I mark phrases like this as a <tt class="docutils literal"><span class="pre">CJCT</span></tt>/<tt class="docutils literal"><span class="pre">XJCT</span></tt> if it seems more
+semantically meaningful, and as <tt class="docutils literal"><span class="pre">TAG</span></tt> if it seems more like a throw-away
+phrase that doesn&#8217;t carry much meaning.  By throw-away, I mean things like
+&#8220;I know&#8221;, &#8220;you know (what)&#8221;, &#8220;I guess&#8221;, &#8220;that&#8217;s right&#8221;, &#8220;you&#8217;re right&#8221;,
+&#8220;let&#8217;s go&#8221;, etc.  If you come across two unconnected, semantically meaningful
+utterances on the same line, in general just mark the first one as <tt class="docutils literal"><span class="pre">ROOT</span></tt>
+and the second as <tt class="docutils literal"><span class="pre">CJCT</span></tt>/<tt class="docutils literal"><span class="pre">XJCT</span></tt> (again, unless you think there&#8217;s a good
+reason to do it the other way around; there&#8217;s no rule against it).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>Throw-away phrases, mark as TAG:
+
+let's go, we're late .
+aux|let's v|go pro|we~v|be&amp;PRES adj|late .
+1|2|AUX 2|4|TAG 3|4|SUBJ 4|0|ROOT 5|4|PRED 6|4|PUNCT
+
+you know what, we already have that .
+pro|you v|know pro:wh|what pro|we adv|already v|have pro:dem|that .
+1|2|SUBJ 2|6|TAG 3|2|OBJ 4|6|SUBJ 5|6|JCT 6|0|ROOT 7|6|OBJ 8|6|PUNCT
+
+there's always next year, I guess .
+pro:exist|there~v|be&amp;3S adv|always adj|next n|year pro|I v|guess .
+1|2|ESUBJ 2|0|ROOT 3|2|JCT 4|5|MOD 5|2|PRED 6|7|SUBJ 7|2|TAG 8|2|PUNCT
+
+Semantically meaningful phrases, mark as CJCT/XJCT:
+
+you can't go there, Mark is in there .
+pro|you aux|can~neg|not v|go adv:loc|there n:prop|Mark v|be&amp;3S prep|in adv:loc|there .
+1|4|SUBJ 2|4|AUX 3|2|NEG 4|0|ROOT 5|4|JCT 6|7|SUBJ 7|4|CJCT 8|7|PRED 9|8|POBJ 10|4|PUNCT
+
+he'll go in the car, you take the train .
+pro|he~aux|will v|go prep|in det|the n|car pro|you v|take det|the n|train .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|JCT 5|6|DET 6|4|POBJ 7|8|SUBJ 8|3|CJCT 9|10|DET 10|8|OBJ 11|3|PUNCT</pre>
+</div>
+</div>
+</div>
+<div class="section" id="the-phrase-verbing">
+<span id="mg-problems-done-verbing"></span><h3>The phrase <b><em>to be</em></b> + <b><em>done/finished</b></em> + <b>VERB<em>ing</em></b><a class="headerlink" href="#the-phrase-verbing" title="Permalink to this headline">¶</a></h3>
+<p>The very common construction <b><em>to be</em></b> + <b><em>done/finished</b></em> + <b>VERB<em>ing</em></b> (e.g. he is done working) is coded
+such that <b><em>done/finished</b></em> is a <tt class="docutils literal"><span class="pre">PRED</span></tt> of <b><em>be</em></b> and the <tt class="docutils literal"><span class="pre">part|verb-PROG</span></tt>
+is an <tt class="docutils literal"><span class="pre">XCOMP</span></tt> of <b><em>done/finished</b></em>.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>she is done singing .
+pro|she v|be&amp;3S part|do&amp;PERF part|sing-PROG .
+1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|XCOMP 5|2|PUNCT
+
+are you finished eating ?
+v|be&amp;PRES pro|you part|finish-PERF part|eat-PROG ?
+1|0|ROOT 2|1|SUBJ 3|1|PRED 4|3|XCOMP 5|1|PUNCT
+
+you can nap when she's done recording .
+pro|you aux|can v|nap conj:subor|when pro|she~v|be&amp;3S part|do&amp;PERF part|record-PROG .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|CPZR 5|6|SUBJ 6|3|CJCT 7|6|PRED 8|7|XCOMP 9|3|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="quantifiers-and-quantifier-of-phrases">
+<span id="mg-problems-qn-vs-pro-indef"></span><h3>Quantifiers and <em>quantifier + of</em> phrases<a class="headerlink" href="#quantifiers-and-quantifier-of-phrases" title="Permalink to this headline">¶</a></h3>
+<p>The following words can be used to quantify a noun phrase in two different ways,
+but with slightly different coding used in each case:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="nb">all</span><span class="p">,</span> <span class="nb">any</span><span class="p">,</span> <span class="n">both</span><span class="p">,</span> <span class="n">each</span><span class="p">,</span> <span class="n">either</span><span class="p">,</span> <span class="n">enough</span><span class="p">,</span> <span class="n">few</span><span class="p">,</span> <span class="n">half</span><span class="p">,</span>
+<span class="n">many</span><span class="p">,</span> <span class="n">more</span><span class="p">,</span> <span class="n">most</span><span class="p">,</span> <span class="n">much</span><span class="p">,</span> <span class="n">plenty</span><span class="p">,</span> <span class="n">several</span><span class="p">,</span> <span class="n">some</span>
+</pre></div>
+</div>
+<p>If any of these words is followed directly by a noun phrase, mark it as <tt class="docutils literal"><span class="pre">qn</span></tt> on
+the mor tier and <tt class="docutils literal"><span class="pre">QUANT</span></tt> on the syn tier, dependent on the head of the NP.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>give me all your money .
+v|give pro|me qn|all pro:poss:det|your n|money .
+1|0|ROOT 2|1|OBJ2 3|5|QUANT 4|5|DET 5|1|OBJ 6|1|PUNCT
+
+some kids don't like chocolate .
+qn|some n|kid-PL aux|do~neg|not v|like n|chocolate .
+1|2|QUANT 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|5|PUNCT</pre>
+</div>
+<p>If, however, there is the preposition &#8220;of&#8221; between the word and the NP, mark the
+word as <tt class="docutils literal"><span class="pre">pro:indef</span></tt> on the mor tier and whatever the GR of the NP would have
+been on the syn tier (e.g. <tt class="docutils literal"><span class="pre">OBJ</span></tt> or <tt class="docutils literal"><span class="pre">SUBJ</span></tt>).  Then, mark &#8220;of&#8221; as a <tt class="docutils literal"><span class="pre">MOD</span></tt> to
+the <tt class="docutils literal"><span class="pre">pro:indef</span></tt>, and mark the head of the NP as a <tt class="docutils literal"><span class="pre">POBJ</span></tt> to &#8220;of&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>give me all of your money .
+v|give pro|me pro:indef|all prep|of pro:poss:det|your n|money .
+1|0|ROOT 2|1|OBJ2 3|1|OBJ 4|3|MOD 5|6|DET 6|4|POBJ 7|1|PUNCT
+
+some of the kids don't like chocolate .
+pro:indef|some prep|of det|the n|kid-PL aux|do~neg|not v|like n|chocolate .
+1|7|SUBJ 2|1|MOD 3|4|DET 4|2|POBJ 5|7|AUX 6|5|NEG 7|0|ROOT 8|7|OBJ 9|7|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="when-to-use-voc">
+<span id="mg-problems-voc"></span><h3>When to use <tt class="docutils literal"><span class="pre">VOC</span></tt><a class="headerlink" href="#when-to-use-voc" title="Permalink to this headline">¶</a></h3>
+<p>Any time a word is used as a vocative (that is, when it identifies to whom an
+utterance is addressed), code it as <tt class="docutils literal"><span class="pre">VOC</span></tt>.  Common vocatives include &#8220;honey&#8221;,
+&#8220;sweetie&#8221;, and &#8220;sir&#8221;.  These words, when used in this sense, get the POS code
+<tt class="docutils literal"><span class="pre">co:voc</span></tt> and the GR code <tt class="docutils literal"><span class="pre">VOC</span></tt>:</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>do you want some more, sweetie ?
+aux|do pro|you v|want qn|some pro:indef|more co:voc|sweetie ?
+1|3|AUX 2|3|SUBJ 3|0|ROOT 4|5|QUANT 5|3|OBJ 6|3|VOC 7|3|PUNCT
+
+honey, I can't understand you .
+co:voc|honey pro|I aux|can~neg|not v|understand pro|you .
+1|5|VOC 2|5|SUBJ 3|5|AUX 4|3|NEG 5|0|ROOT 6|5|OBJ 7|5|PUNCT</pre>
+</div>
+<p>Proper nouns are also very frequently used as vocatives, especially the proper
+nouns &#8220;Mom/Mommy&#8221; and &#8220;Dad/Daddy,&#8221; although any proper noun can be used as a
+vocative.  In fact, any noun can be used as a vocative, though common nouns are
+less likely to be used in that way, although it does happen (especially when kids
+are talking to their toys).</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>Mom, can I have some more ?
+n:prop|Mom aux|can pro|I v|have qn|some pro:indef|more ?
+1|4|VOC 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|6|QUANT 6|4|OBJ 7|4|PUNCT
+
+you've had enough, David .
+pro|you~aux|have part|have&amp;PERF pro:indef|enough n:prop|David .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|3|OBJ 5|3|VOC 6|3|PUNCT
+
+come here, ball !
+v|come adv:loc|here n|ball !
+1|0|ROOT 2|1|JCT 3|1|VOC 4|1|PUNCT
+
+horsie, wake up !
+n|horse-DIM v|wake ptl|up !
+1|2|VOC 2|0|ROOT 3|2|PTL 4|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="structure-of-a-noun-phrase">
+<span id="mg-problems-nps"></span><h3>Structure of a noun phrase<a class="headerlink" href="#structure-of-a-noun-phrase" title="Permalink to this headline">¶</a></h3>
+<p>A noun phrase can consist of the base noun plus a <tt class="docutils literal"><span class="pre">DET</span></tt>, a <tt class="docutils literal"><span class="pre">QUANT</span></tt>,
+or both.  (e.g. all my friends, those two guys).  There should never be
+two <tt class="docutils literal"><span class="pre">DET</span></tt>s; if there are, you should probably just delete the first one
+on the assumption that it was an error or, if the speaker is the child and
+the first <tt class="docutils literal"><span class="pre">DET</span></tt> is &#8220;a&#8221;, mark it as a <tt class="docutils literal"><span class="pre">JCT</span></tt> (e.g. &#8220;a this one, Mommy&#8221;;
+see <cite>&#8220;det&#8221; used as &#8220;JCT&#8221; &lt;mg-problems-det-as-jct&gt;</cite>).  This is because young
+children often use &#8220;a&#8221; in non-standard ways, and we want to track that.</p>
+<p>Standard English does allow two quantifiers to be used in the same noun
+phrase.  However, we only code them both as <tt class="docutils literal"><span class="pre">QUANT</span></tt> to the noun if one
+has the POS code <tt class="docutils literal"><span class="pre">quant</span></tt> and the other has <tt class="docutils literal"><span class="pre">det:num</span></tt>.  If, however,
+two words with POS code <tt class="docutils literal"><span class="pre">quant</span></tt> are used, we mark the first one as a
+<tt class="docutils literal"><span class="pre">JCT</span></tt> to the second, which is a <tt class="docutils literal"><span class="pre">QUANT</span></tt> to the noun.
+GIVE A REASON HEREHEREHERE!!!</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>all my friends are coming .
+qn|all pro:poss:det|my n|friend-PL aux|be&amp;PRES part|come-PROG .
+1|3|QUANT 2|3|DET 3|5|SUBJ 4|5|AUX 5|0|ROOT 6|5|PUNCT
+
+those two guys are my friends .
+det|thos det:num|two n|guy-PL v|be&amp;PRES pro:poss:det|my n|friend-PL .
+1|3|DET 2|3|QUANT 3|4|SUBJ 4|0|ROOT 5|6|DET 6|4|PRED 7|4|PUNCT
+
+do it one more time .
+v|do pro|it det:num|one qn|more n|time .
+1|0|ROOT 2|1|OBJ 3|5|QUANT 4|5|QUANT 5|1|JCT 6|1|PUNCT
+
+hold up all five fingers .
+v|hold ptl|up qn|all det:num|five n|finger-PL .
+1|0|ROOT 2|1|PTL 3|5|QUANT 4|5|QUANT 5|1|OBJ 6|1|PUNCT
+
+give me some more chips .
+v|give pro|me qn|some qn|more n|chip-PL .
+1|0|ROOT 2|1|OBJ 3|4|JCT 4|5|QUANT 5|1|OBJ 6|1|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="comps-and-cpreds-introduce-by-wh-words">
+<span id="mg-problems-wh-comp"></span><h3><tt class="docutils literal"><span class="pre">COMP</span></tt>s and <tt class="docutils literal"><span class="pre">CPRED</span></tt>s introduce by WH-words<a class="headerlink" href="#comps-and-cpreds-introduce-by-wh-words" title="Permalink to this headline">¶</a></h3>
+<p>You will frequently see a subordinate clause introduced by a WH-word (i.e. who,
+what, where, when, why, how).  If you see this, code the clause as a <tt class="docutils literal"><span class="pre">COMP</span></tt>
+(or <tt class="docutils literal"><span class="pre">CPRED</span></tt>, and very occasionally <tt class="docutils literal"><span class="pre">CSUBJ</span></tt>, if the matrix verb is &#8220;be&#8221;) and
+code the WH-word as though it were part of the subordinate clause.  DO NOT code
+the WH-word as part of the matrix clause and then code the subordinate clause as
+a <tt class="docutils literal"><span class="pre">CMOD</span></tt>/<tt class="docutils literal"><span class="pre">CJCT</span></tt> to the WH-word.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I know who you are talking about .
+pro|I v|know pro:wh|who pro|you aux|be&amp;PRES part|talk-PROG prep|about .
+1|2|SUBJ 2|0|ROOT 3|7|POBJ 4|6|SUBJ 5|6|AUX 6|2|COMP 7|6|JCT 8|2|PUNCT
+
+I'll do what I want .
+pro|I~aux|will v|do pro:wh|what pro|I v|want .
+1|3|SUBJ 2|3|AUX 3|0|ROOT 4|6|OBJ 5|6|SUBJ 6|3|COMP 7|3|PUNCT
+
+he knows how you make it .
+pro|he v|know-3S adv:wh|how pro|you v|make pro|it .
+1|2|SUBJ 2|0|ROOT 3|5|JCT 4|5|SUBJ 5|2|COMP 6|5|OBJ 7|2|PUNCT
+
+that is why I won't go .
+pro:dem v|be&amp;3S adv:wh|why pro|I aux|will~neg|not v|go .
+1|2|SUBJ 2|0|ROOT 3|7|JCT 4|7|SUBJ 5|7|AUX 6|5|NEG 7|2|CPRED 8|2|PUNCT
+
+this is what I need .
+pro:dem|this v|be&amp;3S pro:wh|what pro|I v|need .
+1|2|SUBJ 2|0|ROOT 3|5|OBJ 4|5|SUBJ 5|2|CPRED 6|2|PUNCT
+
+here is how you do it .
+adv:loc|here v|be&amp;3S adv:wh|how pro|you v|do pro|it .
+1|2|PRED 2|0|ROOT 3|5|JCT 4|5|SUBJ 5|2|CSUBJ 6|5|OBJ 7|2|PUNCT</pre>
+</div>
+<p>If, however, the WH-word is replaced with a normal noun phrase, you <em>should</em> code
+the noun phrase as part of the matrix clause and code the subordinate clause as a
+<tt class="docutils literal"><span class="pre">CMOD</span></tt> to the noun phrase.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>I know the guy you are talking about .
+pro|I v|know det|the n|guy pro|you aux|be&amp;PRES part|talk-PROG prep|about .
+1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|OBJ 5|7|SUBJ 6|7|AUX 7|4|CMOD 8|7|JCT 9|2|PUNCT
+
+that is the reason I won't go .
+pro:dem v|be&amp;3S det|the n|reason pro|I aux|will~neg|not v|go .
+1|2|SUBJ 2|0|ROOT 3|4|DET 4|2|PRED 5|8|SUBJ 6|8|AUX 7|6|NEG 8|4|CMOD 9|2|PUNCT
+
+here is the way you do it .
+adv:loc|here v|be&amp;3S det|the n|way pro|you v|do pro|it .
+1|2|PRED 2|0|ROOT 3|4|DET 4|2|SUBJ 5|6|SUBJ 6|4|CMOD 7|6|OBJ 8|2|PUNCT</pre>
+</div>
+<p>Although these constructions are very similar and it may seem strange to code
+them in different ways, there is one very important difference.  While you could
+insert a relativizer (i.e. &#8220;that&#8221; or &#8220;who&#8221;) after an NP (i.e. I know the guy
+<em>who</em> you are talking about, that is the reason <em>that</em> I won&#8217;t go), you cannot do
+the same with a WH-word introducing the clause (i.e. *I know who <em>that</em> you are
+talking about, *that is why <em>that</em> I won&#8217;t go).  So, when there is a normal noun
+phrase, we can assume that the relativizer is just implied, but still code it as
+a relative clause.  With the WH-words, however, relative clauses are not allowed,
+so we must code them differently.</p>
+</div>
+<div class="section" id="all-np-verb-is">
+<span id="mg-problems-all-csubj"></span><h3><b><em>all</em></b> <strong>NP VERB</strong> <b><em>is</em></b><a class="headerlink" href="#all-np-verb-is" title="Permalink to this headline">¶</a></h3>
+<p>Very similar to complements introduced by WH-words are subjects introduced by the
+word &#8220;all&#8221; (e.g. &#8220;all you have to do is try your best&#8221;).  Strangely enough, we
+treat this construction as an exception to the last rule; while you can insert
+a relativizer after &#8220;that&#8221; (e.g. &#8220;all <em>that</em> you have to do is try your best&#8221;), we
+don&#8217;t code it as a relative clause, but rather similar to the way we would code it
+with WH-words.  That is to say, &#8220;all&#8221; takes whatever GR it serves in the first
+clause (in this case <tt class="docutils literal"><span class="pre">OBJ</span></tt>), while the entire clause serves as the <tt class="docutils literal"><span class="pre">CSUBJ</span></tt> to
+the main clause.  Unfortunately, the only reason for this is that this is what the
+coders under the old system did.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>all you have to do is try your best .
+pro:indef|all pro|you aux|have inf|to v|do v|be&amp;3S v|try pro:poss:det|your n|best .
+1|5|OBJ 2|5|SUBJ 3|5|AUX 4|5|INF 5|6|CSUBJ 6|0|ROOT 7|6|XPRED 8|9|DET 9|7|OBJ 10|6|PUNCT
+
+all I'm saying is you shouldn't have done that .
+pro:indef|all pro|I~aux|be&amp;1S part|say-PROG v|be&amp;3S pro|you aux|should~neg|not aux|have part|do&amp;PERF pro:dem|that .
+1|4|OBJ 2|4|SUBJ 3|4|AUX 4|5|CSUBJ 5|0|ROOT 6|10|SUBJ 7|10|AUX 8|7|NEG 9|10|AUX 10|5|CPRED 11|10|OBJ 12|5|PUNCT
+
+all he is is a dirty rotten scoundrel .
+pro:indef|all pro|he v|be&amp;3S v|be&amp;3S det|a adj|dirty adj|rotten n|scoundrel .
+1|3|PRED 2|3|SUBJ 3|4|CSUBJ 4|0|ROOT 5|8|DET 6|8|MOD 7|8|MOD 8|4|PRED 9|4|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="the-phrase-be-adj-to-verb">
+<span id="mg-problems-adj-to-verb"></span><h3>The phrase <b><em>be</em></b> <strong>ADJ</strong> <b><em>to</em></b> <strong>VERB</strong><a class="headerlink" href="#the-phrase-be-adj-to-verb" title="Permalink to this headline">¶</a></h3>
+<p>In the construction <b><em>be</em></b> <strong>ADJ</strong> <b><em>to</em></b> <strong>VERB</strong>, the <strong>ADJ</strong> is always a <tt class="docutils literal"><span class="pre">PRED</span></tt>
+to &#8220;be&#8221; while the <strong>VERB</strong> is an <tt class="docutils literal"><span class="pre">XJCT</span></tt> to &#8220;be&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>it is hard to bake a cake .
+pro|it v|be&amp;3S adj|hard inf|to v|bake det|a n|cake .
+1|2|SUBJ 2|0|ROOT 3|2|PRED 4|5|INF 5|2|XJCT 6|7|DET 7|5|OBJ 8|2|PUNCT
+
+it wasn't easy to do .
+pro|it v|be&amp;PAST&amp;13S~neg|not adj|easy inf|to v|do .
+1|2|SUBJ 2|0|ROOT 3|2|NEG 4|2|PRED 5|6|INF 6|2|XJCT 7|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="the-phrase-good-at-verbing">
+<span id="mg-problems-good-at"></span><h3>The phrase <b><em>good at</em></b> <strong>VERBing</strong><a class="headerlink" href="#the-phrase-good-at-verbing" title="Permalink to this headline">¶</a></h3>
+<p>In an utterance like &#8220;you are good at hiding&#8221;, we do not want the phrase &#8220;at hiding&#8221;
+to contribute to the number of clauses in the utterance.  Thus &#8220;good&#8221; should be a <tt class="docutils literal"><span class="pre">PRED</span></tt>
+, &#8220;at&#8221; should be a preposition and a <tt class="docutils literal"><span class="pre">JCT</span></tt> to &#8220;good&#8221;, and the verb (in this case &#8220;hiding&#8221;)
+should be coded as <tt class="docutils literal"><span class="pre">n:gerund|hide-GERUND</span></tt> and should be a <tt class="docutils literal"><span class="pre">POBJ</span></tt> dependent on &#8220;to&#8221;.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>you are good at hiding .
+pro|you v|be&amp;PRES adj|good prep|at n:gerund|hide-GERUND .
+1|2|SUBJ 2|0|ROOT 3|2|PRED 4|3|JCT 5|4|POBJ 6|2|PUNCT</pre>
+</div>
+</div>
+<div class="section" id="clauses-used-as-objects-of-prepositions">
+<span id="mg-problems-clause-as-pobj"></span><h3>Clauses used as objects of prepositions<a class="headerlink" href="#clauses-used-as-objects-of-prepositions" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="wh-word-do-you-think-clause">
+<span id="mg-problems-do-you-think"></span><h3><strong>WH-word</strong> <b><em>do you think</em></b> <strong>CLAUSE</strong><a class="headerlink" href="#wh-word-do-you-think-clause" title="Permalink to this headline">¶</a></h3>
+<p>The phrase <strong>WH-word</strong> <b><em>do you think</em></b> <strong>CLAUSE</strong> comes up frequently (e.g. &#8220;what
+do you think this is?&#8221;, &#8220;where do you think he is going?&#8221;).  There are obviously
+two clauses, but it may not be clear at first which is the <tt class="docutils literal"><span class="pre">ROOT</span></tt> and which the
+subordinate clause.  The easiest way to figure this out is to restructure the
+utterance to make it a declarative sentence.  Thus, &#8220;what do you think this is?&#8221;
+becomes &#8220;you (do) think this is what?&#8221;.  Now it&#8217;s easier to see that &#8220;think&#8221; is
+<tt class="docutils literal"><span class="pre">ROOT</span></tt>, while &#8220;is&#8221; is a <tt class="docutils literal"><span class="pre">COMP</span></tt> and &#8220;what&#8221; is the <tt class="docutils literal"><span class="pre">PRED</span></tt> of &#8220;is&#8221;, even though
+they are not adjacent.</p>
+<p>Example:</p>
+<div class="highlight-python"><pre>what do you think this is ?
+pro:wh|what aux|do pro|you v|think pro:dem|this v|be&amp;3S ?
+1|6|PRED 2|4|AUX 3|4|AUX 4|0|ROOT 5|6|SUBJ 6|4|COMP 7|4|PUNCT
+
+where do you think he is going ?
+adv:wh|where aux|do pro|you v|think pro|he aux|be&amp;3S part|go-PROG ?
+1|7|JCT 2|4|AUX 3|4|SUBJ 4|0|ROOT 5|7|SUBJ 6|7|AUX 7|4|COMP 8|4|PUNCT</pre>
+</div>
+<p>Using the sentence restructuring trick, you will always find that &#8220;do you think&#8221;
+(or any variation of that, such as &#8220;does he think&#8221;) will be the <tt class="docutils literal"><span class="pre">ROOT</span></tt> and the
+other clause will be its <tt class="docutils literal"><span class="pre">COMP</span></tt>.  You can also use this trick any time there is
+an interrogative sentence and it&#8217;s unclear what each word&#8217;s GR is or, if there
+are multiple clauses, which clause is the <tt class="docutils literal"><span class="pre">ROOT</span></tt>.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

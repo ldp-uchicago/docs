@@ -1,0 +1,533 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.16. Form - Gesture Name &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.16. Form - Gesture Name</a><ul>
+<li><a class="reference internal" href="#description">3.16.1. Description</a></li>
+<li><a class="reference internal" href="#format">3.16.2. Format</a></li>
+<li><a class="reference internal" href="#values">3.16.3. Values</a></li>
+<li><a class="reference internal" href="#vertical-dependencies">3.16.4. Vertical Dependencies</a></li>
+<li><a class="reference internal" href="#horizontal-dependencies">3.16.5. Horizontal Dependencies</a></li>
+<li><a class="reference internal" href="#depended-upon-by">3.16.6. Depended Upon By</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/specs/transcript/columns/form.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="form-gesture-name">
+<span id="form-column"></span><h1>3.16. Form - Gesture Name<a class="headerlink" href="#form-gesture-name" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<span id="form-column-description"></span><h2>3.16.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Indicates the category and name of the gesture being coded</p>
+</div>
+<div class="section" id="format">
+<span id="form-column-format"></span><h2>3.16.2. Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h2>
+<pre>
+<strong id="grammar-token-entry">entry    </strong> ::=  <a class="reference internal" href="#grammar-token-offcamera"><tt class="xref docutils literal"><span class="pre">offcamera</span></tt></a> | <a class="reference internal" href="../intro.html#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a> [<a class="reference internal" href="../intro.html#grammar-token-op"><tt class="xref docutils literal"><span class="pre">op</span></tt></a> <a class="reference internal" href="../intro.html#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a>]*
+<strong id="grammar-token-offcamera">offcamera</strong> ::=  &quot;$&quot;
+<strong id="grammar-token-code">code     </strong> ::=  &lt;Any <a class="reference internal" href="../intro.html#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a> from the table below other than <a class="reference internal" href="#grammar-token-offcamera"><tt class="xref docutils literal"><span class="pre">offcamera</span></tt></a>&gt;[<a class="reference internal" href="#grammar-token-continued"><tt class="xref docutils literal"><span class="pre">continued</span></tt></a>]
+<strong id="grammar-token-continued">continued</strong> ::=  &quot;~&quot;
+<strong id="grammar-token-op">op       </strong> ::=  &quot;+&quot; | &quot;-&quot; | &quot;/&quot; | &quot;.&quot;
+</pre>
+</div>
+<div class="section" id="values">
+<span id="form-column-values"></span><h2>3.16.3. Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h2>
+<p>Codes have the following interpretation:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="36%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Form Code</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td colspan="3"><strong>Off Camera</strong></td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">$</span></tt></td>
+<td>Gesture occurred off
+camera and is
+indeterminate</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td colspan="3"><strong>Deictics</strong></td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">point</span></tt></td>
+<td>One or more fingers
+are extended to
+indicate an object or
+set of objects</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">cont</span> <span class="pre">point</span></tt></td>
+<td>One or more fingers
+are used to indicate
+multiple members of a
+set or group of objects</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">drag</span></tt></td>
+<td>A point with a trace
+along a present object</td>
+<td>Deprecated</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">palm</span></tt></td>
+<td>Entire palm used to
+identify or indicate
+an entity or set of
+objects</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">cont</span> <span class="pre">palm</span></tt></td>
+<td>Entire palm used to
+indicate multiple
+members of a set or
+group of objects</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">hold</span></tt></td>
+<td>Holding an object in
+to explicitly indicate
+or draw attention to
+it, can also hold a
+body part by raising it</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td colspan="3"><strong>Conventionals</strong></td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">beat</span></tt></td>
+<td>Any sharp motion
+corresponding with the
+prosody of speech</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">come</span></tt></td>
+<td>Beckoning to another
+entity</td>
+<td><p class="first">Holding out palms of
+hands toward the
+entity being beckoned</p>
+<p class="last">Extending one or more
+fingers and bending
+fingers back toward
+palm with palm up</p>
+</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">dismiss</span></tt></td>
+<td>Brushed hand(s) away
+from body (can look
+very similar to a flip
+but accompanies a
+different context
+established by speech</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">flip</span></tt></td>
+<td>Turning up palm(s) of
+hand(s) by rotating
+wrist or arm</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">got</span> <span class="pre">it</span></tt></td>
+<td>Both hands spread in
+front of body with
+palms facing down or
+inwards and pressing
+down once or repeatedly</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">listing</span></tt></td>
+<td>Fingers move through a
+sequence of numbers
+while verbally listing
+items</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">naughties</span></tt></td>
+<td>Shaking or waving the
+index finger</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">nod</span></tt></td>
+<td>Moving the head up and
+down by bending the
+neck</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">number</span></tt></td>
+<td>Indicates a number
+being referenced by
+holding up the
+corresponding number
+of fingers</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">oh</span> <span class="pre">my</span></tt></td>
+<td>Raising one or both
+hands to the mouth</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">pick</span> <span class="pre">me</span></tt></td>
+<td>Hand raised above head,
+optionally waving</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">pick</span> <span class="pre">up</span></tt></td>
+<td>Holding limb(s),
+usually the arm(s),
+outstretched toward an
+adult to indicate the
+desire to be picked up</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">shake</span></tt></td>
+<td>Turning head left and
+right</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">shh</span></tt></td>
+<td>Hold index finger
+vertically against lips</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">shrug</span></tt></td>
+<td>Raising one or both
+shoulders up towards
+the head</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">shrug</span> <span class="pre">with</span> <span class="pre">flip</span></tt></td>
+<td>Simultaneous flip and
+shrug</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">sweep</span></tt></td>
+<td>Holding arm(s) and
+hand(s) parallel to the
+ground with palms down
+and moving from center
+of body to respective
+side(s) of body</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">tada</span></tt></td>
+<td>Opening of arms and
+hands up and/or out</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">thinking</span></tt></td>
+<td>Putting a finger to the
+head or face and
+holding it there or
+tapping it in place</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">wait</span></tt></td>
+<td>Index finger pointing
+up, other fingertips
+curled under, palm out</td>
+<td>Traditional &#8220;one
+moment&#8221; gesture</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">wave</span></tt></td>
+<td>Moves hand side to side
+with palm out or moves
+hand up and down</td>
+<td>A traditional greeting
+wave</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">&lt;aha&gt;</span></tt></td>
+<td>Raising hand with index
+finger pointed up</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">&lt;back</span> <span class="pre">off&gt;</span></tt></td>
+<td>Holds hand(s) out with
+palm out</td>
+<td>The quintisential
+&#8220;STOP!&#8221; gesture</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">&lt;darn</span> <span class="pre">it&gt;</span></tt></td>
+<td>Holds hand in fist with
+are bent at elbow and
+pulls arm toward center
+of body</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">&lt;hero</span> <span class="pre">fist&gt;</span></tt></td>
+<td>Raising arm(s) up with
+hand(s) in fist(s)</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">&lt;listening&gt;</span></tt></td>
+<td>Cupping hand(s) to
+ear(s)</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">&lt;oh</span> <span class="pre">man&gt;</span></tt></td>
+<td>Holding hand(s) to head</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">&lt;pray</span> <span class="pre">you&gt;</span></tt></td>
+<td>Holding palms together
+in a prayer position</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">&lt;thumbs</span> <span class="pre">up&gt;</span></tt></td>
+<td>Raising one or both
+thumbs up from the rest
+of the fingers in a
+fist</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">&lt;score&gt;</span></tt></td>
+<td>Holding hand in fist
+with arm bent at elbow
+and pulling it toward
+body</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">&lt;so</span> <span class="pre">so&gt;</span></tt></td>
+<td>Holding hand out with
+palm down and
+alternately tilting
+hand from side to side</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">&lt;whew&gt;</span></tt></td>
+<td>Wiping brow with the
+palm or back of hand(s)</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">x</span></tt></td>
+<td>Ambigous gestures that
+do not fall into these
+categories or for which
+an accurate meaning
+cannot be described</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td colspan="3"><strong>Representationals</strong></td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">iconic</span></tt></td>
+<td>A gesture which
+represents a thing or
+idea</td>
+<td><p class="first">Action: flapping arms
+in the air to convey
+&#8216;flying&#8217;</p>
+<p>Direction: moving the
+index finger downward
+to indicate &#8216;downward
+path&#8217;</p>
+<p>Attribute: holding
+cupped hands in the
+air to convey the size
+or shape of a ball</p>
+<p class="last">Shape: tracing the
+shape of a square with
+fingers on a drawing
+or in the air</p>
+</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">metaphoric</span></tt></td>
+<td>A gesture which
+represents a conceptual
+relationship without
+directly mapping to a
+tangible property of
+the relationship or
+entity befing
+referenced</td>
+<td>Cupping hands in air
+as if holding an idea
+for the purpose of
+referencing an idea or
+concept of an idea</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">demo</span></tt></td>
+<td>A gesture which
+represents a procedure
+using at least one
+object involved in that
+procedure without
+actually completing or
+carrying out the action</td>
+<td>Holding a spoon and
+moving in a stirring
+motion in the air
+without actually
+stirring anything to
+show how to stir</td>
+</tr>
+<tr class="row-odd"><td colspan="3"><strong>Sign</strong></td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">sign</span></tt></td>
+<td>Baby sign or ASL sign</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Any code except <tt class="docutils literal"><span class="pre">$</span></tt> may be suffixed with a tilde (<tt class="docutils literal"><span class="pre">~</span></tt>) to indicate
+continuation from the speaker&#8217;s immediately preceding communicative act in
+the transcript.</p>
+</div>
+<p>Ops have the following interpretations:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Op</th>
+<th class="head">Meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">+</span></tt></td>
+<td>Simultaneous gestures</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">-</span></tt></td>
+<td>Sequential gestures without return to neutral position</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">/</span></tt></td>
+<td>Gestures morph into one another</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">.</span></tt></td>
+<td>Sequential gestures with return to neutral position - DEPRECATED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vertical-dependencies">
+<span id="form-column-vert-dep"></span><h2>3.16.4. Vertical Dependencies<a class="headerlink" href="#vertical-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>If a Form code is suffixed with the continuation operator (<tt class="docutils literal"><span class="pre">~</span></tt>), it must have
+an antecedent that is either the base form or the continued form of the code in
+the immediately preceding transcribed communicative act for the given speaker.
+I.e., if the child says something and uses a point, the parent talks for 30
+lines in the transcript, and then the child, still holding the point, says
+something else, the second point could be continued from the first because
+there is no intervening utterance or gesture on the part of the child.</p>
+</div>
+<div class="section" id="horizontal-dependencies">
+<span id="form-column-horz-dep"></span><h2>3.16.5. Horizontal Dependencies<a class="headerlink" href="#horizontal-dependencies" title="Permalink to this headline">¶</a></h2>
+<blockquote>
+<div>None</div></blockquote>
+</div>
+<div class="section" id="depended-upon-by">
+<span id="form-column-dep-by"></span><h2>3.16.6. Depended Upon By<a class="headerlink" href="#depended-upon-by" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>In <a class="reference internal" href="../levels.html#base-level"><em>2.2. Base Transcript</em></a>:</dt>
+<dd><a class="reference internal" href="lrb.html#lrb-column-horz-dep"><em>LRB</em></a>,
+<a class="reference internal" href="obj.html#obj-column-horz-dep"><em>Obj</em></a>,
+<a class="reference internal" href="gloss.html#gloss-column-horz-dep"><em>Gloss</em></a>,
+<a class="reference internal" href="orient.html#orient-column-horz-dep"><em>Orient</em></a>,
+<a class="reference internal" href="mspd.html#mspd-column-horz-dep"><em>MSPD</em></a></dd>
+<dt>In <a class="reference internal" href="../levels.html#seyda-level"><em>2.3. Şeyda Özçalışkan&#8217;s Second Tier Gesture Annotation</em></a>:</dt>
+<dd><a class="reference internal" href="g_type.html#gtype-column-horz-dep"><em>G_Type</em></a>,
+<a class="reference internal" href="gs_rel.html#gsrel-column-horz-dep"><em>GS_Rel</em></a></dd>
+<dt>In <a class="reference internal" href="../levels.html#erica-level"><em>2.5. Erica Cartmill&#8217;s Second Tier Gesture Annotation</em></a>:</dt>
+<dd><a class="reference internal" href="g_type.html#gtype-column-horz-dep"><em>G_Type</em></a>,
+<a class="reference internal" href="gs_rel.html#gsrel-column-horz-dep"><em>GS_Rel</em></a>,
+<a class="reference internal" href="time_gesture.html#time-g-column-horz-dep"><em>Time (Gesture)</em></a></dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,177 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>1. Introduction &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">1. Introduction</a><ul>
+<li><a class="reference internal" href="#index-0">1.1. Notation</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/specs/transcript/intro.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="introduction">
+<span id="id1"></span><h1>1. Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
+<p>The Language Development Project (LDP) is, broadly, a longitudinal study of the
+interaction between the developing language and gesture faculties of young
+children and how this influences and is influenced by the parent-child
+relationship.  In order to study these phenomena, the LDP films communicative
+interactions between parents, children, and the visiting experimenters and
+subsequently employs a system of transcripts that record various data about the
+nature and content of the speech and gesture captured on video.</p>
+<p>As the project itself has developed, the usefulness and accuracy of the data
+captured in the original transcript format has been repeatedly reevaluated and
+modified to meet new needs, leading to a series of standards adoptions and the
+formulation of additional annotation schemas for more fine-grained analysis of
+specific aspects of the data.  The result is a wealth of information that can be
+intimidating to the uninitiated.  This specification is an attempt to draw a
+unified and coherent picture of the various levels of annotation for both
+researchers who have been with the LDP for many years and those interested in
+leveraging the data collected for new and previously unimagined projects.</p>
+<span class="target" id="notation"></span><div class="section" id="index-0">
+<span id="id2"></span><h2>1.1. Notation<a class="headerlink" href="#index-0" title="Permalink to this headline">¶</a></h2>
+<p>Transcripts are organized into columns, each column having its own set of
+possible values and symbols.  In order to describe the permitted combinations,
+we specify a column format.  The descriptions of column entry format use a
+modified <a class="reference internal" href="../../glossary.html#term-bnf-grammar-notation"><em class="xref std std-term">BNF grammar notation</em></a> that uses the following style of
+definition:</p>
+<p>Below we will define a column we&#8217;ll call &#8220;Jump&#8221;:</p>
+<pre>
+<strong id="grammar-token-entry">entry</strong> ::=  (<a class="reference internal" href="#grammar-token-null"><tt class="xref docutils literal"><span class="pre">null</span></tt></a> | <a class="reference internal" href="#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a>) [<a class="reference internal" href="#grammar-token-op"><tt class="xref docutils literal"><span class="pre">op</span></tt></a> (<a class="reference internal" href="#grammar-token-null"><tt class="xref docutils literal"><span class="pre">null</span></tt></a> | <a class="reference internal" href="#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a>)]*
+<strong id="grammar-token-null">null </strong> ::=  &quot;&quot;
+<strong id="grammar-token-code">code </strong> ::=  &quot;hop&quot; | &quot;skip&quot; | &quot;leap&quot; | &quot;vault&quot;
+<strong id="grammar-token-op">op   </strong> ::=  &quot;+&quot; | &quot;-&quot;
+</pre>
+<p>According to the rules, which we will explain in a moment, one possible entry
+in &#8220;Jump&#8221; is <tt class="docutils literal"><span class="pre">hop</span> <span class="pre">+</span> <span class="pre">skip</span> <span class="pre">-</span> <span class="pre">+</span> <span class="pre">leap</span></tt>.  Why is that? Knowing how to read a column
+format helps answer that question.</p>
+<p>A definition is made up of one or more rules.  Each rule has a <em>name</em>, a
+<tt class="docutils literal"><span class="pre">::=</span></tt>, and a <em>description</em>.  The first rule of the definition describes the
+make-up of an <tt class="docutils literal"><span class="pre">entry</span></tt> in the column, and each additional rule describes a
+sub-part of the first one.  As you read across the first rule&#8217;s <em>description</em>,
+just replace each <em>name</em> with its corresponding <em>description</em>, i.e. replace
+<tt class="docutils literal"><span class="pre">null</span></tt> with <tt class="docutils literal"><span class="pre">&quot;&quot;</span></tt>, <tt class="docutils literal"><span class="pre">op</span></tt> with <tt class="docutils literal"><span class="pre">&quot;+&quot;</span> <span class="pre">|</span> <span class="pre">&quot;-&quot;</span></tt>, etc.  If the <em>description</em> of
+a <em>name</em> has other <em>name</em>s in it, you can replace those with their
+<em>definitions</em> and so on until all you have is a <em>description</em> of <tt class="docutils literal"><span class="pre">entry</span></tt> with
+no <em>names</em> in it at all.</p>
+<p>Each symbol in the <em>description</em>s has its own meaning in this notation.
+Quotation marks set aside literal strings and white spaces serve to do nothing
+other than separate the tokens.</p>
+<p>A vertical bar (<tt class="docutils literal"><span class="pre">|</span></tt>) is used to separate alternatives and parentheses are used
+for grouping, so <tt class="docutils literal"><span class="pre">(null</span> <span class="pre">|</span> <span class="pre">code)</span></tt>, which expands to
+<tt class="docutils literal"><span class="pre">(&quot;&quot;</span> <span class="pre">|</span> <span class="pre">&quot;hop&quot;</span> <span class="pre">|</span> <span class="pre">&quot;skip&quot;</span> <span class="pre">|</span> <span class="pre">&quot;leap&quot;</span> <span class="pre">|</span> <span class="pre">&quot;vault&quot;)</span></tt>, means you can have an
+empty string or any one of the words <tt class="docutils literal"><span class="pre">hop</span></tt>, <tt class="docutils literal"><span class="pre">skip</span></tt>, <tt class="docutils literal"><span class="pre">leap</span></tt>, or <tt class="docutils literal"><span class="pre">vault</span></tt>
+as the first thing in an <tt class="docutils literal"><span class="pre">entry</span></tt>.  In our example, <tt class="docutils literal"><span class="pre">hop</span></tt> is the first
+element of our <tt class="docutils literal"><span class="pre">entry</span></tt>, which satisfies this rule.</p>
+<p>Square brackets (<tt class="docutils literal"><span class="pre">[]</span></tt>) set aside optional arguments, so the next part,
+<tt class="docutils literal"><span class="pre">[op</span> <span class="pre">(null</span> <span class="pre">|</span> <span class="pre">code)]</span></tt>, means you can optionally follow the first <tt class="docutils literal"><span class="pre">null</span></tt> or
+<tt class="docutils literal"><span class="pre">code</span></tt> in the <tt class="docutils literal"><span class="pre">entry</span></tt> with an <tt class="docutils literal"><span class="pre">op</span></tt> followed by another <tt class="docutils literal"><span class="pre">null</span></tt> or
+<tt class="docutils literal"><span class="pre">code</span></tt>.  After <tt class="docutils literal"><span class="pre">hop</span></tt>, we see <tt class="docutils literal"><span class="pre">+</span> <span class="pre">skip</span></tt>.  <tt class="docutils literal"><span class="pre">+</span></tt> is an <tt class="docutils literal"><span class="pre">op</span></tt> and <tt class="docutils literal"><span class="pre">skip</span></tt> is
+one of the permitted <tt class="docutils literal"><span class="pre">code</span></tt>s.  So far so good.</p>
+<p>A star (<tt class="docutils literal"><span class="pre">*</span></tt>) indicates one or more repetitions of the unit immediately
+preceding it.  In this case, the arguments in the square brackets precede it,
+meaning that we can continue to add as many <tt class="docutils literal"><span class="pre">op</span></tt> and <tt class="docutils literal"><span class="pre">null</span></tt> or <tt class="docutils literal"><span class="pre">code</span></tt>
+pairs as we like.  The remainder of our example, <tt class="docutils literal"><span class="pre">-</span> <span class="pre">+</span> <span class="pre">leap</span></tt>, is an <tt class="docutils literal"><span class="pre">op</span></tt>, a
+<tt class="docutils literal"><span class="pre">null</span></tt>, another <tt class="docutils literal"><span class="pre">op</span></tt>, and one of our available <tt class="docutils literal"><span class="pre">code</span></tt>s.  The example,
+therefore, satisfies the grammar as laid out in the definition above.</p>
+<p>Angle brackets (<tt class="docutils literal"><span class="pre">&lt;&gt;</span></tt>) surround an informal description or comment.  While
+there are none of these in the definition provided, they will generally be used
+when, for example, the list of possible codes is not exhaustive and but we still
+want to convey a sense of what is allowed.</p>
+<p>For the sake of completeness, here is an invalid entry in &#8220;Jump&#8221;:
+<tt class="docutils literal"><span class="pre">hop</span> <span class="pre">+</span> <span class="pre">skip</span> <span class="pre">vault</span> <span class="pre">-</span> <span class="pre">flip</span></tt>.  This fails on two counts.  For one, there is no
+<tt class="docutils literal"><span class="pre">op</span></tt> between <tt class="docutils literal"><span class="pre">skip</span></tt> and <tt class="docutils literal"><span class="pre">vault</span></tt>.  Second, <tt class="docutils literal"><span class="pre">flip</span></tt> is not one of the
+values listed in the <em>definition</em> of <tt class="docutils literal"><span class="pre">code</span></tt>.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

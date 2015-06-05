@@ -1,0 +1,163 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Repository &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Repository</a><ul>
+<li><a class="reference internal" href="#bin"><tt class="docutils literal"><span class="pre">bin</span></tt></a></li>
+<li><a class="reference internal" href="#lib"><tt class="docutils literal"><span class="pre">lib</span></tt></a></li>
+<li><a class="reference internal" href="#clan"><tt class="docutils literal"><span class="pre">clan</span></tt></a><ul>
+<li><a class="reference internal" href="#clan-lib"><tt class="docutils literal"><span class="pre">clan/lib</span></tt></a></li>
+<li><a class="reference internal" href="#clan-bin"><tt class="docutils literal"><span class="pre">clan/bin</span></tt></a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#chat"><tt class="docutils literal"><span class="pre">chat</span></tt></a><ul>
+<li><a class="reference internal" href="#chat-incoming"><tt class="docutils literal"><span class="pre">chat/incoming</span></tt></a></li>
+<li><a class="reference internal" href="#chat-coders"><tt class="docutils literal"><span class="pre">chat/coders</span></tt></a></li>
+<li><a class="reference internal" href="#chat-final"><tt class="docutils literal"><span class="pre">chat/final</span></tt></a></li>
+<li><a class="reference internal" href="#chat-inserts"><tt class="docutils literal"><span class="pre">chat/inserts</span></tt></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/annotation/repo.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="repository">
+<span id="mg-repo"></span><h1>Repository<a class="headerlink" href="#repository" title="Permalink to this headline">¶</a></h1>
+<p>The following section outlines the hierarchy of the morphosyntax repository
+that all syntax coders check out.  The repository is split up into four main
+directories: <tt class="docutils literal"><span class="pre">bin</span></tt>, <tt class="docutils literal"><span class="pre">lib</span></tt>, <tt class="docutils literal"><span class="pre">clan</span></tt>, and <tt class="docutils literal"><span class="pre">chat</span></tt>.  The first three should
+require minimal attention after the initial setup.  The final one, <tt class="docutils literal"><span class="pre">chat</span></tt>,
+is where you will do most of your work.</p>
+<div class="section" id="bin">
+<span id="mg-repo-bin"></span><h2><tt class="docutils literal"><span class="pre">bin</span></tt><a class="headerlink" href="#bin" title="Permalink to this headline">¶</a></h2>
+<p>This directory contains all of the scripts and programs developed by people in the LDP.  These include <em>dis</em> and <em>caps</em>, used for <a class="reference internal" href="clean.html#mg-clean"><em>prepping transcripts</em></a>, <em>dic</em>, <em>add</em>, and <em>fixlines</em>, used during the <a class="reference internal" href="steps.html#mg-steps"><em>annotation process</em></a>, and <em>graspParse.py</em>, <em>synflagger</em>, and <em>syntax_extract</em>, used for correcting syntax transcripts and generating higher-level syntax codes.</p>
+<p>In order to use these programs, you must have the <strong>bin</strong> directory specified as part of the PATH variable in your <a class="reference internal" href="setup.html#mg-setup-3"><em>.bash_profile</em></a>.  After you do this, you won&#8217;t need to directly access this directory, unless you are developing a new program or need to modify one of the exisiting programs.</p>
+</div>
+<div class="section" id="lib">
+<span id="mg-repo-lib"></span><h2><tt class="docutils literal"><span class="pre">lib</span></tt><a class="headerlink" href="#lib" title="Permalink to this headline">¶</a></h2>
+<p>This directory contains all of the required modules written by people in the LDP.  These are required for many of the scripts and programs found in <a class="reference internal" href="#mg-repo-bin"><em>the bin directory</em></a>.  These modules are split into two directories, <strong>perl</strong> and <strong>python</strong>, depending on the language in which they were written.  Again, unless you are writing a new program or need to modify the modules used in one of the programs, you will not need to directly access this directory.</p>
+</div>
+<div class="section" id="clan">
+<span id="mg-repo-clan"></span><h2><tt class="docutils literal"><span class="pre">clan</span></tt><a class="headerlink" href="#clan" title="Permalink to this headline">¶</a></h2>
+<p>This directory contains all of the information used by the CLAN tools that we use to automatically code the syntax of our transcripts.  When you first check out the morphosyntax repository, <strong>clan</strong> will contain only the directory <strong>lib</strong>.  However, once you <a class="reference internal" href="setup.html#mg-setup-2-2"><em>set up the CLAN tools</em></a>, it will also contain another directory, <strong>bin</strong>, which is not under version control.</p>
+<div class="section" id="clan-lib">
+<span id="mg-repo-clan-lib"></span><h3><tt class="docutils literal"><span class="pre">clan/lib</span></tt><a class="headerlink" href="#clan-lib" title="Permalink to this headline">¶</a></h3>
+<p>This directory contains the lexical entries and rules used by the various CLAN programs we run.  You won&#8217;t have to worry about most of the files in here, except in <strong>clan/lib/english/lex</strong>.  That directory contains the lexical entries used by <em>mor</em> and <em>post</em>, and you will frequently have to edit these files when <a class="reference internal" href="steps.html#mg-steps-4-5"><em>adding words to the lexicon</em></a>.</p>
+<p>While you will be changing files in the <strong>clan/lib</strong> directory, if you use the <em>add</em> and <em>commitlex</em> commands, you will not have to access the lexicon files directly by navigating to this folder.</p>
+</div>
+<div class="section" id="clan-bin">
+<span id="mg-repo-clan-bin"></span><h3><tt class="docutils literal"><span class="pre">clan/bin</span></tt><a class="headerlink" href="#clan-bin" title="Permalink to this headline">¶</a></h3>
+<p>This directory contains the compiled CLAN tools developed at Carnegie Mellon University.  However, this folder is not included when you check out the morphosyntax repository, since the tools must be compiled on each machine that it is run on.</p>
+<p>Once you <a class="reference internal" href="setup.html#mg-setup-2-2"><em>install the CLAN command line tools</em></a> and <a class="reference internal" href="setup.html#mg-setup-3"><em>include this folder in your PATH variable</em></a>, you will not have to directly access the files in this folder again.</p>
+</div>
+</div>
+<div class="section" id="chat">
+<span id="mg-repo-chat"></span><h2><tt class="docutils literal"><span class="pre">chat</span></tt><a class="headerlink" href="#chat" title="Permalink to this headline">¶</a></h2>
+<p>This directory contains all of the transcript files that syntax coders process and code, as well as the final insert files that are passed along to the gesture coders.  These files are split into two directories, <strong>proj_2</strong> and <strong>proj_3</strong>.  Within each of these subdirectories is four more directories: <strong>incoming</strong>, <strong>coders</strong>, <strong>final</strong>, and <strong>inserts</strong>.</p>
+<div class="section" id="chat-incoming">
+<span id="mg-repo-chat-incoming"></span><h3><tt class="docutils literal"><span class="pre">chat/incoming</span></tt><a class="headerlink" href="#chat-incoming" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="chat-coders">
+<span id="mg-repo-chat-coders"></span><h3><tt class="docutils literal"><span class="pre">chat/coders</span></tt><a class="headerlink" href="#chat-coders" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="chat-final">
+<span id="mg-repo-chat-final"></span><h3><tt class="docutils literal"><span class="pre">chat/final</span></tt><a class="headerlink" href="#chat-final" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="chat-inserts">
+<span id="mg-repo-chat-inserts"></span><h3><tt class="docutils literal"><span class="pre">chat/inserts</span></tt><a class="headerlink" href="#chat-inserts" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

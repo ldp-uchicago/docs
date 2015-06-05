@@ -1,0 +1,453 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Setup &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Setup</a><ul>
+<li><a class="reference internal" href="#xcode">Xcode</a><ul>
+<li><a class="reference internal" href="#installing-xcode-tools-on-mac-os-x">Installing Xcode Tools on Mac OS X</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#subversion">Subversion</a><ul>
+<li><a class="reference internal" href="#creating-directory-for-repos">Creating directory for repos</a></li>
+<li><a class="reference internal" href="#checking-out-the-morphosyntax-repo">Checking out the morphosyntax repo</a></li>
+<li><a class="reference internal" href="#checking-out-the-data-repo">Checking out the data repo</a></li>
+<li><a class="reference internal" href="#checking-out-the-code-repo">Checking out the code repo</a></li>
+<li><a class="reference internal" href="#final-steps-for-setting-up-repos">Final steps for setting up repos</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#clan">CLAN</a><ul>
+<li><a class="reference internal" href="#installing-the-gui">Installing the GUI</a></li>
+<li><a class="reference internal" href="#installing-the-command-line-tools">Installing the command line tools</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#edit-your-profile">Edit your profile</a></li>
+<li><a class="reference internal" href="#edit-vimrc">Edit <tt class="docutils literal"><span class="pre">vimrc</span></tt></a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/annotation/setup.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="setup">
+<span id="mg-setup"></span><h1>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h1>
+<p>Before you can start coding syntax, you must set up the necessary tools on your computer.  This section will explain how to download and install the CLAN software and how to set up an SVN repository for accessing and submitting new transcripts.</p>
+<div class="admonition-see-also admonition seealso">
+<p class="first admonition-title">See also</p>
+<p>Before you begin, you may want to check out these guides to using the command line and the VI text editor.</p>
+<dl class="last docutils">
+<dt><a class="reference external" href="http://www.ee.surrey.ac.uk/Teaching/Unix/index.html">UNIX/LINUX Tutorial for Beginners</a></dt>
+<dd>A very good introduction to basic UNIX commands.  Tutorials One through Four are especially useful.</dd>
+<dt><a class="reference external" href="http://www.jerrywang.net/vi/">VI for Smarties</a></dt>
+<dd>A short and simple tutorial on the basics of using the VI text editor.</dd>
+<dt><a class="reference external" href="http://www.eng.hawaii.edu/Tutor/vi.html">Mastering the VI Editor</a></dt>
+<dd>A longer, more detailed tutorial on the VI text editor.</dd>
+</dl>
+</div>
+<div class="section" id="xcode">
+<span id="mg-setup-1"></span><h2>Xcode<a class="headerlink" href="#xcode" title="Permalink to this headline">¶</a></h2>
+<p>The first step in setting up a workspace is making sure that your computer is equipped with the tools to install all of the applications.  On computers running Mac OS X, that means having Xcode tools installed.  To test this, open the Terminal application and type:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">make</span> <span class="o">--</span><span class="n">help</span>
+</pre></div>
+</div>
+<p>If a long message pops up showing a lot of different options, you have developer tools installed and are good to go.  You can skip ahead to <a class="reference internal" href="#mg-setup-2"><em>Installing CLAN software</em></a>.</p>
+<p>If instead you get a message saying:</p>
+<div class="highlight-python"><pre>make: command not found</pre>
+</div>
+<p>you will need to install Xcode Tools.</p>
+<div class="section" id="installing-xcode-tools-on-mac-os-x">
+<span id="mg-setup-1-1"></span><h3>Installing Xcode Tools on Mac OS X<a class="headerlink" href="#installing-xcode-tools-on-mac-os-x" title="Permalink to this headline">¶</a></h3>
+<p>Installing Xcode Tools is an easy process, though it may take a long time.</p>
+<blockquote>
+<div><ol class="arabic">
+<li><dl class="first docutils">
+<dt>Acquire a copy of the <strong>Mac OS X Install Disc 2</strong> and insert it into the computer.</dt>
+<dd><ul class="first last simple">
+<li>Check the drawers of your desk for a copy.  If you can&#8217;t find it there, ask Jason for a copy.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Double-click the <strong>Xcode Tools</strong> folder and then the <strong>Xcode Tools.mpkg</strong> icon.</p>
+</li>
+<li><p class="first">Follow the instructions for installing Xcode tools.</p>
+</li>
+</ol>
+</div></blockquote>
+<p>Now just wait for it to finish installing.  It has a lot to install, so this could take a long, long time.</p>
+</div>
+</div>
+<div class="section" id="subversion">
+<span id="mg-setup-5"></span><h2>Subversion<a class="headerlink" href="#subversion" title="Permalink to this headline">¶</a></h2>
+<p>We&#8217;re using Apache <a class="reference external" href="http://en.wikipedia.org/wiki/Apache_Subversion">Subversion</a> system for sharing code and files. This enables
+everyone to be working from the same set of files.</p>
+<p>How does this work? Well, we&#8217;ve put the essential code and files for doing
+morphosyntactic analysis in a central <strong>morphosyntax</strong> repository (or &#8220;repo&#8221;).
+Anyone doing morphosyntactic analysis can then &#8220;check out&#8221; a copy of the repo
+to work with on their machine. If they make any changes to the files or code,
+they can then &#8220;commit&#8221; their local changes to the central repository so that
+everyone else can then &#8220;update&#8221; their own local working copies to get the
+changes. As a result, everyone is on the same page.</p>
+<p>We also work with a <strong>data</strong> repo, which is used by many other groups in the
+LDP, as well as its accompanying <strong>code</strong> repo.</p>
+<p>The following steps outline how to check out a copy of the three repositories
+for local use.</p>
+<div class="section" id="creating-directory-for-repos">
+<span id="mg-setup-5-1"></span><h3>Creating directory for repos<a class="headerlink" href="#creating-directory-for-repos" title="Permalink to this headline">¶</a></h3>
+<p>It is convenient to have all of the repositories you&#8217;ll be using located in one
+directory.  The one we&#8217;ll use in this guide is <em>~/ldp</em> (where <em>~</em> is your user
+directory).  To create this directory:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">Open the Terminal.  You should start in your user directory.</p>
+</li>
+<li><dl class="first docutils">
+<dt>Type <tt class="docutils literal"><span class="pre">ls</span> <span class="pre">ldp</span></tt> and hit Enter.</dt>
+<dd><ul class="first last simple">
+<li>If the terminal says <tt class="docutils literal"><span class="pre">ls:</span> <span class="pre">cannot</span> <span class="pre">access</span> <span class="pre">ldp:</span> <span class="pre">No</span> <span class="pre">such</span> <span class="pre">file</span> <span class="pre">or</span> <span class="pre">directory</span></tt>, proceed with the next step.</li>
+<li>If you get a listing including <em>morphosyntax</em>, <em>data</em>, and <em>code</em>, the repositories are already installed in this location.  You may either skip the repository setup or set the repos up in a different directory.</li>
+<li>If you get a listing that does not include those names, the directory <em>ldp</em> already exists, but the repos are not checked out.  You may skip to <a class="reference internal" href="#mg-setup-5-2"><em>checking out the morphosyntax repo</em></a>, or create a new directory in which to set up the repos.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">To create a new <em>ldp</em> directory, type <tt class="docutils literal"><span class="pre">mkdir</span> <span class="pre">ldp</span></tt>.</p>
+</li>
+<li><p class="first">Navigate to the newly created folder by typing <tt class="docutils literal"><span class="pre">cd</span> <span class="pre">ldp</span></tt> and proceed to <a class="reference internal" href="#mg-setup-5-2"><em>checking out the morphosyntax repo</em></a>.</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="checking-out-the-morphosyntax-repo">
+<span id="mg-setup-5-2"></span><h3>Checking out the morphosyntax repo<a class="headerlink" href="#checking-out-the-morphosyntax-repo" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">In the Terminal, navigate to the folder where you want to check out the repos (the default for this guide is <em>~/ldp</em>).</p>
+</li>
+<li><dl class="first docutils">
+<dt>Type <tt class="docutils literal"><span class="pre">find</span> <span class="pre">morphosyntax</span></tt> and hit Enter.</dt>
+<dd><ul class="first last simple">
+<li>If the terminal says &#8220;No such file or directory&#8221;, proceed with the next step.</li>
+<li>If you get a long list of things, you already have the repository installed in this location.  You may either skip the repository setup, or install it in a different directory.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Check out the morphosyntax repository by typing:</p>
+<div class="highlight-python"><pre>svn checkout svn://joyrexus.spc.uchicago.edu/morphosyntax morphosyntax</pre>
+</div>
+</li>
+<li><p class="first">You now have the morphosyntax repository!  You&#8217;ll notice a lot of file names popping up on your screen.  Those are all of the files that are under version control in the <strong>morphosyntax</strong> svn repository.  For more on the structure of this repository ADD STRUCTURE DOCUMENTATION</p>
+</li>
+</ol>
+</div></blockquote>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">If you are prompted for a username and password but you don&#8217;t know if you have them or have forgotten what they are, contact Jason and he can set up an account for you.</p>
+</div>
+</div>
+<div class="section" id="checking-out-the-data-repo">
+<span id="mg-setup-5-3"></span><h3>Checking out the data repo<a class="headerlink" href="#checking-out-the-data-repo" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">In the Terminal, navigate to the folder where you want to check out the repos (the default for this guide is <em>~/ldp</em>).</p>
+</li>
+<li><dl class="first docutils">
+<dt>Type <tt class="docutils literal"><span class="pre">find</span> <span class="pre">data</span></tt> and hit Enter</dt>
+<dd><ul class="first last simple">
+<li>If the terminal says &#8220;No such file or directory&#8221;, proceed with the next step.</li>
+<li>If you get a long list of things, you already have the repository installed in this location.  You may either skip the repository setup, or install it in a different directory.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Check out the data repository by typing:</p>
+<div class="highlight-python"><pre>svn checkout svn://joyrexus.spc.uchicago.edu/data/trunk data</pre>
+</div>
+</li>
+<li><p class="first">You now have the data repository!  You&#8217;ll notice a lot of file names popping up on your screen.  Those are all of the files that are under version control in the <strong>data</strong> svn repository.  For more on the structure of this repository ADD STRUCTURE DOCUMENTATION</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="checking-out-the-code-repo">
+<span id="mg-setup-5-4"></span><h3>Checking out the code repo<a class="headerlink" href="#checking-out-the-code-repo" title="Permalink to this headline">¶</a></h3>
+<blockquote>
+<div><ol class="arabic">
+<li><p class="first">In the Terminal, navigate to the folder where you want to check out the repos (the default for this guide is <em>~/ldp</em>).</p>
+</li>
+<li><dl class="first docutils">
+<dt>Type <tt class="docutils literal"><span class="pre">find</span> <span class="pre">code</span></tt> and hit Enter</dt>
+<dd><ul class="first last simple">
+<li>If the terminal says &#8220;No such file or directory&#8221;, proceed with the next step.</li>
+<li>If you get a long list of things, you already have the repository installed in this location.  You may either skip the repository setup, or install it in a different directory.</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">Check out the code repository by typing:</p>
+<div class="highlight-python"><pre>svn checkout svn://joyrexus.spc.uchicago.edu/code/trunk code</pre>
+</div>
+</li>
+<li><p class="first">You now have the code repository!  You&#8217;ll notice a lot of file names popping up on your screen.  Those are all of the files that are under version control in the <strong>code</strong> svn repository.  For more on the structure of this repository ADD STRUCTURE DOCUMENTATION</p>
+</li>
+</ol>
+</div></blockquote>
+</div>
+<div class="section" id="final-steps-for-setting-up-repos">
+<span id="mg-setup-5-5"></span><h3>Final steps for setting up repos<a class="headerlink" href="#final-steps-for-setting-up-repos" title="Permalink to this headline">¶</a></h3>
+<p>You now have the repositories checked out, but there are still a few things you&#8217;ll need to do to ensure that everything that relies on the repos is working properly.</p>
+<blockquote>
+<div><ul>
+<li><dl class="first docutils">
+<dt>When you <a class="reference internal" href="#mg-setup-3"><em>set up your .bash_profile</em></a>, ensure that all environment variables are pointing to the right place.  If your repos have a different name than those in the above directions, or if you set them up in a directory other than <em>~/ldp</em>, you may have to reflect those differences in your .bash_profile.</dt>
+<dd><ul class="first last simple">
+<li>In order to use the programs in the <strong>code</strong> repo, ensure that &#8220;$CODE/bin&#8221; is included in the PATH variable in your .bash_profile, where $CODE points to wherever you checked out the <strong>code</strong> repo.</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</div></blockquote>
+</div>
+</div>
+<div class="section" id="clan">
+<span id="mg-setup-2"></span><h2>CLAN<a class="headerlink" href="#clan" title="Permalink to this headline">¶</a></h2>
+<p>When you have developer tools installed and the svn repository checked out, you can then install the CLAN software, which uses the CHAT transcription format.  It will be helpful to install both the Graphical User Interface (GUI) and the command line tools.</p>
+<div class="section" id="installing-the-gui">
+<h3>Installing the GUI<a class="headerlink" href="#installing-the-gui" title="Permalink to this headline">¶</a></h3>
+<p>The following steps outline how to download and install the CLAN GUI:</p>
+<ol class="arabic simple">
+<li>Go to the <a class="reference external" href="http://childes.psy.cmu.edu/clan">CLAN</a> website.</li>
+<li>Download CLAN for Mac.</li>
+<li>If the installler does not open automatically, find the downloaded file and open it.</li>
+<li>Follow the instructions on screen to complete the installation.</li>
+</ol>
+<p>Once it is installed, you can use the application to open CHAT files.</p>
+</div>
+<div class="section" id="installing-the-command-line-tools">
+<span id="mg-setup-2-2"></span><h3>Installing the command line tools<a class="headerlink" href="#installing-the-command-line-tools" title="Permalink to this headline">¶</a></h3>
+<p>Most of the work we do with CLAN software is done from the command line.  This setup process is a little more complicated, but you will only have to do it once.</p>
+<ol class="arabic">
+<li><p class="first">Download the unix CLAN files from the <a class="reference external" href="http://childes.psy.cmu.edu/clan">CLAN</a> website.</p>
+</li>
+<li><p class="first">Move the zip file to your user directory (for example, <tt class="docutils literal"><span class="pre">/Users/maxmasich</span></tt>).</p>
+</li>
+<li><p class="first">Unpack the file by double-clicking it.  This should create a new
+directory <tt class="docutils literal"><span class="pre">/Users/maxmasich/unix-clan</span></tt>.</p>
+</li>
+<li><p class="first">You now have to make some changes before installing.  Open the Terminal
+and navigate to <tt class="docutils literal"><span class="pre">~/unix-clan/src</span></tt> (where <tt class="docutils literal"><span class="pre">~</span></tt> stands for your user directory).
+Do this by typing:</p>
+<div class="highlight-python"><pre>cd unix-clan/src</pre>
+</div>
+</li>
+<li><p class="first">Open the <em>common.h</em> file by typing:</p>
+<div class="highlight-python"><pre>vi common.h</pre>
+</div>
+</li>
+<li><p class="first">Search for the following:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c">#ifndef DEPDIR</span>
+    <span class="c">#if defined(CLAN_SRV)</span>
+        <span class="c">#define DEPDIR  &quot;/web/childes/webclan/lib/&quot;</span>
+    <span class="c">#else</span>
+        <span class="c">#define DEPDIR  &quot;../lib/&quot;</span>
+    <span class="c">#endif</span>
+</pre></div>
+</div>
+</li>
+<li><p class="first">Replace <tt class="docutils literal"><span class="pre">&quot;/web/childes/webclan/lib/&quot;</span></tt>  and <tt class="docutils literal"><span class="pre">&quot;../lib/&quot;</span></tt> with
+<tt class="docutils literal"><span class="pre">&quot;/Users/USERNAME/ldp/morphosyntax/clan/lib/&quot;</span></tt>,</p>
+<ul>
+<li><p class="first"><em>USERNAME</em> should reflect your user name on the computer.</p>
+</li>
+<li><p class="first">If you set up your morphosyntax repository somewhere else,
+you&#8217;ll have to reflect that change here.  It should look like:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="c">#ifndef DEPDIR</span>
+        <span class="c">#if defined(CLAN_SRV)</span>
+                <span class="c">#define DEPDIR  &quot;/Users/maxmasich/ldp/morphosyntax/clan/lib/&quot;</span>
+        <span class="c">#else</span>
+                <span class="c">#define DEPDIR  &quot;/Users/maxmasich/ldp/morphosyntax/clan/lib/&quot;</span>
+        <span class="c">#endif</span>
+</pre></div>
+</div>
+</li>
+</ul>
+</li>
+<li><p class="first">Compile the command line tools by typing <tt class="docutils literal"><span class="pre">make</span></tt>.</p>
+</li>
+<li><p class="first">Move the tools to your morphosyntactic coding directory.</p>
+<ul>
+<li><p class="first">Move up one level in the directory hierarchy:</p>
+<div class="highlight-python"><pre>$ cd ../unix</pre>
+</div>
+</li>
+<li><p class="first">You should now be in <tt class="docutils literal"><span class="pre">~/unix-clan/unix</span></tt>.</p>
+</li>
+<li><p class="first">Copy the <tt class="docutils literal"><span class="pre">bin</span></tt> directory to your new morphosyntax directory:</p>
+<div class="highlight-python"><pre>$ cp -r bin ~/ldp/morphosyntax/clan/</pre>
+</div>
+</li>
+<li><p class="first">Again, if you installed the repository somewhere else, reflect that change
+here.  Otherwise, be sure you copy this command <em>exactly</em> as it is here.</p>
+</li>
+</ul>
+</li>
+<li><p class="first">To use these tools more easily, you will have to specify where they are in
+your computer&#8217;s <tt class="docutils literal"><span class="pre">$PATH</span></tt> variable, which is done by
+<a class="reference internal" href="#mg-setup-3"><em>editing the .bash_profile file</em></a>.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="section" id="edit-your-profile">
+<span id="mg-setup-3"></span><h2>Edit your profile<a class="headerlink" href="#edit-your-profile" title="Permalink to this headline">¶</a></h2>
+<p>When you have all of the CLAN tools installed, you will have to create a <tt class="docutils literal"><span class="pre">.bash_profile</span></tt> file in your home directory.  If this file already exists, you may have to make some changes to it.</p>
+<ol class="arabic">
+<li><p class="first">Download this <a class="reference download internal" href="../../../_downloads/bash_profile_template"><tt class="xref download docutils literal"><span class="pre">.bash_profile</span> <span class="pre">template</span></tt></a> to your home directory (for example, <em>/Users/maxmasich</em>)</p>
+</li>
+<li><p class="first">If you checked out the repos to a location other than what was specified in the <a class="reference internal" href="#mg-setup-5"><em>Subversion</em></a> section, edit the downloaded file to reflect those differences (for example, if you checked out the repos in <em>~/coding</em> instead of <em>~/ldp</em>, change the line <tt class="docutils literal"><span class="pre">export</span> <span class="pre">LDP=$HOME/ldp</span></tt> to <tt class="docutils literal"><span class="pre">export</span> <span class="pre">LDP=$HOME/coding</span></tt>.</p>
+</li>
+<li><p class="first">Navigate to your home directory (you should be there automatically when you open the Terminal).</p>
+</li>
+<li><p class="first">See if you already have a <em>.bash_profile</em> in your home directory by typing:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">find</span> <span class="o">.</span><span class="n">bash_profile</span>
+</pre></div>
+</div>
+</li>
+</ol>
+<p>You will see one of two things printed to the screen:</p>
+<div class="highlight-python"><pre>.bash_profile
+                                            // This output means you already have a .bash_profile file
+
+find: .bash_profile: No such file or directory
+                                            // This output means that there is no .bash_profile file</pre>
+</div>
+<ol class="arabic" start="5">
+<li><p class="first">If you do not have a <em>.bash_profile</em> file, simply change the name of the downloaded <em>bash_profile_template.txt</em> to <em>.bash_profile</em> and finalize the changes by typing:</p>
+<div class="highlight-python"><pre>mv bash_profile_template.txt .bash_profile
+source .bash_profile</pre>
+</div>
+</li>
+</ol>
+<p>You are now ready to set up the <a class="reference internal" href="#mg-setup-5"><em>morphosyntax repository</em></a>.</p>
+<ol class="arabic" start="6">
+<li><p class="first">If there is already a copy of <em>.bash_profile</em> in your home directory, make sure that each of the lines in the <em>bash_profile_template</em> is found in the current <em>.bash_profile</em>.  If any lines are missing, copy and paste them into your <em>.bash_profile</em>.</p>
+</li>
+<li><p class="first">Finalize the changes by typing on the command line:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="n">source</span> <span class="o">.</span><span class="n">bash_profile</span>
+</pre></div>
+</div>
+</li>
+</ol>
+</div>
+<div class="section" id="edit-vimrc">
+<span id="mg-setup-4"></span><h2>Edit <tt class="docutils literal"><span class="pre">vimrc</span></tt><a class="headerlink" href="#edit-vimrc" title="Permalink to this headline">¶</a></h2>
+<p>To make the process of correcting the syntax output faster, you will need to set up a file which contains shortcuts for the VI text editor.</p>
+<ol class="arabic">
+<li><p class="first">Download the <a class="reference download internal" href="../../../_downloads/vimrc"><tt class="xref download docutils literal"><span class="pre">vimrc.txt</span> <span class="pre">file</span></tt></a> to your home directory.</p>
+</li>
+<li><p class="first">Change the name of the file from <em>vimrc.txt</em> to <em>.vimrc</em> by typing:</p>
+<div class="highlight-python"><pre>mv vimrc.txt .vimrc</pre>
+</div>
+</li>
+</ol>
+<p>You will now have many useful shortcuts when correcting syntax and part-of-speech information in VI.</p>
+<div class="admonition-see-also admonition seealso">
+<p class="first admonition-title">See also</p>
+<p class="last">The <a class="reference internal" href="shortcuts.html#mg-shortcuts"><em>VI Shortcuts</em></a> section for shortcuts you can use
+when correcting syntax in VI.</p>
+</div>
+<p>After you have completed each of these steps, you&#8217;re ready to start coding syntax!</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,310 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Repository/Environment Setup Guide &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Repository/Environment Setup Guide</a><ul>
+<li><a class="reference internal" href="#preliminaries">Preliminaries</a><ul>
+<li><a class="reference internal" href="#check-dependencies">Check dependencies</a></li>
+<li><a class="reference internal" href="#create-an-ldp-project-directory">Create an LDP project directory</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#repositories">Repositories</a><ul>
+<li><a class="reference internal" href="#checkout">Checkout</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#environment-setup">Environment Setup</a><ul>
+<li><a class="reference internal" href="#environment-variables">Environment Variables</a></li>
+<li><a class="reference internal" href="#bash-profile-mac-os-x">~/.bash_profile (Mac OS X)</a></li>
+<li><a class="reference internal" href="#ldp-database">LDP Database</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/devops/guides/repo.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="repository-environment-setup-guide">
+<span id="repo"></span><h1>Repository/Environment Setup Guide<a class="headerlink" href="#repository-environment-setup-guide" title="Permalink to this headline">¶</a></h1>
+<p><em>The purpose of this guide is to show you how to quickly and easily
+get your computing environment up and running by acquiring the LDP
+repositories and making a few configurations to your system.</em></p>
+<p>A version control system (VCS) is used to store and manage resource
+collections called &#8220;repositories&#8221; (or &#8220;repos&#8221; for short).</p>
+<p>The DevOps team currently uses Subversion as our version control system. Our
+Subversion server is currently serving up three repos corresponding to our
+primary resource collections: data, code, and docs.</p>
+<p>The first part of this guide describes how to access and use these repos.</p>
+<p>The second part of the guide discusses system configurations (e.g., setting
+shell environment variables, etc.) that may be necessary in order to ensure
+proper functioning of all components in the code and data repositories critical
+to LDP worker workflow.</p>
+<div class="admonition-code-samples admonition">
+<p class="first admonition-title">Code samples</p>
+<p>This guide makes use of a number of code samples involving shell commands being run in a terminal emulator (e.g., Apple&#8217;s Terminal, etc.). These samples will generally be of the form:</p>
+<div class="highlight-python"><pre>$ &lt;command&gt; &lt;argument(s)&gt;
+&lt;output&gt;</pre>
+</div>
+<p>In such samples, the <tt class="docutils literal"><span class="pre">$</span></tt> (dollar sign) represents a generic command prompt, which is followed by the name of some command, like <tt class="docutils literal"><span class="pre">cd</span></tt>, <tt class="docutils literal"><span class="pre">mkdir</span></tt>, <tt class="docutils literal"><span class="pre">ls</span></tt>, etc., which is in turn followed by any arguments required by the command just entered.</p>
+<p class="last">After typing the command along with any necessary arguments, and hitting return, you should see whatever output the command produces (represented here by &lt;output&gt;) printed to your screen.</p>
+</div>
+<div class="section" id="preliminaries">
+<h2>Preliminaries<a class="headerlink" href="#preliminaries" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="check-dependencies">
+<h3>Check dependencies<a class="headerlink" href="#check-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>This guide assumes you&#8217;ve got a few basic tools installed on your system:</p>
+<ul class="simple">
+<li>GNU Make (<tt class="docutils literal"><span class="pre">make</span></tt>)</li>
+<li>Subversion (<tt class="docutils literal"><span class="pre">svn</span></tt>)</li>
+<li>Sqlite (<tt class="docutils literal"><span class="pre">sqlite3</span></tt>)</li>
+<li>Python (<tt class="docutils literal"><span class="pre">python</span></tt>)</li>
+</ul>
+<p>You can check whether or not you already have these tools installed by using
+the <tt class="docutils literal"><span class="pre">which</span></tt> command from a terminal emulator (e.g., Apple&#8217;s Terminal,
+usually found in <tt class="docutils literal"><span class="pre">/Applications/Utilities/</span></tt> on your hard drive):</p>
+<div class="highlight-python"><pre>$ which make
+/usr/bin/make
+$ which svn
+/usr/bin/svn
+$ which sqlite3
+/usr/bin/sqlite3
+$ which python
+/Library/Frameworks/Python.framework/Versions/2.7/bin/python</pre>
+</div>
+<p>If you have all of these tools installed on your system, you should get a
+non-empty output each time you execute <tt class="docutils literal"><span class="pre">make</span> <span class="pre">&lt;command&gt;</span></tt>, and each output
+should look somewhat similar to the ones shown above.</p>
+<p>If you&#8217;re running Mac OS X, these items are all included in Apple&#8217;s
+developer toolset, <a class="reference external" href="http://developer.apple.com/technologies/xcode.html">Xcode</a>.</p>
+</div>
+<div class="section" id="create-an-ldp-project-directory">
+<h3>Create an LDP project directory<a class="headerlink" href="#create-an-ldp-project-directory" title="Permalink to this headline">¶</a></h3>
+<p>It&#8217;s handy to have all of the Project&#8217;s repos stored in one place. We recommend that you
+create an <tt class="docutils literal"><span class="pre">LDP</span></tt> directory in your home directory:</p>
+<div class="highlight-python"><pre>$ mkdir ~/LDP</pre>
+</div>
+<p>and then enter the <tt class="docutils literal"><span class="pre">~/LDP</span></tt> directory in order to be able to checkout repositories into it:</p>
+<div class="highlight-python"><pre>$ cd ~/LDP</pre>
+</div>
+<p>This is where you&#8217;ll be putting the code, data, and docs repositories shortly.</p>
+</div>
+</div>
+<div class="section" id="repositories">
+<h2>Repositories<a class="headerlink" href="#repositories" title="Permalink to this headline">¶</a></h2>
+<p>The data repo is our central repository for project data, the code repo
+is our central repository for code used to manipulate project data, and the
+docs repo is our central repository for several types of project documentation.</p>
+<p>In the steps below, we&#8217;ll guide you through the process of doing an initial checkout
+and show you how to build a local copy of the project&#8217;s primary dataset.</p>
+<div class="section" id="checkout">
+<h3>Checkout<a class="headerlink" href="#checkout" title="Permalink to this headline">¶</a></h3>
+<p>If you aren&#8217;t already there, navigate to your <tt class="docutils literal"><span class="pre">LDP</span></tt> directory:</p>
+<div class="highlight-python"><pre>$ cd ~/LDP</pre>
+</div>
+<p>Within your <tt class="docutils literal"><span class="pre">LDP</span></tt> directory, check out a copy of the transcript data from
+the data repo, a copy of the code repo, and a copy of the docs repo:</p>
+<div class="highlight-python"><pre>$ svn checkout svn://joyrexus.spc.uchicago.edu/data/trunk data
+$ svn checkout svn://joyrexus.spc.uchicago.edu/code/trunk code
+$ svn checkout svn://joyrexus.spc.uchicago.edu/ldp/site/docs docs</pre>
+</div>
+<p>You should see quite a bit of output after each of these <tt class="docutils literal"><span class="pre">svn</span> <span class="pre">checkout</span></tt> commands.
+Below is a snippet of the output that I see on my machine when freshly checking out the code
+repo, so that you might know what to expect (please note that I am checking the repo out into
+a directory called <tt class="docutils literal"><span class="pre">temp</span></tt> for the purposes of this demonstration):</p>
+<div class="highlight-python"><pre>$ svn checkout svn ://joyrexus.spc.uchicago.edu/code/trunk temp
+A    temp/lib
+A    temp/lib/python
+A    temp/lib/python/ldp
+A    temp/lib/python/ldp/data.py
+A    temp/lib/python/ldp/tests
+A    temp/lib/python/ldp/tests/data_test.py
+A    temp/lib/python/ldp/__init__.py
+
+...
+
+A    temp/lib/python/datastore/__init__.py
+A    temp/lib/python/datastore/sqlite.py
+A    temp/lib/python/datastore/table.py
+ Checked out revision 146.</pre>
+</div>
+<div class="admonition-repo-access admonition">
+<p class="first admonition-title">Repo access</p>
+<p class="last">Upon attempting to checkout the repos, you may be denied access to some of them if your user credentials haven&#8217;t been authorized for access. If this is the case, please email <a class="reference external" href="mailto:jvoigt&#37;&#52;&#48;uchicago&#46;edu">Jason Voigt</a> to resolve the issue.</p>
+</div>
+</div>
+</div>
+<div class="section" id="environment-setup">
+<h2>Environment Setup<a class="headerlink" href="#environment-setup" title="Permalink to this headline">¶</a></h2>
+<p>Now that you have the code, data, and docs repositories checked out, and
+before you start making use of them, a few configurations need to be made.</p>
+<div class="section" id="environment-variables">
+<h3>Environment Variables<a class="headerlink" href="#environment-variables" title="Permalink to this headline">¶</a></h3>
+<p>In order for vital parts of the code and data repositories to function properly,
+your shell must have a number of <em>shell environment variables</em> defined. Shell environment
+variables are often used to simply point to certain files or directories on your machine.</p>
+<p>Defining a shell variable is simple:</p>
+<div class="highlight-python"><pre>$ FOO="/Users/stefanbehr/foo"
+$ export FOO</pre>
+</div>
+<p>Let&#8217;s break down that code snippet.</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">$</span></tt> is simply the command line/shell prompt.</li>
+<li><tt class="docutils literal"><span class="pre">FOO</span></tt> is the name that we&#8217;ve chosen for our environment variable.<ul>
+<li>Convention dictates that we use all uppercase letters (and numbers and underscores if needed).</li>
+</ul>
+</li>
+<li>The equal sign, <tt class="docutils literal"><span class="pre">=</span></tt>, tells the shell that you&#8217;re setting <tt class="docutils literal"><span class="pre">FOO</span></tt> to some value. Spaces are not permitted on either side of <tt class="docutils literal"><span class="pre">=</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">&quot;/Users/stefanbehr/foo&quot;</span></tt> is the path to a directory called <tt class="docutils literal"><span class="pre">foo</span></tt> in my home directory. Doubles quotes optional, but recommended.</li>
+<li>Finally, <tt class="docutils literal"><span class="pre">export</span> <span class="pre">FOO</span></tt>, tells the shell that you want the variable to be globally available.</li>
+</ul>
+<p>An equivalent, and more compact, way of writing the code snippet above is:</p>
+<div class="highlight-python"><pre>$ export FOO="/Users/stefanbehr/foo"</pre>
+</div>
+<p>After defining shell variables, you can <em>reference</em> them when you want to use them. For example:</p>
+<div class="highlight-python"><pre>$ echo $FOO
+/Users/stefanbehr/foo</pre>
+</div>
+<p><tt class="docutils literal"><span class="pre">echo</span></tt> prints its arguments to terminal output. Referencing the <tt class="docutils literal"><span class="pre">FOO</span></tt> variable is done using the <tt class="docutils literal"><span class="pre">$&lt;variable</span> <span class="pre">name&gt;</span></tt> syntax
+(not to be confused with the generic shell prompt).</p>
+</div>
+<div class="section" id="bash-profile-mac-os-x">
+<h3>~/.bash_profile (Mac OS X)<a class="headerlink" href="#bash-profile-mac-os-x" title="Permalink to this headline">¶</a></h3>
+<p>Now that you know how to create and use environment variables, you&#8217;ll have to set up the ones you need for LDP work.
+If you&#8217;re on a Mac, this can be done in your Bash profile. After opening a Terminal, execute the following:</p>
+<div class="highlight-python"><pre>$ vim ~/.bash_profile</pre>
+</div>
+<p>This opens the document <tt class="docutils literal"><span class="pre">.bash_profile</span></tt> in your Vim text editor. The document may already exist in your home directory, but, if it doesn&#8217;t, a new one will be created.</p>
+<p>Now that your Bash profile is open in Vim, you&#8217;ll need to add some things to the end of it. First, type <tt class="docutils literal"><span class="pre">G</span></tt> to move your cursor to the end of the document. Next, type <tt class="docutils literal"><span class="pre">i</span></tt> to enter Vim&#8217;s insert mode, which will allow you to enter text.</p>
+<p>Enter the block of code below into your <tt class="docutils literal"><span class="pre">.bash_profile</span></tt>. Cutting and pasting works, or you can type it in manually. Please note that any text following a <tt class="docutils literal"><span class="pre">#</span></tt> symbol in the code below is a comment, which you may modify without disrupting the effect of the code):</p>
+<div class="highlight-python"><pre># variables pointing to LDP directory and subdirectories
+
+export LDP="$HOME/LDP"
+export LDP_DAT="$LDP/data"                  # data repo
+export LDP_COD="$LDP/code"                  # code repo
+export LDP_DOC="$LDP/docs"                  # docs repo
+export LDP_DB="$LDP_DAT/ldp.db"             # LDP database file
+export LDP_LIB="$LDP_COD/lib/python"        # holds vital Python modules
+export LDP_BIN="$LDP_COD/bin"               # holds important executables
+
+# PYTHONPATH and PATH variables for import and executable search
+
+export PYTHONPATH="$LDP_LIB:$PYTHONPATH"    # tells Python where importable Python code lives
+export PATH="$LDP_BIN:$PATH"                # tells the shell where to look for executables
+
+# useful aliases
+
+alias update="echo 'Update DATA repo'; svn up $LDP_DAT; echo 'Update CODE repo'; svn up $LDP_COD; echo 'Update DOCS repo'; svn up $LDP_DOC"</pre>
+</div>
+<p>After pasting this block of code into your <tt class="docutils literal"><span class="pre">.bash_profile</span></tt>, hit the escape key to exit Vim&#8217;s insert mode, and type <tt class="docutils literal"><span class="pre">:wq</span></tt> to write the file and quit Vim.</p>
+<p>You can now reference any of the variables you just put into your <tt class="docutils literal"><span class="pre">.bash_profile</span></tt> by typing <tt class="docutils literal"><span class="pre">$</span></tt>, followed directly by the name of the desired variable. You can also use the <tt class="docutils literal"><span class="pre">update</span></tt> alias that was created, by simply invoking it at the command line:</p>
+<div class="highlight-python"><pre>$ update
+Update DATA repo
+...
+Update CODE repo
+...
+Update DOCS repo
+...</pre>
+</div>
+</div>
+<div class="section" id="ldp-database">
+<h3>LDP Database<a class="headerlink" href="#ldp-database" title="Permalink to this headline">¶</a></h3>
+<p>With your <tt class="docutils literal"><span class="pre">.bash_profile</span></tt> set up, you should now be able to build the LDP database in your data repository, after which your environment will be completely set up.</p>
+<p>Simply execute the following commands at the command line, and you&#8217;ll be done:</p>
+<div class="highlight-python"><pre>$ cd $LDP_DAT
+$ make</pre>
+</div>
+<p>Upon executing the <tt class="docutils literal"><span class="pre">make</span></tt> command, the LDP database will be built. This will probably involve a download, which might last up to several minutes (there will be a download timer shown). Once the shell prints a new prompt, you&#8217;ll know that the build process is complete, and you&#8217;ll be ready to go!</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,157 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Intro &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Intro</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#a-simple-example">A Simple Example</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/reference/intro.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="intro">
+<h1>Intro<a class="headerlink" href="#intro" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>A subset of the LDP transcripts have received morphosyntactic coding &#8211;
+an additional level of annotation that describes the morphosyntactic properties
+and relations among the word tokens in an utterance.</p>
+<p>These transcripts have a <strong>mor</strong> column (for both parent and child)
+containing morphological coding and a <strong>syn</strong> column containing syntactic
+coding for each utterace.</p>
+<p>The tables below provide a key to the part-of-speech tags and
+grammatical-relation labels used in these two columns.</p>
+<div class="section" id="a-simple-example">
+<h3>A Simple Example<a class="headerlink" href="#a-simple-example" title="Permalink to this headline">¶</a></h3>
+<p>Here&#8217;s an example of an annotated utterance:</p>
+<div class="highlight-python"><pre>I         spilled       it       .              # utt
+pro|I     v|spill-PAST  pro|it   .              # mor
+1|2|SUBJ  2|0|ROOT      3|2|OBJ  4|2|PUNCT      # syn</pre>
+</div>
+<p>The first line shows the utterance as it would be transcribed
+in the <strong>utt</strong> column, the second line shows the morphology annotation that
+would be contained in the corresponding <strong>mor</strong> column, and the third line
+shows the syntactic annotation that would be contained in the correspoding
+<strong>syn</strong> column.</p>
+<p>We can represent the above example in a slightly different format, combining
+the annotation of the two columns, with one word token per line:</p>
+<div class="highlight-python"><pre>#  WORD     LEMMA   SUFFIX  POS  DEP  REL
+1  I        I               pro  2    SUBJ
+2  spilled  spill   PAST    v    0    ROOT
+3  it       it              pro  2    OBJ
+4  .        .               .    2    PUNCT</pre>
+</div>
+<p>The morphology annotation indicates that the first word (&#8220;I&#8221;) is tagged as
+a pronoun (<tt class="docutils literal"><span class="pre">pro</span></tt>) and the second word (&#8220;spilled&#8221;) is tagged as a verb (<tt class="docutils literal"><span class="pre">v</span></tt>)
+and contains a past-tense suffix (<tt class="docutils literal"><span class="pre">PAST</span></tt>).</p>
+<p>The syntactic annotation indicates that the first word (&#8220;I&#8221;) is dependent on
+the second word (&#8220;spilled&#8221;), the verb of the utterance, and is playing the
+role of grammatical subject in relation to the verb.</p>
+<p>Note how it represents the grammatical dependency relations:</p>
+<div class="highlight-python"><pre>             ┌── PUNCT ──┐
+I      spilled     it    .
+└─ SUBJ ─┘ └─ OBJ ──┘</pre>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">For more information about the various steps involved in adding
+morphosyntactic coding see our <a class="reference external" href="http://joyrexus.spc.uchicago.edu/ldp/docs/guides/morphosyntax/index.html">Morphosyntax Annotation Guide</a>.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

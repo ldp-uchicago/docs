@@ -1,0 +1,557 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>VI Shortcuts &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">VI Shortcuts</a><ul>
+<li><a class="reference internal" href="#general-use-shortcuts">General use shortcuts</a></li>
+<li><a class="reference internal" href="#changing-gr-information">Changing GR information</a></li>
+<li><a class="reference internal" href="#changing-part-of-speech-information">Changing part-of-speech information</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/annotation/shortcuts.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="vi-shortcuts">
+<span id="mg-shortcuts"></span><h1>VI Shortcuts<a class="headerlink" href="#vi-shortcuts" title="Permalink to this headline">¶</a></h1>
+<p>Coding syntax can be quite a strain on your hands when you are constantly entering and exiting insert mode and typing out long parts-of-speech and GRs.  The following shortcuts in VI will save you a lot of time and effort.</p>
+<div class="section" id="general-use-shortcuts">
+<span id="mg-shortcuts-general"></span><h2>General use shortcuts<a class="headerlink" href="#general-use-shortcuts" title="Permalink to this headline">¶</a></h2>
+<p>There are various shortcuts that will help you navigate a transcript, find and count flags, and complete other common tasks:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">What it is used for</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>e</td>
+<td>Move the page down</td>
+</tr>
+<tr class="row-odd"><td>E</td>
+<td>Move the page up</td>
+</tr>
+<tr class="row-even"><td>w</td>
+<td>Move to the beginning of
+the next word</td>
+</tr>
+<tr class="row-odd"><td>b</td>
+<td>Move to the beginning of
+the previous word</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>Move to the beginning
+of a line</td>
+</tr>
+<tr class="row-odd"><td>-</td>
+<td>Move to the end of a line</td>
+</tr>
+<tr class="row-even"><td>mct</td>
+<td>Count the number of
+utterances with flags (press
+<strong>n</strong> for next flagged
+utterance)</td>
+</tr>
+<tr class="row-odd"><td>==</td>
+<td>Find the next flag</td>
+</tr>
+<tr class="row-even"><td>`c</td>
+<td>Affix <em>&amp;</em> to the beginning
+of all instances of <em>oh</em>,
+<em>uh</em>, <em>um</em>, <em>ooh</em>, and <em>ah</em></td>
+</tr>
+<tr class="row-odd"><td>`m</td>
+<td>Finds non-capitalized instances
+of common familial proper nouns
+and capitalizes them if they&#8217;re
+not preceded by a determiner</td>
+</tr>
+<tr class="row-even"><td>`d</td>
+<td>Finds capitalized instances of
+common familial proper nouns and
+lower-cases them if they are
+preceded by a determiner</td>
+</tr>
+<tr class="row-odd"><td>`v</td>
+<td>Finds common formatting errors
+that require closer inspection</td>
+</tr>
+<tr class="row-even"><td>mw</td>
+<td>Save the file you are
+working on</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="changing-gr-information">
+<span id="mg-shortcuts-gr"></span><h2>Changing GR information<a class="headerlink" href="#changing-gr-information" title="Permalink to this headline">¶</a></h2>
+<p>While in command mode in vi, move the cursor to any part of the GR that needs to be changed and use the following shortcuts to change the GR:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change GR to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>ma</td>
+<td>AUX</td>
+</tr>
+<tr class="row-odd"><td>mf</td>
+<td>COORD</td>
+</tr>
+<tr class="row-even"><td>mz</td>
+<td>CPZR</td>
+</tr>
+<tr class="row-odd"><td>md</td>
+<td>DET</td>
+</tr>
+<tr class="row-even"><td>mu</td>
+<td>ENUM</td>
+</tr>
+<tr class="row-odd"><td>mi</td>
+<td>INF</td>
+</tr>
+<tr class="row-even"><td>mj</td>
+<td>JCT</td>
+</tr>
+<tr class="row-odd"><td>ml</td>
+<td>LOC</td>
+</tr>
+<tr class="row-even"><td>mm</td>
+<td>MOD</td>
+</tr>
+<tr class="row-odd"><td>mo</td>
+<td>OBJ</td>
+</tr>
+<tr class="row-even"><td>m2</td>
+<td>OBJ2</td>
+</tr>
+<tr class="row-odd"><td>mb</td>
+<td>POBJ</td>
+</tr>
+<tr class="row-even"><td>me</td>
+<td>PRED</td>
+</tr>
+<tr class="row-odd"><td>mp</td>
+<td>PTL</td>
+</tr>
+<tr class="row-even"><td>mq</td>
+<td>QUANT</td>
+</tr>
+<tr class="row-odd"><td>mt</td>
+<td>SRL</td>
+</tr>
+<tr class="row-even"><td>ms</td>
+<td>SUBJ</td>
+</tr>
+<tr class="row-odd"><td>mg</td>
+<td>TAG</td>
+</tr>
+<tr class="row-even"><td>mv</td>
+<td>VOC</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change GR to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>mcj</td>
+<td>CJCT</td>
+</tr>
+<tr class="row-odd"><td>mcm</td>
+<td>CMOD</td>
+</tr>
+<tr class="row-even"><td>mcc</td>
+<td>COM</td>
+</tr>
+<tr class="row-odd"><td>mco</td>
+<td>COMP</td>
+</tr>
+<tr class="row-even"><td>mce</td>
+<td>CPRED</td>
+</tr>
+<tr class="row-odd"><td>mcs</td>
+<td>CSUBJ</td>
+</tr>
+<tr class="row-even"><td>mcn</td>
+<td>NEG</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change GR to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>mxo</td>
+<td>XCOMP</td>
+</tr>
+<tr class="row-odd"><td>mxj</td>
+<td>XJCT</td>
+</tr>
+<tr class="row-even"><td>mxm</td>
+<td>XMOD</td>
+</tr>
+<tr class="row-odd"><td>mxe</td>
+<td>XPRED</td>
+</tr>
+<tr class="row-even"><td>mxs</td>
+<td>XSUBJ</td>
+</tr>
+</tbody>
+</table>
+<table border="1" class="docutils">
+<colgroup>
+<col width="41%" />
+<col width="59%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change GR to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>mkaj</td>
+<td>AUX-CJCT</td>
+</tr>
+<tr class="row-odd"><td>mkam</td>
+<td>AUX-CMOD</td>
+</tr>
+<tr class="row-even"><td>mkac</td>
+<td>AUX-COMP</td>
+</tr>
+<tr class="row-odd"><td>mkdo</td>
+<td>DET-OBJ</td>
+</tr>
+<tr class="row-even"><td>mkdb</td>
+<td>DET-POBJ</td>
+</tr>
+<tr class="row-odd"><td>mkde</td>
+<td>DET-PRED</td>
+</tr>
+<tr class="row-even"><td>mkds</td>
+<td>DET-SUBJ</td>
+</tr>
+<tr class="row-odd"><td>mkij</td>
+<td>INF-CJCT</td>
+</tr>
+<tr class="row-even"><td>mkic</td>
+<td>INF-COMP</td>
+</tr>
+<tr class="row-odd"><td>mkix</td>
+<td>INF-XCOMP</td>
+</tr>
+</tbody>
+</table>
+<p>The following shortcuts will change the GR and the headword number will become 0:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="30%" />
+<col width="34%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change GR to</th>
+<th class="head">Change headword to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>mr</td>
+<td>ROOT</td>
+<td>0</td>
+</tr>
+<tr class="row-odd"><td>mkar</td>
+<td>AUX-ROOT</td>
+<td>0</td>
+</tr>
+<tr class="row-even"><td>mkir</td>
+<td>INF-ROOT</td>
+<td>0</td>
+</tr>
+</tbody>
+</table>
+<p>The following shortcuts will change the headword number:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="46%" />
+<col width="54%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change headword to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>m,</td>
+<td>Word number of the
+ROOT</td>
+</tr>
+<tr class="row-odd"><td>m;</td>
+<td>6</td>
+</tr>
+<tr class="row-even"><td><ol class="first last loweralpha simple" start="13">
+<li></li>
+</ol>
+</td>
+<td>Decreases by 1</td>
+</tr>
+<tr class="row-odd"><td>m/</td>
+<td>Increases by 1</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="changing-part-of-speech-information">
+<span id="mg-shortcuts-pos"></span><h2>Changing part-of-speech information<a class="headerlink" href="#changing-part-of-speech-information" title="Permalink to this headline">¶</a></h2>
+<p>While in command mode in vi, move the cursor to any part of the word you would like to change the part-of-speech of and use the following shortcuts to change the part-of-speech (alternative part-of-speech for select words in parentheses):</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change part-of-speech to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>caj</td>
+<td>adj</td>
+</tr>
+<tr class="row-odd"><td>cav</td>
+<td>adv</td>
+</tr>
+<tr class="row-even"><td>ci</td>
+<td>adv:int (<strong>to</strong>: inf)</td>
+</tr>
+<tr class="row-odd"><td>cv</td>
+<td>adv:loc (<strong>*day</strong>,
+<strong>*night</strong>, <strong>*time</strong>,
+<strong>*ever</strong>, <strong>after</strong>,
+<strong>tomorrow</strong>, <strong>then</strong>:
+adv:tem)</td>
+</tr>
+<tr class="row-even"><td>cx</td>
+<td>aux</td>
+</tr>
+<tr class="row-odd"><td>cco</td>
+<td>co</td>
+</tr>
+<tr class="row-even"><td>c;</td>
+<td>co:voc</td>
+</tr>
+<tr class="row-odd"><td>cs</td>
+<td>conj:subor</td>
+</tr>
+<tr class="row-even"><td>cd</td>
+<td>det:num (<strong>what</strong>,
+<strong>which</strong>: det:wh;
+<strong>that</strong>, <strong>these</strong>,
+<strong>those</strong>, <strong>another</strong>,
+<strong>the</strong>, <strong>this</strong>: det)</td>
+</tr>
+<tr class="row-odd"><td>ccn</td>
+<td>neg</td>
+</tr>
+<tr class="row-even"><td>cp</td>
+<td>prep (<strong>too</strong>: post;
+<strong>own</strong>, <strong>her</strong>: pro)</td>
+</tr>
+<tr class="row-odd"><td>cm</td>
+<td>pro:dem</td>
+</tr>
+<tr class="row-even"><td>ct</td>
+<td>pro:exist</td>
+</tr>
+<tr class="row-odd"><td>cr</td>
+<td>pro:indef (<strong>that</strong>,
+<strong>who</strong>, <strong>which</strong>: rel)</td>
+</tr>
+<tr class="row-even"><td>co</td>
+<td>pro:poss:det</td>
+</tr>
+<tr class="row-odd"><td>ch</td>
+<td>pro:wh</td>
+</tr>
+<tr class="row-even"><td>cl</td>
+<td>ptl</td>
+</tr>
+<tr class="row-odd"><td>cq</td>
+<td>qn</td>
+</tr>
+</tbody>
+</table>
+<p>The following shortcuts will change the part-of-speech and the morphology of the word:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="41%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">Change part-of-speech to</th>
+<th class="head">Change suffix to</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>cn</td>
+<td>n</td>
+<td>PL</td>
+</tr>
+<tr class="row-odd"><td>cg</td>
+<td>n:gerund</td>
+<td>GERUND</td>
+</tr>
+<tr class="row-even"><td>cf</td>
+<td>part</td>
+<td>PERF</td>
+</tr>
+<tr class="row-odd"><td>cu</td>
+<td>part</td>
+<td>PROG</td>
+</tr>
+<tr class="row-even"><td>c,</td>
+<td>v</td>
+<td>3S</td>
+</tr>
+</tbody>
+</table>
+<p>And finally, the following miscellaneous shortcuts:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Key Combination</th>
+<th class="head">What it does</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>cz</td>
+<td>Removes <tt class="docutils literal"><span class="pre">&amp;ZERO</span></tt> suffix</td>
+</tr>
+<tr class="row-odd"><td>ce</td>
+<td>Changes POS to <tt class="docutils literal"><span class="pre">quote</span></tt>
+and adds <tt class="docutils literal"><span class="pre">&#64;q</span></tt> suffix
+to word on speech tier</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,715 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Quick tips for doc authors &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/underscore.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="index.html"><img src="_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="search.html">search</a>|&nbsp;</li>
+    <li><a href="index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Quick tips for doc authors</a><ul>
+<li><a class="reference internal" href="#templates">Templates</a><ul>
+<li><a class="reference internal" href="#faqs">FAQs</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#formatting-text">Formatting text</a></li>
+<li><a class="reference internal" href="#links">Links</a></li>
+<li><a class="reference internal" href="#lists">Lists</a><ul>
+<li><a class="reference internal" href="#bullet-lists">Bullet lists</a></li>
+<li><a class="reference internal" href="#enumerated-lists">Enumerated lists</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#tables">Tables</a></li>
+<li><a class="reference internal" href="#images">Images</a></li>
+<li><a class="reference internal" href="#glossary">Glossary</a></li>
+<li><a class="reference internal" href="#math">Math</a></li>
+<li><a class="reference internal" href="#miscellaneous">Miscellaneous</a></li>
+<li><a class="reference internal" href="#additional-info">Additional info</a></li>
+<li><a class="reference internal" href="#this-file">This file</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="_sources/tips.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="quick-tips-for-doc-authors">
+<span id="tips"></span><h1>Quick tips for doc authors<a class="headerlink" href="#quick-tips-for-doc-authors" title="Permalink to this headline">¶</a></h1>
+<p>Here are some tips for using Sphinx and reStructuredText.  The idea is to
+present a selection of the various formatting and other features provided by
+Sphinx in a form you can see (the html version you are now reading) as well as
+quick access to the <a class="reference internal" href="#tips-literal"><em>source file</em></a> so you can see how to produce it yourself.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Every page on the doc site shold have a <em>Show Source</em> link in the
+right-hand panel. If you look to the right you should see the sections
+<strong>Table Of Contents</strong>, <strong>Previous topic</strong>, and <strong>This Page</strong>, under which
+you&#8217;ll see the <em>Show Source</em> link. By clicking this you&#8217;ll see the actual
+source file used to produce that documentation page.</p>
+</div>
+<div class="section" id="templates">
+<h2>Templates<a class="headerlink" href="#templates" title="Permalink to this headline">¶</a></h2>
+<p>We&#8217;ve created a set of pre-defined templates to make it easy to get started on
+certain document types.</p>
+<div class="section" id="faqs">
+<h3>FAQs<a class="headerlink" href="#faqs" title="Permalink to this headline">¶</a></h3>
+<p>A Frequently Asked Question document or FAQ is simply a list of frequently asked
+questions with links to answers. (See the simple FAQ template <a class="reference internal" href="templates/faq_simple.html"><em>here</em></a> or the section FAQ template <a class="reference internal" href="templates/faq.html"><em>here</em></a>.)</p>
+<hr class="docutils" />
+</div>
+</div>
+<div class="section" id="formatting-text">
+<span id="id1"></span><h2>Formatting text<a class="headerlink" href="#formatting-text" title="Permalink to this headline">¶</a></h2>
+<p>You use inline markup to make text <em>italics</em>, <strong>bold</strong>, or <tt class="docutils literal"><span class="pre">monotype</span></tt>.</p>
+<ul class="simple">
+<li>one asterisk: <tt class="docutils literal"><span class="pre">*text*</span></tt> for emphasis (<em>italics</em>),</li>
+<li>two asterisks: <tt class="docutils literal"><span class="pre">**text**</span></tt> for strong emphasis (<strong>boldface</strong>), and</li>
+<li>backquotes: <tt class="docutils literal"><span class="pre">``text``</span></tt> for code samples (<tt class="docutils literal"><span class="pre">monotype</span></tt>).</li>
+</ul>
+<p>Please use <em>italics</em> to refer to field/column names and <tt class="docutils literal"><span class="pre">monotype</span></tt> to refer to field/column values. For example, you might given an example of how one should enter the code <tt class="docutils literal"><span class="pre">x</span></tt> in the <em>Foo</em> column.</p>
+<p>You can insert a block comment like the following:</p>
+<div class="highlight-python"><pre>This is a multiline
+block comment</pre>
+</div>
+<p>This is the custom for representing code blocks:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">import</span> <span class="nn">numpy</span> <span class="kn">as</span> <span class="nn">np</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">rand</span><span class="p">(</span><span class="mi">12</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>Or include code directly from a file:</p>
+<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">collections</span> <span class="kn">import</span> <span class="n">defaultdict</span> <span class="k">as</span> <span class="n">dd</span>
+
+<span class="k">def</span> <span class="nf">autodict</span><span class="p">():</span> <span class="k">return</span> <span class="n">dd</span><span class="p">(</span><span class="n">autodict</span><span class="p">)</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">autodict</span><span class="p">()</span>
+<span class="n">d</span><span class="p">[</span><span class="s">&#39;an&#39;</span><span class="p">][</span><span class="s">&#39;arbitrarily&#39;</span><span class="p">][</span><span class="s">&#39;deep&#39;</span><span class="p">][</span><span class="s">&#39;dictionary&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s">&quot;yes!&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="links">
+<span id="id2"></span><h2>Links<a class="headerlink" href="#links" title="Permalink to this headline">¶</a></h2>
+<p>Use <tt class="docutils literal"><span class="pre">`Link</span> <span class="pre">text</span> <span class="pre">&lt;http://target&gt;`_</span></tt> for inline web links.  For example, here&#8217;s a link to the <a class="reference external" href="https://ldp.spc.uchicago.edu">LDP portal website</a>.</p>
+<p>You can also use this style of linking to link to section titles within a document.  For example, to jump to the <a class="reference internal" href="#tables">Tables</a> section of this page you&#8217;d
+use <tt class="docutils literal"><span class="pre">`Tables_`</span></tt>.</p>
+<p>To link to a <a class="reference external" href="http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations">label</a> (i.e., an invisible anchor point) in one of your
+documents you can use <tt class="docutils literal"><span class="pre">:ref:`label-name`</span></tt>.  For example, to jump to the
+<a class="reference internal" href="#tables"><em>Tables</em></a> label below you&#8217;d use <tt class="docutils literal"><span class="pre">:ref:`tables`</span></tt>.  Labels permit
+cross-referencing arbitrary locations (i.e., within or between documents).
+Create a label by placing <tt class="docutils literal"><span class="pre">..</span> <span class="pre">LABEL-NAME:</span></tt> before whatever section of
+your document you wish to label.</p>
+<p>You can link to documents instead of specific places within a document (sections or labels) using <tt class="docutils literal"><span class="pre">:doc:</span></tt>.  For example, <a class="reference internal" href="index.html"><em>this</em></a>
+should take you to the index.</p>
+<p>You can also create links to files for download using <tt class="docutils literal"><span class="pre">:download:</span></tt>. For
+example, try downloading <a class="reference download internal" href="_downloads/autodict.py"><tt class="xref download docutils literal"><span class="pre">this</span> <span class="pre">sample</span> <span class="pre">script</span></tt></a>.</p>
+</div>
+<div class="section" id="lists">
+<span id="id3"></span><h2>Lists<a class="headerlink" href="#lists" title="Permalink to this headline">¶</a></h2>
+<p>It&#8217;s easy to set up various kinds of lists.</p>
+<div class="section" id="bullet-lists">
+<h3>Bullet lists<a class="headerlink" href="#bullet-lists" title="Permalink to this headline">¶</a></h3>
+<p>Here are points <em>a</em>, <em>b</em>, and <em>c</em>:</p>
+<ul class="simple">
+<li>point <em>a</em><ul>
+<li>subpoint</li>
+<li>subpoint</li>
+</ul>
+</li>
+<li>point <em>b</em></li>
+<li>point <em>c</em></li>
+</ul>
+</div>
+<div class="section" id="enumerated-lists">
+<h3>Enumerated lists<a class="headerlink" href="#enumerated-lists" title="Permalink to this headline">¶</a></h3>
+<p>Here are points <strong>A</strong>, <strong>B</strong>, and <strong>C</strong>:</p>
+<ol class="arabic simple">
+<li>point <strong>A</strong></li>
+<li>point <strong>B</strong></li>
+<li>point <strong>C</strong></li>
+</ol>
+</div>
+</div>
+<div class="section" id="tables">
+<span id="id4"></span><h2>Tables<a class="headerlink" href="#tables" title="Permalink to this headline">¶</a></h2>
+<p>This shows you how to make a simple table. If you only want to make a list
+see <a class="reference internal" href="#lists"><em>Lists</em></a>.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="61%" />
+<col width="39%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Status</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Kristi Schonwald</td>
+<td>94</td>
+</tr>
+<tr class="row-odd"><td>Research Assistant</td>
+<td>36</td>
+</tr>
+<tr class="row-even"><td>Jason Voigt</td>
+<td>-22</td>
+</tr>
+</tbody>
+</table>
+<p>You can also create grid based tables.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="32%" />
+<col width="32%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">time</th>
+<th class="head">line</th>
+<th class="head">p_utts</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>0:00:00</td>
+<td>1</td>
+<td>hi there.</td>
+</tr>
+</tbody>
+</table>
+<p>Or tables based on CSV (comma-separated values) data.</p>
+<table border="1" class="docutils">
+<caption>STATUS BREAKDOWN</caption>
+<colgroup>
+<col width="41%" />
+<col width="41%" />
+<col width="17%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Status</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>Kristi Schonwald</td>
+<td>Project Admin</td>
+<td>94</td>
+</tr>
+<tr class="row-odd"><td>Max Masich</td>
+<td>Annotator in Chief</td>
+<td>88</td>
+</tr>
+<tr class="row-even"><td>Jason Voigt</td>
+<td>Data Munger</td>
+<td>-22</td>
+</tr>
+</tbody>
+</table>
+<p>See the docutils guide for options available for the <a class="reference external" href="http://docutils.sourceforge.net/docs/ref/rst/directives.html#id1">csv-table</a> directive.</p>
+</div>
+<div class="section" id="images">
+<span id="id5"></span><h2>Images<a class="headerlink" href="#images" title="Permalink to this headline">¶</a></h2>
+<p>Below you should see an image:</p>
+<img alt="_images/bolshevik.jpg" src="_images/bolshevik.jpg" />
+</div>
+<div class="section" id="glossary">
+<h2>Glossary<a class="headerlink" href="#glossary" title="Permalink to this headline">¶</a></h2>
+<p>Glossaries enable you to define any technical terms once in a centralized
+location. Then, when using a defined term you can use the <tt class="docutils literal"><span class="pre">:term:</span></tt> role to
+link to the term&#8217;s definition in the glossary.</p>
+<p>For example, here&#8217;s a little glossary created by the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">glossary::</span></tt>
+directive:</p>
+<hr class="docutils" />
+<p class="centered" id="gloss">
+<strong>MY SAMPLE GLOSSARY</strong></p><dl class="glossary docutils">
+<dt id="term-glossary">glossary</dt>
+<dd>A glossary is an alphabetical list of terms in a particular domain of
+knowledge with the definitions for those terms. Traditionally, a
+glossary appears at the end of a book and includes terms within that
+book which are either newly introduced or at least uncommon.</dd>
+<dt id="term-definition">definition</dt>
+<dd>A concise explanation of the meaning of a word or phrase or symbol.</dd>
+<dt id="term-language">language</dt>
+<dd>A form of communication using words either spoken or gestured with the
+hands and structured with grammar, often with a writing system</dd>
+<dt id="term-foo">foo</dt>
+<dd>A metasyntactic variable used to represent an unspecified entity. If
+part of a series of such entities, <em>foo</em> is often the first in the
+series, and followed immediately by <em>bar</em>, and <em>baz</em>.
+Example: <cite>Suppose we have two objects, foo, bar and baz.</cite></dd>
+</dl>
+<hr class="docutils" />
+<p>Having defined our terms we can then use any of these terms in our
+documentation, such as the term <a class="reference internal" href="#term-foo"><em class="xref std std-term">foo</em></a>, and have it linked to our glossary
+definition for quick lookup.</p>
+<p>Note that if you&#8217;re writing official project documentation we have a global
+project glossary in the root docs directory: <tt class="docutils literal"><span class="pre">site/docs/glossary.rst</span></tt>. This
+file should contain definitions for any and all technical terms used throughout
+the project documentation. For example, have a look at the definition of
+<a class="reference internal" href="glossary.html#term-disjoint-prepositional-phrase"><em class="xref std std-term">disjoint prepositional phrase</em></a>.</p>
+</div>
+<div class="section" id="math">
+<h2>Math<a class="headerlink" href="#math" title="Permalink to this headline">¶</a></h2>
+<p>You can include inline math like <span class="math">
+\(x \rightarrow y\)</span>
+ or <span class="math">
+\(\forall y \exists x(x-y = 4)\)</span>
+. Or more complicated stuff using the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">math::</span></tt> directive:</p>
+<div class="math">
+\begin{equation*}
+W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
+\end{equation*}
+</div>
+</div>
+<div class="section" id="miscellaneous">
+<h2>Miscellaneous<a class="headerlink" href="#miscellaneous" title="Permalink to this headline">¶</a></h2>
+<p>It&#8217;s not often used, but you can create centered, boldfaced text using the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">centered::</span></tt> directive. For example, it was used above to set off <a class="reference internal" href="#gloss"><em>MY SAMPLE GLOSSARY</em></a>.</p>
+<p>You&#8217;ll see that we also used separators to set off the glossary. You can insert
+a separator by putting a series of four or more dashes (<tt class="docutils literal"><span class="pre">-----</span></tt>) on its own
+line preceded and followed by blank lines.</p>
+<p>You can create notes that standout using the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span></tt> directive:</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This is a note to catch the reader&#8217;s eye.</p>
+</div>
+<p>You can also use the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">warning::</span></tt> directive to warn readers:</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This is a note to warn the reader.</p>
+</div>
+<p>If you need to refer to multiple related areas of your documentation and/or
+external docs, you should use the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">seealso::</span></tt> directive.</p>
+<div class="admonition-see-also admonition seealso">
+<p class="first admonition-title">See also</p>
+<p><a class="reference external" href="http://sphinx.pocoo.org/markup/para.html">Sphinx docs</a>. Additional
+details on the seealso directive including the short form.</p>
+<p class="last"><a class="reference internal" href="#links"><em>Links</em></a>. Description of how to create simple inline links.</p>
+</div>
+<p>If you&#8217;re describing some new feature or rule, you should specify the version
+number of the code or documentation when it was added using the <tt class="docutils literal"><span class="pre">..</span>&nbsp; <span class="pre">versionadded::</span></tt> directive.</p>
+<p class="versionadded">
+<span class="versionmodified">New in version 1.1: </span>The <cite>versionadded</cite> directive.</p>
+<p>If you&#8217;re changing some feature or rule, there&#8217;s a similar <tt class="docutils literal"><span class="pre">..</span>
+<span class="pre">versionchanged::</span></tt> directive.</p>
+<p class="versionchanged">
+<span class="versionmodified">Changed in version 1.2: </span>The <cite>versionchanged</cite> directive.</p>
+<p>To create more compact lists that use horizontal space, try the <tt class="docutils literal"><span class="pre">..</span> <span class="pre">hlist::</span></tt>
+directive:</p>
+<table class="hlist"><tr><td><ul class="simple">
+<li>first item</li>
+<li>second item</li>
+<li>third item</li>
+</ul>
+</td><td><ul class="simple">
+<li>fourth item</li>
+<li>fifth item</li>
+<li>sixth item</li>
+</ul>
+</td><td><ul class="simple">
+<li>seventh item</li>
+<li>eighth item</li>
+<li>ninth item</li>
+</ul>
+</td></tr></table>
+</div>
+<div class="section" id="additional-info">
+<span id="info"></span><h2>Additional info<a class="headerlink" href="#additional-info" title="Permalink to this headline">¶</a></h2>
+<p>For a brief intro to reStructuredText, see <a class="reference external" href="http://sphinx.pocoo.org/rest.html">this primer</a>.</p>
+<p>For a nice reStructuredText cheat sheet, see <a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">this quick reference</a></p>
+<p>The Sphinx documentation can be found <a class="reference external" href="http://sphinx.pocoo.org/contents.html">here</a>.</p>
+<p>There&#8217;s also <a class="reference external" href="http://matplotlib.sourceforge.net/sampledoc">a nice little Sphinx tutorial</a> that shows you how to get up and running quickly.</p>
+</div>
+<div class="section" id="this-file">
+<span id="tips-literal"></span><h2>This file<a class="headerlink" href="#this-file" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python"><pre>.. _tips:
+
+**************************
+Quick tips for doc authors
+**************************
+
+Here are some tips for using Sphinx and reStructuredText.  The idea is to
+present a selection of the various formatting and other features provided by
+Sphinx in a form you can see (the html version you are now reading) as well as
+quick access to the :ref:`source file &lt;tips-literal&gt;` so you can see how to produce it yourself.
+   
+.. note::
+
+   Every page on the doc site shold have a *Show Source* link in the
+   right-hand panel. If you look to the right you should see the sections 
+   **Table Of Contents**, **Previous topic**, and **This Page**, under which
+   you'll see the *Show Source* link. By clicking this you'll see the actual
+   source file used to produce that documentation page.
+
+
+Templates
+=========
+
+We've created a set of pre-defined templates to make it easy to get started on
+certain document types. 
+
+FAQs
+----
+
+A Frequently Asked Question document or FAQ is simply a list of frequently asked
+questions with links to answers. (See the simple FAQ template :doc:`here
+&lt;templates/faq_simple&gt;` or the section FAQ template :doc:`here &lt;templates/faq&gt;`.)
+
+----------------
+
+.. _formatting-text:
+
+Formatting text
+===============
+
+You use inline markup to make text *italics*, **bold**, or ``monotype``. 
+
+* one asterisk: ``*text*`` for emphasis (*italics*),
+* two asterisks: ``**text**`` for strong emphasis (**boldface**), and
+* backquotes: ````text```` for code samples (``monotype``).
+
+Please use *italics* to refer to field/column names and ``monotype`` to refer to field/column values. For example, you might given an example of how one should enter the code ``x`` in the *Foo* column.
+
+You can insert a block comment like the following::
+
+    This is a multiline 
+    block comment
+
+
+This is the custom for representing code blocks::
+
+    import numpy as np
+    x = np.random.rand(12)
+
+Or include code directly from a file:
+
+.. literalinclude:: code/autodict.py
+
+
+.. _links:
+
+Links
+=====
+
+Use ```Link text &lt;http://target&gt;`_`` for inline web links.  For example, here's a link to the `LDP portal website &lt;https://ldp.spc.uchicago.edu&gt;`_.
+
+You can also use this style of linking to link to section titles within a document.  For example, to jump to the Tables_ section of this page you'd 
+use ```Tables_```.
+
+To link to a label_ (i.e., an invisible anchor point) in one of your 
+documents you can use ``:ref:`label-name```.  For example, to jump to the 
+:ref:`tables` label below you'd use ``:ref:`tables```.  Labels permit 
+cross-referencing arbitrary locations (i.e., within or between documents).  
+Create a label by placing ``.. LABEL-NAME:`` before whatever section of 
+your document you wish to label.
+
+You can link to documents instead of specific places within a document (sections or labels) using ``:doc:``.  For example, :doc:`this &lt;index&gt;` 
+should take you to the index.
+
+You can also create links to files for download using ``:download:``. For
+example, try downloading :download:`this sample script &lt;code/autodict.py&gt;`.
+
+.. _label: http://sphinx.pocoo.org/markup/inline.html#cross-referencing-arbitrary-locations
+
+
+.. _lists:
+
+Lists
+=====
+
+It's easy to set up various kinds of lists.
+
+Bullet lists
+------------
+Here are points *a*, *b*, and *c*:
+
+* point *a*
+
+  * subpoint
+  * subpoint
+
+* point *b*
+* point *c*
+
+Enumerated lists
+----------------
+Here are points **A**, **B**, and **C**:
+
+#. point **A**
+#. point **B**
+#. point **C**
+
+
+.. _tables:
+
+Tables
+======
+
+This shows you how to make a simple table. If you only want to make a list 
+see :ref:`lists`.
+
+===================    ============
+Name                   Status
+===================    ============
+Kristi Schonwald       94
+Research Assistant     36
+Jason Voigt            -22
+===================    ============
+
+You can also create grid based tables.
+
++------------+-----------+-----------+
+| time       | line      | p_utts    | 
++============+===========+===========+
+| 0:00:00    | 1         | hi there. |
++------------+-----------+-----------+
+
+Or tables based on CSV (comma-separated values) data.
+
+.. csv-table:: STATUS BREAKDOWN
+    :header: "Name", "Position", "Status"
+    :widths: 12, 12, 5
+
+    "Kristi Schonwald", "Project Admin", 94
+    "Max Masich", "Annotator in Chief", 88
+    "Jason Voigt", "Data Munger", -22
+
+See the docutils guide for options available for the csv-table_ directive.
+
+.. _csv-table: http://docutils.sourceforge.net/docs/ref/rst/directives.html#id1
+
+
+.. _images:
+
+Images
+======
+
+Below you should see an image:
+
+.. image:: _static/bolshevik.jpg
+
+
+Glossary
+========
+
+Glossaries enable you to define any technical terms once in a centralized
+location. Then, when using a defined term you can use the ``:term:`` role to
+link to the term's definition in the glossary.
+
+For example, here's a little glossary created by the ``.. glossary::`` 
+directive:
+
+----------------
+
+.. _gloss:
+
+.. centered:: MY SAMPLE GLOSSARY
+
+.. glossary::
+   
+   glossary
+        A glossary is an alphabetical list of terms in a particular domain of
+        knowledge with the definitions for those terms. Traditionally, a
+        glossary appears at the end of a book and includes terms within that
+        book which are either newly introduced or at least uncommon.
+
+   definition
+        A concise explanation of the meaning of a word or phrase or symbol.
+
+   language
+        A form of communication using words either spoken or gestured with the
+        hands and structured with grammar, often with a writing system
+
+   foo
+        A metasyntactic variable used to represent an unspecified entity. If
+        part of a series of such entities, *foo* is often the first in the 
+        series, and followed immediately by *bar*, and *baz*. 
+        Example: `Suppose we have two objects, foo, bar and baz.`
+
+----------------
+
+Having defined our terms we can then use any of these terms in our
+documentation, such as the term :term:`foo`, and have it linked to our glossary
+definition for quick lookup.
+
+Note that if you're writing official project documentation we have a global
+project glossary in the root docs directory: ``site/docs/glossary.rst``. This
+file should contain definitions for any and all technical terms used throughout
+the project documentation. For example, have a look at the definition of
+:term:`disjoint prepositional phrase`.
+
+
+Math
+====
+
+You can include inline math like :math:`x \rightarrow y` or :math:`\forall y \exists x(x-y = 4)`. Or more complicated stuff using the ``.. math::`` directive:
+
+.. math::
+
+  W^{3\beta}_{\delta_1 \rho_1 \sigma_2} \approx U^{3\beta}_{\delta_1 \rho_1}
+
+Miscellaneous
+=============
+
+It's not often used, but you can create centered, boldfaced text using the ``.. centered::`` directive. For example, it was used above to set off :ref:`MY SAMPLE GLOSSARY &lt;gloss&gt;`.
+
+You'll see that we also used separators to set off the glossary. You can insert
+a separator by putting a series of four or more dashes (``-----``) on its own 
+line preceded and followed by blank lines.
+
+You can create notes that standout using the ``.. note::`` directive:
+
+.. note::
+
+   This is a note to catch the reader's eye.
+
+You can also use the ``.. warning::`` directive to warn readers: 
+
+.. warning::
+
+   This is a note to warn the reader.
+
+If you need to refer to multiple related areas of your documentation and/or
+external docs, you should use the ``.. seealso::`` directive.
+
+.. seealso::
+
+   `Sphinx docs &lt;http://sphinx.pocoo.org/markup/para.html&gt;`_. Additional 
+   details on the seealso directive including the short form.
+
+   :ref:`links`. Description of how to create simple inline links.
+
+If you're describing some new feature or rule, you should specify the version
+number of the code or documentation when it was added using the ``..  versionadded::`` directive.
+
+.. versionadded:: 1.1
+   The `versionadded` directive.
+
+If you're changing some feature or rule, there's a similar ``..
+versionchanged::`` directive.
+
+.. versionchanged:: 1.2
+   The `versionchanged` directive.
+
+To create more compact lists that use horizontal space, try the ``.. hlist::``
+directive:
+
+.. hlist::
+   :columns: 3
+
+   * first item
+   * second item
+   * third item
+   * fourth item
+   * fifth item
+   * sixth item
+   * seventh item
+   * eighth item
+   * ninth item
+
+
+.. _info:
+
+Additional info
+===============
+
+For a brief intro to reStructuredText, see `this primer &lt;http://sphinx.pocoo.org/rest.html&gt;`_.
+
+For a nice reStructuredText cheat sheet, see `this quick reference &lt;http://docutils.sourceforge.net/docs/user/rst/quickref.html&gt;`_ 
+
+The Sphinx documentation can be found `here &lt;http://sphinx.pocoo.org/contents.html&gt;`_.
+
+There's also `a nice little Sphinx tutorial &lt;http://matplotlib.sourceforge.net/sampledoc&gt;`_ that shows you how to get up and running quickly.
+
+
+.. _tips-literal:
+
+This file
+=========
+
+.. literalinclude:: tips.rst
+</pre>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="search.html">search</a>|&nbsp;</li>
+    <li><a href="index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

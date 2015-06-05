@@ -1,0 +1,296 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.30. Reinf - Reinforcing Information &mdash; LDPdocs 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="LDPdocs 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.30. Reinf - Reinforcing Information</a><ul>
+<li><a class="reference internal" href="#description">3.30.1. Description</a></li>
+<li><a class="reference internal" href="#format">3.30.2. Format</a></li>
+<li><a class="reference internal" href="#values">3.31.3. Values</a></li>
+<li><a class="reference internal" href="#vertical-dependencies">3.31.4. Vertical Dependencies</a></li>
+<li><a class="reference internal" href="#horizontal-dependencies">3.31.5. Horizontal Dependencies</a></li>
+<li><a class="reference internal" href="#depended-upon-by">3.31.6. Depended Upon By</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/specs/transcript/columns/reinf.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="reinf-reinforcing-information">
+<span id="reinf-column"></span><h1>3.30. Reinf - Reinforcing Information<a class="headerlink" href="#reinf-reinforcing-information" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<span id="reinf-column-description"></span><h2>3.30.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Specifies what type of information is being reinforced by the gesture.</p>
+</div>
+<div class="section" id="format">
+<span id="reinf-column-format"></span><h2>3.30.2. Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h2>
+<pre>
+<strong id="grammar-token-entry">entry    </strong> ::=  <a class="reference internal" href="sem_role.html#grammar-token-code_set"><tt class="xref docutils literal"><span class="pre">code_set</span></tt></a> [&quot;;&quot; <a class="reference internal" href="sem_role.html#grammar-token-code_set"><tt class="xref docutils literal"><span class="pre">code_set</span></tt></a>]*
+<strong id="grammar-token-code_set">code_set </strong> ::=  (<a class="reference internal" href="../intro.html#grammar-token-null"><tt class="xref docutils literal"><span class="pre">null</span></tt></a> | <a class="reference internal" href="sem_role.html#grammar-token-code_list"><tt class="xref docutils literal"><span class="pre">code_list</span></tt></a>) [&quot;/&quot; ( <a class="reference internal" href="../intro.html#grammar-token-null"><tt class="xref docutils literal"><span class="pre">null</span></tt></a> | <a class="reference internal" href="sem_role.html#grammar-token-code_list"><tt class="xref docutils literal"><span class="pre">code_list</span></tt></a> )]*
+<strong id="grammar-token-code_list">code_list</strong> ::=  <a class="reference internal" href="../intro.html#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a> [&quot;,&quot; <a class="reference internal" href="../intro.html#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a>]*
+<strong id="grammar-token-code">code     </strong> ::=  &quot;AB&quot; | &quot;AO&quot; | &quot;L&quot; | &quot;M&quot; | &quot;P&quot; | &quot;SH&quot; | &quot;SI&quot;
+<strong id="grammar-token-null">null     </strong> ::=  &quot;X&quot;
+</pre>
+</div>
+<div class="section" id="values">
+<span id="reinf-column-values"></span><h2>3.31.3. Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h2>
+<p>Codes have the following interpretations:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="15%" />
+<col width="38%" />
+<col width="36%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Code</th>
+<th class="head">Meaning</th>
+<th class="head">Description</th>
+<th class="head">Example</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AB</span></tt></td>
+<td>Action by</td>
+<td>An object referenced by an
+action it typically
+performs</td>
+<td>Hands form claws, raised
+up and swept out and down
+to signifiy &#8220;bear&#8221;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AO</span></tt></td>
+<td>Action on</td>
+<td>An object referenced by an
+action typically performed
+on it</td>
+<td>Flat hands with palms
+together, hands open out
+to signifiy &#8220;book&#8221;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">L</span></tt></td>
+<td>Location</td>
+<td>The (relative) location of
+an act or object</td>
+<td>Flat hands held palms
+down side by side to
+indicate that one object
+is close to another</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">M</span></tt></td>
+<td>Manner</td>
+<td>The type of action
+performed or the way in
+which it is executed</td>
+<td>Hand is bounced up and
+down to indicate jumping</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">P</span></tt></td>
+<td>Path</td>
+<td>The path through which an
+act moves as it is
+performed</td>
+<td>Hand sweeps out and to
+the side to signify the
+path something has taken
+around another object</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">SH</span></tt></td>
+<td>Shape</td>
+<td>The shape of an object</td>
+<td>Finger traces &#8220;v&#8221; in air
+to signify the type of
+shirt desired</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">SI</span></tt></td>
+<td>Size</td>
+<td>The size of an object</td>
+<td>Hand extends over head to
+signify &#8220;tall&#8221;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">X</span></tt></td>
+<td>Null</td>
+<td>The gesture does not
+reinforce the speech</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<p>Ops have the following interpretations:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="7%" />
+<col width="93%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Op</th>
+<th class="head">Meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">;</span></tt></td>
+<td>Separates all codes</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">/</span></tt></td>
+<td>Used to combine representational codes into single units</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">,</span></tt></td>
+<td>Used to create lists of codes</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vertical-dependencies">
+<span id="reinf-column-vert-dep"></span><h2>3.31.4. Vertical Dependencies<a class="headerlink" href="#vertical-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="horizontal-dependencies">
+<span id="reinf-column-horz-dep"></span><h2>3.31.5. Horizontal Dependencies<a class="headerlink" href="#horizontal-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Reinf is dependent upon the <a class="reference internal" href="utts.html#utts-column-dep-by"><em>Utts Column</em></a>, the
+<a class="reference internal" href="g_type.html#gtype-column-dep-by"><em>G_Type Column</em></a>, and the
+<a class="reference internal" href="added.html#added-column-dep-by"><em>Added Column</em></a></p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="89%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Reinf</th>
+<th class="head">Conditions</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AB</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AO</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">L</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">M</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">P</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">SH</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">SI</span></tt></td>
+<td>An utterance is transcribed in Utts and the corresponding G_Type
+code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.m</span></tt>, or <tt class="docutils literal"><span class="pre">R.met</span></tt></td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">X</span></tt></td>
+<td><p class="first">Either:</p>
+<p>An utterance is transcribed in Utts, the corresponding
+G_Type code is <tt class="docutils literal"><span class="pre">R.a</span></tt>, <tt class="docutils literal"><span class="pre">R.d</span></tt>, <tt class="docutils literal"><span class="pre">R.met</span></tt>, or <tt class="docutils literal"><span class="pre">C</span></tt>, and the
+corresponding Added code is not <tt class="docutils literal"><span class="pre">X</span></tt></p>
+<p class="last">An utterance is not transcribed in Utts</p>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="depended-upon-by">
+<span id="reinf-column-dep-by"></span><h2>3.31.6. Depended Upon By<a class="headerlink" href="#depended-upon-by" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="added.html#added-column-horz-dep"><em>Added</em></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Jason Voigt, Richard Williams IV.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
