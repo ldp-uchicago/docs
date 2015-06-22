@@ -1,10 +1,10 @@
-.. LDPdocs documentation master file, created by
-   sphinx-quickstart on Fri Jun  5 18:36:16 2015.
+.. Language Developement Project Documentation documentation master file, created by
+   sphinx-quickstart on Mon Jun 22 15:31:59 2015.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to LDPdocs's documentation!
-===================================
+Welcome to Language Developement Project Documentation's documentation!
+=======================================================================
 
 Contents:
 

@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 #
-# LDPdocs documentation build configuration file, created by
-# sphinx-quickstart on Fri Jun  5 18:36:16 2015.
+# Language Developement Project Documentation documentation build configuration file, created by
+# sphinx-quickstart on Mon Jun 22 15:31:59 2015.
 #
 # This file is execfile()d with the current directory set to its containing dir.
 #
@@ -25,7 +25,7 @@ import sys, os
 
 # Add any Sphinx extension module names here, as strings. They can be extensions
 # coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
-extensions = []
+extensions = ['sphinx.ext.autodoc', 'sphinx.ext.doctest', 'sphinx.ext.intersphinx', 'sphinx.ext.todo', 'sphinx.ext.pngmath', 'sphinx.ext.ifconfig']
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -40,7 +40,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'LDPdocs'
+project = u'Language Developement Project Documentation'
 copyright = u'2015, Jason Voigt, Richard Williams IV'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -164,7 +164,7 @@ html_static_path = ['_static']
 #html_file_suffix = None
 
 # Output file base name for HTML help builder.
-htmlhelp_basename = 'LDPdocsdoc'
+htmlhelp_basename = 'LanguageDevelopementProjectDocumentationdoc'
 
 
 # -- Options for LaTeX output --------------------------------------------------
@@ -183,7 +183,7 @@ latex_elements = {
 # Grouping the document tree into LaTeX files. List of tuples
 # (source start file, target name, title, author, documentclass [howto/manual]).
 latex_documents = [
-  ('index', 'LDPdocs.tex', u'LDPdocs Documentation',
+  ('index', 'LanguageDevelopementProjectDocumentation.tex', u'Language Developement Project Documentation Documentation',
    u'Jason Voigt, Richard Williams IV', 'manual'),
 ]
 
@@ -213,7 +213,7 @@ latex_documents = [
 # One entry per manual page. List of tuples
 # (source start file, name, description, authors, manual section).
 man_pages = [
-    ('index', 'ldpdocs', u'LDPdocs Documentation',
+    ('index', 'languagedevelopementprojectdocumentation', u'Language Developement Project Documentation Documentation',
      [u'Jason Voigt, Richard Williams IV'], 1)
 ]
 
@@ -227,8 +227,8 @@ man_pages = [
 # (source start file, target name, title, author,
 #  dir menu entry, description, category)
 texinfo_documents = [
-  ('index', 'LDPdocs', u'LDPdocs Documentation',
-   u'Jason Voigt, Richard Williams IV', 'LDPdocs', 'One line description of project.',
+  ('index', 'LanguageDevelopementProjectDocumentation', u'Language Developement Project Documentation Documentation',
+   u'Jason Voigt, Richard Williams IV', 'LanguageDevelopementProjectDocumentation', 'One line description of project.',
    'Miscellaneous'),
 ]
 
@@ -240,3 +240,7 @@ texinfo_documents = [
 
 # How to display URL addresses: 'footnote', 'no', or 'inline'.
 #texinfo_show_urls = 'footnote'
+
+
+# Example configuration for intersphinx: refer to the Python standard library.
+intersphinx_mapping = {'http://docs.python.org/': None}
