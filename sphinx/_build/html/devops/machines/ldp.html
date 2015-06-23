@@ -1,0 +1,203 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>ldp (web services) &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">ldp (web services)</a><ul>
+<li><a class="reference internal" href="#overview">Overview</a></li>
+<li><a class="reference internal" href="#specs">Specs</a></li>
+<li><a class="reference internal" href="#config">Config</a></li>
+<li><a class="reference internal" href="#server-scripts">Server Scripts</a></li>
+<li><a class="reference internal" href="#cron-jobs">Cron Jobs</a></li>
+<li><a class="reference internal" href="#postgres">Postgres</a></li>
+<li><a class="reference internal" href="#log">Log</a><ul>
+<li><a class="reference internal" href="#id1">01-31-2011</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/devops/machines/ldp.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="ldp-web-services">
+<h1>ldp (web services)<a class="headerlink" href="#ldp-web-services" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>This machine hosts the both the Project&#8217;s <a class="reference external" href="https://ldp.spc.uchicago.edu/">public-facing website</a> and our <a class="reference external" href="https://ldp.spc.uchicago.edu/portal/">internal portal site</a> (a Pylons-based web app). It&#8217;s also running the <a class="reference internal" href="#postgres">Postgres</a> database backing the portal.</p>
+</div>
+<div class="section" id="specs">
+<h2>Specs<a class="headerlink" href="#specs" title="Permalink to this headline">¶</a></h2>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">hardware:</th><td class="field-body">Mac Mini</td>
+</tr>
+<tr class="field-even field"><th class="field-name">ram:</th><td class="field-body">4 GB</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">os:</th><td class="field-body">Snow Leopard (10.6.6)</td>
+</tr>
+<tr class="field-even field"><th class="field-name">dns:</th><td class="field-body"><tt class="docutils literal"><span class="pre">ldp.spc.uchicago.edu</span></tt></td>
+</tr>
+<tr class="field-odd field"><th class="field-name">ip:</th><td class="field-body">128.135.189.218</td>
+</tr>
+<tr class="field-even field"><th class="field-name">location:</th><td class="field-body">Green 512</td>
+</tr>
+<tr class="field-odd field"><th class="field-name">services:</th><td class="field-body">web app hosting, postgres database server</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="config">
+<h2>Config<a class="headerlink" href="#config" title="Permalink to this headline">¶</a></h2>
+<p>The production environment is located in <tt class="docutils literal"><span class="pre">~/virtualenvs/production</span></tt>.</p>
+<p>Top-level contents:</p>
+<div class="highlight-python"><pre>bin/                (binaries and scripts)
+build/
+data/
+    images/
+    sessions/
+    templates/
+docs/               (doc site contents)
+include/            (link to Python lib)
+initial_data/       (csv data files for postgres db)
+lib/
+production.ini      (Pylons config file)
+server-scripts/     (scripts for syncing files, etc.)
+src/                (source files)
+wsgi-scripts/</pre>
+</div>
+<p>Our <tt class="docutils literal"><span class="pre">launchd</span></tt> <tt class="docutils literal"><span class="pre">*.plist</span></tt> files can be found in <tt class="docutils literal"><span class="pre">\Library\LaunchDaemons</span></tt>. (See <a class="reference internal" href="#cron-jobs">Cron Jobs</a> for overview.)</p>
+<p>The log file for the doc site update script (<tt class="docutils literal"><span class="pre">~/virtualenvs/production/server-scripts/sync-docs</span></tt>) is in <tt class="docutils literal"><span class="pre">/var/log/ldpsite/docs.log</span></tt>.</p>
+</div>
+<div class="section" id="server-scripts">
+<h2>Server Scripts<a class="headerlink" href="#server-scripts" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="cron-jobs">
+<h2>Cron Jobs<a class="headerlink" href="#cron-jobs" title="Permalink to this headline">¶</a></h2>
+<p>Some of the scripts in <tt class="docutils literal"><span class="pre">~/virtualenvs/production/server-scripts/*</span></tt> are triggered by <tt class="docutils literal"><span class="pre">launchd</span></tt> at specified times. See the <tt class="docutils literal"><span class="pre">*.plist</span></tt> files
+in <tt class="docutils literal"><span class="pre">/Library/LaunchDaemons</span></tt> or try <tt class="docutils literal"><span class="pre">sudo</span> <span class="pre">launchctl</span> <span class="pre">list</span> <span class="pre">|</span> <span class="pre">grep</span> <span class="pre">ldp</span></tt> to see a list of LDP-related jobs.</p>
+</div>
+<div class="section" id="postgres">
+<h2>Postgres<a class="headerlink" href="#postgres" title="Permalink to this headline">¶</a></h2>
+<p>To access the postgres database use <tt class="docutils literal"><span class="pre">psql</span> <span class="pre">-U</span> <span class="pre">postgres</span> <span class="pre">ldp</span></tt>.</p>
+<p>Use <tt class="docutils literal"><span class="pre">\d</span></tt> to see the overall schema or <tt class="docutils literal"><span class="pre">\d</span> <span class="pre">TABLE</span></tt> where &#8220;TABLE&#8221; is
+the name of one of the tables (e.g. <tt class="docutils literal"><span class="pre">\d</span> <span class="pre">samples</span></tt>)</p>
+<p>To see the list of user defined data types use <tt class="docutils literal"><span class="pre">\dT</span></tt> (or <tt class="docutils literal"><span class="pre">\dT+</span></tt> to see the
+data type definitions).</p>
+<p>To dump a set of rows from a table use the following sequence:</p>
+<div class="highlight-python"><pre>\f ','          (set separator to comma)
+\a              (toggle alignment)
+\t              (toggle tuples/rows only)
+\o out.csv      (dump to "out.csv")
+select ...      (your select statement)
+\o
+\q</pre>
+</div>
+</div>
+<div class="section" id="log">
+<h2>Log<a class="headerlink" href="#log" title="Permalink to this headline">¶</a></h2>
+<p>A log of significant changes made to the system.</p>
+<p>For example ...</p>
+<div class="section" id="id1">
+<h3>01-31-2011<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Added <tt class="docutils literal"><span class="pre">server-scripts</span></tt> dir to production environment. This currently contains
+a script, <tt class="docutils literal"><span class="pre">sync-docs</span></tt>, for updating the documentation site. (See comments in
+source file for implementation details.)</p>
+<p>Also added <tt class="docutils literal"><span class="pre">com.ldp.sync-docs.plist</span></tt> to <tt class="docutils literal"><span class="pre">/Libary/LaunchDaemons</span></tt> and loaded
+this job using <tt class="docutils literal"><span class="pre">launchctl</span></tt>. This will run the <tt class="docutils literal"><span class="pre">sync-doc</span></tt> script at 3 AM
+nightly.</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

@@ -1,0 +1,824 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>2. Annotation Levels &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">2. Annotation Levels</a><ul>
+<li><a class="reference internal" href="#overview-of-levels">2.1. Overview of Levels</a></li>
+<li><a class="reference internal" href="#base-transcript">2.2. Base Transcript</a><ul>
+<li><a class="reference internal" href="#goals">2.2.1. Goals</a></li>
+<li><a class="reference internal" href="#columns">2.2.2. Columns</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#seyda-ozcaliskan-s-second-tier-gesture-annotation">2.3. Şeyda Özçalışkan&#8217;s Second Tier Gesture Annotation</a><ul>
+<li><a class="reference internal" href="#id1">2.3.1. Goals</a></li>
+<li><a class="reference internal" href="#id2">2.3.2. Columns</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#morpho-syntactic-analysis-supplement">2.4. Morpho-Syntactic Analysis Supplement</a><ul>
+<li><a class="reference internal" href="#id3">2.4.1. Goals</a></li>
+<li><a class="reference internal" href="#id4">2.4.2. Columns</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#erica-cartmill-s-second-tier-gesture-annotation">2.5. Erica Cartmill&#8217;s Second Tier Gesture Annotation</a><ul>
+<li><a class="reference internal" href="#id5">2.5.1. Goals</a></li>
+<li><a class="reference internal" href="#id6">2.5.2. Columns</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/specs/transcript/levels.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="annotation-levels">
+<span id="levels"></span><h1>2. Annotation Levels<a class="headerlink" href="#annotation-levels" title="Permalink to this headline">¶</a></h1>
+<p id="levels-description">While the original transcript format has been useful for general studies of the
+interaction between speech and gesture, it has been necessary to augment them
+with additional levels of annotation for more fine-grained studies of specific
+aspects of child language use.  The original format, then, acts as a base upon
+which all other LDP annotation levels depend.</p>
+<div class="section" id="overview-of-levels">
+<h2>2.1. Overview of Levels<a class="headerlink" href="#overview-of-levels" title="Permalink to this headline">¶</a></h2>
+<p>There are currently four annotation levels:</p>
+<dl class="docutils">
+<dt><a class="reference internal" href="#base-level"><em>2.2. Base Transcript</em></a></dt>
+<dd>The aforementioned, original transcript layout.  Records speech, roughly
+categorizes gestures, and provides information about environmental
+conditions.</dd>
+<dt><a class="reference internal" href="#seyda-level"><em>2.3. Şeyda Özçalışkan&#8217;s Second Tier Gesture Annotation</em></a></dt>
+<dd>Further classifies gestures according to type and meaning and provides
+information regarding the relationship between speech and gestures.</dd>
+<dt><a class="reference internal" href="#morpho-syntax-level"><em>2.4. Morpho-Syntactic Analysis Supplement</em></a></dt>
+<dd>Provides CHAT formatted transcription of speech and counts and
+categorizations of morpho-syntactic structures used by the speaker.  It is
+referred to as a supplement as it is typically integrated with
+<a class="reference internal" href="#erica-level"><em>Erica Cartmill&#8217;s Second Tier Gesture Annotation</em></a></dd>
+<dt><a class="reference internal" href="#erica-level"><em>2.5. Erica Cartmill&#8217;s Second Tier Gesture Annotation</em></a></dt>
+<dd>Builds upon
+<a class="reference internal" href="#seyda-level"><em>Şeyda Özçalışkan&#8217;s Second Tier Gesture Annotation</em></a> and
+the <a class="reference internal" href="#morpho-syntax-level"><em>Morpho-Syntactic Analysis Supplement</em></a> to
+permit detailed analysis of the relationship between gesture types and
+concurrent speech.</dd>
+</dl>
+</div>
+<div class="section" id="base-transcript">
+<span id="base-level"></span><h2>2.2. Base Transcript<a class="headerlink" href="#base-transcript" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="goals">
+<h3>2.2.1. Goals<a class="headerlink" href="#goals" title="Permalink to this headline">¶</a></h3>
+<p>Explain general goals for this annotation level</p>
+</div>
+<div class="section" id="columns">
+<h3>2.2.2. Columns<a class="headerlink" href="#columns" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="58%" />
+<col width="22%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Speaker</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="columns/time_chronology.html#time-c-column"><em>3.1. Time (Chronology)</em></a></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/line.html#line-column"><em>3.2. Line - Line Number</em></a></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/key.html#key-column"><em>3.3. Key - Coded Environmental Context</em></a></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>4</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>5</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>6</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>7</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>8</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>9</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>10</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>11</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>12</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>13</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>14</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>15</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>16</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>17</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/context.html#context-column"><em>3.33. Context - Transcriber Notes</em></a></td>
+<td>18</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="seyda-ozcaliskan-s-second-tier-gesture-annotation">
+<span id="seyda-level"></span><h2>2.3. Şeyda Özçalışkan&#8217;s Second Tier Gesture Annotation<a class="headerlink" href="#seyda-ozcaliskan-s-second-tier-gesture-annotation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id1">
+<h3>2.3.1. Goals<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>Description of goals of this annotation level</p>
+</div>
+<div class="section" id="id2">
+<h3>2.3.2. Columns<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="58%" />
+<col width="22%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Speaker</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="columns/time_chronology.html#time-c-column"><em>3.1. Time (Chronology)</em></a></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/line.html#line-column"><em>3.2. Line - Line Number</em></a></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/key.html#key-column"><em>3.3. Key - Coded Environmental Context</em></a></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>4</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>5</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>6</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>7</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>8</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>9</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>10</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/g_type.html#gtype-column"><em>3.22. G_Type - Gesture Type</em></a></td>
+<td>11</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/gs_rel.html#gsrel-column"><em>3.23. GS_Rel - Gesture-Speech Relation</em></a></td>
+<td>12</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>13</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>14</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>15</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>16</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>17</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>18</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>19</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/g_type.html#gtype-column"><em>3.22. G_Type - Gesture Type</em></a></td>
+<td>20</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gs_rel.html#gsrel-column"><em>3.23. GS_Rel - Gesture-Speech Relation</em></a></td>
+<td>21</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/context.html#context-column"><em>3.33. Context - Transcriber Notes</em></a></td>
+<td>22</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="morpho-syntactic-analysis-supplement">
+<span id="morpho-syntax-level"></span><h2>2.4. Morpho-Syntactic Analysis Supplement<a class="headerlink" href="#morpho-syntactic-analysis-supplement" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id3">
+<h3>2.4.1. Goals<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>Provide morphological and syntactic analyses of utterances</p>
+</div>
+<div class="section" id="id4">
+<h3>2.4.2. Columns<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="59%" />
+<col width="22%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Speaker</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="columns/time_chronology.html#time-c-column"><em>3.1. Time (Chronology)</em></a></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/line.html#line-column"><em>3.2. Line - Line Number</em></a></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/key.html#key-column"><em>3.3. Key - Coded Environmental Context</em></a></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>4</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/chat.html#chat-column"><em>3.5. CHAT - CHAT Formatted Utterances</em></a></td>
+<td>5</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/enum.html#enum-column"><em>3.6. Enum - Enumerated Utterances</em></a></td>
+<td>6</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mor.html#mor-column"><em>3.7. Mor - Morphology</em></a></td>
+<td>7</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/syn.html#syn-column"><em>3.8. Syn - Syntax</em></a></td>
+<td>8</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/clauses.html#clauses-column"><em>3.9. Clauses - Clause Count</em></a></td>
+<td>9</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/np.html#np-column"><em>3.10. NP - Noun Phrase Count</em></a></td>
+<td>10</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/pp.html#pp-column"><em>3.11. PP - Prepositional Phrase Count</em></a></td>
+<td>11</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/dpp.html#dpp-column"><em>3.12. DPP - Disjoint Prepositional Phrase Count</em></a></td>
+<td>12</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/wpu.html#wpu-column"><em>3.13. WPU - Words Per Utterance</em></a></td>
+<td>13</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/passives.html#passives-column"><em>3.14. Passives - Passive Constructions</em></a></td>
+<td>14</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/syntype.html#syntype-column"><em>3.15. SynType - Coded Syntactic Type</em></a></td>
+<td>15</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>16</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>17</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>18</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>19</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>20</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>21</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>22</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/chat.html#chat-column"><em>3.5. CHAT - CHAT Formatted Utterances</em></a></td>
+<td>23</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/enum.html#enum-column"><em>3.6. Enum - Enumerated Utterances</em></a></td>
+<td>24</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mor.html#mor-column"><em>3.7. Mor - Morphology</em></a></td>
+<td>25</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/syn.html#syn-column"><em>3.8. Syn - Syntax</em></a></td>
+<td>26</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/clauses.html#clauses-column"><em>3.9. Clauses - Clause Count</em></a></td>
+<td>27</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/np.html#np-column"><em>3.10. NP - Noun Phrase Count</em></a></td>
+<td>28</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/pp.html#pp-column"><em>3.11. PP - Prepositional Phrase Count</em></a></td>
+<td>29</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/dpp.html#dpp-column"><em>3.12. DPP - Disjoint Prepositional Phrase Count</em></a></td>
+<td>30</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/wpu.html#wpu-column"><em>3.13. WPU - Words Per Utterance</em></a></td>
+<td>31</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/passives.html#passives-column"><em>3.14. Passives - Passive Constructions</em></a></td>
+<td>32</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/syntype.html#syntype-column"><em>3.15. SynType - Coded Syntactic Type</em></a></td>
+<td>33</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>34</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>35</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>36</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>37</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>38</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>39</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/context.html#context-column"><em>3.33. Context - Transcriber Notes</em></a></td>
+<td>40</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="erica-cartmill-s-second-tier-gesture-annotation">
+<span id="erica-level"></span><h2>2.5. Erica Cartmill&#8217;s Second Tier Gesture Annotation<a class="headerlink" href="#erica-cartmill-s-second-tier-gesture-annotation" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id5">
+<h3>2.5.1. Goals<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>What are the goals of this annotation level?</p>
+</div>
+<div class="section" id="id6">
+<h3>2.5.2. Columns<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="59%" />
+<col width="22%" />
+<col width="19%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Name</th>
+<th class="head">Position</th>
+<th class="head">Speaker</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><a class="reference internal" href="columns/time_chronology.html#time-c-column"><em>3.1. Time (Chronology)</em></a></td>
+<td>1</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/line.html#line-column"><em>3.2. Line - Line Number</em></a></td>
+<td>2</td>
+<td>N/A</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/key.html#key-column"><em>3.3. Key - Coded Environmental Context</em></a></td>
+<td>3</td>
+<td>N/A</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>4</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/chat.html#chat-column"><em>3.5. CHAT - CHAT Formatted Utterances</em></a></td>
+<td>5</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/enum.html#enum-column"><em>3.6. Enum - Enumerated Utterances</em></a></td>
+<td>6</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mor.html#mor-column"><em>3.7. Mor - Morphology</em></a></td>
+<td>7</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/syn.html#syn-column"><em>3.8. Syn - Syntax</em></a></td>
+<td>8</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/clauses.html#clauses-column"><em>3.9. Clauses - Clause Count</em></a></td>
+<td>9</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/np.html#np-column"><em>3.10. NP - Noun Phrase Count</em></a></td>
+<td>10</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/pp.html#pp-column"><em>3.11. PP - Prepositional Phrase Count</em></a></td>
+<td>11</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/dpp.html#dpp-column"><em>3.12. DPP - Disjoint Prepositional Phrase Count</em></a></td>
+<td>12</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/wpu.html#wpu-column"><em>3.13. WPU - Words Per Utterance</em></a></td>
+<td>13</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/passives.html#passives-column"><em>3.14. Passives - Passive Constructions</em></a></td>
+<td>14</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/syntype.html#syntype-column"><em>3.15. SynType - Coded Syntactic Type</em></a></td>
+<td>15</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>16</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>17</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>18</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>19</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>20</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>21</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/g_type.html#gtype-column"><em>3.22. G_Type - Gesture Type</em></a></td>
+<td>22</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/gs_rel.html#gsrel-column"><em>3.23. GS_Rel - Gesture-Speech Relation</em></a></td>
+<td>23</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/time_gesture.html#time-g-column"><em>3.24. Time - Timing of Gesture</em></a></td>
+<td>24</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/time_gen.html#timegen-column"><em>3.25. Time_Gen - General Timing</em></a></td>
+<td>25</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/word.html#word-column"><em>3.26. Word - Speech Correlate of Gesture</em></a></td>
+<td>26</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/word_num.html#wordnum-column"><em>3.27. Word_Num - Enumeration of Speech Correlate</em></a></td>
+<td>27</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/sem_role.html#semrole-column"><em>3.28. Sem_Role - Semantic Role</em></a></td>
+<td>28</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/pres_ref.html#presref-column"><em>3.29. Pres_Ref - Presence of Referent</em></a></td>
+<td>29</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/reinf.html#reinf-column"><em>3.30. Reinf - Reinforcing Information</em></a></td>
+<td>30</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/added.html#added-column"><em>3.31. Added - Added Information</em></a></td>
+<td>31</td>
+<td>Parent</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/persp.html#persp-column"><em>3.32. Persp - Perspective of Representational Gesture</em></a></td>
+<td>32</td>
+<td>Parent</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/utts.html#utts-column"><em>3.4. Utts - Transcribed Utterances</em></a></td>
+<td>33</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/chat.html#chat-column"><em>3.5. CHAT - CHAT Formatted Utterances</em></a></td>
+<td>34</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/enum.html#enum-column"><em>3.6. Enum - Enumerated Utterances</em></a></td>
+<td>35</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/mor.html#mor-column"><em>3.7. Mor - Morphology</em></a></td>
+<td>36</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/syn.html#syn-column"><em>3.8. Syn - Syntax</em></a></td>
+<td>37</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/clauses.html#clauses-column"><em>3.9. Clauses - Clause Count</em></a></td>
+<td>38</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/np.html#np-column"><em>3.10. NP - Noun Phrase Count</em></a></td>
+<td>39</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/pp.html#pp-column"><em>3.11. PP - Prepositional Phrase Count</em></a></td>
+<td>40</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/dpp.html#dpp-column"><em>3.12. DPP - Disjoint Prepositional Phrase Count</em></a></td>
+<td>41</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/wpu.html#wpu-column"><em>3.13. WPU - Words Per Utterance</em></a></td>
+<td>42</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/passives.html#passives-column"><em>3.14. Passives - Passive Constructions</em></a></td>
+<td>43</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/syntype.html#syntype-column"><em>3.15. SynType - Coded Syntactic Type</em></a></td>
+<td>44</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/form.html#form-column"><em>3.16. Form - Gesture Name</em></a></td>
+<td>45</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/lrb.html#lrb-column"><em>3.17. LRB - Place of Gesture Articulation</em></a></td>
+<td>46</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/obj.html#obj-column"><em>3.18. Obj - Referent of Gesture</em></a></td>
+<td>47</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/gloss.html#gloss-column"><em>3.19. Gloss - Meaning of Gesture</em></a></td>
+<td>48</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/orient.html#orient-column"><em>3.20. Orient - Manner of Gesture</em></a></td>
+<td>49</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/mspd.html#mspd-column"><em>3.21. MSPD - Motion-Space Descriptor</em></a></td>
+<td>50</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/g_type.html#gtype-column"><em>3.22. G_Type - Gesture Type</em></a></td>
+<td>51</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/gs_rel.html#gsrel-column"><em>3.23. GS_Rel - Gesture-Speech Relation</em></a></td>
+<td>52</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/time_gesture.html#time-g-column"><em>3.24. Time - Timing of Gesture</em></a></td>
+<td>53</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/time_gen.html#timegen-column"><em>3.25. Time_Gen - General Timing</em></a></td>
+<td>54</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/word.html#word-column"><em>3.26. Word - Speech Correlate of Gesture</em></a></td>
+<td>55</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/word_num.html#wordnum-column"><em>3.27. Word_Num - Enumeration of Speech Correlate</em></a></td>
+<td>56</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/sem_role.html#semrole-column"><em>3.28. Sem_Role - Semantic Role</em></a></td>
+<td>57</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/pres_ref.html#presref-column"><em>3.29. Pres_Ref - Presence of Referent</em></a></td>
+<td>58</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/reinf.html#reinf-column"><em>3.30. Reinf - Reinforcing Information</em></a></td>
+<td>59</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/added.html#added-column"><em>3.31. Added - Added Information</em></a></td>
+<td>60</td>
+<td>Child</td>
+</tr>
+<tr class="row-even"><td><a class="reference internal" href="columns/persp.html#persp-column"><em>3.32. Persp - Perspective of Representational Gesture</em></a></td>
+<td>61</td>
+<td>Child</td>
+</tr>
+<tr class="row-odd"><td><a class="reference internal" href="columns/context.html#context-column"><em>3.33. Context - Transcriber Notes</em></a></td>
+<td>62</td>
+<td>N/A</td>
+</tr>
+</tbody>
+</table>
+<p>Description of what&#8217;s going on here</p>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

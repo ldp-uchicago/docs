@@ -1,0 +1,832 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Syntax &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Syntax</a><ul>
+<li><a class="reference internal" href="#introduction">Introduction</a><ul>
+<li><a class="reference internal" href="#a-simple-example">A Simple Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#terminology">Terminology</a></li>
+<li><a class="reference internal" href="#overview">Overview</a><ul>
+<li><a class="reference internal" href="#relative-clauses">Relative Clauses</a></li>
+<li><a class="reference internal" href="#clausal-dependencies">Clausal Dependencies</a></li>
+<li><a class="reference internal" href="#required-vs-optional">Required vs. Optional</a></li>
+<li><a class="reference internal" href="#finite-vs-non-finite">Finite vs. Non-Finite</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#gr-tags">GR Tags</a><ul>
+<li><a class="reference internal" href="#notes-on-specific-tags">Notes on specific tags</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#predicate-head-relations">Predicate-head relations</a><ul>
+<li><a class="reference internal" href="#subj">SUBJ</a></li>
+<li><a class="reference internal" href="#csubj">CSUBJ</a></li>
+<li><a class="reference internal" href="#xsubj">XSUBJ</a></li>
+<li><a class="reference internal" href="#obj">OBJ</a></li>
+<li><a class="reference internal" href="#obj2">OBJ2</a></li>
+<li><a class="reference internal" href="#iobj">IOBJ</a></li>
+<li><a class="reference internal" href="#loc">LOC</a></li>
+<li><a class="reference internal" href="#comp">COMP</a></li>
+<li><a class="reference internal" href="#xcomp">XCOMP</a></li>
+<li><a class="reference internal" href="#pred">PRED</a></li>
+<li><a class="reference internal" href="#cpred">CPRED</a></li>
+<li><a class="reference internal" href="#xpred">XPRED</a></li>
+<li><a class="reference internal" href="#pobj">POBJ</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#argument-head-relations">Argument-head relations</a><ul>
+<li><a class="reference internal" href="#jct">JCT</a></li>
+<li><a class="reference internal" href="#cjct">CJCT</a></li>
+<li><a class="reference internal" href="#tag">TAG</a></li>
+<li><a class="reference internal" href="#xjct">XJCT</a></li>
+<li><a class="reference internal" href="#mod">MOD</a></li>
+<li><a class="reference internal" href="#cmod">CMOD</a></li>
+<li><a class="reference internal" href="#xmod">XMOD</a></li>
+<li><a class="reference internal" href="#det">DET</a></li>
+<li><a class="reference internal" href="#quant">QUANT</a></li>
+<li><a class="reference internal" href="#aux">AUX</a></li>
+<li><a class="reference internal" href="#neg">NEG</a></li>
+<li><a class="reference internal" href="#inf">INF</a></li>
+<li><a class="reference internal" href="#srl">SRL</a></li>
+<li><a class="reference internal" href="#cpzr">CPZR</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#root-linkage">Root linkage</a><ul>
+<li><a class="reference internal" href="#com">COM</a></li>
+<li><a class="reference internal" href="#voc">VOC</a></li>
+<li><a class="reference internal" href="#top">TOP</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#cosmetic-relations">Cosmetic relations</a><ul>
+<li><a class="reference internal" href="#punct">PUNCT</a></li>
+<li><a class="reference internal" href="#root">ROOT</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#series-relations">Series relations</a><ul>
+<li><a class="reference internal" href="#enum">ENUM</a></li>
+<li><a class="reference internal" href="#coord">COORD</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#bivalency">Bivalency</a></li>
+<li><a class="reference internal" href="#ellision-relations">Ellision Relations</a><ul>
+<li><a class="reference internal" href="#id1">AUX-</a></li>
+<li><a class="reference internal" href="#id2">INF-</a></li>
+<li><a class="reference internal" href="#id3">DET-</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/guides/morphosyntax/reference/syn.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="syntax">
+<h1>Syntax<a class="headerlink" href="#syntax" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>We represent grammatical relations (such as subjects, objects, and
+adjuncts) between word tokens in an utterance using a convention of
+labeled dependencies.</p>
+<p>As in many flavors of dependency-based syntax, each grammatical relation
+represents a relationship between two words in an utterance: a head (or parent)
+and a dependent (or child).  These dependency relations between words are
+labeled, indicating the syntactic relationship holding between the two words.</p>
+<p>The <strong>syn</strong> column in our transcripts contains our syntactic annotation
+for each utterance, indicating these grammatical dependency relations holding
+between the word tokens.</p>
+<p>For each word token in an utterance (including the punctuation), the <strong>syn</strong>
+column indicates the word token&#8217;s ...</p>
+<ul class="simple">
+<li>number (based on its order in the utterance)</li>
+<li>grammatical dependency (the number of the word token on which it depends)</li>
+<li>grammatical relation (to its dependency)</li>
+</ul>
+<p>The meaning of the labels for the grammatical relations are indicated in the
+table below.</p>
+<div class="section" id="a-simple-example">
+<h3>A Simple Example<a class="headerlink" href="#a-simple-example" title="Permalink to this headline">¶</a></h3>
+<p>For example, the following simple utterance contains four word tokens:</p>
+<div class="highlight-python"><pre>you got me !
+1   2   3  4</pre>
+</div>
+<p>It would be annotated as follows:</p>
+<div class="highlight-python"><pre>you      got        me      !                # utt
+1|2|SUBJ 2|0|ROOT   3|2|OBJ 4|2|PUNCT        # syn
+  ^ ----   ^ ----     ^ ---   ^ -----</pre>
+</div>
+<p>We can alternatively represent the grammatical-dependency relations
+for this example as follows:</p>
+<div class="highlight-python"><pre>#  WORD  DEP  REL
+1  you   2    SUBJ
+2  got   0    ROOT
+3  me    2    OBJ
+4  .     2    PUNCT</pre>
+</div>
+<p>Observe how this captures the following dependency relations:</p>
+<div class="highlight-python"><pre>           ┌-── PUNCT -──┐
+you      got        me   .
+└─ SUBJ ─┘ └─ OBJ ──┘</pre>
+</div>
+<p>That is, the first word (&#8220;you&#8221;) is dependent on the second word (&#8220;got&#8221;, the
+verb of the sentence, which acts as the head or <tt class="docutils literal"><span class="pre">ROOT</span></tt> dependency), and
+stands in the relation of a grammatical subject (<tt class="docutils literal"><span class="pre">SUBJ</span></tt>) to the verb, etc.</p>
+</div>
+</div>
+<div class="section" id="terminology">
+<h2>Terminology<a class="headerlink" href="#terminology" title="Permalink to this headline">¶</a></h2>
+<p>When discussing more involved grammatical dependency relations, it&#8217;s often
+helpful to employ a taxonomic/genealogical vocabulary.  Consider the following
+taxonomy of food types:</p>
+<div class="highlight-python"><pre>food
+├── fruit
+│   ├── banana
+│   └── apple
+│       ├── braeburn
+│       ├── honeycrisp
+│       └── gala
+└── meat</pre>
+</div>
+<p>We&#8217;ll say:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">food</span></tt> is the <strong>dependency</strong> (or <strong>parent</strong>) of <tt class="docutils literal"><span class="pre">fruit</span></tt> and <tt class="docutils literal"><span class="pre">meat</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">fruit</span></tt> and <tt class="docutils literal"><span class="pre">meat</span></tt> are <strong>dependent</strong> on <tt class="docutils literal"><span class="pre">food</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">fruit</span></tt> and <tt class="docutils literal"><span class="pre">meat</span></tt> are <strong>dependants</strong> (or <strong>children</strong>) of <tt class="docutils literal"><span class="pre">food</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">banana</span></tt> and <tt class="docutils literal"><span class="pre">apple</span></tt> are <strong>dependants</strong> (or <strong>children</strong>) of <tt class="docutils literal"><span class="pre">fruit</span></tt>.</li>
+</ul>
+<p>Note that these terms always indicate <em>immediate</em> ancestor/descendant relations
+(e.g., parent/child).</p>
+<p>If we want to describe both immediate and non-immediate dependency relations
+we speak of <strong>ancestors</strong> (chain of dependencies) and <strong>descendants</strong> (chain of
+dependants).</p>
+<p>For example, we&#8217;ll say:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">fruit</span></tt>, <tt class="docutils literal"><span class="pre">apple</span></tt>, and <tt class="docutils literal"><span class="pre">gala</span></tt> are all <strong>descendants</strong> of <tt class="docutils literal"><span class="pre">food</span></tt>.</li>
+<li><tt class="docutils literal"><span class="pre">food</span></tt> is an <strong>ancestor</strong> of <tt class="docutils literal"><span class="pre">fruit</span></tt>, <tt class="docutils literal"><span class="pre">apple</span></tt>, and <tt class="docutils literal"><span class="pre">gala</span></tt>.</li>
+</ul>
+</div>
+<div class="section" id="overview">
+<h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
+<p>Observe that while this annotation scheme captures the grammatical dependency
+relations between words in an utterance, these relations have the structure of a
+directed graph with labeled edges.  The words of the utterance serve as nodes
+of the graph, the dependency relations (indicated by the indices) serve as
+directed edges, and the grammatical relations function as labels on these
+edges. The edges should be thought of as directed from a given head word (parent
+node) to its dependents (immediate child nodes).</p>
+<p>In other words, the GR tags are labels indicating the syntactic relationship
+holding between a head and each of its depedents. Except for the &#8220;root&#8221; word in
+an utterance, note that each word must be dependent on exactly one head word
+(though heads may have several dependents).</p>
+<p>Note that head words are typically content words and their dependents are
+typically function words.  For example, nouns are the heads of determiners
+(forming a GR of type DET with the noun as the head and the determiner as the
+dependent), and verbs are chosen as the heads of auxiliaries (forming a GR of
+type AUX with the verb as the head and the auxiliary as the dependent). An
+exception to this rule is coordination, where coordinated items are dependents
+of the coordinator (for example, in &#8220;boys and girls&#8221; each noun is a dependent
+of &#8220;and&#8221;, forming two GRs of type COORD).</p>
+<p>When both words in a GR are members of lexical (content) categories, the
+direction of the relation follows common practice, where complements,
+adjuncts and modifiers are dependents of the words they complement or modify.
+For example, adjectives are typically dependents of nouns, and adverbs are
+typically dependent of verbs, adjectives or other adverbs.</p>
+<p>By convention, vocatives and communicators are dependents of the main verb of
+their sentences.</p>
+<div class="section" id="relative-clauses">
+<h3>Relative Clauses<a class="headerlink" href="#relative-clauses" title="Permalink to this headline">¶</a></h3>
+<p>Nouns are dependents of verbs when the noun is a complement (such as subject
+or object), but verbs can also be dependents of nouns, as in the case of
+relative clauses (where a clause modifies a noun, and the verb is the root of
+the dependency subtree representing the clause).  In the case of
+prepositional phrases, the preposition is chosen as the head of the
+prepositional object (in a POBJ relation).</p>
+</div>
+<div class="section" id="clausal-dependencies">
+<h3>Clausal Dependencies<a class="headerlink" href="#clausal-dependencies" title="Permalink to this headline">¶</a></h3>
+<p>In cases where a clause has a relation to another clause, the verb of the lower
+(subordinate) clause is used as a dependent. For example, consider the relative
+clause of the sentence &#8220;The boy I saw drew a picture&#8221;:</p>
+<div class="highlight-python"><pre>#  WORD     DEP  REL
+1  The      2    DET
+2  boy      5    SUBJ
+3  I        4    SUBJ
+4  saw      2    CMOD
+5  drew     0    ROOT
+6  a        7    DET
+7  picture  8    OBJ
+8  .        5    PUNCT
+
+┌─DET─┐ ┌─SUBJ─┐    ┌-─--PUNCT--──┐
+The boy I    saw drew a  picture  .
+      ├--CMOD-─┘ |    |     ├-OBJ-┘
+      └---SUBJ--─┘    └-DET─┘</pre>
+</div>
+<p>The verb &#8220;saw&#8221; of the relative clause is treated as dependent in a CMOD
+(clausal modifier of a nominal) relation with the noun &#8220;boy&#8221;.  The other
+relations in this sentence are as expected: &#8220;The&#8221; and &#8220;a&#8221; are dependents
+in DET relations with &#8220;boy&#8221; and &#8220;picture&#8221;, &#8220;boy&#8221; is the dependent in a SUBJ
+relation with &#8220;saw&#8221;, and &#8220;picture&#8221; is in a OBJ relation with &#8220;drew&#8221;.  Finally,
+&#8220;drew&#8221; is the root of the dependency tree for this sentence.</p>
+</div>
+<div class="section" id="required-vs-optional">
+<h3>Required vs. Optional<a class="headerlink" href="#required-vs-optional" title="Permalink to this headline">¶</a></h3>
+<p>Our tagging system itself makes two broad distinctions, which are useful to understand before looking at specific grammatical relationship tags.</p>
+<p>First, it distinguishes between required and optional elements.  A required element is demanded by a transitive or ditransitive verb, or by a preposition.  Removing this element changes the basic meaning of the sentence.  Optional elements give more information about the head of their clause, but they can be easily removed without destroying meaning.</p>
+<p>The following are examples of required elements:</p>
+<blockquote>
+<div>I saw <em>him</em>.
+I saw <em>what you did</em>.
+I gave <em>the book to her</em>.</div></blockquote>
+<p>This broad category covers things like objects (OBJ), objects of prepositions (POBJ), and complements (COMP, XCOMP).</p>
+<p>These, on the other hand, are optional:</p>
+<blockquote>
+<div>I saw <em>already</em>.
+I saw <em>after you did</em>.</div></blockquote>
+<p>This category covers things like adjuncts (JCT), modifiers (MOD), and clausal adjuncts and modifiers (CJCT, XJCT, CMOD, XMOD).</p>
+</div>
+<div class="section" id="finite-vs-non-finite">
+<h3>Finite vs. Non-Finite<a class="headerlink" href="#finite-vs-non-finite" title="Permalink to this headline">¶</a></h3>
+<p>The tagging system also draws a distinction between finite and non-finite verbal clauses.  The difference here is that the form of a finite element is dependent on other information in the sentence, but the form of a non-finite element will never change.  Non-finite elements are generally infinitives or particles.</p>
+<p>The following are finite verbs:</p>
+<blockquote>
+<div>I know they went to the park.
+I know he goes to the park.</div></blockquote>
+<p>While these are non-finite:</p>
+<blockquote>
+<div>I know how to go to the park.
+It&#8217;s hard to run.</div></blockquote>
+<p>These categories are easily distinguished in our system by looking at the tag itself.  Finite clauses generally begin with a C (CMOD, CSUBJ, COMP, CPRED, etc.) while non-finite clauses generally begin with an X (XMOD, XCOMP, XPRED, XSUBJ, etc.).</p>
+</div>
+</div>
+<div class="section" id="gr-tags">
+<h2>GR Tags<a class="headerlink" href="#gr-tags" title="Permalink to this headline">¶</a></h2>
+<p>The grammatical relationship codes have the following interpretations:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="22%" />
+<col width="78%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Tag</th>
+<th class="head">Grammatical Relation</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AUX</span></tt></td>
+<td>Auxiliary</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">CJCT</span></tt></td>
+<td>Finite clausal adjunct</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">CMOD</span></tt></td>
+<td>Finite clausal modifier</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">COM</span></tt></td>
+<td>Communicator</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">COMP</span></tt></td>
+<td>Finite complement</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">COORD</span></tt></td>
+<td>Coordinated word</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">CPRED</span></tt></td>
+<td>Finite clausal predicate</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">CPZR</span></tt></td>
+<td>Complementizer</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">CSUBJ</span></tt></td>
+<td>Finite clausal subject</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">DET</span></tt></td>
+<td>Determiner</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">ENUM</span></tt></td>
+<td>Enumerated word</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">ESUBJ</span></tt></td>
+<td>Existential subject</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF</span></tt></td>
+<td>Infinitive</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">IOBJ</span></tt></td>
+<td>Preposition introducing indirect object</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">JCT</span></tt></td>
+<td>Non-clausal adjunct</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">LOC</span></tt></td>
+<td>Obligatory locative identifier</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">MOD</span></tt></td>
+<td>Non-clausal modifier of a nominal</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">NEG</span></tt></td>
+<td>Negation</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">OBJ</span></tt></td>
+<td>Object</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">OBJ2</span></tt></td>
+<td>Indirect object without preposition</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">POBJ</span></tt></td>
+<td>Prepositional object</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">PRED</span></tt></td>
+<td>Predicate</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">PTL</span></tt></td>
+<td>Particle</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">PUNCT</span></tt></td>
+<td>Punctuation</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">QUANT</span></tt></td>
+<td>Quantifier</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">ROOT</span></tt></td>
+<td>Head of sentence (verbal)</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">ROOT-NV</span></tt></td>
+<td>Head of sentence (non-verbal)</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">SRL</span></tt></td>
+<td>Serial verb</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">SUBJ</span></tt></td>
+<td>Subject</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">TAG</span></tt></td>
+<td>Verb used as tag</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">TOP</span></tt></td>
+<td>Topicalizer</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">VOC</span></tt></td>
+<td>Vocative</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">XCOMP</span></tt></td>
+<td>Non-finite complement</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">XJCT</span></tt></td>
+<td>Non-finite clausal adjunct</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">XMOD</span></tt></td>
+<td>Non-finite clausal modifier</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">XPRED</span></tt></td>
+<td>Non-finite clausal predicate</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">XSUBJ</span></tt></td>
+<td>Non-finite clausal subject</td>
+</tr>
+</tbody>
+</table>
+<p><tt class="docutils literal"><span class="pre">COORD</span></tt> may be combined with any relationship type that is being
+coordinated (e.g. <tt class="docutils literal"><span class="pre">COORD-ROOT</span></tt>, <tt class="docutils literal"><span class="pre">COORD-POBJ</span></tt>).</p>
+<p>Additionally, the following grammatical-relation combinations are recognized:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Code</th>
+<th class="head">Meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">DET-SUBJ</span></tt></td>
+<td>Determiner ...</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">DET-OBJ</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">DET-POBJ</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">DET-PRED</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF-COMP</span></tt></td>
+<td>Infinitive ...</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">INF-XCOMP</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF-CJCT</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">INF-XJCT</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF-CSUBJ</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">INF-XSUBJ</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF-CMOD</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">INF-XMOD</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF-CPRED</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">INF-XPRED</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">INF-ROOT</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AUX-COMP</span></tt></td>
+<td>Auxiliary ...</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AUX-XCOMP</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AUX-CJCT</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AUX-XJCT</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AUX-CSUBJ</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AUX-XSUBJ</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AUX-CMOD</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AUX-XMOD</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AUX-CPRED</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">AUX-XPRED</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AUX-ROOT</span></tt></td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+<div class="section" id="notes-on-specific-tags">
+<h3>Notes on specific tags<a class="headerlink" href="#notes-on-specific-tags" title="Permalink to this headline">¶</a></h3>
+<p>The following is a comprehensive list of the grammatical relations in the GRASP annotation scheme. Example GRs as well as other relevant GR to that particular GR are provided. In this annotation scheme, C refers to clausal and X refers to non-finite clausal. This list is divided into relations with the predicate as head and relations with the argument as head. In the examples, the dependent is marked in italics.</p>
+</div>
+</div>
+<div class="section" id="predicate-head-relations">
+<h2>Predicate-head relations<a class="headerlink" href="#predicate-head-relations" title="Permalink to this headline">¶</a></h2>
+<p>First, we list the relations in which the dependent attaches to a head that serves as the predicate. In many of these relations, the head is the verb. The combination of a verb with all of its arguments, including the SUBJ argument, constitutes a verb phrase.</p>
+<div class="section" id="subj">
+<h3>SUBJ<a class="headerlink" href="#subj" title="Permalink to this headline">¶</a></h3>
+<p>SUBJect identifies the subject of clause, when the subject itself is not a clause. Typically, the head is the main verb and the dependent is a nominal.</p>
+<blockquote>
+<div><em>You</em> eat vegetables.</div></blockquote>
+</div>
+<div class="section" id="csubj">
+<h3>CSUBJ<a class="headerlink" href="#csubj" title="Permalink to this headline">¶</a></h3>
+<p>ClausalSUBJect identifies the finite clausal subject of another clause.  The head is the main verb, and the dependent is the main verb of the clausal subject. An alternative analysis of these structures would treat the subordinator “that” as the head of the CSUBJ.</p>
+<blockquote>
+<div><em>That you ate your vegetables</em> is important.</div></blockquote>
+</div>
+<div class="section" id="xsubj">
+<h3>XSUBJ<a class="headerlink" href="#xsubj" title="Permalink to this headline">¶</a></h3>
+<p>XSUBJect identifies the non-finite clausal subject of another clause. The head is the main verb, and the dependent is the main verb of the clausal subject.</p>
+<blockquote>
+<div><em>Eating vegetables</em> is important.</div></blockquote>
+</div>
+<div class="section" id="obj">
+<h3>OBJ<a class="headerlink" href="#obj" title="Permalink to this headline">¶</a></h3>
+<p>OBJect identifies the first object of a verb. The head is the main verb, and the dependent is a nominal or a noun that is the head of a nominal phrase. A clausal complement relation should be denoted by COMP or XCOMP (depending on whether the clausal complement is finite or non-finite, see below), not OBJ or OBJ2.</p>
+<blockquote>
+<div>You read <em>the book</em>.</div></blockquote>
+</div>
+<div class="section" id="obj2">
+<h3>OBJ2<a class="headerlink" href="#obj2" title="Permalink to this headline">¶</a></h3>
+<p>OBJect2 identifies the second object of a ditransitive verb, when not introduced by a preposition. The head is a ditransitive verb, and the dependent is a noun (or other nominal). The dependent must be the head of a required non- clausal and nonprepositional complement of a verb (head of OBJ2) that is also the head of an OBJ relation. A second complement that has a preposition as its head should be denoted by IOBJ, not OBJ2.</p>
+<blockquote>
+<div>He gave <em>you</em> the book.</div></blockquote>
+</div>
+<div class="section" id="iobj">
+<h3>IOBJ<a class="headerlink" href="#iobj" title="Permalink to this headline">¶</a></h3>
+<p>IndirectOBJect identifies an (required) object complement introduced by a preposition. When a prepositional phrase appears as the required complement of a verb, it is the dependent in an IOBJ relation, not a JCT (adjunct) relation. The head is the main verb, and the dependent is a preposition (not the complement of the preposition, see POBJ below).</p>
+<blockquote>
+<div>Mary gave a book <em>to</em> John.</div></blockquote>
+</div>
+<div class="section" id="loc">
+<h3>LOC<a class="headerlink" href="#loc" title="Permalink to this headline">¶</a></h3>
+<p>LOCative identifies the relation between a verb and a required location. Locations are required for verbs such as put or live. LOC takes the place of JCT in such cases when the PP is required by the verb. This is especially relevant for here, there, and back, which would otherwise be labeled JCT for other verbs.</p>
+<blockquote>
+<div>Put the toys <em>there</em>.</div></blockquote>
+</div>
+<div class="section" id="comp">
+<h3>COMP<a class="headerlink" href="#comp" title="Permalink to this headline">¶</a></h3>
+<p>COMPlement identifies a finite clausal complement of a verb. The head is the main verb of the matrix clause, and the dependent is the main verb of the clausal complement.</p>
+<blockquote>
+<div>I think <em>that was Fraser</em>.</div></blockquote>
+</div>
+<div class="section" id="xcomp">
+<h3>XCOMP<a class="headerlink" href="#xcomp" title="Permalink to this headline">¶</a></h3>
+<p>XCOMPlement identifies a non-finite clausal complement of a verb. The head is the main verb of the matrix clause, and the dependent is the main verb of the clausal complement. The XCOMP relation is only used for non-finite clausal complements, not predicate nominals or predicate adjectives (see PRED).</p>
+<blockquote>
+<div>I told you <em>to go</em>.
+I hate <em>leaving</em>.</div></blockquote>
+</div>
+<div class="section" id="pred">
+<h3>PRED<a class="headerlink" href="#pred" title="Permalink to this headline">¶</a></h3>
+<p>PREDicate identifies a predicate nominal, predicate adjective, or a prepositional complement of verbs such as be and become. The head is the verb. PRED should not be confused with XCOMP, which identifies a non-finite complement of a verb (some syntactic formalisms group PRED and XCOMP in a single category).</p>
+<blockquote>
+<div>I’m not <em>sure</em>.
+He is a <em>doctor</em>.
+He is <em>in</em> Chicago.</div></blockquote>
+</div>
+<div class="section" id="cpred">
+<h3>CPRED<a class="headerlink" href="#cpred" title="Permalink to this headline">¶</a></h3>
+<p>ClausalPREDicate identifies a finite clausal predicate that identifies the status of the subject of verbs such as be and become. The head is the main verb of the matrix clause, not its subject. The dependent is the verb of the predicate clause.</p>
+<blockquote>
+<div>This is <em>how we do it</em>.</div></blockquote>
+</div>
+<div class="section" id="xpred">
+<h3>XPRED<a class="headerlink" href="#xpred" title="Permalink to this headline">¶</a></h3>
+<p>XPREDicate identifies a non-finite clausal predicate of the subject of verbs such as be and become. The head is the main verb (of the matrix clause), not its subject.</p>
+<blockquote>
+<div>My goal is <em>to win</em>.</div></blockquote>
+</div>
+<div class="section" id="pobj">
+<h3>POBJ<a class="headerlink" href="#pobj" title="Permalink to this headline">¶</a></h3>
+<p>PrepositionalOBJect is the relation between a preposition and its object. The head is a preposition, and the dependent is typically a noun. The traditional treatment of the prepositional phrase views the object of the preposition as the head of the prepositional phrase. However, we are here treating the preposition as the head, since the prepositional phrase then participates in a further JCT relation to a head verb or a NJCT relation to a head noun.</p>
+<blockquote>
+<div>You want to sit on the <em>stool</em>?</div></blockquote>
+</div>
+</div>
+<div class="section" id="argument-head-relations">
+<h2>Argument-head relations<a class="headerlink" href="#argument-head-relations" title="Permalink to this headline">¶</a></h2>
+<p>Relations in which the arguments (rather than the predicates) serve as the heads include relations of adjunction and modification.</p>
+<div class="section" id="jct">
+<h3>JCT<a class="headerlink" href="#jct" title="Permalink to this headline">¶</a></h3>
+<p>adJunCT identifies an adjunct that modifies a verb, adjective, or adverb.  This grammatical relation covers a wide variety of structures whose exact form is best understood by noting the specific parts of speech that are involved. In all of these, the adjunct is the predicate, since it opens up a valency slot for something to attach to. The head of JCT is the verb, adjective or adverb to which the JCT attaches as a dependent. The dependent is typically an adverb, a preposition (in the case of phrasal adjuncts headed by a preposition, such as a prepositional phrase). Intransitive prepositions may be treated as adverbs, in which case the JCT relation applies. Adjuncts are optional, and carry meaning on their own (and do not change the basic meaning of their JCT heads). Verbs requiring a complement describing location may be treated as prepositional objects, in which case the IOBJ relation applies (see above).</p>
+<blockquote>
+<div>That’s <em>much</em> better.
+He ran <em>with</em> a limp.</div></blockquote>
+</div>
+<div class="section" id="cjct">
+<h3>CJCT<a class="headerlink" href="#cjct" title="Permalink to this headline">¶</a></h3>
+<p>ClausaladJunCT identifies a finite clause that adjoins to a verb, adjective, or adverb head. The dependent is typically the main verb of a subordinate clause and this clause attaches to the root verb of the main clause.</p>
+<blockquote>
+<div>We can’t find it, <em>because it is gone</em>.</div></blockquote>
+</div>
+<div class="section" id="tag">
+<h3>TAG<a class="headerlink" href="#tag" title="Permalink to this headline">¶</a></h3>
+<p>TAG is the relation between the finite verb of a tag question and the root verb of the main clause.</p>
+<blockquote>
+<div>You know how to count, <em>don’t</em> you?</div></blockquote>
+</div>
+<div class="section" id="xjct">
+<h3>XJCT<a class="headerlink" href="#xjct" title="Permalink to this headline">¶</a></h3>
+<p>XadJunCT identifies a non-finite clause that adjoins to a verb, adjective, or adverb. The dependent is typically the main verb of a non-finite subordinate clause.</p>
+<blockquote>
+<div>She’s outside <em>sleeping</em>.</div></blockquote>
+</div>
+<div class="section" id="mod">
+<h3>MOD<a class="headerlink" href="#mod" title="Permalink to this headline">¶</a></h3>
+<p>MODifier identifies a non-clausal nominal modifier or complement. The head is a noun, and the dependent is typically an adjective, noun or preposition.</p>
+<blockquote>
+<div>I like <em>grape</em> juice.
+I like the juice <em>of grapes</em>.</div></blockquote>
+</div>
+<div class="section" id="cmod">
+<h3>CMOD<a class="headerlink" href="#cmod" title="Permalink to this headline">¶</a></h3>
+<p>ClausalMODifier identifies a finite clause that is a nominal modifier (such as a relative clause) or complement. The head is a noun, and the dependent is typically a finite verb.</p>
+<blockquote>
+<div>Here are the grapes <em>I like</em>.</div></blockquote>
+</div>
+<div class="section" id="xmod">
+<h3>XMOD<a class="headerlink" href="#xmod" title="Permalink to this headline">¶</a></h3>
+<p>XMODifier identifies a non-finite clause that is a nominal modifier (such as a relative clause) or complement. The head is a noun, and the dependent is typically a non-finite verb.</p>
+<blockquote>
+<div>It’s time <em>to take a nap</em>.</div></blockquote>
+</div>
+<div class="section" id="det">
+<h3>DET<a class="headerlink" href="#det" title="Permalink to this headline">¶</a></h3>
+<p>DETerminer identifies a determiner of a noun. Determiners include the, a, as well as (adjectival) possessives pronouns (my, your, etc) and demonstratives (this, those, etc), but not quantifiers (all, some, any, etc; see QUANT below). Typically, the head is a noun and the dependent/governor is a determiner. In cases where a word that is usually a determiner does not have a head, there is no DET relation.</p>
+<blockquote>
+<div>I want <em>that</em> cookie.</div></blockquote>
+</div>
+<div class="section" id="quant">
+<h3>QUANT<a class="headerlink" href="#quant" title="Permalink to this headline">¶</a></h3>
+<p>QUANTifier identifies a nominal quantifier, such as three, many, and some. Typically, the head is a noun, and the dependent is a quantifier. In cases where a quantifier has no head, there is no QUANT relation. In English, the MOD, DET, and QUANT relations have largely the same syntax. However, within the noun phrase, we occasionally see that they are ordered as QUANT+DET+MOD+N.</p>
+<blockquote>
+<div>I’ll take <em>three</em> bananas.</div></blockquote>
+</div>
+<div class="section" id="aux">
+<h3>AUX<a class="headerlink" href="#aux" title="Permalink to this headline">¶</a></h3>
+<p>AUXiliary identifies an auxiliary of a verb, or a modal. The head is a verb, and the dependent is an auxiliary (such as be or have) or a modal (such as can or should).</p>
+<blockquote>
+<div><em>Can</em> you do it?</div></blockquote>
+</div>
+<div class="section" id="neg">
+<h3>NEG<a class="headerlink" href="#neg" title="Permalink to this headline">¶</a></h3>
+<p>NEGation identifies verbal negation. When the word not (contracted or not) follows an auxiliary or modal (or sometimes a verb), it is the dependent in a NEG relation (not JCT), where the auxiliary, modal or verb (in the absence of an auxiliary or modal) is the head.</p>
+<blockquote>
+<div>Mommy will <em>not</em> read it.</div></blockquote>
+</div>
+<div class="section" id="inf">
+<h3>INF<a class="headerlink" href="#inf" title="Permalink to this headline">¶</a></h3>
+<p>INFinitive identifies an infinitival particle (to). The head is a verb, and the dependent is always to.</p>
+<blockquote>
+<div>He’s going <em>to</em> drink the coffee.</div></blockquote>
+</div>
+<div class="section" id="srl">
+<h3>SRL<a class="headerlink" href="#srl" title="Permalink to this headline">¶</a></h3>
+<p>SeRiaL identifies serial verbs such as go play and come see. In English, such verb sequences start with either come or go. The initial verb is the dependent, and the verb next to the inital verb, e.g., play and see in the previous example, is the head (the adjacent verb is typically the root of the sentence).</p>
+<blockquote>
+<div><em>Come</em> see if we can find it.
+<em>Go</em> play with your toys over there.</div></blockquote>
+</div>
+<div class="section" id="cpzr">
+<h3>CPZR<a class="headerlink" href="#cpzr" title="Permalink to this headline">¶</a></h3>
+<p>ComPlementiZeR identifies the relation between a complementizer (that, which) or a subordinate conjunction and the verb to which it attaches. After this attachment, the verbal head acts as the dependent in a CJCT relation involving the embedded clause and its matrix clause (the verb is higher in the dependency tree than the complementizer).</p>
+<blockquote>
+<div>Wait <em>until</em> the noodles are cool.</div></blockquote>
+</div>
+</div>
+<div class="section" id="root-linkage">
+<h2>Root linkage<a class="headerlink" href="#root-linkage" title="Permalink to this headline">¶</a></h2>
+<p>There is also a set of relations in which the dependent is a sentential modifier. These could be viewed as depending on either the root or the left wall. Somewhat arbitrarily, we code them as linking to the root.</p>
+<div class="section" id="com">
+<h3>COM<a class="headerlink" href="#com" title="Permalink to this headline">¶</a></h3>
+<p>COMmunicator identifies a communicator (such as hey, okay, etc). Because communicators are typically global in a given sentence, the head of COM is typically the root. The dependent is a communicator. COM items often appear either at the very beginning or very end of a clause or sentence.</p>
+<blockquote>
+<div><em>Yes</em>, you got a fly.
+You need more paper, <em>right</em>?</div></blockquote>
+</div>
+<div class="section" id="voc">
+<h3>VOC<a class="headerlink" href="#voc" title="Permalink to this headline">¶</a></h3>
+<p>VOCative identifies a vocative. As with COM, the head is the root of the sentence. The dependent is a vocative.</p>
+<blockquote>
+<div>Some more cookies, <em>Eve</em>?</div></blockquote>
+</div>
+<div class="section" id="top">
+<h3>TOP<a class="headerlink" href="#top" title="Permalink to this headline">¶</a></h3>
+<p>TOPicalization identifies an object or a predicate nominal that has been topicalized. The head is the ROOT of the sentence, and the dependent is the topicalized item.</p>
+<blockquote>
+<div><em>Tapioca</em>, there is no tapioca.</div></blockquote>
+</div>
+</div>
+<div class="section" id="cosmetic-relations">
+<h2>Cosmetic relations<a class="headerlink" href="#cosmetic-relations" title="Permalink to this headline">¶</a></h2>
+<p>There are several relations that are just used during transcription to assist in the accurate training of the GRASP tagger:</p>
+<div class="section" id="punct">
+<h3>PUNCT<a class="headerlink" href="#punct" title="Permalink to this headline">¶</a></h3>
+<p>PUNCTuation is the relation between the final punctuation mark and the root.</p>
+</div>
+<div class="section" id="root">
+<h3>ROOT<a class="headerlink" href="#root" title="Permalink to this headline">¶</a></h3>
+<p>ROOT is the relation between the topmost word in a sentence (the root of the dependency tree) and the LeftWall. The topmost word in a sentence is the word that is the head of one or more relations, but is not the dependent in any relation with other words (except for the LeftWall).</p>
+</div>
+</div>
+<div class="section" id="series-relations">
+<h2>Series relations<a class="headerlink" href="#series-relations" title="Permalink to this headline">¶</a></h2>
+<p>Some additional relations involve processes of listing, coordination, and classification. In these, the final element is the head and the initial elements all depend on the final head. In English, this extends the idea that the last element in a compound is the head.</p>
+<div class="section" id="enum">
+<h3>ENUM<a class="headerlink" href="#enum" title="Permalink to this headline">¶</a></h3>
+<p>ENUMeration involves a relation between elements in a series without any coordination based on a conjunction (and, but, or). The series can contain letters, numbers, and nominals. The head is the last item in the series, and all the other items in the enumeration depend on this last word.</p>
+<blockquote>
+<div>One, two, three, four.</div></blockquote>
+</div>
+<div class="section" id="coord">
+<h3>COORD<a class="headerlink" href="#coord" title="Permalink to this headline">¶</a></h3>
+<p>COORD is the relationship of phrases that have been conjoined with a coordinating conjunction, which then serves as the head of the entire conjoined phrase.</p>
+<blockquote>
+<div>I like <em>walking</em> and <em>jumping</em>.</div></blockquote>
+</div>
+</div>
+<div class="section" id="bivalency">
+<h2>Bivalency<a class="headerlink" href="#bivalency" title="Permalink to this headline">¶</a></h2>
+<p>The above GRs describe dependencies in terms of the direction of the major valency relations. However, many of these relations have a secondary bivalent nature. For example, in the relations of thematic roles with the verb, it is also true that nominals are “looking for” roles in predications. Within the noun phrase, common nouns are looking for completion with either articles or plurality. Also, the attachment of auxiliaries to non-finite verbs serves to complete their finite marking. We can think of these additional valency relations as secondary relations. In all of these cases, valency works within the overall framework of dependency. Because GRASP relations are unidirectional, bivalency cannot be represented in GRASP.</p>
+</div>
+<div class="section" id="ellision-relations">
+<h2>Ellision Relations<a class="headerlink" href="#ellision-relations" title="Permalink to this headline">¶</a></h2>
+<p>In addition to the basic GRs, there is this additional set of GRs used for marking elided elements.</p>
+<div class="section" id="id1">
+<h3>AUX-<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
+<p>AUX-, when added onto the beginning of a verbal GR, identifies an auxiliary verb serving as the head of a clause where the main verb has been elided.  The relations you will see beginning with AUX are AUX-CJCT, AUX-CMOD, AUX-COMP, and AUX-ROOT.</p>
+<blockquote>
+<div>Yes, I <em>can</em> xxx.</div></blockquote>
+</div>
+<div class="section" id="id2">
+<h3>INF-<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>INF-, when added onto the beginning of a verbal GR, identifies an infinitive particle serving as the head of a clause where the main verb has been elided.  The relations you will see beginning with INF are INF-CJCT, INF-COMP, INF-XCOMP, and INF-ROOT.</p>
+<blockquote>
+<div>I want <em>to</em>.</div></blockquote>
+</div>
+<div class="section" id="id3">
+<h3>DET-<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>DET-, when added onto the beginning of a nominal GR, identifies a determiner serving as the head of a noun phrase where the noun has been elided, usually through interrupted speech.  The relations you will see beginning with DET are DET-OBJ, DET-POBJ, DET-PRED, and DET-SUBJ.</p>
+<blockquote>
+<div>I saw <em>the</em> +...</div></blockquote>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

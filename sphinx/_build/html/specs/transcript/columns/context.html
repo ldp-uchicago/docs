@@ -1,0 +1,153 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.33. Context - Transcriber Notes &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.33. Context - Transcriber Notes</a><ul>
+<li><a class="reference internal" href="#description">3.33.1. Description</a></li>
+<li><a class="reference internal" href="#format">3.33.2. Format</a></li>
+<li><a class="reference internal" href="#values">3.33.3. Values</a></li>
+<li><a class="reference internal" href="#vertical-dependencies">3.33.4. Vertical Dependencies</a></li>
+<li><a class="reference internal" href="#horizontal-dependencies">3.33.5. Horizontal Dependencies</a></li>
+<li><a class="reference internal" href="#depended-upon-by">3.33.6. Depended Upon By</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/specs/transcript/columns/context.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="context-transcriber-notes">
+<span id="context-column"></span><h1>3.33. Context - Transcriber Notes<a class="headerlink" href="#context-transcriber-notes" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<span id="context-column-description"></span><h2>3.33.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Notes on the environment or condition of the communicative act made by
+transcribers to further contextualize it</p>
+</div>
+<div class="section" id="format">
+<span id="context-column-format"></span><h2>3.33.2. Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h2>
+<pre>
+<strong id="grammar-token-entry">entry      </strong> ::=  <a class="reference internal" href="#grammar-token-note"><tt class="xref docutils literal"><span class="pre">note</span></tt></a> | <a class="reference internal" href="#grammar-token-end_of_flag"><tt class="xref docutils literal"><span class="pre">end_of_flag</span></tt></a>
+<strong id="grammar-token-note">note       </strong> ::=  &lt;Any notes about the environment or condition of the communicative act&gt;
+<strong id="grammar-token-end_of_flag">end_of_flag</strong> ::=  &quot;END OF&quot; (<a class="reference internal" href="#grammar-token-tape"><tt class="xref docutils literal"><span class="pre">tape</span></tt></a> | <a class="reference internal" href="#grammar-token-transcript"><tt class="xref docutils literal"><span class="pre">transcript</span></tt></a>)
+<strong id="grammar-token-tape">tape       </strong> ::=  &quot;TAPE&quot; (&quot;1&quot; | &quot;2&quot; | &quot;3&quot; | &quot;4&quot;)
+<strong id="grammar-token-transcript">transcript </strong> ::=  &quot;TRANSCRIPT&quot;
+</pre>
+</div>
+<div class="section" id="values">
+<span id="context-column-values"></span><h2>3.33.3. Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h2>
+<p>When the transcriber has access to inside knowledge about a gesture or speech
+act or when the events are otherwise deemed difficult to interpret, notes can
+be made in this column to ease interpretation without corresponding video data.
+This could include notes about a child&#8217;s current toy or television obsession
+(e.g.
+<tt class="docutils literal"><span class="pre">C</span> <span class="pre">talking</span> <span class="pre">about</span> <span class="pre">Tuvok,</span> <span class="pre">a</span> <span class="pre">Star</span> <span class="pre">Trek</span> <span class="pre">guy</span> <span class="pre">who's</span> <span class="pre">lost</span> <span class="pre">in</span> <span class="pre">space,</span> <span class="pre">getting</span> <span class="pre">home</span></tt>),
+a child&#8217;s speech or gesture peculiarities, or the environment
+making it difficult to understand what is being said (e.g.
+<tt class="docutils literal"><span class="pre">the</span> <span class="pre">television</span> <span class="pre">was</span> <span class="pre">turned</span> <span class="pre">up</span> <span class="pre">very</span> <span class="pre">loud</span> <span class="pre">and</span> <span class="pre">the</span> <span class="pre">dogs</span> <span class="pre">were</span> <span class="pre">barking</span></tt>).</p>
+<p>The Context column is also used to identify the points at which tape breaks
+occur (e.g. <tt class="docutils literal"><span class="pre">END</span> <span class="pre">OF</span> <span class="pre">TAPE</span> <span class="pre">1</span></tt>) and the last line of the transcript
+for machine readers with <tt class="docutils literal"><span class="pre">END</span> <span class="pre">OF</span> <span class="pre">TRANSCRIPT</span></tt>.</p>
+</div>
+<div class="section" id="vertical-dependencies">
+<span id="context-column-vert-dep"></span><h2>3.33.4. Vertical Dependencies<a class="headerlink" href="#vertical-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="horizontal-dependencies">
+<span id="context-column-horz-dep"></span><h2>3.33.5. Horizontal Dependencies<a class="headerlink" href="#horizontal-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="depended-upon-by">
+<span id="context-column-dep-by"></span><h2>3.33.6. Depended Upon By<a class="headerlink" href="#depended-upon-by" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference internal" href="time_chronology.html#time-c-column-horz-dep"><em>Time (Chronology)</em></a></p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

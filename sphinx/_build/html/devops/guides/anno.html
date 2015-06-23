@@ -1,0 +1,146 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>The Transcript Annotation Process &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">The Transcript Annotation Process</a><ul>
+<li><a class="reference internal" href="#marking-edits">Marking Edits</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/devops/guides/anno.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="the-transcript-annotation-process">
+<h1>The Transcript Annotation Process<a class="headerlink" href="#the-transcript-annotation-process" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="marking-edits">
+<h2>Marking Edits<a class="headerlink" href="#marking-edits" title="Permalink to this headline">¶</a></h2>
+<p>Could we name the two new columns <em>edit</em> and <em>edit_note</em>?</p>
+<p>My thought is that <em>edit</em> should only contain one of three possible values:</p>
+<ul class="simple">
+<li><tt class="docutils literal"><span class="pre">o</span></tt> for &#8220;omit&#8221;</li>
+<li><tt class="docutils literal"><span class="pre">i</span></tt> for &#8220;insert&#8221;</li>
+<li><tt class="docutils literal"><span class="pre">f</span></tt> for &#8220;flag&#8221;</li>
+</ul>
+<p>The other column, <em>edit_note</em>, will be an open-ended text field used to give
+some indication of why the edit is needed.</p>
+<p>For example:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">edit</th>
+<th class="head">edit_note</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">o</span></tt></td>
+<td>omit this line; not really a gesture</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">f</span></tt></td>
+<td>&#8220;slipperry&#8221; in child utterance should be &#8220;slippery&#8221;</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">i</span></tt></td>
+<td>insert this line; missed in original transcription</td>
+</tr>
+</tbody>
+</table>
+<p>As you can see, I changed my mind about deleting lines. We&#8217;re not ever going to
+delete anything from the transcript dataset. However, we will use the <em>edit</em>
+column to mark lines that could optionally be omitted from future analyses
+because a later editor judges them as problematic for some reason.</p>
+<p>FWIW, I&#8217;ve also changed my mind about how annotators should incorporate new lines that were missed the first time around. Instead of inserting new lines within the existing/original transcript lines, for now I&#8217;m going to ask Galila (or anyone doing additional levels of annotation) to append lines to be inserted after the last line of the original transcript. This will make updating the transcript dataset much easier and allow us to establish permanent/canonical line IDs.</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

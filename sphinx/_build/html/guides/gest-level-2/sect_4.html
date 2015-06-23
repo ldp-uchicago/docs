@@ -1,0 +1,1187 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Timing, Reference, Semantics, and Syntax &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Timing, Reference, Semantics, and Syntax</a><ul>
+<li><a class="reference internal" href="#timing">Timing</a></li>
+<li><a class="reference internal" href="#relational-timing">Relational Timing</a><ul>
+<li><a class="reference internal" href="#chat-deletions">CHAT deletions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#semantic-correlate-word-and-word-number">Semantic Correlate (word and word number)</a><ul>
+<li><a class="reference internal" href="#when-to-code">When to code</a></li>
+<li><a class="reference internal" href="#explanation">Explanation</a></li>
+<li><a class="reference internal" href="#examples">Examples</a></li>
+<li><a class="reference internal" href="#nonadjacent-correlates">Nonadjacent Correlates</a><ul>
+<li><a class="reference internal" href="#example">Example</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#demonstratives-this-and-that">Demonstratives: <em>this</em> and <em>that</em></a><ul>
+<li><a class="reference internal" href="#id1">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#quantifiers">Quantifiers</a><ul>
+<li><a class="reference internal" href="#id2">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#nouns-with-adjectives-and-possessives">Nouns with Adjectives and Possessives</a><ul>
+<li><a class="reference internal" href="#id3">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#attributes-and-adjectives-rf-a">Attributes and Adjectives (RF.a)</a><ul>
+<li><a class="reference internal" href="#id4">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#id5">CHAT deletions</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#semantic-role">Semantic Role</a><ul>
+<li><a class="reference internal" href="#id6">Explanation</a></li>
+<li><a class="reference internal" href="#id7">When to code</a></li>
+<li><a class="reference internal" href="#adds-and-gestures-without-speech">ADDs and gestures without speech</a><ul>
+<li><a class="reference internal" href="#deictics">Deictics</a></li>
+<li><a class="reference internal" href="#iconics">Iconics</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#when-entities-have-more-than-one-semantic-role">When entities have more than one Semantic Role</a></li>
+<li><a class="reference internal" href="#id8">Attributes and Adjectives (RF.a)</a></li>
+<li><a class="reference internal" href="#ambiguous-verbs">Ambiguous Verbs</a></li>
+<li><a class="reference internal" href="#choosing-semantic-correlate-and-semantic-role-for-multi-clause-utterances">Choosing Semantic Correlate and Semantic Role for Multi-clause Utterances</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#presence-of-referent">Presence of Referent</a><ul>
+<li><a class="reference internal" href="#id9">Explanation</a></li>
+<li><a class="reference internal" href="#id10">When to code</a></li>
+<li><a class="reference internal" href="#id11">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/guides/gest-level-2/sect_4.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="timing-reference-semantics-and-syntax">
+<span id="g2sect-4"></span><h1>Timing, Reference, Semantics, and Syntax<a class="headerlink" href="#timing-reference-semantics-and-syntax" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="timing">
+<h2>Timing<a class="headerlink" href="#timing" title="Permalink to this headline">¶</a></h2>
+<p>Goal: To record exactly where a gesture occurs within the <em>word order</em> of a spoken utterance.</p>
+<ul class="simple">
+<li>Timing is coded for all gestures, including Functional Acts.</li>
+<li>The gestures take place during the highlighted words.  If a gesture extends past the beginning or the end of an utterance it will be noted with the <tt class="docutils literal"><span class="pre">[</span></tt> or <tt class="docutils literal"><span class="pre">]</span></tt> symbols.</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="37%" />
+<col width="23%" />
+<col width="10%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Code</td>
+<td>Definition</td>
+<td>Example Utterance</td>
+<td>Example Code</td>
+</tr>
+<tr class="row-even"><td>Word numbers separated by commas (no spaces).</td>
+<td>Timing is coded as the range of word numbers that are spoken during the gesture.</td>
+<td>&#8220;He went <strong>over to the store</strong>&#8220;</td>
+<td>3,4,5,6</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&#8220;<strong>It was big</strong>!&#8221;</td>
+<td>1,2,3</td>
+</tr>
+<tr class="row-even"><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&#8220;<strong>[The big round ball]</strong>!&#8221;</td>
+<td>0.5, 1, 2, 3, 4, 4.5</td>
+</tr>
+<tr class="row-odd"><td>&nbsp;</td>
+<td>&nbsp;</td>
+<td>&#8220;I want it <strong>now</strong>!&#8221;</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<p>Timing can begin before an utterance and continue after an utterance. For gestures beginning before an utterance, timing begins at 0.5. For gestures continuing after an utterance, timing ends at N.5.</p>
+<ul class="simple">
+<li>Beats are used to emphasize a specific word or words in speech. Each instance of emphasis should be coded individually. Thus, an utterance with multiple beats will have multiple codes.</li>
+</ul>
+</div>
+<div class="section" id="relational-timing">
+<h2>Relational Timing<a class="headerlink" href="#relational-timing" title="Permalink to this headline">¶</a></h2>
+<p>Goal: To record, in general terms, where gestures fall in relation to <em>whole utterances</em>.</p>
+<ul class="simple">
+<li>Relational timing is also coded for all gestures</li>
+</ul>
+<table border="1" class="docutils">
+<colgroup>
+<col width="5%" />
+<col width="9%" />
+<col width="61%" />
+<col width="25%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Code</td>
+<td>Category</td>
+<td>Definition</td>
+<td>Example Utterance</td>
+</tr>
+<tr class="row-even"><td>B</td>
+<td>Beginning</td>
+<td>Gesture overlaps with the beginning of the utterance but does not last until the end.</td>
+<td>&#8220;<strong>He</strong> did it&#8221;</td>
+</tr>
+<tr class="row-odd"><td>M</td>
+<td>Middle</td>
+<td>Gesture is performed entirely within the utterance.</td>
+<td>&#8220;I saw <strong>cars</strong> at school&#8221;</td>
+</tr>
+<tr class="row-even"><td>E</td>
+<td>End</td>
+<td>Gesture overlaps with the beginning of the utterance but does not last until the end.</td>
+<td>&#8220;A mouse went <strong>there</strong>&#8220;</td>
+</tr>
+<tr class="row-odd"><td>W</td>
+<td>Whole</td>
+<td>Gesture overlaps with the whole utterance.</td>
+<td>&#8220;<strong>It was big</strong>!&#8221;</td>
+</tr>
+</tbody>
+</table>
+<p>As of session 11H, we are leaving this column blank. The information gained from this column can be obtained from the numeric timing column. Relational timing was coded for 09H and 10H for both P2 and P3 subjects.</p>
+<div class="section" id="chat-deletions">
+<h3>CHAT deletions<a class="headerlink" href="#chat-deletions" title="Permalink to this headline">¶</a></h3>
+<p>If the word or words that the gesture occurs during has/have been deleted during the removal of disfluent speech for CHAT processing, code timing as NA.</p>
+</div>
+</div>
+<div class="section" id="semantic-correlate-word-and-word-number">
+<h2>Semantic Correlate (word and word number)<a class="headerlink" href="#semantic-correlate-word-and-word-number" title="Permalink to this headline">¶</a></h2>
+<p>Goal: To record the word that is reinforced or disambiguated by a gesture performed during the utterance.</p>
+<div class="section" id="when-to-code">
+<h3>When to code<a class="headerlink" href="#when-to-code" title="Permalink to this headline">¶</a></h3>
+<p>Semantic Correlate is coded for:
+1. Deictics
+2. Iconics and Metaphorics
+3. Emphatics
+4. Nods and Shakes (when RF)</p>
+<blockquote>
+<div><ul class="simple">
+<li>Not coded for Conventionals other than nods and shakes (and only for nods and shakes when a variant of yes (e.g. yeah, uh-huh, mm+hm, sure, good, right, etc.) or no (e.g. nope, nah, not, neither, didn&#8217;t, isn&#8217;t, etc.) is used in speech.</li>
+<li>Not coded when there is no speech (Semantic Correlate is not the same as GLOSS)</li>
+<li>ADDs do not have semantic correlates!</li>
+</ul>
+</div></blockquote>
+</div>
+<div class="section" id="explanation">
+<h3>Explanation<a class="headerlink" href="#explanation" title="Permalink to this headline">¶</a></h3>
+<p>The semantic correlate of a gesture should be whatever word or phase is reinforced or disambiguated by the gesture. Coders should aim to reduce this correlate to its smallest possible unit of meaning for aid in analysis. Thus, in the utterance &#8220;I want the blue car&#8221; + POINT (to blue car), the semantic correlate should be &#8220;CAR&#8221; not &#8220;BLUE CAR.&#8221; Single nouns or verbs should be used whenever possible, adjectives and adverbs should be ignored. In situations where both the object and the location could be chosen as the correlate, the object takes precedence over location.</p>
+</div>
+<div class="section" id="examples">
+<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="17%" />
+<col width="42%" />
+<col width="41%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate:</strong> List the word that is reinforced or disambiguated by the gesture as it appears in the utterance.</td>
+<td><strong>Semantic Correlate Number:</strong> The number of the semantic correlate as it appears in the word order of the utterance.</td>
+</tr>
+<tr class="row-even"><td>&#8220;This one is pink&#8221; + POINT</td>
+<td>PINK</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>&#8220;This cow is pink&#8221; + POINT</td>
+<td>COW</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>&#8220;Pink&#8221; + POINT</td>
+<td>PINK</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>&#8220;Do you like big ones?&#8221; + ICONIC (for big)</td>
+<td>BIG ONES</td>
+<td>4,5</td>
+</tr>
+<tr class="row-even"><td>&#8220;Do you like big ones?&#8221; + POINT</td>
+<td>BIG ONES</td>
+<td>5,6</td>
+</tr>
+<tr class="row-odd"><td>&#8220;You do it!&#8221; + POINT (to other)</td>
+<td>YOU</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>&#8220;The CD is on the table&#8221; + POINT TO CD ON TABLE</td>
+<td>CD</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>&#8221; It is on the table&#8221; + POINT TO CD ON TABLE</td>
+<td>TABLE</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>&#8220;It is there&#8221; + POINT TO BOTTLE</td>
+<td>IT</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>&#8220;These are mine&#8221; + POINT TO SELF</td>
+<td>MINE</td>
+<td>3</td>
+</tr>
+<tr class="row-even"><td>&#8220;It&#8217;s my hat&#8221; + POINT TO SELF</td>
+<td>MY</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>&#8220;It&#8217;s my hat&#8221; + POINT TO HAT</td>
+<td>HAT</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>&#8220;I don&#8217;t know&#8221; + FLIP</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="row-odd"><td>POINT (to door)</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="row-even"><td>&#8220;Can you help?&#8221; + POINT (to closed box)</td>
+<td>X</td>
+<td>X</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I want all of them&#8221; + POINT</td>
+<td>THEM</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>&#8220;These three&#8221; + CONT POINT</td>
+<td>THESE THREE</td>
+<td>1,2</td>
+</tr>
+<tr class="row-odd"><td>&#8220;These three bears&#8221; + CONT POINT</td>
+<td>THREE BEARS</td>
+<td>2,3</td>
+</tr>
+<tr class="row-even"><td>&#8220;Over here&#8221; + POINT</td>
+<td>HERE</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>&#8220;Around there&#8221; + ICONIC (tracepath)</td>
+<td>AROUND</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>&#8220;I want to go over there.&#8221; + POINT</td>
+<td>THERE</td>
+<td>6</td>
+</tr>
+<tr class="row-odd"><td>&#8220;Lots of big ones to open&#8221; + ICONIC (for big)</td>
+<td>BIG</td>
+<td>3</td>
+</tr>
+<tr class="row-even"><td>&#8220;I want to flip it&#8221; + ICONIC (for flip)</td>
+<td>FLIP</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I don&#8217;t like it&#8221; + SHAKE</td>
+<td>NOT</td>
+<td>3 (see CHAT)</td>
+</tr>
+<tr class="row-even"><td>&#8220;I have apples and oranges&#8221; + POINT</td>
+<td>*APPLES ORANGES</td>
+<td>*3,5</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I want the <strong>yellow</strong> one&#8221; + BEAT</td>
+<td>YELLOW</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="nonadjacent-correlates">
+<h3>Nonadjacent Correlates<a class="headerlink" href="#nonadjacent-correlates" title="Permalink to this headline">¶</a></h3>
+<p>When a gesture has more than one word as a semantic correlate and those words are nonadjacent, then both words and both words numbers should be coded and are be preceded by <cite>*</cite>.</p>
+<p>When more than one word in an utterance could be the semantic correlate of a gesture, the coder should use their judgment to determine if one word is more likely to be the correlate than the other. If both are equally possible, then the gesture should be coded as having more than one correlate.</p>
+<div class="section" id="example">
+<h4>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="28%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Correlate Number:</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;No, I don&#8217;t like it&#8221; + SHAKE</td>
+<td>NO</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="demonstratives-this-and-that">
+<h3>Demonstratives: <em>this</em> and <em>that</em><a class="headerlink" href="#demonstratives-this-and-that" title="Permalink to this headline">¶</a></h3>
+<p>When &#8220;this&#8221; and &#8220;that&#8221; are used as demonstrative pronouns, then they are the semantic correlates. When &#8220;this&#8221; and &#8220;that&#8221; are used as determiners (e.g. &#8220;this truck&#8221;), then the noun is the semantic correlate. When &#8220;this&#8221; and &#8220;that&#8221; are used with another pronoun (i.e. &#8220;this one&#8221;), the semantic correlate is both (e.g. this one). The same is true when &#8220;this&#8221; or &#8220;that&#8221; is combined with &#8220;way&#8221; (e.g. this way).</p>
+<div class="section" id="id1">
+<h4>Examples<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="29%" />
+<col width="37%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Correlate Number:</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;I want this&#8221; + POINT</td>
+<td>THIS</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I want this toy&#8221; + POINT</td>
+<td>TOY</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>&#8220;I want this one&#8221; + POINT</td>
+<td>THIS ONE</td>
+<td>3,4</td>
+</tr>
+<tr class="row-odd"><td>&#8220;Let&#8217;s go this way&#8221; + POINT</td>
+<td>THIS WAY</td>
+<td>3,4</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="quantifiers">
+<h3>Quantifiers<a class="headerlink" href="#quantifiers" title="Permalink to this headline">¶</a></h3>
+<p>When a series of points or a continuous point is used with a quantifier + noun (e.g. &#8220;four dogs&#8221; or &#8220;several monkeys&#8221;), both the quantifier and the noun should be included in the semantic correlate if the gesture takes in the quantity specified. However, if a point is used with a quantifier but no noun, it is an ADD and has no correlate. Each number in a counting sequence is reinforced and the semantic correlate is the number.</p>
+<div class="section" id="id2">
+<h4>Examples<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="54%" />
+<col width="20%" />
+<col width="26%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Correlate Number:</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;The three bears were very hungry&#8221; + POINT (to 3 bears in sequence)</td>
+<td>THREE BEARS</td>
+<td>2,3</td>
+</tr>
+<tr class="row-odd"><td>&#8220;The three bears were very hungry&#8221; + CONT POINT</td>
+<td>THREE BEARS</td>
+<td>2,3</td>
+</tr>
+<tr class="row-even"><td>&#8220;The three bears were very hungry&#8221; + POINT (single point)</td>
+<td>BEARS</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I see lots of circles&#8221; + DRAG</td>
+<td>LOTS OF CIRCLES</td>
+<td>3,4,5</td>
+</tr>
+<tr class="row-even"><td>&#8220;One, two, three, four&#8221; + POINT - POINT - POINT - POINT</td>
+<td>ONE; TWO; THREE; FOUR</td>
+<td>1;2;3;4</td>
+</tr>
+<tr class="row-odd"><td>&#8220;There are four&#8221; + POINT</td>
+<td>X</td>
+<td>X</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="nouns-with-adjectives-and-possessives">
+<h3>Nouns with Adjectives and Possessives<a class="headerlink" href="#nouns-with-adjectives-and-possessives" title="Permalink to this headline">¶</a></h3>
+<p>When a noun is described with a possessive or an adjective (e.g. &#8220;my socks&#8221; or &#8220;the big puppy&#8221;), the semantic correlate is only coded as the noun itself. When an adjective is used with &#8220;one,&#8221; the semantic correlate is comprised of both. When a possible adjective is used on its own and is of a kind of adjective able to exist as an observable noun in its own right (e.g. colors and shapes), it is the semantic correlate. However, in cases where the possessor is emphasized in speech or in gesture, the possessor should be coded as the correlate rather than the object.</p>
+<div class="section" id="id3">
+<h4>Examples<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="42%" />
+<col width="25%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Correlate Number:</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;These are my socks&#8221; + POINT</td>
+<td>SOCKS</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I love that big puppy&#8221; + POINT</td>
+<td>PUPPY</td>
+<td>5</td>
+</tr>
+<tr class="row-even"><td>&#8220;I have a red one&#8221; + POINT</td>
+<td>RED ONE</td>
+<td>4,5</td>
+</tr>
+<tr class="row-odd"><td>&#8220;That pink is pretty&#8221; + POINT</td>
+<td>PINK</td>
+<td>2</td>
+</tr>
+<tr class="row-even"><td>&#8220;Bring me the big one&#8221; + POINT</td>
+<td>BIG ONE</td>
+<td>4,5</td>
+</tr>
+<tr class="row-odd"><td>&#8220;My name is Franklin&#8221; + POINT (to self)</td>
+<td>MY</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>&#8220;These are mine&#8221; + PALM (to self)</td>
+<td>MINE</td>
+<td>3</td>
+</tr>
+<tr class="row-odd"><td>&#8220;The video is his&#8221; + POINT (to other)</td>
+<td>HIS</td>
+<td>4</td>
+</tr>
+<tr class="row-even"><td>&#8220;Circle&#8221; + POINT</td>
+<td>CIRCLE</td>
+<td>1</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="attributes-and-adjectives-rf-a">
+<h3>Attributes and Adjectives (RF.a)<a class="headerlink" href="#attributes-and-adjectives-rf-a" title="Permalink to this headline">¶</a></h3>
+<p>When a spoken attribute (e.g. &#8220;pink&#8221; or &#8220;big&#8221;) accompanies a gesture toward an object possessing that attribute, the gesture-speech relationship is given as reinforcing attribute (RF.a) and the semantic correlate is given as the attribute. If the object label is spoken as well, then the gesture-speech relationship is reinforcing (RF) and the semantic correlate is the object label.</p>
+<div class="section" id="id4">
+<h4>Examples<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="47%" />
+<col width="26%" />
+<col width="28%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>G-S Relationship</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;Pink&#8221; + POINT (to pink car)</td>
+<td>RF.a</td>
+<td>PINK</td>
+</tr>
+<tr class="row-odd"><td>&#8220;That is pink&#8221; + POINT (to pink car)</td>
+<td>RF.a</td>
+<td>PINK</td>
+</tr>
+<tr class="row-even"><td>&#8220;This one is pink&#8221; + POINT (to pink car)</td>
+<td>RF.a</td>
+<td>PINK</td>
+</tr>
+<tr class="row-odd"><td>&#8220;This car is pink&#8221; + POINT (to pink car)</td>
+<td>RF</td>
+<td>CAR</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="id5">
+<h3>CHAT deletions<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>If the word or words that the gesture occurs during has/have been deleted during the removal of disfluent speech for CHAT processing, code the semantic correlate and word number as NA.</p>
+</div>
+</div>
+<div class="section" id="semantic-role">
+<h2>Semantic Role<a class="headerlink" href="#semantic-role" title="Permalink to this headline">¶</a></h2>
+<p>Goal: To determine what types of semantic roles are supported by gesture or conveyed solely in gesture.</p>
+<div class="section" id="id6">
+<h3>Explanation<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
+<p>Semantic role refers to the active role that a word or entity plays in relation to the actions or concepts that appear in a particular sentence. It takes into account such things as the performer of an action, the recipient of an action, whether objects are described versus moved, and whether events are framed in space or time.</p>
+</div>
+<div class="section" id="id7">
+<h3>When to code<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>Semantic role should be coded for all gestures. When gestures reinforce (RF) or disambiguate (DA) speech, the semantic role of the semantic correlate is coded. When gestures add information to speech (ADD), then the semantic role that the gesture adds to the utterance is coded if it can be determined. A particular effort should be made to code semantic role for ADDs, since we do not know what types of roles may be added by gesture.</p>
+<blockquote>
+<div><ul class="simple">
+<li>When counting gestures are used, they are not given a semantic role.</li>
+<li>The semantic role of a word emphasized by a beat is coded.</li>
+</ul>
+</div></blockquote>
+<table border="1" class="docutils">
+<colgroup>
+<col width="3%" />
+<col width="5%" />
+<col width="54%" />
+<col width="39%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Code</strong></td>
+<td><strong>Thematic Role</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Examples</strong></td>
+</tr>
+<tr class="row-even"><td>TA</td>
+<td>Transitive Agent</td>
+<td>The actor purposefully performs an action to or on another entity.</td>
+<td><ul class="first last simple">
+<li><strong>Susan</strong>  wrote the book</li>
+<li><strong>William</strong> put the frog in a bowl</li>
+<li>Vroom (+point to car)</li>
+<li>guh (+point to letter G)</li>
+<li>What sound does <strong>this</strong> make (+point to letter G)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>IA</td>
+<td>Intransitive Agent</td>
+<td>The actor purposefully performs an action that does not have a patient or theme.</td>
+<td><ul class="first last simple">
+<li>The <strong>cat</strong> slept</li>
+<li><strong>Jonah</strong> jumped into the lake</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>PO</td>
+<td>Possessor</td>
+<td>An entity characterized in a sentence by having, owning, or holding an object.</td>
+<td><ul class="first last simple">
+<li><strong>Brian</strong> has two turtles</li>
+<li>This is <strong>Greg</strong>&#8216;s purple hat</li>
+<li>It&#8217;s <strong>my</strong> hat</li>
+<li>These are <strong>mine</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>EX</td>
+<td>Experiencer</td>
+<td>The person or entity that experiences a state or event but does not initiate or affect it. Usually the experiencer receives sensory input or is described as being affected by an emotional state.</td>
+<td><ul class="first last simple">
+<li><strong>I</strong> want a cookie</li>
+<li><strong>Sam</strong> knows Lois</li>
+<li><strong>Richard</strong> saw the bear</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>PA</td>
+<td>Patient</td>
+<td>The recipient of a transformative action performed by the AGENT. The action leaves the patient changed in form or kind.</td>
+<td><ul class="first last simple">
+<li>I read the <strong>book</strong></li>
+<li>Thomas ate all the <strong>cheese</strong></li>
+<li>Cut <strong>it</strong>!</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>TH</td>
+<td>Theme</td>
+<td>The entity moving in a locative action (often performed by the AGENT). The action leaves the theme changed in space or time.</td>
+<td><ul class="first last simple">
+<li>Put the <strong>jar</strong> on the shelf!</li>
+<li>The <strong>ball</strong> rolled under the couch</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>EL</td>
+<td>Locative Entity</td>
+<td>An (non patient or theme) object or entity that is described as being in a particular place.</td>
+<td><ul class="first last simple">
+<li>The <strong>cup</strong> is on the table</li>
+<li><strong>Dad</strong> is in his office</li>
+<li><strong>It</strong> is there</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>EO</td>
+<td>Owned Entity</td>
+<td>An (non patient or theme) object or entity that is described as belonging to or being in the possession of a person, animal or character. Entities described as belonging to a non-animate object (e.g. the house&#8217;s chimney) are described entities (ED).</td>
+<td><ul class="first last simple">
+<li><strong>This</strong> is mine</li>
+<li>Brian has four <strong>trucks</strong></li>
+<li>Is that your <strong>car</strong>?</li>
+<li>Is <strong>that</strong> yours?</li>
+<li>This is my <strong>nose</strong></li>
+<li>Your <strong>leg</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>EP</td>
+<td>Perceived Entity</td>
+<td>An (non patient or theme) object or entity that is described as being perceived through a sense or emotion (usually paired with an experiencer)</td>
+<td><ul class="first last simple">
+<li>I want <strong>cookies</strong></li>
+<li>Look at <strong>that</strong>!</li>
+<li>She touched the <strong>cat</strong></li>
+<li>See? (<strong>+point</strong>)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>ED</td>
+<td>Described Entity</td>
+<td>An (non patient or theme) object or entity that is described as having a particular characteristic or use.</td>
+<td><ul class="first last simple">
+<li><strong>Frogs</strong> can jump</li>
+<li>A yellow <strong>pen</strong></li>
+<li><strong>It</strong>&#8216;s for me</li>
+<li>There are four (+point)</li>
+<li><strong>It</strong> needs batteries (+point)</li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>EN</td>
+<td>Named Entity</td>
+<td>An (non patient or theme) object or entity that is labeled without further description.</td>
+<td><ul class="first last simple">
+<li>This <strong>box</strong></li>
+<li><strong>Frogs</strong></li>
+<li>He is a boy (+ point to girl) GS = ADD.err</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>AE</td>
+<td>Animate Endpoint</td>
+<td>The person/animal at which a translocational action ends.</td>
+<td><ul class="first last simple">
+<li>I threw the ball to the <strong>dog</strong></li>
+<li>Give it to <strong>me</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>IE</td>
+<td>Inanimate Endpoint</td>
+<td>The place at which a translocational action ends.</td>
+<td><ul class="first last simple">
+<li>Put it on the <strong>table</strong></li>
+<li>It ran down into the <strong>hole</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>AS</td>
+<td>Animate Source</td>
+<td>The person/animal from whence a translocational action originates or the origin of an entity.</td>
+<td><ul class="first last simple">
+<li>The cat ran away from <strong>me</strong></li>
+<li>The cookies are from my <strong>mom</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>IS</td>
+<td>Inanimate Source</td>
+<td>The place from whence a translocational action originates or the origin of an entity.</td>
+<td><ul class="first last simple">
+<li>It ran out from under the <strong>sofa</strong></li>
+<li>The dog is from the <strong>shelter</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>PT</td>
+<td>Path</td>
+<td>The relative location where an action takes place or through which an object moves.</td>
+<td><ul class="first last simple">
+<li>Make it go <strong>up and around</strong></li>
+<li>The car drove <strong>through</strong> it</li>
+<li>That one&#8217;s <strong>far away</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>SC</td>
+<td>Static Comparative</td>
+<td>The second argument in comparisons of static traits between entities.</td>
+<td><ul class="first last simple">
+<li>I&#8217;m taller than <strong>you</strong></li>
+<li>That one is bigger than <strong>this one</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>AC</td>
+<td>Active Comparative</td>
+<td>The second argument in comparisons of active traits between entities.</td>
+<td><ul class="first last simple">
+<li>I can jump higher than <strong>you</strong></li>
+<li>The Flash could run faster than <strong>Superman</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>IN</td>
+<td>Instrument</td>
+<td>A tool used to perform an action. It can take the place of an agent, but is still referred to as an instrument if it is incapable of performing the action without an agent.</td>
+<td><ul class="first last simple">
+<li>She opened the box with a <strong>key</strong></li>
+<li>He was killed with a <strong>knife</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>AA</td>
+<td>Accompanying Actor</td>
+<td>A person or entity that performs the action along with the agent.</td>
+<td><ul class="first last simple">
+<li>I saw the movie with my <strong>dad</strong></li>
+<li>Sarah has dinner with <strong>us</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>BE</td>
+<td>Beneficiary</td>
+<td>A person or animate character who benefits as the result of the action. Purposes (e.g. this is for dinner) are not coded.</td>
+<td><ul class="first last simple">
+<li>I washed dishes for my <strong>mom</strong></li>
+<li>Dad made <strong>us</strong> a snack</li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>TI</td>
+<td>Time</td>
+<td>The time at which an action/event occurs.</td>
+<td><ul class="first last simple">
+<li><strong>Yesterday</strong>, all our troubles seemed so far away</li>
+<li>Jasmine got one <strong>last week</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-even"><td>LO</td>
+<td>Location</td>
+<td>The location where an action/event occurs.</td>
+<td><ul class="first last simple">
+<li>I threw a penny into the well at the <strong>park</strong></li>
+<li>It is on the <strong>table</strong></li>
+</ul>
+</td>
+</tr>
+<tr class="row-odd"><td>UC</td>
+<td>Unclear</td>
+<td>The role of the gesture is unclear.</td>
+<td>&nbsp;</td>
+</tr>
+<tr class="row-even"><td>X</td>
+<td>Doesn&#8217;t exist</td>
+<td>The gesture refers to a part of speech that cannot take a semantic role such as a verb.</td>
+<td>&nbsp;</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="adds-and-gestures-without-speech">
+<h3>ADDs and gestures without speech<a class="headerlink" href="#adds-and-gestures-without-speech" title="Permalink to this headline">¶</a></h3>
+<p>Semantic role should be coded for all gestures regardless of whether they have a semantic correlate or are produced with any speech at all. When gestures are adding information to speech, the coder should try to determine what type of semantic role the object or entity produced in gesture would play in the utterance. If the semantic role for an ADD is unclear, code as UC.</p>
+<div class="section" id="deictics">
+<h4>Deictics<a class="headerlink" href="#deictics" title="Permalink to this headline">¶</a></h4>
+<p>Deictic points produced without speech or produced along with filler utterances (ADD.f) are coded as named entities (EN), since there is no other information provided other than the possible referent.</p>
+<p>Deictic shows points produced without speech or produced along with filler utterances (ADD.f) are coded as perceived entities (EP) since the main effect is to have the other person look at the object and are often accompanied by &#8220;look&#8221; or &#8220;see&#8221; when speech is present.</p>
+<ul class="simple">
+<li>DP = EN</li>
+<li>DS = EP</li>
+<li>DSDP = EN</li>
+</ul>
+</div>
+<div class="section" id="iconics">
+<h4>Iconics<a class="headerlink" href="#iconics" title="Permalink to this headline">¶</a></h4>
+<p>Iconics produced without speech or produced along with filler utterances (ADD.f) may often be described entities (ED), since the form of the iconic provides additional information about the size, shape, location, manner or path of the referent.</p>
+</div>
+</div>
+<div class="section" id="when-entities-have-more-than-one-semantic-role">
+<h3>When entities have more than one Semantic Role<a class="headerlink" href="#when-entities-have-more-than-one-semantic-role" title="Permalink to this headline">¶</a></h3>
+<p>Many entities are described in more than one way and could be scored as more than one semantic role. Take the sentence &#8220;I can see my mother&#8217;s old friendly turtle is in his basket.&#8221; The turtle in question is, an EP, EO, ED, and EL all in the same utterance. This occurs in a less drastic way quite often, as in &#8220;my purple crayon,&#8221; &#8220;the little one in the corner,&#8221; or &#8220;look at the really big one!&#8221; In these cases, all of the possible roles are to be coded. The codes should be recorded in the order in which they appeared in speech and separated by commas without spaces in the form E(X),E(Y). EN is used only when no other semantic role can be used and is not used in combination with other codes.</p>
+<p>Examples:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="49%" />
+<col width="19%" />
+<col width="32%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Role</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;My dog is huggable&#8221; + POINT (to dog)</td>
+<td>DOG</td>
+<td>EO,ED</td>
+</tr>
+<tr class="row-odd"><td>&#8220;Kristin&#8217;s red scissors&#8221; + POINT (to scissors)</td>
+<td>SCISSORS</td>
+<td>EO,ED</td>
+</tr>
+<tr class="row-even"><td>&#8220;The little one in the bowl&#8221; + POINT (to object)</td>
+<td>ONE</td>
+<td>ED,EL</td>
+</tr>
+<tr class="row-odd"><td>&#8220;He saw my bouncy ball roll under the sofa&#8221; + POINT (to ball)</td>
+<td>BALL</td>
+<td>TH (not an entity because it is active)</td>
+</tr>
+<tr class="row-even"><td>&#8220;We need one more flat-edged one&#8221; + POINT (to puzzle piece)</td>
+<td>ONE</td>
+<td>EP,ED</td>
+</tr>
+<tr class="row-odd"><td>&#8220;He went to the store&#8221; + BEAT (store)</td>
+<td>STORE</td>
+<td>IE</td>
+</tr>
+<tr class="row-even"><td>&#8220;The dog&#8221; + point</td>
+<td>DOG</td>
+<td>EN</td>
+</tr>
+<tr class="row-odd"><td>&#8220;The dog loves me&#8221; + point</td>
+<td>DOG</td>
+<td>EX (not EN)</td>
+</tr>
+</tbody>
+</table>
+<ul class="simple">
+<li>When something could be described as something other than an entity as well as an entity (e.g. is a patient but is also described as being owned as in the sentence &#8220;I ate Fred&#8217;s cupcake&#8221;) it should only be given the non-entity role. Entities are the fall back category when a person or object does not play a more active role in the utterance.</li>
+</ul>
+</div>
+<div class="section" id="id8">
+<h3>Attributes and Adjectives (RF.a)<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>Sometimes a gesture will be used along with an utterance that includes a description of an object but not the object label. These types of utterances are given the G-S relationship &#8220;RF.a&#8221; for reinforcing attribute. In these situations, the semantic correlate should be listed as the adjective, but the theme as entity described (ED), since the reinforced attribute describes an entity.</p>
+<p>Examples:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="27%" />
+<col width="13%" />
+<col width="18%" />
+<col width="23%" />
+<col width="19%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance</strong></td>
+<td><strong>G-Type</strong></td>
+<td><strong>G-S Relation</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Role</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;This one is pink&#8221; + POINT</td>
+<td>DP</td>
+<td>RF.a</td>
+<td>PINK</td>
+<td>ED</td>
+</tr>
+<tr class="row-odd"><td>&#8220;This is pink&#8221; + POINT</td>
+<td>DP</td>
+<td>RF.a</td>
+<td>PINK</td>
+<td>ED</td>
+</tr>
+<tr class="row-even"><td>&#8220;Pink&#8221; + POINT</td>
+<td>DP</td>
+<td>RF.a</td>
+<td>PINK</td>
+<td>ED</td>
+</tr>
+<tr class="row-odd"><td>&#8220;This bag is pink&#8221; + POINT</td>
+<td>DP</td>
+<td>RF</td>
+<td>BAG</td>
+<td>ED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ambiguous-verbs">
+<h3>Ambiguous Verbs<a class="headerlink" href="#ambiguous-verbs" title="Permalink to this headline">¶</a></h3>
+<p>Verbs such as &#8220;to have&#8221; can play different roles based on their context. For these verbs, the coder should take into account the surrounding context to try to determine whether the recipient of the verb is a patient, a theme, or an entity.</p>
+<p>Examples:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="32%" />
+<col width="12%" />
+<col width="17%" />
+<col width="22%" />
+<col width="18%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance</strong></td>
+<td><strong>G-Type</strong></td>
+<td><strong>G-S Relation</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Semantic Role</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;I had some cake at lunch&#8221; + POINT</td>
+<td>DP</td>
+<td>RF</td>
+<td>CAKE</td>
+<td>PA</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I have two frogs&#8221; + POINT</td>
+<td>DP</td>
+<td>RF</td>
+<td>FROGS</td>
+<td>EO</td>
+</tr>
+<tr class="row-even"><td>&#8220;The house has a chimney&#8221; + POINT</td>
+<td>DP</td>
+<td>RF</td>
+<td>CHIMNEY</td>
+<td>ED</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="choosing-semantic-correlate-and-semantic-role-for-multi-clause-utterances">
+<h3>Choosing Semantic Correlate and Semantic Role for Multi-clause Utterances<a class="headerlink" href="#choosing-semantic-correlate-and-semantic-role-for-multi-clause-utterances" title="Permalink to this headline">¶</a></h3>
+<p>When utterances have multiple clauses and you need to choose the semantic correlate from either the main or the subordinate clause, rely on the timing of the gesture. If it occurs during the main clause, choose the main clause. If it occurs during the subordinate clause, choose the subordinate clause.</p>
+<p>When utterances have multiple clauses and you need to choose the semantic role from either the main or the subordinate clause <em>and the semantic correlate is shared by both clauses</em>, choose the clause with the most action or agency.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="10%" />
+<col width="9%" />
+<col width="7%" />
+<col width="15%" />
+<col width="26%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td>Utterance</td>
+<td>G-Type</td>
+<td>G-S Relation</td>
+<td>Time</td>
+<td>Semantic Correlate</td>
+<td>Semantic Role</td>
+</tr>
+<tr class="row-even"><td>I&#8217;m trying to get Hanna in here so she&#8217;ll calm down.</td>
+<td>DP (to Hanna)</td>
+<td>RF</td>
+<td>4,5,6</td>
+<td>Hanna</td>
+<td>TH</td>
+</tr>
+<tr class="row-odd"><td>I&#8217;m trying to get Hanna in here so she&#8217;ll calm down.</td>
+<td>DP (to Hanna)</td>
+<td>RF</td>
+<td>10,11,12</td>
+<td>She</td>
+<td>EX</td>
+</tr>
+<tr class="row-even"><td>You&#8217;ve got to eat what you&#8217;ve got.</td>
+<td>DP (to child)</td>
+<td>DA</td>
+<td>1,2,3,4</td>
+<td>You (in first clause)</td>
+<td>TA</td>
+</tr>
+<tr class="row-odd"><td>Do you see the chair move?</td>
+<td>DP (to chair)</td>
+<td>RF</td>
+<td>1,2,3</td>
+<td>Chair</td>
+<td>TH (chair is part of subordinate clause)</td>
+</tr>
+<tr class="row-even"><td>Can you bring the cat that&#8217;s sleeping over there?</td>
+<td>DP (to cat)</td>
+<td>RF</td>
+<td>4,5</td>
+<td>Cat</td>
+<td>TH</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="presence-of-referent">
+<h2>Presence of Referent<a class="headerlink" href="#presence-of-referent" title="Permalink to this headline">¶</a></h2>
+<p>Goal: To record whether an object or action is physically present when it is referenced in gesture.</p>
+<div class="section" id="id9">
+<h3>Explanation<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>A gesture should be coded as having a referent present when the object is freely accessible in the space. In other words, could a reference to the object or action using &#8220;this&#8221; or &#8220;it&#8221; be disambiguated by a point? The object does not need to be fully accessible to both parties (since we are not making claims about visual perspective taking) only to the gesturer. If an object is out of the room, behind or under another object, or a real world object/action that is not present in the gesturer&#8217;s space, then the referent is not present. If the referent is an abstract concept incapable of having a visually-accessible referent (e.g. &#8220;honor&#8221; or &#8220;cynicism&#8221;), then the present of referent should be coded as &#8220;X,&#8221; since it is not applicable for that referent.</p>
+</div>
+<div class="section" id="id10">
+<h3>When to code<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<dl class="docutils">
+<dt>Presence of referent is coded for:</dt>
+<dd><ul class="first last simple">
+<li>Deictics</li>
+<li>Iconics</li>
+<li>ASL signs</li>
+<li>Counting</li>
+</ul>
+</dd>
+<dt>Notes:</dt>
+<dd><ul class="first last simple">
+<li>Not coded for other conventionals (C) or functional acts (FA): mark cell with X</li>
+<li>Deictics typically have the referent present, but some deictics may be &#8220;non-literal&#8221; and use a location or object to refer to a different one (i.e. &#8220;where is he?&#8221; +[point to dad&#8217;s empty chair])</li>
+<li>Iconics typically have the referent absent but when iconics refer to direction, the referent is always coded as present.</li>
+</ul>
+</dd>
+</dl>
+<table border="1" class="docutils">
+<colgroup>
+<col width="4%" />
+<col width="21%" />
+<col width="53%" />
+<col width="22%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Code</strong></td>
+<td><strong>Referent Presence</strong></td>
+<td><strong>Definition</strong></td>
+<td><strong>Example</strong></td>
+</tr>
+<tr class="row-even"><td>Y</td>
+<td>Referent is present in gesture&#8217;s frame of reference</td>
+<td>Gesturer can see the object or action (or its location) that is referred to in gesture.</td>
+<td>&#8220;Rabbits are nice&#8221; +[point to picture of rabbit in book]</td>
+</tr>
+<tr class="row-odd"><td>N</td>
+<td>Referent is not present in gesture&#8217;s frame of reference</td>
+<td>Gesturer can&#8217;t see the object or action (or its location) that is referred to in gesture.</td>
+<td>&#8220;Rabbits are nice&#8221; +[iconic for rabbit hopping]</td>
+</tr>
+<tr class="row-even"><td>UC</td>
+<td>Coder is unsure whether referent is present</td>
+<td>Gesture refers to an object/action that is not visible to the camera but which might be present (e.g. something on a computer screen or book)</td>
+<td>&#8220;Mouse&#8221; +[point to computer screen out of camera&#8217;s view]</td>
+</tr>
+<tr class="row-odd"><td>X</td>
+<td>Not applicable</td>
+<td>Gesture refers to something that can&#8217;t have a physical referent (e.g. nods, shakes, etc.)</td>
+<td>&#8220;Let&#8217;s do something else&#8221; +[dismiss]</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h3>Examples<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="60%" />
+<col width="19%" />
+<col width="21%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Utterance + GESTURE</strong></td>
+<td><strong>Semantic Correlate</strong></td>
+<td><strong>Presence of Referent</strong></td>
+</tr>
+<tr class="row-even"><td>&#8220;Bunny&#8221; + POINT (to picture of rabbit)</td>
+<td>BUNNY</td>
+<td>Y</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I think we need one more flat-edged one&#8221; + POINT (to pile of puzzle pieces)</td>
+<td>X</td>
+<td>UC</td>
+</tr>
+<tr class="row-even"><td>&#8220;Sleeping&#8221; + POINT (to dog sleeping)</td>
+<td>SLEEPING</td>
+<td>Y</td>
+</tr>
+<tr class="row-odd"><td>&#8220;Sleeping&#8221; + ICONIC (for sleep - sleeping dog is visible)</td>
+<td>SLEEPING</td>
+<td>Y</td>
+</tr>
+<tr class="row-even"><td>&#8220;I got to scoop the ice cream&#8221; + ICONIC (for scoop - no scooping visible)</td>
+<td>SCOOP</td>
+<td>N</td>
+</tr>
+<tr class="row-odd"><td>&#8220;I want to scoop now&#8221; + ICONIC (for scoop - mom is visibly scooping)</td>
+<td>SCOOP</td>
+<td>Y</td>
+</tr>
+<tr class="row-even"><td>&#8220;I got to scoop the ice cream&#8221; + POINT (to fridge - no visible ice cream)</td>
+<td>ADD</td>
+<td>N</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

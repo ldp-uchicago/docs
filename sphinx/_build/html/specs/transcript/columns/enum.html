@@ -1,0 +1,172 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.6. Enum - Enumerated Utterances &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.6. Enum - Enumerated Utterances</a><ul>
+<li><a class="reference internal" href="#description">3.6.1. Description</a></li>
+<li><a class="reference internal" href="#format">3.6.2. Format</a></li>
+<li><a class="reference internal" href="#values">3.6.3. Values</a></li>
+<li><a class="reference internal" href="#vertical-dependencies">3.6.4. Vertical Dependencies</a></li>
+<li><a class="reference internal" href="#horizontal-dependencies">3.6.5. Horizontal Dependencies</a></li>
+<li><a class="reference internal" href="#depended-upon-by">3.6.6. Depended Upon By</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/specs/transcript/columns/enum.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="enum-enumerated-utterances">
+<span id="enum-column"></span><h1>3.6. Enum - Enumerated Utterances<a class="headerlink" href="#enum-enumerated-utterances" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<span id="enum-column-description"></span><h2>3.6.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Speaker specific utterance transcription with each word and final punctuation
+enumerated to aid in second-layer gesture coding</p>
+</div>
+<div class="section" id="format">
+<span id="enum-column-format"></span><h2>3.6.2. Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h2>
+<pre>
+<strong id="grammar-token-entry">entry             </strong> ::=  <a class="reference internal" href="#grammar-token-enum"><tt class="xref docutils literal"><span class="pre">enum</span></tt></a>+ <a class="reference internal" href="#grammar-token-enum_punct"><tt class="xref docutils literal"><span class="pre">enum_punct</span></tt></a>
+<strong id="grammar-token-enum">enum              </strong> ::=  <a class="reference internal" href="#grammar-token-number"><tt class="xref docutils literal"><span class="pre">number</span></tt></a> &quot;|&quot; <a class="reference internal" href="word_num.html#grammar-token-value"><tt class="xref docutils literal"><span class="pre">value</span></tt></a>
+<strong id="grammar-token-number">number            </strong> ::=  &lt;Positive integer&gt;
+<strong id="grammar-token-value">value             </strong> ::=  english_word | foreign_word | letter | idiosyncratic_word | clitic
+<strong id="grammar-token-english_word">english_word      </strong> ::=  &lt;Any English word&gt;
+<strong id="grammar-token-foreign_word">foreign_word      </strong> ::=  &quot;word&#64;f&quot; &lt;where word is any foreign word&gt;
+<strong id="grammar-token-letter">letter            </strong> ::=  &quot;x&#64;l&quot; &lt;where x is any letter&gt;
+<strong id="grammar-token-idiosyncratic_word">idiosyncratic_word</strong> ::=  &quot;word&#64;&quot; &lt;where word is any word unique to child&gt;
+<strong id="grammar-token-clitic">clitic            </strong> ::=  &quot;'s&quot; | &quot;'ll&quot; | &quot;'m&quot; | &quot;'d&quot; | &quot;'ve&quot;
+<strong id="grammar-token-enum_punct">enum_punct        </strong> ::=  <a class="reference internal" href="#grammar-token-number"><tt class="xref docutils literal"><span class="pre">number</span></tt></a> &quot;|&quot; <a class="reference internal" href="mor.html#grammar-token-punct"><tt class="xref docutils literal"><span class="pre">punct</span></tt></a>
+<strong id="grammar-token-punct">punct             </strong> ::=  &quot;.&quot; | &quot;?&quot; | &quot;!&quot; | &quot;+...&quot;
+</pre>
+</div>
+<div class="section" id="values">
+<span id="enum-column-values"></span><h2>3.6.3. Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h2>
+<p>Enum entries are composed of enumerated words and orthographic elements.  They
+are created by:</p>
+<ol class="arabic simple">
+<li>Expanding a CHAT formatted utterance into a list of all canonically
+spelled words, proper nouns, clitics (<tt class="docutils literal"><span class="pre">'s</span></tt>, <tt class="docutils literal"><span class="pre">'ll</span></tt>, <tt class="docutils literal"><span class="pre">'m</span></tt>,
+<tt class="docutils literal"><span class="pre">'d</span></tt>, and <tt class="docutils literal"><span class="pre">'ve</span></tt>), standard sentence-final punctuation, and <tt class="docutils literal"><span class="pre">+...</span></tt>s</li>
+<li>Going through the list and prepending each list item with its numbered
+position (positions start with 1), and a pipe symbol (<tt class="docutils literal"><span class="pre">|</span></tt>)</li>
+</ol>
+</div>
+<div class="section" id="vertical-dependencies">
+<span id="enum-column-vert-dep"></span><h2>3.6.4. Vertical Dependencies<a class="headerlink" href="#vertical-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="horizontal-dependencies">
+<span id="enum-column-horz-dep"></span><h2>3.6.5. Horizontal Dependencies<a class="headerlink" href="#horizontal-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Enum is dependent upon the <a class="reference internal" href="chat.html#chat-column-dep-by"><em>CHAT Column</em></a>.</p>
+<p>Enum is derived directly from the content of the CHAT column with the following
+modifications:</p>
+<ul class="simple">
+<li>Each word that has the <tt class="docutils literal"><span class="pre">&amp;</span></tt> prefix is removed, as are all non-sentence-final
+punctuation and the <tt class="docutils literal"><span class="pre">#</span></tt> symbol</li>
+<li>Words that are contractions with the word &#8220;not&#8221; are expanded (e.g. don&#8217;t =&gt;
+do not)</li>
+<li>Other words that are written with an apostrophe (I&#8217;m, he&#8217;ll, Mom&#8217;s, etc.)
+are split before the apostrophe (with the exception of let&#8217;s)</li>
+<li>All remaining words and punctuation are prefixed by their word number and
+the <tt class="docutils literal"><span class="pre">|</span></tt> symbol.</li>
+</ul>
+<p>Example:</p>
+<div class="highlight-python"><pre>CHAT: let's see, I'm going to make Dad's dinner &amp;xxx .
+Enum: 1|let's 2|see 3|I 4|'m 5|going 6|to 7|make 8|Dad 9|'s 10|dinner 11|.</pre>
+</div>
+</div>
+<div class="section" id="depended-upon-by">
+<span id="enum-column-dep-by"></span><h2>3.6.6. Depended Upon By<a class="headerlink" href="#depended-upon-by" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

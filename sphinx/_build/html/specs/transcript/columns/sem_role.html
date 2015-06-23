@@ -1,0 +1,321 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>3.28. Sem_Role - Semantic Role &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../../index.html"><img src="../../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">3.28. Sem_Role - Semantic Role</a><ul>
+<li><a class="reference internal" href="#description">3.28.1. Description</a></li>
+<li><a class="reference internal" href="#format">3.28.2. Format</a></li>
+<li><a class="reference internal" href="#values">3.28.3. Values</a></li>
+<li><a class="reference internal" href="#vertical-dependencies">3.28.4. Vertical Dependencies</a></li>
+<li><a class="reference internal" href="#horizontal-dependencies">3.28.5. Horizontal Dependencies</a></li>
+<li><a class="reference internal" href="#depended-upon-by">3.28.6. Depended Upon By</a></li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../../_sources/specs/transcript/columns/sem_role.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="sem-role-semantic-role">
+<span id="semrole-column"></span><h1>3.28. Sem_Role - Semantic Role<a class="headerlink" href="#sem-role-semantic-role" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="description">
+<span id="semrole-column-description"></span><h2>3.28.1. Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>Detemines what types of semantic roles are supported by gesture or conveyed
+solely in gesture</p>
+</div>
+<div class="section" id="format">
+<span id="semrole-column-format"></span><h2>3.28.2. Format<a class="headerlink" href="#format" title="Permalink to this headline">¶</a></h2>
+<pre>
+<strong id="grammar-token-entry">entry      </strong> ::=  <a class="reference internal" href="#grammar-token-code_set"><tt class="xref docutils literal"><span class="pre">code_set</span></tt></a> [<a class="reference internal" href="../intro.html#grammar-token-op"><tt class="xref docutils literal"><span class="pre">op</span></tt></a> <a class="reference internal" href="#grammar-token-code_set"><tt class="xref docutils literal"><span class="pre">code_set</span></tt></a>]*
+<strong id="grammar-token-code_set">code_set   </strong> ::=  <a class="reference internal" href="#grammar-token-code_list"><tt class="xref docutils literal"><span class="pre">code_list</span></tt></a> [<a class="reference internal" href="word_num.html#grammar-token-set_op"><tt class="xref docutils literal"><span class="pre">set_op</span></tt></a> <a class="reference internal" href="#grammar-token-code_list"><tt class="xref docutils literal"><span class="pre">code_list</span></tt></a>]*
+<strong id="grammar-token-code_list">code_list  </strong> ::=  <a class="reference internal" href="../intro.html#grammar-token-null"><tt class="xref docutils literal"><span class="pre">null</span></tt></a> | <a class="reference internal" href="../intro.html#grammar-token-code"><tt class="xref docutils literal"><span class="pre">code</span></tt></a> | <a class="reference internal" href="#grammar-token-entity_code"><tt class="xref docutils literal"><span class="pre">entity_code</span></tt></a> [<a class="reference internal" href="#grammar-token-entity_op"><tt class="xref docutils literal"><span class="pre">entity_op</span></tt></a> <a class="reference internal" href="#grammar-token-entity_code"><tt class="xref docutils literal"><span class="pre">entity_code</span></tt></a>]*
+<strong id="grammar-token-null">null       </strong> ::=  &quot;X&quot;
+<strong id="grammar-token-code">code       </strong> ::=  &quot;TA&quot; | &quot;IA&quot; | &quot;PO&quot; | &quot;EX&quot; | &quot;PA&quot; | &quot;TH&quot; | &quot;EN&quot; | &quot;AE&quot; | &quot;IE&quot; | &quot;AS&quot; | &quot;IS&quot; | &quot;PT&quot; | &quot;SC&quot; | &quot;AC&quot; | &quot;IN&quot; | &quot;AA&quot; | &quot;BE&quot; | &quot;TI&quot; | &quot;LO&quot; | &quot;UC&quot;
+<strong id="grammar-token-entity_code">entity_code</strong> ::=  &quot;EO&quot; | &quot;EP&quot; | &quot;ED&quot; | &quot;EL&quot;
+<strong id="grammar-token-entity_op">entity_op  </strong> ::=  &quot;,&quot;
+<strong id="grammar-token-set_op">set_op     </strong> ::=  &quot;/&quot;
+<strong id="grammar-token-op">op         </strong> ::=  &quot;;&quot;
+</pre>
+</div>
+<div class="section" id="values">
+<span id="semrole-column-values"></span><h2>3.28.3. Values<a class="headerlink" href="#values" title="Permalink to this headline">¶</a></h2>
+<p>CODE must be drawn from the following:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="11%" />
+<col width="27%" />
+<col width="62%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Code</th>
+<th class="head">Meaning</th>
+<th class="head">Description</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">TA</span></tt></td>
+<td>Transitive Agent</td>
+<td>The actor purposefully performs an action
+to or on another entity.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">IA</span></tt></td>
+<td>Inransitive Agent</td>
+<td>The actor purposefully performs an action
+that does not have a patient or theme.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">PO</span></tt></td>
+<td>Possessor</td>
+<td>An entity characterized in a sentence by
+having, owning, or holding an object.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">EX</span></tt></td>
+<td>Experiencer</td>
+<td>The person or entity that experiences a
+state or event but does not initiate or
+affect it.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">PA</span></tt></td>
+<td>Patient</td>
+<td>The recipient of a transformative action
+performed by the AGENT.  The action leaves
+the patient changed in form or kind.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">TH</span></tt></td>
+<td>Theme</td>
+<td>The entity moving in a locative action.
+The action leaves the theme changed in
+space or time.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">EL</span></tt></td>
+<td>Locative Entity</td>
+<td>An object or entity that is described as
+being in a particular place</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">EO</span></tt></td>
+<td>Owned Entity</td>
+<td>An object or entity that is described as
+belonging to or being in the possession of
+a person, animal, or character.  Entities
+described as belonging to non-animate
+objects are described entities.</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">EP</span></tt></td>
+<td>Perceived Entity</td>
+<td>An object or entity that is described as
+being perceived through a sense or emotion
+(usually paired with an experiencer)</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">ED</span></tt></td>
+<td>Described Entity</td>
+<td>An object or entity that is described as
+having a particular characteristic or use</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">EN</span></tt></td>
+<td>Named Entity</td>
+<td>An object or entity that is labeled with
+no futher description</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AE</span></tt></td>
+<td>Animate Endpoint</td>
+<td>The person/animal at which a translocational
+action ends</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">IE</span></tt></td>
+<td>Inanimate Endpoint</td>
+<td>The place at which a translocational action
+ends</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AS</span></tt></td>
+<td>Animate Source</td>
+<td>The persona/animal from whence a
+translocational action originates or the
+origin of an entity</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">IS</span></tt></td>
+<td>Inanimate Source</td>
+<td>The place from when a translocational action
+originates or the origin of an entity</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">PT</span></tt></td>
+<td>Path</td>
+<td>The relative location where an action takes
+place or through which an object moves</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">SC</span></tt></td>
+<td>Static Comparative</td>
+<td>The second argument in comparisons of static
+traits between entities</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AC</span></tt></td>
+<td>Active Comparative</td>
+<td>The second argument in comparisons of action
+traits between entities</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">IN</span></tt></td>
+<td>Instrument</td>
+<td>A tool used to perform an action.  It can
+take the place of an agent, but is still
+referred to as an instrument if it is
+incapable of performing the action without
+an agent.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">AA</span></tt></td>
+<td>Accompanying Actor</td>
+<td>A person or entity that performs the action
+along with the agent</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">BE</span></tt></td>
+<td>Beneficiary</td>
+<td>A person or animate character who benefits
+as the restul of the action.  Purposes (e.g.
+this is for dinner) are not coded.</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">TI</span></tt></td>
+<td>Time</td>
+<td>The time at which an action/event occurs</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">LO</span></tt></td>
+<td>Location</td>
+<td>The location where an action/event occurs</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">UC</span></tt></td>
+<td>Unclear</td>
+<td>The role of the gesture is unclear</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">X</span></tt></td>
+<td>Doesn&#8217;t Exist/Null</td>
+<td>The gestures refers to a part of speech that
+cannot take a semantic role (e.g. a verb).</td>
+</tr>
+</tbody>
+</table>
+<p>Ops are drawn from the following set of operators:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="9%" />
+<col width="91%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head"><tt class="docutils literal"><span class="pre">op</span></tt></th>
+<th class="head">Meaning</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">;</span></tt></td>
+<td>Separates all <tt class="docutils literal"><span class="pre">code</span></tt>s</td>
+</tr>
+<tr class="row-odd"><td><tt class="docutils literal"><span class="pre">/</span></tt></td>
+<td>Used to combine representational <tt class="docutils literal"><span class="pre">code</span></tt>s into single units</td>
+</tr>
+<tr class="row-even"><td><tt class="docutils literal"><span class="pre">,</span></tt></td>
+<td>Used to create a list of <tt class="docutils literal"><span class="pre">value</span></tt>s</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="vertical-dependencies">
+<span id="semrole-column-vert-dep"></span><h2>3.28.4. Vertical Dependencies<a class="headerlink" href="#vertical-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+<div class="section" id="horizontal-dependencies">
+<span id="semrole-column-horz-dep"></span><h2>3.28.5. Horizontal Dependencies<a class="headerlink" href="#horizontal-dependencies" title="Permalink to this headline">¶</a></h2>
+<p>Sem_Role is dependent on the <a class="reference internal" href="g_type.html#gtype-column-dep-by"><em>G_Type Column</em></a>.</p>
+<p>If the corresponding G_Type code is <tt class="docutils literal"><span class="pre">C</span></tt>, <tt class="docutils literal"><span class="pre">FA</span></tt>, or <tt class="docutils literal"><span class="pre">G</span></tt>, the Sem_Role code
+must be <tt class="docutils literal"><span class="pre">X</span></tt>.  Otherwise, anything that is appropriate for the current
+utterance is allowed.</p>
+</div>
+<div class="section" id="depended-upon-by">
+<span id="semrole-column-dep-by"></span><h2>3.28.6. Depended Upon By<a class="headerlink" href="#depended-upon-by" title="Permalink to this headline">¶</a></h2>
+<p>None</p>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>

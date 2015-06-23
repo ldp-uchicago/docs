@@ -1,0 +1,1505 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Example Manual &mdash; Language Development Project Documentation 1.0 documentation</title>
+    
+    <link rel="stylesheet" href="../../_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '1.0',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../../_static/jquery.js"></script>
+    <script type="text/javascript" src="../../_static/underscore.js"></script>
+    <script type="text/javascript" src="../../_static/doctools.js"></script>
+    <link rel="top" title="Language Development Project Documentation 1.0 documentation" href="../../index.html" /> 
+  </head>
+  <body>
+    <div style="background-color: white; text-align: left; padding: 10px 10px 15px 15px">
+    <a href="../../index.html"><img src="../../_static/logo.png" border="0" alt="Joyrex Labs"/></a>
+    </div>
+    
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+  <h3><a href="../../index.html">Outline</a></h3>
+  <ul>
+<li><a class="reference internal" href="#">Example Manual</a><ul>
+<li><a class="reference internal" href="#g-s-relationship-examples-deictics-some-iconics">G-S Relationship examples: Deictics (&amp; some Iconics)</a><ul>
+<li><a class="reference internal" href="#rf">RF</a></li>
+<li><a class="reference internal" href="#rf-a">RF.a</a></li>
+<li><a class="reference internal" href="#rf-p">RF.p</a></li>
+<li><a class="reference internal" href="#da">DA</a></li>
+<li><a class="reference internal" href="#add">ADD</a></li>
+<li><a class="reference internal" href="#add-nr">ADD.nr</a></li>
+<li><a class="reference internal" href="#add-s">ADD.s</a></li>
+<li><a class="reference internal" href="#add-ns">ADD.ns</a></li>
+<li><a class="reference internal" href="#add-f">ADD.f</a></li>
+<li><a class="reference internal" href="#add-q">ADD.q</a></li>
+<li><a class="reference internal" href="#add-err">ADD.err</a></li>
+<li><a class="reference internal" href="#add-err-s">ADD.err.s</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#g-s-relationship-examples-conventionals-some-functional-acts">G-S Relationship examples: Conventionals (&amp; some Functional Acts)</a><ul>
+<li><a class="reference internal" href="#give">GIVE</a><ul>
+<li><a class="reference internal" href="#id1">RF</a></li>
+<li><a class="reference internal" href="#id2">ADD</a></li>
+<li><a class="reference internal" href="#id3">ADD.nr</a></li>
+<li><a class="reference internal" href="#id4">ADD.err</a></li>
+<li><a class="reference internal" href="#id5">ADD.f</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#flips">FLIPS</a><ul>
+<li><a class="reference internal" href="#id6">RF</a></li>
+<li><a class="reference internal" href="#id7">ADD</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#nods-shakes">NODS &amp; SHAKES</a><ul>
+<li><a class="reference internal" href="#id8">RF</a></li>
+<li><a class="reference internal" href="#id9">ADD</a></li>
+<li><a class="reference internal" href="#e">E</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#other-conventionals">OTHER CONVENTIONALS</a><ul>
+<li><a class="reference internal" href="#id10">RF</a></li>
+<li><a class="reference internal" href="#id11">ADD.nr</a></li>
+<li><a class="reference internal" href="#ms">MS</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#functional-acts-fa">FUNCTIONAL ACTS (FA)</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#semantic-role-examples">Semantic Role examples</a><ul>
+<li><a class="reference internal" href="#confusing-example-sentences">Confusing example sentences</a></li>
+<li><a class="reference internal" href="#transitive-agent-ta">Transitive Agent [TA]</a></li>
+<li><a class="reference internal" href="#intransitive-agent-ia">Intransitive Agent [IA]</a></li>
+<li><a class="reference internal" href="#possessor-po">Possessor [PO]</a></li>
+<li><a class="reference internal" href="#experiencer-ex">Experiencer [EX]</a></li>
+<li><a class="reference internal" href="#patient-pa">Patient [PA]</a></li>
+<li><a class="reference internal" href="#theme-th">Theme [TH]</a></li>
+<li><a class="reference internal" href="#entity-locative-static-el">Entity-Locative (static) [EL]</a></li>
+<li><a class="reference internal" href="#entity-owned-static-eo">Entity-Owned (static) [EO]</a></li>
+<li><a class="reference internal" href="#entity-perceived-ep">Entity-Perceived [EP]</a></li>
+<li><a class="reference internal" href="#entity-described-ed">Entity-Described [ED]</a></li>
+<li><a class="reference internal" href="#entity-named-en">Entity-Named [EN]</a></li>
+<li><a class="reference internal" href="#animate-endpoint-ae">Animate Endpoint [AE]</a></li>
+<li><a class="reference internal" href="#inanimate-endpoint-ie">Inanimate Endpoint [IE]</a></li>
+<li><a class="reference internal" href="#animate-source-as">Animate Source [AS]</a></li>
+<li><a class="reference internal" href="#inanimate-source-is">Inanimate Source [IS]</a></li>
+<li><a class="reference internal" href="#path-pt">Path [PT]</a></li>
+<li><a class="reference internal" href="#static-comparative-sc">Static Comparative [SC]</a></li>
+<li><a class="reference internal" href="#active-comparative-ac">Active Comparative [AC]</a></li>
+<li><a class="reference internal" href="#instrument-in">Instrument [IN]</a></li>
+<li><a class="reference internal" href="#accompanying-actor-aa">Accompanying Actor [AA]</a></li>
+<li><a class="reference internal" href="#beneficiary-be">Beneficiary [BE]</a></li>
+<li><a class="reference internal" href="#time-ti">Time [TI]</a></li>
+<li><a class="reference internal" href="#location-lo">Location [LO]</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  <h3>This Page</h3>
+  <ul class="this-page-menu">
+    <li><a href="../../_sources/guides/gest-level-2/sect_7.txt"
+           rel="nofollow">Show Source</a></li>
+  </ul>
+<div id="searchbox" style="display: none">
+  <h3>Search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" size="18" />
+      <input type="hidden" name="check_keywords" value="yes" />
+      <input type="hidden" name="area" value="default" />
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="example-manual">
+<span id="g2sect-7"></span><h1>Example Manual<a class="headerlink" href="#example-manual" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="g-s-relationship-examples-deictics-some-iconics">
+<h2>G-S Relationship examples: Deictics (&amp; some Iconics)<a class="headerlink" href="#g-s-relationship-examples-deictics-some-iconics" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="rf">
+<h3>RF<a class="headerlink" href="#rf" title="Permalink to this headline">¶</a></h3>
+<p>Gesture replicates speech (includes match both at the basic and superordinate level)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Cookie</td>
+<td>point at cookie</td>
+</tr>
+<tr class="row-odd"><td>Put it on the table</td>
+<td>point at table</td>
+</tr>
+<tr class="row-even"><td>What letter is this?</td>
+<td>point at letters in book</td>
+</tr>
+<tr class="row-odd"><td>What color are his tires?</td>
+<td>hold up green tires</td>
+</tr>
+<tr class="row-even"><td>Put the animals</td>
+<td>hold up sheep and pig, one in each hand</td>
+</tr>
+<tr class="row-odd"><td>A mommy</td>
+<td>point to picture of lady</td>
+</tr>
+<tr class="row-even"><td>mommy, daddy, baby</td>
+<td>point to big, medium, small penguin</td>
+</tr>
+<tr class="row-odd"><td>Clean the house</td>
+<td>point to a wall in the house</td>
+</tr>
+<tr class="row-even"><td>Open the door</td>
+<td>point to door knob</td>
+</tr>
+<tr class="row-odd"><td>Get her the boat</td>
+<td>point to drawer where the boat is</td>
+</tr>
+<tr class="row-even"><td>Me want hotdog</td>
+<td>point to refrigerator where hotdog is</td>
+</tr>
+<tr class="row-odd"><td>It&#8217;s my hat</td>
+<td>point to hat</td>
+</tr>
+<tr class="row-even"><td>garbage</td>
+<td>point to kitchen where garbage is</td>
+</tr>
+<tr class="row-odd"><td>pew!</td>
+<td>iconic: wave hand: it stinks</td>
+</tr>
+<tr class="row-even"><td>round</td>
+<td>iconic: make a circle with hand</td>
+</tr>
+<tr class="row-odd"><td>Turn it over</td>
+<td>iconic hand turn</td>
+</tr>
+<tr class="row-even"><td>Quiet</td>
+<td>metaphoric: palm down, moves down</td>
+</tr>
+<tr class="row-odd"><td>This side</td>
+<td>point to puzzle</td>
+</tr>
+<tr class="row-even"><td>This part.</td>
+<td>point to picture.</td>
+</tr>
+<tr class="row-odd"><td>That piece.</td>
+<td>point to puzzle piece.</td>
+</tr>
+<tr class="row-even"><td>That end.</td>
+<td>point to other end of couch.</td>
+</tr>
+</tbody>
+</table>
+<p>For speech that involves counting: If the pointing gesture is highlighting the number aspect, then call it an RF.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>There is one</td>
+<td>point: picture in book</td>
+</tr>
+<tr class="row-odd"><td>one, two, three</td>
+<td>point: bread piece1, bread piece 2, bread piece 3</td>
+</tr>
+<tr class="row-even"><td>You got one two three</td>
+<td>hold up a triangle, a heart, a circle</td>
+</tr>
+</tbody>
+</table>
+<p>Gestures accompanying imaginative play:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="78%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>There&#8217;s a stoplight.</td>
+<td>point to block representing stoplight (after first time item is introduced as a stoplight).</td>
+</tr>
+<tr class="row-odd"><td>Want some tea?</td>
+<td>Hold up empty teacup.</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rf-a">
+<h3>RF.a<a class="headerlink" href="#rf-a" title="Permalink to this headline">¶</a></h3>
+<p>Gesture replicates the adjective in speech (only for physically apparent ones)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Happy</td>
+<td>point at a happy baby in book</td>
+</tr>
+<tr class="row-odd"><td>There is the purple one</td>
+<td>point at purple bead</td>
+</tr>
+<tr class="row-even"><td>Purple</td>
+<td>point at purple bead</td>
+</tr>
+<tr class="row-odd"><td>It is yellow.</td>
+<td>hold up yellow peg</td>
+</tr>
+<tr class="row-even"><td>How about the blue one?</td>
+<td>hold up blue peg</td>
+</tr>
+<tr class="row-odd"><td>Hammer the green one</td>
+<td>hold up green peg</td>
+</tr>
+<tr class="row-even"><td>A long one and a short one</td>
+<td>point at long playdough then point at short playdough</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="rf-p">
+<h3>RF.p<a class="headerlink" href="#rf-p" title="Permalink to this headline">¶</a></h3>
+<p>Gesture replicates the predicate in speech</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="34%" />
+<col width="66%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Sleeping</td>
+<td>point at sleeping cat in movie</td>
+</tr>
+<tr class="row-odd"><td>Crying</td>
+<td>point at crying baby in book</td>
+</tr>
+<tr class="row-even"><td>Crying</td>
+<td>point toward room where baby is crying</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="da">
+<h3>DA<a class="headerlink" href="#da" title="Permalink to this headline">¶</a></h3>
+<p>Gesture clarifies a pronominal reference (he, they, it, this, that, etc.), a deictic reference (here, there), or a particle (up, down) in speech</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="35%" />
+<col width="65%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>What are these?</td>
+<td>point to noodles</td>
+</tr>
+<tr class="row-odd"><td>What color is this?</td>
+<td>hold pink marker</td>
+</tr>
+<tr class="row-even"><td>These are mine.</td>
+<td>point to self</td>
+</tr>
+<tr class="row-odd"><td>It&#8217;s my hat.</td>
+<td>point to self</td>
+</tr>
+<tr class="row-even"><td>Who is this?</td>
+<td>point to Sarah in picture</td>
+</tr>
+<tr class="row-odd"><td>Who are those guys?</td>
+<td>point to red bird + point to blue bird</td>
+</tr>
+<tr class="row-even"><td>What is his name?</td>
+<td>point to boy in picture</td>
+</tr>
+<tr class="row-odd"><td>That is not a bee.</td>
+<td>point to dragonfly</td>
+</tr>
+<tr class="row-even"><td>Is that an elephant?</td>
+<td>point to mammoth</td>
+</tr>
+<tr class="row-odd"><td>It looks like an elephant</td>
+<td>point to mammoth</td>
+</tr>
+<tr class="row-even"><td>That is Julie&#8217;s stuff.</td>
+<td>point to Julie&#8217;s backpack</td>
+</tr>
+<tr class="row-odd"><td>Where is their car?</td>
+<td>hold up Ken and Barbie</td>
+</tr>
+<tr class="row-even"><td>Put it over there?</td>
+<td>point to coffee table</td>
+</tr>
+<tr class="row-odd"><td>Give it to me.</td>
+<td>point to cookie</td>
+</tr>
+<tr class="row-even"><td>You want to see this one?</td>
+<td>hold up a book</td>
+</tr>
+<tr class="row-odd"><td>Up</td>
+<td>point to an upper shelf</td>
+</tr>
+<tr class="row-even"><td>Down</td>
+<td>point to floor</td>
+</tr>
+<tr class="row-odd"><td>Put it through the back</td>
+<td>point to back of toy</td>
+</tr>
+<tr class="row-even"><td>Put the man on top</td>
+<td>point to top of toy</td>
+</tr>
+<tr class="row-odd"><td>This one is raspberry</td>
+<td>point to raspberry juice box</td>
+</tr>
+<tr class="row-even"><td>This way</td>
+<td>point any direction</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add">
+<h3>ADD<a class="headerlink" href="#add" title="Permalink to this headline">¶</a></h3>
+<p>Gesture adds a new argument to what is conveyed in speech</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="45%" />
+<col width="55%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Here</td>
+<td>hold up a toy block</td>
+</tr>
+<tr class="row-odd"><td>See</td>
+<td>hold up a toy block</td>
+</tr>
+<tr class="row-even"><td>Look</td>
+<td>hold up a toy block</td>
+</tr>
+<tr class="row-odd"><td>What color?</td>
+<td>hold pink marker</td>
+</tr>
+<tr class="row-even"><td>What shape?</td>
+<td>hold up triangle block</td>
+</tr>
+<tr class="row-odd"><td>How about?</td>
+<td>point to empty space in puzzle</td>
+</tr>
+<tr class="row-even"><td>Zoe</td>
+<td>point at orange circle</td>
+</tr>
+<tr class="row-odd"><td>Put it back in</td>
+<td>hold up plastic bag</td>
+</tr>
+<tr class="row-even"><td>kiss Santa and put it back</td>
+<td>point to a location</td>
+</tr>
+<tr class="row-odd"><td>put it back on</td>
+<td>point to a location (a plant)</td>
+</tr>
+<tr class="row-even"><td>You need to hold on</td>
+<td>point to spin wheel</td>
+</tr>
+<tr class="row-odd"><td>Put in</td>
+<td>point to hole in toy fridge</td>
+</tr>
+<tr class="row-even"><td>Put it back</td>
+<td>point to couch</td>
+</tr>
+<tr class="row-odd"><td>You have some on your tray.</td>
+<td>point to food on tray</td>
+</tr>
+<tr class="row-even"><td>Little bit more.</td>
+<td>point to juice in cup</td>
+</tr>
+<tr class="row-odd"><td>Want some?</td>
+<td>hold up a banana</td>
+</tr>
+<tr class="row-even"><td>You want the other half</td>
+<td>point to noodle</td>
+</tr>
+<tr class="row-odd"><td>Want to feed?</td>
+<td>point to spoon</td>
+</tr>
+<tr class="row-even"><td>Not Elmo</td>
+<td>point to other toy on floor</td>
+</tr>
+<tr class="row-odd"><td>They are camping</td>
+<td>point to tent</td>
+</tr>
+<tr class="row-even"><td>Water</td>
+<td>point to toy sink (where there is no water)</td>
+</tr>
+<tr class="row-odd"><td>You are supposed to leave it</td>
+<td>point to other room</td>
+</tr>
+<tr class="row-even"><td>Want to say hi to him?</td>
+<td>hold up toy phone</td>
+</tr>
+<tr class="row-odd"><td>In the cheese</td>
+<td>point to mouse in cheese toy</td>
+</tr>
+<tr class="row-even"><td>You want to scan the eggs</td>
+<td>point to scanner</td>
+</tr>
+<tr class="row-odd"><td>Look what I have got!</td>
+<td>hold up ball + hold up barney</td>
+</tr>
+<tr class="row-even"><td>Look what I have got!</td>
+<td>hold up a toy block</td>
+</tr>
+<tr class="row-odd"><td>Eat what&#8217;s on your tray.</td>
+<td>point to food on tray</td>
+</tr>
+<tr class="row-even"><td>You know where it goes</td>
+<td>point to puzzle board</td>
+</tr>
+<tr class="row-odd"><td>All gone</td>
+<td>hold up snack wrapper</td>
+</tr>
+<tr class="row-even"><td>All done</td>
+<td>hold up the back cover of book</td>
+</tr>
+<tr class="row-odd"><td>All gone</td>
+<td>hold up empty hands</td>
+</tr>
+<tr class="row-even"><td>Daddy</td>
+<td>point to street where daddy was previously</td>
+</tr>
+<tr class="row-odd"><td>What do you want?</td>
+<td>point to toys in basket</td>
+</tr>
+<tr class="row-even"><td>What&#8217;s Mommy got in her hand?</td>
+<td>hold object</td>
+</tr>
+</tbody>
+</table>
+<p>With adjectives</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Broken</td>
+<td>hold up toy</td>
+</tr>
+<tr class="row-odd"><td>Hot</td>
+<td>point to radiator</td>
+</tr>
+<tr class="row-even"><td>A big</td>
+<td>hold up truck</td>
+</tr>
+<tr class="row-odd"><td>Yucky</td>
+<td>hold up green beans</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add-nr">
+<h3>ADD.nr<a class="headerlink" href="#add-nr" title="Permalink to this headline">¶</a></h3>
+<p>Gesture adds a new predicate to what is conveyed in speech</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="58%" />
+<col width="42%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Let me see it</td>
+<td>open palm: give toy</td>
+</tr>
+<tr class="row-odd"><td>Come here</td>
+<td>palm: give bottle</td>
+</tr>
+<tr class="row-even"><td>Who loves Mommy?</td>
+<td>come</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add-s">
+<h3>ADD.s<a class="headerlink" href="#add-s" title="Permalink to this headline">¶</a></h3>
+<p>For characterizing sounds (typically animal sounds), code ADD.s for speech that produce animal sounds, or some other sound characteristic of an entity (e.g., crying sound for a sad person, engine sound for a car)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Meow!</td>
+<td>point to cat in book</td>
+</tr>
+<tr class="row-odd"><td>Woof!</td>
+<td>point to cat dog</td>
+</tr>
+<tr class="row-even"><td>Wa wa wa! (crying sound)</td>
+<td>hold up a sad bear face</td>
+</tr>
+<tr class="row-odd"><td>Choo choo!</td>
+<td>hold up a toy train</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add-ns">
+<h3>ADD.ns<a class="headerlink" href="#add-ns" title="Permalink to this headline">¶</a></h3>
+<p>For  evaluative sounds, code ADD.ns for speech that act as an evaluative marking on a gesture (surprise sound Uh-oh!, question sound: Hmm?, excitement sound: Wow!, etc.)</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Oh!</td>
+<td>hold up: Winnie the Pooh</td>
+</tr>
+<tr class="row-odd"><td>Hmm?</td>
+<td>point at cat</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add-f">
+<h3>ADD.f<a class="headerlink" href="#add-f" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Yeah</td>
+<td>point to bottle</td>
+</tr>
+<tr class="row-odd"><td>Thank You</td>
+<td>hold cup of milk</td>
+</tr>
+<tr class="row-even"><td>OK</td>
+<td>point to TV</td>
+</tr>
+</tbody>
+</table>
+<p>Also: ByeBye, Hello/hey, alright, sure, please, oh well, it&#8217;s all right, you&#8217;re welcome, oh my, excuse me, amen, there you go, here you go, it&#8217;s ok, I mean, hold on, oh my gosh, that&#8217;s right, I&#8217;m sorry, bless you, right.</p>
+</div>
+<div class="section" id="add-q">
+<h3>ADD.q<a class="headerlink" href="#add-q" title="Permalink to this headline">¶</a></h3>
+<p>Gesture answers Wh-type question in speech</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="40%" />
+<col width="60%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Where are the apples?.</td>
+<td>point to apple tree in book</td>
+</tr>
+<tr class="row-odd"><td>Where&#8217;s baby Mikey?</td>
+<td>point to baby in picture</td>
+</tr>
+<tr class="row-even"><td>Which fish did he catch?</td>
+<td>point to fish caught by character in a book</td>
+</tr>
+<tr class="row-odd"><td>Where is the cow?</td>
+<td>point to board where cow is located</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add-err">
+<h3>ADD.err<a class="headerlink" href="#add-err" title="Permalink to this headline">¶</a></h3>
+<p>Gesture adds an incorrect match to speech</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>cat</td>
+<td>point at dog</td>
+</tr>
+<tr class="row-odd"><td>frog</td>
+<td>palm up:  give cat</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="add-err-s">
+<h3>ADD.err.s<a class="headerlink" href="#add-err-s" title="Permalink to this headline">¶</a></h3>
+<p>Gesture adds an incorrect match to speech that includes an animal or artifact sound</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="53%" />
+<col width="47%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Meow</td>
+<td>point at dog</td>
+</tr>
+<tr class="row-odd"><td>Ruff</td>
+<td>point at dinosaur</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="g-s-relationship-examples-conventionals-some-functional-acts">
+<h2>G-S Relationship examples: Conventionals (&amp; some Functional Acts)<a class="headerlink" href="#g-s-relationship-examples-conventionals-some-functional-acts" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="give">
+<span id="g2-gsrelat-convent"></span><h3>GIVE<a class="headerlink" href="#give" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Any indication of object transfer in speech gets &#8220;RF&#8221;</li>
+<li>Other speech with verbs typically gets &#8220;ADD.nr&#8221;</li>
+<li>Fillers (e.g., OK, yeah, thank you) gets &#8220;ADD.f&#8221;</li>
+<li>Ignore pronouns in give gestures; so no &#8220;DA&#8221; coding</li>
+</ul>
+<div class="section" id="id1">
+<h4>RF<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Give me the pacifier</td>
+<td>open palm: give pacifier</td>
+</tr>
+<tr class="row-odd"><td>Can I have the ball?</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>Let me have it.</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-odd"><td>You want me to take it?</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>Throw it to mom!</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-odd"><td>Roll it to mom!</td>
+<td>open palm: give pacifier</td>
+</tr>
+<tr class="row-even"><td>Send it back</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-odd"><td>Hand it (to me)</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>Bring your bike here</td>
+<td>palm up: give bike</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id2">
+<h4>ADD<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="33%" />
+<col width="67%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>My pacifier</td>
+<td>open palm: give pacifier</td>
+</tr>
+<tr class="row-odd"><td>Ball</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>More</td>
+<td>open palm: give cracker</td>
+</tr>
+<tr class="row-odd"><td>Yeah over here</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>Ball</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-odd"><td>Daddy</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>Na-na</td>
+<td>open palm: give pacifier (nana=pacifier)</td>
+</tr>
+<tr class="row-odd"><td>throw it</td>
+<td>open palm: give ball</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id3">
+<h4>ADD.nr<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Want me to fix it?</td>
+<td>open palm: give toy</td>
+</tr>
+<tr class="row-odd"><td>Can I see your book?</td>
+<td>open palm: give book</td>
+</tr>
+<tr class="row-even"><td>Want me to put them together?</td>
+<td>open palm: give lego</td>
+</tr>
+<tr class="row-odd"><td>Let me see</td>
+<td>open palm: give toy</td>
+</tr>
+<tr class="row-even"><td>That was your Winnie the Pooh snack?</td>
+<td>open palm: give snack wrapper</td>
+</tr>
+<tr class="row-odd"><td>Hot.</td>
+<td>give food (the food is hot)</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id4">
+<h4>ADD.err<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Ball</td>
+<td>give red ribbon</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id5">
+<h4>ADD.f<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Yeah</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-odd"><td>Thank you</td>
+<td>open palm: give ball</td>
+</tr>
+<tr class="row-even"><td>OK</td>
+<td>open palm: give ball</td>
+</tr>
+</tbody>
+</table>
+<p>Also: ByeBye, Hello/hey, alright, sure, please, oh well, it&#8217;s all right, you&#8217;re welcome, oh my, excuse me, amen, there you go, here you go, it&#8217;s ok, I mean, hold on, oh my gosh, that&#8217;s right, I&#8217;m sorry, bless you, right.</p>
+</div>
+</div>
+<div class="section" id="flips">
+<h3>FLIPS<a class="headerlink" href="#flips" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h4>RF<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p>Code &#8220;RF&#8221; when flips come with a question of any sort. These include sentences that are declarative, but are produced with a question intonation.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="50%" />
+<col width="50%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>What will Molly tape?</td>
+<td>flip her hands: &#8220;don&#8217;t know&#8221;</td>
+</tr>
+<tr class="row-odd"><td>Does that hurt?</td>
+<td>flip her hands: &#8220;don&#8217;t know&#8221;</td>
+</tr>
+<tr class="row-even"><td>That is your blue book?</td>
+<td>flip her hands: &#8220;don&#8217;t know&#8221;</td>
+</tr>
+<tr class="row-odd"><td>Blue?</td>
+<td>flip her hands: &#8220;don&#8217;t know&#8221;</td>
+</tr>
+</tbody>
+</table>
+<p>Code &#8220;RF&#8221; when flips match the discursive intonation of speech.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>I can&#8217;t do it anymore</td>
+<td>flip w/shrug: give up</td>
+</tr>
+<tr class="row-odd"><td>I didn&#8217;t do it</td>
+<td>flip: don&#8217;t know</td>
+</tr>
+<tr class="row-even"><td>uh-oh!</td>
+<td>flip: where is it?</td>
+</tr>
+<tr class="row-odd"><td>Look how nice it is!</td>
+<td>flip: exclamation</td>
+</tr>
+<tr class="row-even"><td>Big boy!</td>
+<td>flip: exclamation</td>
+</tr>
+</tbody>
+</table>
+<p>Code &#8220;RF&#8221; when flips come with speech that marks absence of objects or people.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>I don&#8217;t have any more grapes</td>
+<td>flip: all gone</td>
+</tr>
+<tr class="row-odd"><td>No kitty cats</td>
+<td>flip: all gone</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id7">
+<h4>ADD<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<p>Code &#8220;ADD&#8221; when flip adds a question to what is said; this does not happen very often, typically children use this, but sometimes the moms may use it as well.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="57%" />
+<col width="43%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Mommy</td>
+<td>flip: where is she?</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="nods-shakes">
+<h3>NODS &amp; SHAKES<a class="headerlink" href="#nods-shakes" title="Permalink to this headline">¶</a></h3>
+<p>Nods produced with <strong>affirmative</strong> words or words of <strong>positive emotional</strong> valence are considered reinforcing (RF). Shakes produced with words of <strong>negation</strong> or words of <strong>negative emotional</strong> valence are considered reinforcing (RF).</p>
+<p><strong>Nods (affirmation)</strong>
+* Yes
+* Yep
+* Yeah
+* Right
+* Uh-huh
+* Sure
+* Ok
+* Absolutely
+* Right on
+* Mm-hmm</p>
+<p><strong>Shakes (negation)</strong>
+* No
+* Nope
+* Nah
+* Not
+* Don&#8217;t
+* Didn&#8217;t
+* Won&#8217;t
+* Wouldn&#8217;t
+* Can&#8217;t
+* Uh-uh</p>
+<p><strong>Nods (positive emotion)</strong>
+* Great
+* Awesome
+* Good
+* Sweet
+* Fabulous</p>
+<p><strong>Shakes (negative emotion)</strong>
+* Bad
+* Horrible
+* Yuck
+* Bleagh
+* Disgusting
+* Etc.</p>
+<div class="section" id="id8">
+<h4>RF<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="67%" />
+<col width="33%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech:</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Yeah</td>
+<td>nod</td>
+</tr>
+<tr class="row-odd"><td>yeah?</td>
+<td>nod</td>
+</tr>
+<tr class="row-even"><td>No?</td>
+<td>shake</td>
+</tr>
+<tr class="row-odd"><td>Don&#8217;t</td>
+<td>shake</td>
+</tr>
+<tr class="row-even"><td>Yucky</td>
+<td>shake</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id9">
+<h4>ADD<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h4>
+<p>Gesture adds a negation to an affirmative sentence that is not a question</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Got to find a new place for that</td>
+<td>shake</td>
+</tr>
+<tr class="row-odd"><td>the CD is out</td>
+<td>shake</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="e">
+<h4>E<a class="headerlink" href="#e" title="Permalink to this headline">¶</a></h4>
+<p>Gesture that comes with questions (or declarative sentences in speech), but does not answer the question.  It just emphasizes it. I typically change the gloss of the gesture from &#8220;yes&#8221; or &#8220;no&#8221; to &#8220;emphasis&#8221;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="72%" />
+<col width="28%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>you want to go bye bye, don&#8217;t you?</td>
+<td>nod</td>
+</tr>
+<tr class="row-odd"><td>Hard to decide</td>
+<td>shake</td>
+</tr>
+<tr class="row-even"><td>Where are you going?</td>
+<td>nod</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="other-conventionals">
+<h3>OTHER CONVENTIONALS<a class="headerlink" href="#other-conventionals" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h4>RF<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>No, no, no, no</td>
+<td>naughties</td>
+</tr>
+<tr class="row-odd"><td>Leave me alone</td>
+<td>naughties</td>
+</tr>
+<tr class="row-even"><td>Take a breath</td>
+<td>Palm out (wait gesture): slow down</td>
+</tr>
+<tr class="row-odd"><td>That is enough</td>
+<td>Palm down (wait gesture): slow down</td>
+</tr>
+<tr class="row-even"><td>come/come here/come on, etc.</td>
+<td>pick up</td>
+</tr>
+<tr class="row-odd"><td>Up</td>
+<td>pick me up</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="id11">
+<h4>ADD.nr<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h4>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Hug</td>
+<td>beckon</td>
+</tr>
+<tr class="row-odd"><td>Let&#8217;s go</td>
+<td>beckon</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="ms">
+<h4>MS<a class="headerlink" href="#ms" title="Permalink to this headline">¶</a></h4>
+<p>Code MS for unconventional sounds.  This typically happens with infants, rarely with adults</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="44%" />
+<col width="56%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Ba!</td>
+<td>holds up a bottle</td>
+</tr>
+<tr class="row-odd"><td>Ba!</td>
+<td>holds up a toy lid</td>
+</tr>
+<tr class="row-even"><td>Da!</td>
+<td>points at food on table</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="functional-acts-fa">
+<h3>FUNCTIONAL ACTS (FA)<a class="headerlink" href="#functional-acts-fa" title="Permalink to this headline">¶</a></h3>
+<p>For all functional acts (hold-outs and demonstrators) code gesture-speech relation as &#8220;FA&#8221;</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="56%" />
+<col width="44%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Speech</strong></td>
+<td><strong>Gesture</strong></td>
+</tr>
+<tr class="row-even"><td>Want me to help you up?</td>
+<td>open palm: take hand</td>
+</tr>
+<tr class="row-odd"><td>Get up?</td>
+<td>open palm: take hand</td>
+</tr>
+<tr class="row-even"><td>Want more juice?</td>
+<td>hold out: take juice bottle</td>
+</tr>
+<tr class="row-odd"><td>This is how you turn the handle</td>
+<td>demo: hand turns the handle</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<div class="section" id="semantic-role-examples">
+<h2>Semantic Role examples<a class="headerlink" href="#semantic-role-examples" title="Permalink to this headline">¶</a></h2>
+<p>For further info see Levin (1955); Lyons (1977), Croft (1991)</p>
+<div class="section" id="confusing-example-sentences">
+<h3>Confusing example sentences<a class="headerlink" href="#confusing-example-sentences" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>&#8220;You need to match this one to this one&#8221; +POINT (to puzzle piece) +POINT (to other puzzle piece) = TH &amp; IE</li>
+<li>&#8220;This one matches this one&#8221; +POINT (to shirt) +POINT (to pants) = ED &amp; ED</li>
+<li>&#8220;Pink&#8221; +POINT (to shoe) = ED</li>
+<li>&#8220;This one is pink&#8221;&#8221; +POINT (to shoe) = ED</li>
+<li>&#8220;Fast&#8221; +POINT (to toy car) = ED</li>
+<li>&#8220;I think&#8221; +POINT (to brownies) = X (unable to determine role)</li>
+</ul>
+</div>
+<div class="section" id="transitive-agent-ta">
+<h3>Transitive Agent [TA]<a class="headerlink" href="#transitive-agent-ta" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The <strong>boy</strong> ate the pretzel.</li>
+<li><strong>Susan</strong> read the book.</li>
+<li><strong>William</strong> put the frog in a bowl.</li>
+<li><strong>Emily</strong> bought a new bike.</li>
+<li>The <strong>robber</strong> turned himself in.</li>
+<li><strong>Matt</strong> sang an old song.</li>
+</ul>
+</div>
+<div class="section" id="intransitive-agent-ia">
+<h3>Intransitive Agent [IA]<a class="headerlink" href="#intransitive-agent-ia" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The <strong>boy</strong> ate.</li>
+<li>The <strong>cat</strong> slept.</li>
+<li><strong>Charles</strong> sang.</li>
+<li><strong>Jonah</strong> jumped into the lake.</li>
+<li>The <strong>bird</strong> flew up to the branch.</li>
+</ul>
+</div>
+<div class="section" id="possessor-po">
+<h3>Possessor [PO]<a class="headerlink" href="#possessor-po" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Brian</strong> has two turtles.</li>
+<li><strong>I</strong> have more cookies than Paul.</li>
+<li>This is <strong>Greg</strong>&#8216;s purple hat.</li>
+<li><strong>My</strong> name is Franklin. +POINT (to self)</li>
+<li>These are <strong>mine</strong>. +PALM (to self)</li>
+<li>The video is <strong>his</strong>. +POINT (to other)</li>
+</ul>
+</div>
+<div class="section" id="experiencer-ex">
+<h3>Experiencer [EX]<a class="headerlink" href="#experiencer-ex" title="Permalink to this headline">¶</a></h3>
+<table border="1" class="docutils">
+<colgroup>
+<col width="31%" />
+<col width="31%" />
+<col width="38%" />
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><strong>Emotion</strong></td>
+<td><strong>Perception</strong></td>
+<td><strong>Sensory Perception</strong></td>
+</tr>
+<tr class="row-even"><td><ul class="first last simple">
+<li><strong>I</strong> am morose.</li>
+<li>Hugging my dog makes <strong>me</strong> happy.</li>
+<li><strong>James</strong> is in love with Dorian.</li>
+<li><strong>Kelsey</strong> likes playing jacks</li>
+<li>Spiders frighten <strong>Wanda</strong>.</li>
+<li><strong>I</strong> want a cookie!</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li><strong>Sam</strong> knows Lois.</li>
+<li><strong>Walter</strong> understood the theorem.</li>
+</ul>
+</td>
+<td><ul class="first last simple">
+<li><strong>Richard</strong> saw the bear cub first.</li>
+<li>The flowers smelled nice to <strong>Amanda</strong>.</li>
+<li><strong>Everyone</strong> heard the explosion</li>
+</ul>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="patient-pa">
+<h3>Patient [PA]<a class="headerlink" href="#patient-pa" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Thomas ate all the <strong>cheese</strong></li>
+<li>The fire destroyed the <strong>building</strong></li>
+<li>Goats groom <strong>each other</strong> with their teeth</li>
+<li>Can you open the <strong>jar</strong>?</li>
+<li>Cut <strong>it</strong>!</li>
+<li>I read the <strong>book</strong>.</li>
+<li>The <strong>rain</strong> stopped.</li>
+</ul>
+</div>
+<div class="section" id="theme-th">
+<h3>Theme [TH]<a class="headerlink" href="#theme-th" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Damien put the <strong>jar</strong> on the shelf.</li>
+<li>He gave the <strong>flowers</strong> to Jennifer.</li>
+<li>I drove <strong>Sarah</strong> to the mall.</li>
+<li>She took her <strong>wallet</strong> so she could shop.</li>
+<li>Andrew told Kayla a <strong>secret</strong>.</li>
+<li><strong>Humphrey</strong> fell off the couch.</li>
+<li>Daisy made <strong>Zora</strong> late for her appointment.</li>
+</ul>
+</div>
+<div class="section" id="entity-locative-static-el">
+<h3>Entity-Locative (static) [EL]<a class="headerlink" href="#entity-locative-static-el" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The <strong>cup</strong> is on the table.</li>
+<li><strong>Dad</strong> is in his office.</li>
+<li><strong>Frogs</strong> live in the river.</li>
+<li>The <strong>possum</strong> is on the patio.</li>
+</ul>
+</div>
+<div class="section" id="entity-owned-static-eo">
+<h3>Entity-Owned (static) [EO]<a class="headerlink" href="#entity-owned-static-eo" title="Permalink to this headline">¶</a></h3>
+<p>Only animate things (or characters) can own entities. Otherwise possessive descriptions are Described Entities.</p>
+<ul class="simple">
+<li><strong>This</strong> is mine. +POINT (to object)</li>
+<li>Mine. +**POINT(to object)**</li>
+<li>Brian has four <strong>dump trucks</strong>.</li>
+<li>The <strong>shoes</strong> belong to Jane.</li>
+<li>Mom&#8217;s <strong>slippers</strong>.</li>
+<li>My <strong>freckles</strong>.</li>
+</ul>
+</div>
+<div class="section" id="entity-perceived-ep">
+<h3>Entity-Perceived [EP]<a class="headerlink" href="#entity-perceived-ep" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>I saw two <strong>dogs</strong> playing.</li>
+<li>Look at <strong>that</strong>! +POINT</li>
+<li>He could smell <strong>dinner</strong> all the way upstairs.</li>
+<li>Touch the <strong>rabbit</strong> on his back.</li>
+<li>This <strong>dress</strong> looks weird in this light.</li>
+<li>I want <strong>cookies</strong>!</li>
+<li>Want to look? <strong>+POINT</strong></li>
+<li>See mommy? <strong>+POINT</strong></li>
+</ul>
+</div>
+<div class="section" id="entity-described-ed">
+<h3>Entity-Described [ED]<a class="headerlink" href="#entity-described-ed" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The <strong>rabbit</strong> is soft.</li>
+<li><strong>Candles</strong> are hot.</li>
+<li>This purple <strong>dress</strong>.</li>
+<li><strong>Frogs</strong> are nice.</li>
+<li><strong>Max</strong> is my friend.</li>
+<li>There are four. <strong>+POINT</strong></li>
+<li><strong>It</strong>&#8216;s for me.</li>
+<li>Is <strong>that one</strong> fast?</li>
+<li>Lots of <strong>sugar</strong>.</li>
+<li>Pink <strong>box</strong></li>
+<li>Squishy <strong>+POINT</strong></li>
+<li>How about the last <strong>corner?</strong> + POINT to puzzle piece</li>
+</ul>
+</div>
+<div class="section" id="entity-named-en">
+<h3>Entity-Named [EN]<a class="headerlink" href="#entity-named-en" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>This is a <strong>turtle</strong>.</li>
+<li><strong>Larry</strong>.</li>
+<li><strong>Sugar</strong>.</li>
+<li><strong>Pink</strong>.</li>
+<li>What&#8217;s <strong>this</strong>?</li>
+<li><strong>This</strong> one +POINT</li>
+<li><strong>POINT</strong></li>
+<li>Is <strong>that</strong> it?</li>
+</ul>
+</div>
+<div class="section" id="animate-endpoint-ae">
+<h3>Animate Endpoint [AE]<a class="headerlink" href="#animate-endpoint-ae" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>I gave two quarters to <strong>Hector</strong>.</li>
+<li>The ball rolled to the <strong>dog</strong>.</li>
+<li>Fred&#8217;s bike crashed into <strong>me</strong>.</li>
+<li>Hand <strong>Lilly</strong> the corkscrew.</li>
+<li>The horse walked up to <strong>Kaye</strong>.</li>
+<li>Bring back my bonnie to <strong>me</strong>.</li>
+</ul>
+</div>
+<div class="section" id="inanimate-endpoint-ie">
+<h3>Inanimate Endpoint [IE]<a class="headerlink" href="#inanimate-endpoint-ie" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>I put two quarters into the <strong>machine</strong>.</li>
+<li>The meatball rolled under the <strong>sofa</strong>.</li>
+<li>Put your feet in your <strong>shoes</strong>.</li>
+<li>The bunny hopped into the <strong>river</strong>.</li>
+<li>She dropped two tablets into the <strong>glass</strong> of water.</li>
+</ul>
+</div>
+<div class="section" id="animate-source-as">
+<h3>Animate Source [AS]<a class="headerlink" href="#animate-source-as" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The fleas jumped from the poodle to <strong>Sam</strong>.</li>
+<li>These presents are from <strong>Larry</strong>.</li>
+<li><strong>You</strong> gave me a great idea.</li>
+<li>The rabbit jumped out of my <strong>hands</strong>.</li>
+</ul>
+</div>
+<div class="section" id="inanimate-source-is">
+<h3>Inanimate Source [IS]<a class="headerlink" href="#inanimate-source-is" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The train left the <strong>station</strong>.</li>
+<li>Ralf escaped from his <strong>terrarium</strong>.</li>
+<li>This wine is from <strong>Paris</strong>.</li>
+<li>Then he went from <strong>here</strong> to there.</li>
+<li>I was hiding and then I jumped out of the <strong>box</strong>.</li>
+</ul>
+</div>
+<div class="section" id="path-pt">
+<h3>Path [PT]<a class="headerlink" href="#path-pt" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>The leaf fell <strong>down</strong>.</li>
+<li>Then you make it go <strong>up and around</strong>.</li>
+<li>Now you go <strong>under</strong>.</li>
+<li>The car drove <strong>through</strong> it.</li>
+<li>I hopped <strong>around</strong> the table.</li>
+<li>I&#8217;m <strong>far away</strong>.</li>
+</ul>
+</div>
+<div class="section" id="static-comparative-sc">
+<h3>Static Comparative [SC]<a class="headerlink" href="#static-comparative-sc" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Jude is taller than <strong>Jack</strong>.</li>
+<li>My flower is prettier than <strong>yours</strong>.</li>
+<li>Americans are fatter than <strong>Lithuanians</strong>.</li>
+<li>Superman is stronger than <strong>Batman</strong>.</li>
+</ul>
+</div>
+<div class="section" id="active-comparative-ac">
+<h3>Active Comparative [AC]<a class="headerlink" href="#active-comparative-ac" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>I can eat more cheese than <strong>you</strong>.</li>
+<li>Frogs can jump higher than <strong>mice</strong>.</li>
+<li>Superman can run faster than <strong>Batman</strong>.</li>
+<li>Batman chases more ladies than <strong>Superman</strong>.</li>
+</ul>
+</div>
+<div class="section" id="instrument-in">
+<h3>Instrument [IN]<a class="headerlink" href="#instrument-in" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>She cut the pie with the <strong>knife</strong>.</li>
+<li>I opened the box with <strong>scissors</strong>.</li>
+<li>The <strong>knife</strong> cut his heart out.</li>
+<li>Doug used <strong>poison</strong> to get revenge on his ex-wife.</li>
+</ul>
+</div>
+<div class="section" id="accompanying-actor-aa">
+<h3>Accompanying Actor [AA]<a class="headerlink" href="#accompanying-actor-aa" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>He ate dinner with his <strong>wife</strong></li>
+<li>I want to go play with <strong>Susie</strong>.</li>
+<li>Charles likes to watch television with his <strong>grandpa</strong>.</li>
+</ul>
+</div>
+<div class="section" id="beneficiary-be">
+<h3>Beneficiary [BE]<a class="headerlink" href="#beneficiary-be" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>I put the dishes away for my <strong>mom</strong>.</li>
+<li>She took night classes to improve her Spanish for her <strong>boyfriend</strong>.</li>
+<li>Graham painted a picture for <strong>Rebecca</strong>.</li>
+<li>Dad made <strong>me</strong> deviled eggs.</li>
+</ul>
+</div>
+<div class="section" id="time-ti">
+<h3>Time [TI]<a class="headerlink" href="#time-ti" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><strong>Yesterday</strong>, all our troubles seemed so far away.</li>
+<li><strong>Now</strong>, it looks as though they&#8217;re here to stay.</li>
+<li>Jasmine got one <strong>last week</strong>.</li>
+<li>My dad comes home at <strong>5 PM</strong>.</li>
+<li>We get to do a puzzle <strong>everyday</strong>.</li>
+</ul>
+</div>
+<div class="section" id="location-lo">
+<h3>Location [LO]<a class="headerlink" href="#location-lo" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>I threw a penny into the well at the <strong>park</strong>.</li>
+<li>The top is spinning on the <strong>table</strong>.</li>
+<li>At <strong>school</strong>, our teacher gave us stickers.</li>
+<li>Iona picked up the most trash on the <strong>beach</strong>.</li>
+</ul>
+</div>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+    <li><a href="../../contents.html">TOC</a>|&nbsp;</li>
+    <li><a href="../../search.html">search</a>|&nbsp;</li>
+    <li><a href="../../index.html">home</a>&raquo;</li>
+ 
+      </ul>
+    </div>
+    <div class="footer">
+        &copy; Copyright 2015, Language Development Project Team.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 1.1.3.
+    </div>
+  </body>
+</html>
