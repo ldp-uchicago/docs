@@ -35,6 +35,7 @@ Every HOT utterance is coded either as a *structure HOT* or a *surface HOT*.  Se
 #.  The depth of description provided will determine if an utterance is surface or structure.
 
 ``I wonder what we could put in there is *surface*``
+
 ``It's a round hole and two inches deep, I wonder what we could put in there is *structure*``
 
 #.  If you aren't sure what an utterance means, code as surface.
