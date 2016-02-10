@@ -14,26 +14,27 @@ The basic unit of transcription is the utterance.  HOT coding is done on the utt
 Four Types of HOT
 =================
 
-#. Inference: Deriving a conclusion not otherwise given by using known (or logical) premises
+#.  Inference: Deriving a conclusion not otherwise given by using known (or logical) premises
 
-#. Abstraction: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
+#.  Abstraction: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
 
-#. Comparison: Uses an explicit framework of speech to point out a similarity or difference between two representations: source and analog
+#.  Comparison: Uses an explicit framework of speech to point out a similarity or difference between two representations: source and analog
 
-#. Hierarchy: An arrangement of categories (concepts), with a superordinate and subordinate framework; kinds of things - from the general to the specific
+#.  Hierarchy: An arrangement of categories (concepts), with a superordinate and subordinate framework; kinds of things - from the general to the specific
 
-Every HOT in speech is either an "ask" or a "give"
+Every HOT in speech is coded as an "ask" or a "give"
 ===================================================
- If a HOT in speech is not an ask, then it is a give.  An ask is usually in the form of a question (e.g. "why are you doing that?" "how are these similar?" "is a brownie a kind of cookie?") but can also be statements that clearly demand a response (e.g. "tell me why you're doing that."). If it's demanding a response, it's an ask. Otherwise it's a give.
+If a HOT in speech is not an ask, then it is a give. An ask is usually in the form of a question (e.g., "why are you doing that?", "how are these similar?", "is a brownie a kind of cookie?") but can also be statements that clearly demand a response (e.g., "tell me why you are doing that."). If it's demanding a response, it's an ask.
 
 Surface vs. Structure
 ======================
 Every HOT utterance is coded either as a structure HOT or a surface HOT.  See specific pages for each type of HOT for further examples of surface vs. structure.  
-If an utterance is both surface and structure, you will only mark one, and structure will trump surface.
-    How options are being described demonstrates underlying structure of construct.
-        I wonder what we could put in there is surface
-        It’s a round hole and two inches deep, I wonder what we could put in there is structure
-    If you aren't sure what an utterance means, code as surface, especially when calling speech HOT means giving the child the benefit of the doubt.
+
+#.  If an utterance is both surface and structure, then structure trumps surface.
+
+#.  The depth of description provided will determine if an utterance is surface or structure.
+
+#.  If you aren't sure what an utterance means, code as surface.
 
 
 
