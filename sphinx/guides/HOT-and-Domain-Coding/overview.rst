@@ -43,6 +43,8 @@ Every HOT utterance is coded either as a *structure HOT* or a *surface HOT*.  Se
 Column or Field Descriptions
 =============================
 
+The HOT coding categories with the field names in a table below.
+
 ===================     ============
 HOT Coding Category     Field name
 ===================     ============
