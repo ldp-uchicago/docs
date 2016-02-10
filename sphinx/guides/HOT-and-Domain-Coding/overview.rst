@@ -14,13 +14,13 @@ The basic unit of transcription is the utterance.  HOT coding is done on the utt
 Four Types of HOT
 =================
 
-#.  Inference: Deriving a conclusion not otherwise given by using known (or logical) premises
+#.  *Inference*: Deriving a conclusion not otherwise given by using known (or logical) premises
 
-#.  Abstraction: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
+#.  *Abstraction*: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
 
-#.  Comparison: Uses an explicit framework of speech to point out a similarity or difference between two representations: source and analog
+#.  *Comparison*: Uses an explicit framework of speech to point out a similarity or difference between two representations: source and analog
 
-#.  Hierarchy: An arrangement of categories (concepts), with a superordinate and subordinate framework; kinds of things - from the general to the specific
+#.  *Hierarchy*: An arrangement of categories (concepts), with a superordinate and subordinate framework; kinds of things - from the general to the specific
 
 Every HOT in speech is coded as an "ask" or a "give"
 ===================================================
