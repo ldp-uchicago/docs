@@ -63,29 +63,28 @@ Structure               structure
 If an utterance is coded as HOT, then a "1" is put in at least one of the 8 ask/give coding categories **and** a "1" is entered in either *surface* or *structure*.  Below is a sample coded sheet (from the earlier home visit transcripts)
 
 
-+----------------+-----------------+---------------------+-------------------------+------------+--------------------+
-|form            |lrb              |obj                  |gloss                    |orient      |mspd                |
-+================+=================+=====================+=========================+============+====================+
-|hold            |L/R/B/LF/RF/WB   |cookie, toy, etc.    |cookie OR take cookie    |shake,      |                    |
-|                |                 |                     |                         |(blank)     |                    |
-+----------------+-----------------+---------------------+-------------------------+------------+--------------------+
-|point           |L/R/B/LF/RF/H    |cookie, toy, etc.    |cookie, toy, etc.        |tap,        |points with         |
-|                |                 |                     |                         |touch,      |*object*, (blank)   |               
-|                |                 |                     |                         |(blank)     |                    |
-+----------------+-----------------+---------------------+-------------------------+------------+--------------------+
-|cont point      |L/R/B/LF/RF      |cookies, toys, etc.  |cookies, toys, etc.      |touch,      |points with         |
-|                |                 |                     |                         |(blank)     |*object* (blank)    |
-+----------------+-----------------+---------------------+-------------------------+------------+--------------------+
-|palm            |L/R/B            |table, cookie, etc.  |cookie OR give cookie    |tap,        |                    |
-|                |                 |                     |                         |touch,      |                    |
-|                |                 |                     |                         |palm up,    |                    |
-|                |                 |                     |                         |palm down,  |                    |
-|                |                 |                     |                         |palm side,  |                    |
-|                |                 |                     |                         |palm out    |                    |
-+----------------+-----------------+---------------------+-------------------------+------------+--------------------+
-|cont palm       |L/R/B            |tables, cookies, etc.|tables, cookies, etc.    |touch,      |                    |
-|                |                 |                     |                         |palm up,    |                    |
-|                |                 |                     |                         |palm down,  |                    |
-|                |                 |                     |                         |palm side,  |                    |
-|                |                 |                     |                         |palm out    |                    |
-+----------------+-----------------+---------------------+-------------------------+------------+--------------------+
++----------------------+-----------------+
+|HOT Coding Category   |Field name       |
++======================+=================+
+|Ask Inference         |ask inf          |
++----------------------+-----------------+
+|Give Inference        |give inf         |
++----------------------+-----------------+
+|Ask Comparison        |ask inf          |  
++----------------------+-----------------+
+|Give Comparison       |give comp        |
++----------------------+-----------------+
+|Ask Abstraction       |ask abs          |
++----------------------+-----------------+
+|Give Abstraction      |give abs         |
++----------------------+-----------------+
+|Ask Hierarchy         |ask hier         |
++----------------------+-----------------+
+|Give Hierarchy        |give hier        |
++----------------------+-----------------+
+|Surface               |surface          |
++----------------------+-----------------+
+|Structure             |structure        |
++----------------------+-----------------+
+
+
