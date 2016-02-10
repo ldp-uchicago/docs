@@ -42,8 +42,22 @@ Every HOT utterance is coded either as a *structure HOT* or a *surface HOT*.  Se
 
 Column or Field Descriptions
 =============================
+===================     ============
+HOT Coding Category     Field name
+===================     ============
+Ask Inference           ask_inf
+Give Inference          give-inf    
+Ask Comparison          ask_comp
+Give Comparison         give_comp
+Ask Abstraction         ask_abs
+Give Abstraction        give_abs
+Ask Hierarchy           ask_hier
+Give Hierarchy          give_hier
+Surface                 surface
+Structure               structure
+===================    ============
 
-
+If an utterance is coded as HOT, then a "1" is put in at least one of the 8 ask/give coding categories **and** a "1" is entered in either *surface* or *structure*.  Below is a sample coded sheet (from the earlier home visit transcripts)
 +----------------+-----------------+---------------------+-------------------------+------------+--------------------+
 |form            |lrb              |obj                  |gloss                    |orient      |mspd                |
 +================+=================+=====================+=========================+============+====================+
