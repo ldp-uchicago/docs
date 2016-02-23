@@ -1,3 +1,5 @@
+.. _HOT-sect1:
+
 HOT Coding and Utterances
 =========================
 The basic unit of transcription is the utterance.  HOT coding is done on the utterance level, i.e., if an utterance contains at least one of the four types of HOT, then the utterance is coded as HOT.  More than one type of HOT can be coded for each utterance, e.g., an utterance can be both a comparison and an inference.  While any single topic of conversation can include both utterances containing HOT and utterances without HOT, only code as HOT those utterances containing the instance of HOT in speech.
@@ -43,13 +45,13 @@ The HOT coding categories with the field names are in a table below.
 +----------------------+-----------------+
 |Give Inference        |give inf         |
 +----------------------+-----------------+
-|Ask Comparison        |ask inf          |  
-+----------------------+-----------------+
-|Give Comparison       |give comp        |
-+----------------------+-----------------+
-|Ask Abstraction       |ask abs          |
+|Ask Abstraction       |ask abs          |  
 +----------------------+-----------------+
 |Give Abstraction      |give abs         |
++----------------------+-----------------+
+|Ask Comparison        |ask comp         |
++----------------------+-----------------+
+|Give Comparison       |give comp        |
 +----------------------+-----------------+
 |Ask Hierarchy         |ask hier         |
 +----------------------+-----------------+
