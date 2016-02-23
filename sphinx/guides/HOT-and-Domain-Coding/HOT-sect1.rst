@@ -64,6 +64,9 @@ The HOT coding categories with the field names are in a table below.
 
 If an utterance is coded as HOT, then a "1" is put in at least one of the 8 ask/give coding categories **and** a "1" is entered in either *surface* or *structure*.  Below is a sample coded sheet (from the earlier home visit transcripts)
 
+Sample Coded Transcript
+=======================
+
 
 --------+-----------------------------+-----------------------+---------+--------+--------+---------+--------+---------+---------+----------+-----+----------+
 | line  | *p_utts*                    | *c_utts*              | ask inf |give inf| ask abs| give abs| ask cmp| give cmp| ask hier| give hier| surf| structure|
