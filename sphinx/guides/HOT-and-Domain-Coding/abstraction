@@ -1,13 +1,12 @@
-.. :abstraction
+.. _abstraction:
 
-===========
 Abstraction
 ===========
 
 **Abstraction**: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
 
-
 Instances of Abstraction
+========================
 
 Abstractions are not very common in our coding. These types of speech should be coded as HOT-Abstraction.
 
@@ -30,6 +29,7 @@ Keep in Mind
     "You" Generalizations: Some abstractions are not made with general terms like "people" or "children", but using the generic "you" (or "we") rather than "you" directed at the listener. If you can replace all instances of "you" with "one" while preserving the intent of the utterance ("you look both ways before crossing the street" becomes "one looks both ways..."), the utterance might be an abstraction. To decide, consider the context of the utterance. If the utterance can apply to the immediate situation that the listener is in, then the utterance is not an abstraction. If the utterance is removed from the situation it describes and is triggered by something like a book, memory, or observation of another person, this should be coded as a surface abstraction.
 
 Keywords
+========
 
 These words often (not always) indicate HOT-Abstraction:
 
@@ -39,6 +39,7 @@ These words often (not always) indicate HOT-Abstraction:
     none
 
 Surface vs. Structure
+======================
 
 Most HOT-Abstraction will be structure, though some will be surface.
 
