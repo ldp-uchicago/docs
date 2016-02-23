@@ -69,7 +69,7 @@ Sample Coded Transcript
 
 
 +-----------------------------+-----------------------+---------+--------+--------+---------+--------+---------+---------+----------+-----+----------+
-| p_utts                    | c_utts              | ask inf |give inf| ask abs| give abs| ask cmp| give cmp| ask hier| give hier| surf| structure|
+| p_utts                      |  c_utts              | ask inf |give inf| ask abs| give abs| ask cmp| give cmp| ask hier| give hier| surf| structure|
 +=============================+=======================+=========+========+========+=========+========+=========+=========+==========+=====+==========+
 | why would you want to       |                       |    1    |        |        |         |        |         |         |          | 1   |          |
 |       | shoot a baby jelly+fish?    |                       |         |        |        |         |        |         |         |          |     |          |               
