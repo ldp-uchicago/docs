@@ -67,6 +67,7 @@ If an utterance is coded as HOT, then a "1" is put in at least one of the 8 ask/
 Sample Coded Transcript
 =======================
 
+
 +-----------------------------+----------------------+---------+---------+--------+---------+---------+----------+-----+----------+
 | *p_utts*                    | *c_utts*             | ask inf | give inf| ask cmp| give cmp| ask hier| give hier| surf| structure|
 +=============================+======================+=========+=========+========+=========+=========+==========+=====+==========+
