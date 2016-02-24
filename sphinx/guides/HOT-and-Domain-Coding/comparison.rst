@@ -10,10 +10,9 @@ Comparisons are fairly common in our coding. These types of speech should be cod
 * Metaphor: Clear instances of metaphor, including simile, are instances of comparison.
  Must be able to identify a source (sometimes called a base) and a target/analog: Where A is like B, A is target and B is the source.
 * Comparatives and Superlatives: Comparatives grade one thing as more or less of a quality than something esle. Superlatives grade one as being the most or least of a quality of all things like it.
-
- #.  Metaphor: Clear instances of metaphor, including simile, are instances of comparison.
- Must be able to identify a source (sometimes called a base) and a target/analog: Where A is like B; A is target and B is the source
- #.  Comparatives and Superlatives: Comparatives grade one thing as more or less of a quality than something else. Superlatives grade one thing as being the most or least of a quality of all things like it.
+ comparatives are usually constructed by more/less + adjective or adjective + -er
+  children sometimes use comparatives as simple adjectives, for example saying "bigger" when they mean "big"; these are not comparisons.
+  
 comparatives are usually constructed by more/less + adjective or adjective + -er
 children sometimes use comparatives as simple adjectives, for example saying "bigger" when they mean "big"; these are not comparison
 comparatives can be coded with two clearly indexed objects, or one object/index compared to itself at another time point, so long as the time points are not ambiguous (e.g. "The birdie is closer now!" is a surface comparison, but "The birdie is closer" without clear time reference is NOT)
