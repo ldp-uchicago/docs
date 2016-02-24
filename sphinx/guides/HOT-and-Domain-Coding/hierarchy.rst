@@ -21,6 +21,7 @@ Keywords
 =========
 
 These words often (not always) indicate HOT-Comparison:
+
 *  kind (of)
 *  type (of)
 *  sort (of)
