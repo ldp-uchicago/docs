@@ -59,6 +59,7 @@ These words often (not always) indicate HOT-Comparison:
 Surface vs. Structure
 =======================
 HOT-Comparison can be either surface or structure.
+
 Code as surface when...
   comparing physical attributes (color, appearance, size, sound, etc.)
   drawing basic parallels and differences (x "better than" y, "both from Chicago", want eggs "like yesterday", etc.)
