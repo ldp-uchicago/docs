@@ -21,10 +21,9 @@ Keywords
 =========
 
 These words often (not always) indicate HOT-Comparison:
-
- *  kind (of)
- *  type (of)
- *  sort (of)
+*  kind (of)
+*  type (of)
+*  sort (of)
 
 Surface vs. Structure
 ======================
