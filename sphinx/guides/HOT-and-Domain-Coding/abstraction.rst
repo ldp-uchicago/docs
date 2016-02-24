@@ -10,17 +10,19 @@ Instances of Abstraction
 
 Abstractions are not very common in our coding. These types of speech should be coded as HOT-Abstraction.
 
-    Organizing Knowledge: People use abstractions to organize current knowledge and provide a framework for future understanding. Types of this organization could include:
-        rubric: academic learning
-        social: socially defined habitual routines or social rules where events enable other events
-        stereotypes: generalizations that may or may not be true of all of a type of something
-        social roles: assigned traditional behavior or value to someone based on their occupation, status, gender, etc.
-        scripts: speech that has become mostly rote for the user
-        worldview: description of beliefs or values of an individual or group that are extended outward generally
-        archetypes: description of "most typical" of a type of person or thing
-        habits: descriptions of habitual behaviors, only HOT if generalized to a type of person instead of a particular person
-    Definitions: Beyond basic labels (places, objects, people, adjectives, etc.), attempts to describe or define a word or concept are generally abstractions.
-    Codification: Abstraction occurs when a quality or behavior is applied to a class of something as a way of identifying that class. This commonly seen with animal sounds and letters/spelling.
+*Organizing Knowledge*: People use abstractions to organize current knowledge and provide a framework for future understanding. Types of this organization could include:
+   *    rubric: academic learning
+   *    social: socially defined habitual routines or social rules where events enable other events
+   *    stereotypes: generalizations that may or may not be true of all of a type of something
+   *    social roles: assigned traditional behavior or value to someone based on their occupation, status, gender, etc.
+   *    scripts: speech that has become mostly rote for the user
+   *    worldview: description of beliefs or values of an individual or group that are extended outward generally
+   *    archetypes: description of "most typical" of a type of person or thing
+   *    habits: descriptions of habitual behaviors, only HOT if generalized to a type of person instead of a particular person
+   
+*Definitions:* Beyond basic labels (places, objects, people, adjectives, etc.), attempts to describe or define a word or concept are generally abstractions.
+
+*Codification:* Abstraction occurs when a quality or behavior is applied to a class of something as a way of identifying that class. This commonly seen with animal sounds and letters/spelling.
 
 Keep in Mind
 
