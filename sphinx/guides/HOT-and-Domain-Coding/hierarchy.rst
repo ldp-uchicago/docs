@@ -9,7 +9,7 @@ Instances of Hierarchy
 
 Hierarchy is relatively uncommon in our coding. These types of speech should be coded as HOT-Hierarchy.
 
-*  Kinds of Things:  Explicit language such as "kind of" or "type of" is used to describe sorts of things.
+* Kinds of Things:  Explicit language such as "kind of" or "type of" is used to describe sorts of things.
     *The explicit language must be present. This means that speech that is descriptive rather than hierarchical should not be coded. Listing types or probing for types is considered descriptive unless explicit language exists to mark it as hierarchy.
 
 Keep in Mind
