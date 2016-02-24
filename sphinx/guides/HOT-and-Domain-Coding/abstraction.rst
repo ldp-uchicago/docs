@@ -10,7 +10,7 @@ Instances of Abstraction
 
 Abstractions are not very common in our coding. These types of speech should be coded as HOT-Abstraction.
 
-*Organizing Knowledge*: People use abstractions to organize current knowledge and provide a framework for future understanding. Types of this organization could include:
+*Organizing Knowledge:* People use abstractions to organize current knowledge and provide a framework for future understanding. Types of this organization could include:
    *    rubric: academic learning
    *    social: socially defined habitual routines or social rules where events enable other events
    *    stereotypes: generalizations that may or may not be true of all of a type of something
