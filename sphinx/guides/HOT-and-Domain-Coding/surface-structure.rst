@@ -27,15 +27,23 @@ Code as surface when HOT speech:
 *  Describes relationships with physical sensations such as:
 
     *Temperature
+    
     *Hunger
+    
     *Pain
+    
     *e.g. When you kick me, that hurts.
     
 *  Describes relationships with physical attributes such as:
 
     *Color
+    
     *Appearance
+    
     *Weight
+    
     *Sound
+    
     *Strength
+    
     *e.g. Daddy is stronger than Mommy.
