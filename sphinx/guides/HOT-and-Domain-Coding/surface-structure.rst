@@ -47,3 +47,20 @@ Code as surface when HOT speech:
     *Strength
     
     *e.g. Daddy is stronger than Mommy.
+    
+  
+Structure Guidelines
+======================
+
+Code as structure when HOT speech:
+
+#.  Makes a connection using theory of mind.
+#.  Makes a leap or jump that isn't immediate or obvious.
+#.  Brings in outside knowledge beyond what is contained in the actual text.
+#.  Conjectures about someone else's wants.
+#.  Describes potential properties (that are not immediate or obvious).
+#.  Makes a connection using multiple, complex links.
+#.  Makes a connection about objects or properties not physically seen, so they are not understood just by perception.
+#.  Explains something about the nature of the world.
+        ``You're a good kid because you are very kind.`` is structure
+        ``She's a good kid like you.`` is surface
