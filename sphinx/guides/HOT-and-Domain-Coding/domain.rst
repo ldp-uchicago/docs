@@ -16,11 +16,9 @@ in at least one of the 14 domains.
 
 #. Code the domain of every line by placing a "1" in the correct domain column.
 
-   * If an utterance is completely indistinguishable (### with no intelligible speech surrounding it) it should be coded as unspecified. If there is enough context from intelligible speech either within the utterance or in 
-surrounding lines, make your best guess as to the domain.
+   * If an utterance is completely indistinguishable (### with no intelligible speech surrounding it) it should be coded as unspecified. If there is enough context from intelligible speech either within the utterance or in surrounding lines, make your best guess as to the domain.
   
-   * Utterances like "yes," "yeah," "no," "ok," "mmhm," "what?" and "huh?" that are in response to something previously said should be coded in the same domain as the previous utterance.
- (e.g. Child: "Frogs are amphibians." PCG: "Yeah, uhhuh." Both utterances should be coded as Natural World.)
+   * Utterances like "yes," "yeah," "no," "ok," "mmhm," "what?" and "huh?" that are in response to something previously said should be coded in the same domain as the previous utterance. (e.g. Child: "Frogs are amphibians." PCG: "Yeah, uhhuh." Both utterances should be coded as Natural World.)
 
 2.  Some utterances will fall into multiple domains. Code primary, secondary, and tertiary (if present) with 1,2, and 3 respectively. 
 Remember all utterances will have a primary domain (1) but secondary domains are coded only as needed.
