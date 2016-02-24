@@ -60,9 +60,9 @@ Surface vs. Structure
 =======================
 HOT-Comparison can be either surface or structure.
 
-    Code as surface when...
-        comparing physical attributes (color, appearance, size, sound, etc.)
-        drawing basic parallels and differences (x "better than" y, "both from Chicago", want eggs "like yesterday", etc.)
-    Code as structure when...
-        comparing emotional states ("brave like Piglet")
-        drawing complex parallels or differences about the nature, structure, or functionality of an object, for example how a toy works rather than how it looks
+ Code as surface when...
+  comparing physical attributes (color, appearance, size, sound, etc.)
+  drawing basic parallels and differences (x "better than" y, "both from Chicago", want eggs "like yesterday", etc.)
+Code as structure when...
+  comparing emotional states ("brave like Piglet")
+  drawing complex parallels or differences about the nature, structure, or functionality of an object, for example how a toy works rather than how it looks
