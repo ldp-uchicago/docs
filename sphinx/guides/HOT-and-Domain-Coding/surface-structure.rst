@@ -62,5 +62,7 @@ Code as structure when HOT speech:
 #.  Makes a connection using multiple, complex links.
 #.  Makes a connection about objects or properties not physically seen, so they are not understood just by perception.
 #.  Explains something about the nature of the world.
+
         ``You're a good kid because you are very kind.`` is structure
+        
         ``She's a good kid like you.`` is surface
