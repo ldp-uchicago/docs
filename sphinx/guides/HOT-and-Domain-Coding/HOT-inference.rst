@@ -13,9 +13,12 @@ Inference is the most common type of HOT speech that we code.  These types of sp
 
     * includes most coherent utterances with *because* but **not** children's utterances lacking a clear syntax of cause and effect
     ``try this: get rid of *because* in the utterance. If utterance still has a causal meaning, code as HOT.``
+    
     * so can represent a causual relationship
     ``do not code when *so* is used to introduce a topic, this is not causal
+    
     * includes most coherent instances of *how come, why,* and *what for*
+    
     * includes some instances of *for* as explanation, when glossing to "for the purpose of"
     
     
