@@ -47,12 +47,12 @@ Surface vs. Structure
 
 Most HOT-Abstraction will be structure, though some will be surface.
 
-    Code as surface when...
-    *  modifying behavior without explanation
-    *  talking about animal sounds
-    *  the abstraction is also letter/sound/spelling talk
-    *  the abstraction is an out-of-context "you"-generalization (see above)
-    Code as structure when...
-    *  modifying behavior with explanation
-    *  defining an unknown word/concept
-    *  describing social constructs or organizing worldviews
+ Code as surface when...
+ *  modifying behavior without explanation
+ *  talking about animal sounds
+ *  the abstraction is also letter/sound/spelling talk
+ *  the abstraction is an out-of-context "you"-generalization (see above)
+Code as structure when...
+  *  modifying behavior with explanation
+  *  defining an unknown word/concept
+  *  describing social constructs or organizing worldviews
