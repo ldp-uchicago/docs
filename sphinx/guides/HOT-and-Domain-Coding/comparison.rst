@@ -13,12 +13,19 @@ Comparisons are fairly common in our coding. These types of speech should be cod
 * Comparatives and Superlatives: Comparatives grade one thing as more or less of a quality than something esle. Superlatives grade one as being the most or least of a quality of all things like it.
 
   *comparatives are usually constructed by more/less + adjective or adjective + -er
+  
   *children sometimes use comparatives as simple adjectives, for example saying "bigger" when they mean "big"; these are not comparison
+  
   *comparatives are usually constructed by more/less + adjective or adjective + -er
+  
   *children sometimes use comparatives as simple adjectives, for example saying "bigger" when they mean "big"; these are not comparison
+  
   *comparatives can be coded with two clearly indexed objects, or one object/index compared to itself at another time point, so long as the time points are not ambiguous (e.g. "The birdie is closer now!" is a surface comparison, but "The birdie is closer" without clear time reference is NOT)
+  
   *superlatives are usually constructed by most/least + adjective or adjective + -est
+  
   *people, especially children, often use superlatives without truly comparing anything (e.g. "she's my most favoritest"), these utterances should not be coded unless it is clear that a true comparison is being drawn between two indexes
+  
   *saying "my favorite" isn't good enough
 
 Keep in Mind
