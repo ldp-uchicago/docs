@@ -23,12 +23,16 @@ Surface Guidelines
 Code as surface when HOT speech:
 
 *  Relates preferences, wants, desires, or needs.
+
 *  Describes relationships with physical sensations such as:
+
     *Temperature
     *Hunger
     *Pain
     *e.g. When you kick me, that hurts.
+    
 *  Describes relationships with physical attributes such as:
+
     *Color
     *Appearance
     *Weight
