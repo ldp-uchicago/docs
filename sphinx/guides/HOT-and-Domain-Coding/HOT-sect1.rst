@@ -62,7 +62,7 @@ The HOT coding categories with the field names are in a table below.
 |Structure             |structure        |
 +----------------------+-----------------+
 
-If an utterance is coded as HOT, then a "1" is put in at least one of the 8 ask/give coding categories **and** a "1" is entered in either *surface* or *structure*.  Below is a sample coded sheet (from the earlier home visit transcripts)
+If an utterance is coded as HOT, then a "1" is put in at least one of the 8 ask/give coding categories **and** a "1" is entered in either *surface* or *structure*.  Below is a sample coded sheet (from the earlier home visit transcripts) showing the four (of 8) HOT categories relevant for the conversation.
 
 Sample Coded Transcript
 =======================
