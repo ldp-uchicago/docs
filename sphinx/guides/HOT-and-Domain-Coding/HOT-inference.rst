@@ -24,9 +24,9 @@ Inference is the most common type of HOT speech that we code.  These types of sp
          ``do not code when *for* is used to assign one thing to another, such as specific foods for a meal, a person for a social role, or a gift for a party``
          ``try this: turn the utterance into a short dialogue. Use what comes before the *for* as the first line, then pretend a second speaker asks "why?" if the rest of th eutterance makes a coherent and causal resopnse, this is likely HOT-inf.``
          
-     * non-temporal *until* can (sometimes) be causal
+    * non-temporal *until* can (sometimes) be causal
       
-     * non-directional and non-infinitive *to* can (sometimes) be causal
+    * non-directional and non-infinitive *to* can (sometimes) be causal
             ``try this: replace *to* with *in order to*. Does the utterance have the same causal meaning? If yes, then code as HOT.
             
 2.  *Conditionals:*  Speculation about what could or will happen with predictable cause.
@@ -37,7 +37,7 @@ Inference is the most common type of HOT speech that we code.  These types of sp
             ``if the speaker drops the *if/then* structure entirely (e.g. replaces it with a conjunction like *and*, this is not HOT and should not be coded.``
             ``try this: flip the clauses in the utterance. Does the utterance still have a causal meaning? If yes, then the utterance is likely HOT. (e.g. "I'll use this if it's microwave safe" flips to "If it's microwave-safe, then I'll use this" and is still causal).``
             
-   * speculation could include keywords like *think* or *doubt*
+  * speculation could include keywords like *think* or *doubt*
       
     
     
