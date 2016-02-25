@@ -34,10 +34,20 @@ Inference is the most common type of HOT speech that we code.  These types of sp
  * if/then structure is very important and should be coded
       
             ``if the speaker drops *then,* the utterance can still be HOT-inf.``
+            
             ``if the speaker drops the *if/then* structure entirely (e.g. replaces it with a conjunction like *and*, this is not HOT and should not be coded.``
+            
             ``try this: flip the clauses in the utterance. Does the utterance still have a causal meaning? If yes, then the utterance is likely HOT. (e.g. "I'll use this if it's microwave safe" flips to "If it's microwave-safe, then I'll use this" and is still causal).``
             
+  
   * speculation could include keywords like *think* or *doubt*
+  
+   * this speculation is not HOT if it is probing for a yes/no answer
+   * this speculation is not HOT if it is inteneded to halt conversation or direct behavior
+   * the speculation can only be coded as inf if there is sufficient evidence in the proximal context
+   * if speculation does not have explicitly inferential language, it is necessarily surface, never structure; often a follow-up utterance will contain explicit inf language, but whether that follow-up is surface or structure does not change the speculative utterance to structure.
+   
+   
       
     
     
