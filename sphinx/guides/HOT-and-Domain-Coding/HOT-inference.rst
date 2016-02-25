@@ -29,12 +29,14 @@ Inference is the most common type of HOT speech that we code.  These types of sp
       * non-directional and non-infinitive *to* can (sometimes) be causal
             ``try this: replace *to* with *in order to*. Does the utterance have the same causal meaning? If yes, then code as HOT.
             
-   2. *Conditionals:*  Speculation about what could or will happen with predictable cause.
+ 2.  *Conditionals:*  Speculation about what could or will happen with predictable cause.
    
       * if/then structure is very important and should be coded
+      
             ``if the speaker drops *then,* the utterance can still be HOT-inf.``
             ``if the speaker drops the *if/then* structure entirely (e.g. replaces it with a conjunction like *and*, this is not HOT and should not be coded.``
             ``try this: flip the clauses in the utterance. Does the utterance still have a causal meaning? If yes, then the utterance is likely HOT. (e.g. "I'll use this if it's microwave safe" flips to "If it's microwave-safe, then I'll use this" and is still causal).``
+            
       * speculation could include keywords like *think* or *doubt*
       
     
