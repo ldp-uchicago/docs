@@ -46,8 +46,20 @@ Inference is the most common type of HOT speech that we code.  These types of sp
    * this speculation is not HOT if it is inteneded to halt conversation or direct behavior
    * the speculation can only be coded as inf if there is sufficient evidence in the proximal context
    * if speculation does not have explicitly inferential language, it is necessarily surface, never structure; often a follow-up utterance will contain explicit inf language, but whether that follow-up is surface or structure does not change the speculative utterance to structure.
-   
-   
-      
-    
-    
+  
+ Surface vs. Structure
+ =====================
+Inference is the most common HOT speech, so there could be many instances of both surface and structure.
+
+    Code as surface when...
+        the cause/effect relationship is cut and dry, easily perceived
+        the cause/effect refers to physical sensation (e.g. temperature, hunger, pain)
+        the cause/effect relationship is based on knowledge of concurrent or immediate events (e.g. "you broke it because it wasn't broken before)
+        there is a "button" relationship explaining what happens but not why (e.g. "when you push the button the clown pops out")
+        there is one link or very simple/immediate chain reactions (e.g. "move the block so he can open the door")
+        there question is a disembodied why
+        
+    Code as structure when...
+        there is more than one possible relationship between the cause and effect, no clear-cut arrows between events
+        the cause and effect are separated in time
+        an inference occurs simultaneously with another type of HOT speech
