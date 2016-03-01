@@ -1,4 +1,4 @@
-.. _HOT-sect1:
+.. _HOTov:
 
 HOT Coding and Utterances
 =========================
@@ -7,7 +7,7 @@ The basic unit of transcription is the utterance.  HOT coding is done on the utt
 Four Types of HOT
 =================
 
-#.  *Inference*: Deriving a conclusion not otherwise given by using known (or logical) premises
+#.  :ref:`Inference<HOTinf>`: Deriving a conclusion not otherwise given by using known (or logical) premises
 
 #.  *Abstraction*: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
 
