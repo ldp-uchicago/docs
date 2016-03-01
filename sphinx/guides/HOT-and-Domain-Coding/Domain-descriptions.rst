@@ -116,5 +116,34 @@ The following types of speech are in the Spatial Reasoning domain:
 
 Note: To distinguish between the *Behavior Management* and *Behaviors* domains, a tip would be to look at the response. If a parent says "Could you put on your shoes?" and the child says "I need help," then it was a behavioral directive, and should be coded in this domain. If the child responds "Not with gloves on!" then the child is interpreting it as a behavior. This is the subtle difference between telling people what to do (behavior management) and saying what is being done (behaviors).
 
+**Behaviors:** The following types of speech are in the Behaviors domain:
 
+* Self-talk/narration of your own or another animate actor's actions, as part of dyadic interaction (can be past, current, or future)
+* Can refer to behaviors not completed, but must be behavioral states, not personal attributes
+* Talk like "I want to do X" should be in this domain if X can occur in the near future and is possible (describing wishes for the future or impossible desires would be in the preferences domain)
+* Phrases with "can" are occasionally in this domain if "I can..." is used to mean "I am currently..."
 
+**Preferences:** The following types of speech are in the Preferences domain:
+
+* Wants, favorites, likes, dislikes, and wishes
+* Discussion about what someone would prefer to do next
+* Do NOT code wants as emotional unless it has other context that makes it clearly fit into that domain
+
+**Scripts/Recitation:** The following types of speech are in the Scripts/Recitiation (S/R) domain:
+
+* Reading a book out loud (note that discussion of the book is not in this domain)
+* Scripts and ritualized interactions
+* Ritualized exclamations (not spontaneous interjections/exclamations)
+
+**Rules:** The following types of speech are in the Rules domain:
+
+* Stating rules to a game
+* Telling someone to follow the rules is behavior management
+
+**Unspecified:** The following types of speech are in the Unspecified domain:
+
+* Utterances that do not clearly fall into any of the above domains
+* Questions about choices
+* Possessive declarations (unless trumped by another category)
+
+Note: Occasionally several domains (Behaviors, Preferences, Rules, S/R) will be coded as subtypes of the Unspecified domain. This is not the standard method of current coding, but if you encounter this or are asked to use this system, remember that you should mark only the subtype's column and not the Unspecified column. 
