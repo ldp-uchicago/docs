@@ -1,4 +1,4 @@
-.. _DOMdsc
+.. _DOMdsc:
 
 Domain Descriptions
 ===================
