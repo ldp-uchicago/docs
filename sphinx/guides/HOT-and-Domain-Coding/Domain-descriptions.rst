@@ -22,7 +22,6 @@ The following types of speech are in the Social domain:
 * People from different countries and their traditions
 
 **Emotional:**
-
 The following types of speech are in the Emotional domain:
 
 * Discussing feelings (emotion words)
@@ -32,7 +31,6 @@ The following types of speech are in the Emotional domain:
 * Descriptors like "funny" or "silly" are not emotions
 
 **Natural World:**
-
 The following types of speech are in the Natural World domain:
 
 * Science, technology, engineering, physical sciences, natural sciences
@@ -47,7 +45,6 @@ The following types of speech are in the Natural World domain:
 * Artistic representations of natural phenomena, unless the point is to understand the artwork
 
 **Mathematics:**
-
 The following types of speech are in the Mathematics domain:
 
 * Measurements: quantity, size, height, speed, depth, weight, degrees, movement
@@ -58,7 +55,6 @@ The following types of speech are in the Mathematics domain:
 * Having a "math word" in an utterance does not mean it is necessarily math
 
 **Spatial Reasoning:**
-
 The following types of speech are in the Spatial Reasoning domain:
 
 * Spatial relations (using words like "above", "below", "next to", etc.)
@@ -69,3 +65,56 @@ The following types of speech are in the Spatial Reasoning domain:
 * Use of "here" vs. "there" or "far" vs. "near" are not specific enough without being able to identify the object of reference (gestures can be used to help identify the reference)
 * Use of "here" to get attention rather than locate something is not spatial (typically from parents)
 * Metaphorical uses of spatial language are not spatial
+
+**Literacy and Print:**  The following types of speech are in the Literacy and Print domain:
+
+* Word pronunciation (when age appropriate, typically very young children)
+* Spelling talk, how to write letters, how to recognize letters
+* Discussion of reading as a topic (not enough to mention reading)
+* Book talk (title, author, literary frame, meta-talk about stores, "once upon a time", etc.)
+* Drawing references between books and real life
+* Meanings and definitions (words, idioms, phrases, semantic distinctions, names of objects, etc.); labeling is not enough, must also define it
+* Rhymes
+* Jokes
+* Bible references
+* Book reading itself is not LaP; should be coded as Scripts/Recitation
+
+**Art, Music, and Design:** The following types of speech are in the Art, Music, and Design (AMD) domain:
+
+* Visual art (painting, scultpting, drawing, crafts, etc.)
+* Questions (especially serial questions) can make an exchange into art
+* Discussion of tools used to create art is AMD
+* Performing art (music, dancing, theater, movies)
+* Character identification (non-book), including video and board game characters, and holiday figures
+* Talk about artists, actors, and musicians
+* Singing a made-up song, including invented songs/repetition of words musically, talk about melody and rhythm (but NOT reciting an established song like Happy Birthday)
+* Art history and museums
+* Design, architechture, building things, creativity, inventing
+* Color as a topic of conversation (must discuss something about color or colors rather than mentioning a color as a descriptor)
+* Simply saying whether art is good or bad is not enough
+* Labeling the subject of an artwork is not enough
+
+**Sports:** The following types of speech are in the Sports domain:
+
+* Sporting equipment
+* Physical games and contests
+* Activities in this domain should be based mostly on physical skill (e.g. strength, aim, balance, flexibility)
+* Although competition should be an aspect of most activities in this domain, it is not absolutely necessary if the "sport" is based primarily on physical activity. Ex - yoga is a sport. However, adding the element of competition and regulation to some non-sport activities may categorize them as a sport. Ex - general hunting is not a sport but skeet shooting would be.
+* When discussing athletes and other people in the realm of sports, it should only be categorized as "sport" if it references their purpose in the sport (like a referee) or their specific athletic ability. Just referencing the person's name or physical description is not enough. Ex - "You are dunking that basketball like Michael Jordan" is sport. "You look like Don King with your hair sticking up" is not a sport.
+* Other domains trump this domain
+* Competitive activities based on mental skill, such as chess or poker, would NOT be considered sports
+
+**Behavior Management:** The following types of speech are in the Behavior Management domain:
+
+* Behavioral directives do not need to explain why the directive is being given
+* Questions about behavior are BM if specific, but vague questions like "What do we do?" should be coded as unspecified
+* Can be implicit or explicit, with implicit directives usually being dependent on context (see examples below for clarification)
+* Prompts/praise for continuation or completion of the directed behavior
+* Reasons for why to not to the behavior are in this domain unless trumped by another domain
+* If something is both a behavioral directive and another category (besides unspecified), code as the other category
+* Only trying to get someone's attention ("hey!") is not behavioral
+
+Note: To distinguish between the *Behavior Management* and *Behaviors* domains, a tip would be to look at the response. If a parent says "Could you put on your shoes?" and the child says "I need help," then it was a behavioral directive, and should be coded in this domain. If the child responds "Not with gloves on!" then the child is interpreting it as a behavior. This is the subtle difference between telling people what to do (behavior management) and saying what is being done (behaviors).
+
+
+
