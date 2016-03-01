@@ -1,4 +1,4 @@
-.. _hot-overview:
+.. _overview:
 
 *******************************
 HOT and Domain Coding Overview
