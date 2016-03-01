@@ -9,7 +9,7 @@ Four Types of HOT
 
 #.  :ref:`Inference <HOTinf>`: Deriving a conclusion not otherwise given by using known (or logical) premises
 
-#.  *Abstraction*: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
+#.  :ref:`Abstraction <HOTab>`: A mental framework or model that is used to facilitate the process of cognition and perception, and successfully apply categories and organization to a concept - from the specific to the general.
 
 #.  *Comparison*: Uses an explicit framework of speech to point out a similarity or difference between two representations: source and analog
 
