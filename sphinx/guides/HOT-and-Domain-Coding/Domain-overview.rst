@@ -1,4 +1,4 @@
-.. _DOMov
+.. _DOMov:
 
 Domain Coding
 =============
