@@ -1,3 +1,4 @@
+.. _HOThier:
 
 Hierarchy
 ==========
